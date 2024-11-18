@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "tools",
+  "pattern": [
+    " # ",
+    "#N#",
+    " / "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:prismarine_crystals"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "/": {
+      "item": "minecraft:end_rod"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "lksls:light_sword"
+  },
+  "group": "season_one_items"
+}

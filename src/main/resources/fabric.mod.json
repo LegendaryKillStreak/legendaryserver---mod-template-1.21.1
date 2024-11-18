@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "lks",
+	"version": "${version}",
+	"name": "LegendaryServer - Mod",
+	"description": "This is the first test for the multi seasonal minecraft mod for LegendaryServer, made by LegendaryKillStreak",
+	"authors": [
+		"LegendaryKillStreak"
+	],
+	"contact": {
+		"homepage": "https://legendarykillstreak.carrd.co/",
+		"sources": "https://github.com/LegendaryKillStreak/LegendaryServerMod.main.1.21.1"
+	},
+	"license": "MIT",
+	"icon": "assets/lksls/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.lks.legendaryserver.LegendaryServerMod"
+		],
+		"fabric-datagen": [
+			"net.lks.legendaryserver.LegendaryServerModDataGenerator"
+		],
+		"client": [
+			"net.lks.legendaryserver.LkslsModClient"
+		]
+	},
+	"mixins": [
+		"legendaryserver.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
