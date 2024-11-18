@@ -10,6 +10,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final  Item LIGHT_SWORD = registerItem("light_sword", new Item(new Item.Settings()));
+    public static final  Item LIGHT_CORE = registerItem("light_core", new Item(new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {
@@ -23,5 +24,8 @@ public class ModItems {
             entries.add(LIGHT_SWORD);
         });
 
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+            entries.add(LIGHT_CORE);
+        });
     }
 }

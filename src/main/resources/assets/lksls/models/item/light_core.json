@@ -1,0 +1,7 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "C:/Users/jylie/OneDrive/Dokumente/light_core"
+	}
+}

@@ -1,25 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "tools",
+  "category": "material",
   "pattern": [
     " # ",
     "#N#",
-    " / "
+    " # "
   ],
   "key": {
     "#": {
-      "item": "minecraft:prismarine_crystals"
+      "item": "minecraft:glowstone_dust"
     },
     "N": {
-      "item": "lksls:light_core"
-    },
-    "/": {
-      "item": "minecraft:end_rod"
+      "item": "minecraft:nether_star"
     }
   },
   "result": {
     "count": 1,
-    "id": "lksls:light_sword"
+    "id": "lksls:light_core"
   },
   "group": "season_one_items"
 }
