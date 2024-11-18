@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": {
+      "model": "lksls:block/light_core_block"
+    }
+
+  }
+}

@@ -2,6 +2,7 @@ package net.lks.legendaryserver.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.lks.legendaryserver.LegendaryServerMod;
+import net.lks.legendaryserver.block.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -16,6 +17,8 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.lksls.season_one_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.LIGHT_SWORD);
+                        entries.add(ModItems.LIGHT_CORE);
+                        entries.add(ModBlocks.LIGHT_CORE_BLOCK);
 
                     }).build());
 

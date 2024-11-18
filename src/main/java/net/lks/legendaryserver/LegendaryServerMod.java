@@ -2,6 +2,7 @@ package net.lks.legendaryserver;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.lks.legendaryserver.block.ModBlocks;
 import net.lks.legendaryserver.item.ModItemGroups;
 import net.lks.legendaryserver.item.ModItems;
 import org.slf4j.Logger;
@@ -15,6 +16,7 @@ public class LegendaryServerMod implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
+		ModBlocks.registerModBlocks();
 
 
 
