@@ -15,7 +15,7 @@ import java.util.function.Supplier;
 public enum ModToolMaterials implements ToolMaterial {
 
     LIGHT(ModTags.Blocks.INCORRECT_FOR_LIGHT_TOOL,
-            4602, 13.0F, 7.0F, 22, () -> Ingredient.ofItems(ModItems.LIGHT_CORE));
+            4602, 13.0F, 12.0F, 22, () -> Ingredient.ofItems(ModItems.LIGHT_CORE));
 
     private final TagKey<Block> inverseTag;
     private final int itemDurability;
@@ -24,7 +24,7 @@ public enum ModToolMaterials implements ToolMaterial {
     private final int enchantability;
     private final Supplier<Ingredient> repairIngredient;
 
-    private ModToolMaterials(final TagKey<Block> inverseTag, final int itemDurability, final float miningSpeed, final float attackDamage, final int enchantability, final Supplier<Ingredient> repairIngredient
+    ModToolMaterials(final TagKey<Block> inverseTag, final int itemDurability, final float miningSpeed, final float attackDamage, final int enchantability, final Supplier<Ingredient> repairIngredient
     ) {
         this.inverseTag = inverseTag;
         this.itemDurability = itemDurability;
@@ -33,6 +33,7 @@ public enum ModToolMaterials implements ToolMaterial {
         this.enchantability = enchantability;
         this.repairIngredient = Suppliers.memoize(repairIngredient::get);
     }
+
 
     @Override
     public int getDurability() {

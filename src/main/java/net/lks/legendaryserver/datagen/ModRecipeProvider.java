@@ -1,20 +1,55 @@
 package net.lks.legendaryserver.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.lks.legendaryserver.block.ModBlocks;
+import net.lks.legendaryserver.item.ModItems;
+import net.lks.legendaryserver.util.ModTags;
+import net.minecraft.data.server.recipe.RecipeExporter;
+import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.item.Items;
+import net.minecraft.recipe.ShapedRecipe;
+import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.registry.tag.BlockTags;
 
 import java.util.concurrent.CompletableFuture;
 
-public class ModRecipeProvider extends FabricTagProvider.BlockTagProvider {
+public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
     }
 
     @Override
-    protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE);
+    public void generate(RecipeExporter exporter) {
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_CORE_BLOCK)
+                        .pattern("AAA")
+                        .pattern("AAA")
+                        .pattern("AAA")
+                        .input('A', ModItems.LIGHT_CORE)
+                        .criterion(hasItem(ModItems.LIGHT_CORE), conditionsFromItem(ModItems.LIGHT_CORE))
+                        .offerTo(exporter);
+
+        ;
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.LIGHT_SWORD)
+                .pattern(" A ")
+                .pattern("AXA")
+                .pattern(" B ")
+                .input('A', Items.PRISMARINE_SHARD)
+                .input('B', Items.END_ROD)
+                .input('X', ModItems.LIGHT_CORE)
+                .criterion(hasItem(ModItems.LIGHT_CORE), conditionsFromItem(ModItems.LIGHT_CORE))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LIGHT_CORE)
+                .pattern(" A ")
+                .pattern("AXA")
+                .pattern(" A ")
+                .input('A', Items.GLOWSTONE_DUST)
+                .input('X', Items.NETHER_STAR)
+                .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
+                .offerTo(exporter);
 
     }
 }

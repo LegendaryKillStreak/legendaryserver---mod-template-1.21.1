@@ -2,6 +2,7 @@ package net.lks.legendaryserver.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.lks.legendaryserver.block.ModBlocks;
 import net.lks.legendaryserver.util.ModTags;
 import net.minecraft.item.Item;
 import net.minecraft.registry.RegistryWrapper;
@@ -17,9 +18,17 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE);
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.LIGHT_CORE_BLOCK);
 
 
+        getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
+                .add(ModBlocks.LIGHT_CORE_BLOCK);
+
+
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_LIGHT_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
     }
 
 
