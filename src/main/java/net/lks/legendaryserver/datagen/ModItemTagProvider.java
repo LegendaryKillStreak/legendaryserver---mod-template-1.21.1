@@ -19,10 +19,15 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ModTags.Items.TRANSFORMABLE_ITEMS)
                 .add(ModItems.LIGHT_CORE)
-                ;
+                .add(ModItems.DARK_CORE);
+
+
+
 
         getOrCreateTagBuilder(ItemTags.SWORDS)
                 .add(ModItems.LIGHT_SWORD);
+
+
 
     }
 }

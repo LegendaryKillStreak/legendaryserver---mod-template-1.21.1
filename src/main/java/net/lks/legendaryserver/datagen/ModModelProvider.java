@@ -23,11 +23,14 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.LIGHT_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_CORE, Models.GENERATED);
 
 
+
+        itemModelGenerator.register(ModItems.DARKNESS_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.LIGHT_SWORD, Models.HANDHELD);
 
-        itemModelGenerator.register(Item.fromBlock(ModBlocks.LIGHT_CORE_BLOCK), Models.CUBE_ALL);
+
 
         
 

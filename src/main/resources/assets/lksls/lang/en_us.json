@@ -1,6 +1,9 @@
 {
   "item.lksls.light_sword": "Sword of Light",
   "item.lksls.light_core": "Light Core",
+  "item.lksls.dark_core": "Dark Core",
+  "item.lksls.darkness_sword": "Sword of Darkness",
+
   "itemgroup.lksls.season_one_items": "Season One Items",
 
   "block.lksls.light_core_block": "Light Core Block"

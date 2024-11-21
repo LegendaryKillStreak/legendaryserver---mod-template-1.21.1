@@ -1,0 +1,11 @@
+// 1.21.1	2024-11-21T03:04:36.41657	LegendaryServer - Mod/Recipes
+ba1249983e5539965d51d93f829998fa629cefe8 data\lks\recipe\light_core.json
+3ee23bf2f07f1a5c957ed059a0a0c45a71cf42ea data\lks\advancement\recipes\combat\darkness_sword.json
+186dcc19d3c53bd3326e912521115e1da6a1f321 data\lks\recipe\light_core_block.json
+d4b827ed8e7cbff13569a1c869bce070405c5bc8 data\lks\advancement\recipes\combat\light_sword.json
+5be6e9bba038e3eccfa1f8fa4c6476b672db3f2d data\lks\recipe\darkness_sword.json
+398fbdcd113689fa26717c8c7bf6e6a8a531dad2 data\lks\recipe\light_sword.json
+ee473254b28cf63a753e0e1595b72a3eb46aaa20 data\lks\advancement\recipes\misc\light_core.json
+d0e5cbc55c9a5d4b8256f45945df77233b982a49 data\lks\advancement\recipes\building_blocks\light_core_block.json
+ceef5575fcfa071aaa392e4216e74d205f8f580f data\lks\recipe\dark_core.json
+adf4e65018add23a033f644b9ebd123d66899f01 data\lks\advancement\recipes\misc\dark_core.json

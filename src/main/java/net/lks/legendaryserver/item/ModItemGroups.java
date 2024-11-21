@@ -19,6 +19,8 @@ public class ModItemGroups {
                         entries.add(ModItems.LIGHT_SWORD);
                         entries.add(ModItems.LIGHT_CORE);
                         entries.add(ModBlocks.LIGHT_CORE_BLOCK);
+                        entries.add(ModItems.DARK_CORE);
+                        entries.add(ModItems.DARKNESS_SWORD);
 
                     }).build());
 

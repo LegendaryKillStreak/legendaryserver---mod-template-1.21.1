@@ -2,6 +2,8 @@ package net.lks.legendaryserver.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.lks.legendaryserver.LegendaryServerMod;
+import net.lks.legendaryserver.item.custom.DarknessSword;
+import net.lks.legendaryserver.item.custom.DarknessSword;
 import net.lks.legendaryserver.item.custom.LightSword;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -16,7 +18,14 @@ public class ModItems {
                     .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.LIGHT, 3, -2.4f))));
 
 
+    public static final Item DARKNESS_SWORD = registerItem("darkness_sword",
+            new DarknessSword(ModToolMaterials.DARK, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.DARK, 3, -2.4f))));
+
+
     public static final  Item LIGHT_CORE = registerItem("light_core", new Item(new Item.Settings()));
+    public static final  Item DARK_CORE = registerItem("dark_core", new Item(new Item.Settings()));
+
 
 
 
@@ -34,6 +43,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(LIGHT_CORE);
             entries.add(ModItems.LIGHT_SWORD);
+            entries.add(ModItems.DARK_CORE);
         });
     }
 }

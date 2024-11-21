@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "B": {
+      "item": "minecraft:end_rod"
+    },
+    "X": {
+      "item": "lksls:light_core"
+    }
+  },
+  "pattern": [
+    " A ",
+    "AXA",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "lksls:light_sword"
+  }
+}

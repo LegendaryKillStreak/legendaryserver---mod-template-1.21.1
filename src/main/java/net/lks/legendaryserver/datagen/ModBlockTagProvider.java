@@ -28,7 +28,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
 
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_LIGHT_TOOL)
-                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+                .addOptionalTag(BlockTags.NEEDS_DIAMOND_TOOL);
     }
 
 

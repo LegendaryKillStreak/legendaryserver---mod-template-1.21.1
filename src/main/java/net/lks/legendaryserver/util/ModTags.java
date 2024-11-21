@@ -28,7 +28,12 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_LIGHT_TOOL = createTag("needs_light_tool");
         public static final TagKey<Block> INCORRECT_FOR_LIGHT_TOOL = createTag("incorrect_for_light_tool");
 
+        public static final TagKey<Block> NEEDS_DARK_TOOL = createTag("needs_dark_tool");
+        public static final TagKey<Block> INCORRECT_FOR_DARK_TOOL = createTag("incorrect_for_dark_tool");
+
     }
+
+
 
 
 

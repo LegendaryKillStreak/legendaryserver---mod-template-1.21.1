@@ -51,5 +51,26 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.DARKNESS_SWORD)
+                .pattern(" A ")
+                .pattern("CXC")
+                .pattern(" B ")
+                .input('A', Items.WITHER_SKELETON_SKULL)
+                .input('B', Items.BLAZE_ROD)
+                .input('X', ModItems.DARK_CORE)
+                .input('C', Items.AMETHYST_SHARD)
+                .criterion(hasItem(ModItems.DARK_CORE), conditionsFromItem(ModItems.DARK_CORE))
+                .offerTo(exporter);
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DARK_CORE)
+                .pattern(" A ")
+                .pattern("AXA")
+                .pattern(" A ")
+                .input('A', Items.TINTED_GLASS)
+                .input('X', ModItems.LIGHT_CORE)
+                .criterion(hasItem(ModItems.LIGHT_CORE), conditionsFromItem(ModItems.LIGHT_CORE))
+                .offerTo(exporter);
+
     }
 }

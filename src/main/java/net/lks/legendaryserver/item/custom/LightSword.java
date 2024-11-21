@@ -14,9 +14,16 @@ public class LightSword extends SwordItem {
 
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
-        target.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 3600,1));
-        target.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA,3,1));
+        target.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 36000,1));
+        target.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA,60,1));
     return super.postHit(stack, target, attacker);
+    }
+
+    @Override
+    public void postDamageEntity(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+        attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION,400,1));
+
+        super.postDamageEntity(stack, target, attacker);
     }
 
 
