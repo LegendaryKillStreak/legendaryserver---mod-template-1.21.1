@@ -21,6 +21,16 @@ public class ModItemGroups {
                         entries.add(ModBlocks.LIGHT_CORE_BLOCK);
                         entries.add(ModItems.DARK_CORE);
                         entries.add(ModItems.DARKNESS_SWORD);
+                        entries.add(ModItems.LIGHT_AXE);
+                        entries.add(ModItems.LIGHT_HOE);
+                        entries.add(ModItems.LIGHT_PICKAXE);
+                        entries.add(ModItems.LIGHT_SHOVEL);
+                        entries.add(ModItems.DARKNESS_AXE);
+                        entries.add(ModItems.DARKNESS_PICKAXE);
+                        entries.add(ModItems.DARKNESS_SHOVEL);
+                        entries.add(ModItems.DARKNESS_HOE);
+                        entries.add(ModItems.COIN);
+
 
                     }).build());
 

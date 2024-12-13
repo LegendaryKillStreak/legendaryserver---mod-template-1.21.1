@@ -1,3 +1,7 @@
-// 1.21.1	2024-11-21T19:08:21.2179132	LegendaryServer - Mod/Tags for minecraft:item
-2a9865d9cbb7601bc8618fcf4ffa0880458e7410 data\minecraft\tags\item\swords.json
-ed7ef73a67514286fd6dc4fb4b07be2313b473c6 data\lksls\tags\item\transformable_items.json
+// 1.21.1	2024-12-13T06:28:25.9105057	LegendaryServer - Mod/Tags for minecraft:item
+3eb4dc179cb3a3b66d4c3d31727741a5d8375b85 data\minecraft\tags\item\axes.json
+544c931be0148c58a605dd2c6eef5c856b5280ce data\minecraft\tags\item\swords.json
+714a257d68a4e7e6d28e1cdae0e9bc792a8513cb data\minecraft\tags\item\pickaxes.json
+2279817513eac3d51608af2b2eefb1f963181bf7 data\lksls\tags\item\transformable_items.json
+daf7586bce0445a402cc352e603baae0e7927f4e data\minecraft\tags\item\hoes.json
+3ea45b5582fd00aa2db3fd6211dc5c8a4bb03133 data\minecraft\tags\item\shovels.json

@@ -1,7 +1,16 @@
-// 1.21.1	2024-11-21T19:08:21.2184134	LegendaryServer - Mod/Model Definitions
+// 1.21.1	2024-12-13T06:28:25.9105057	LegendaryServer - Mod/Model Definitions
 81d3358ca9906e36a19ab70ff96017b9d652bddb assets\lksls\models\item\darkness_sword.json
-74f8fce4583a07e400c9f5e1390977ef4ca3d96d assets\lksls\models\item\light_core.json
+3f6d7971b2e2d61c4704892bc3b6ecb6bffaa924 assets\lksls\models\item\light_hoe.json
+c4d8ed4f76ed28e526d0da79cf53bb157a58bd55 assets\lksls\models\item\light_axe.json
 eaab09150f538b315d310600417d284b7cd6b05b assets\lksls\models\item\dark_core.json
+b7f8d7a760219e1043b23d8ab4747675fc0d30f7 assets\lksls\models\item\darkness_hoe.json
+c0c2b0be5761457516cce495cbab73f73202652b assets\lksls\models\item\darkness_axe.json
 af3cd2270ee9f406a7d509971d925ad02d084e32 assets\lksls\blockstates\light_core_block.json
 6f3788d52cb890cecd2cfd4c9d0766825107190a assets\lksls\models\item\light_sword.json
+062b20bc7fcd60568679db4ed3325adb0fd045c2 assets\lksls\models\item\light_pickaxe.json
 c8fceb367ec9a2c87ca724bce88a1cdbbad21d4a assets\lksls\models\block\light_core_block.json
+712dd24dca43f464d4bc3bac1cf601229f409d32 assets\lksls\models\item\darkness_pickaxe.json
+74f8fce4583a07e400c9f5e1390977ef4ca3d96d assets\lksls\models\item\light_core.json
+0cbff4fbb381147237b99629db5a927da4743b9d assets\lksls\models\item\light_shovel.json
+163c41a0060e3ee3545b9f3a58103c0b10bc730c assets\lksls\models\item\coin.json
+efca2ca9b39dbe00e2438db1b1d4442a1dc30181 assets\lksls\models\item\darkness_shovel.json

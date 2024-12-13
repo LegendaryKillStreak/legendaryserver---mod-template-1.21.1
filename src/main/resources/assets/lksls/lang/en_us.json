@@ -3,6 +3,16 @@
   "item.lksls.light_core": "Light Core",
   "item.lksls.dark_core": "Dark Core",
   "item.lksls.darkness_sword": "Sword of Darkness",
+  "item.lksls.darkness_axe": "Darkness Axe",
+  "item.lksls.darkness_pickaxe": "Darkness Pickaxe",
+  "item.lksls.darkness_shovel": "Darkness Shovel",
+  "item.lksls.darkness_hoe": "Darkness Hoe",
+  "item.lksls.light_pickaxe": "Light Pickaxe",
+  "item.lksls.light_axe": "Light Axe",
+  "item.lksls.light_shovel": "Light Shovel",
+  "item.lksls.light_hoe": "Light Hoe",
+  "item.lksls.coin": "Coin",
+
 
   "itemgroup.lksls.season_one_items": "Season One Items",
 

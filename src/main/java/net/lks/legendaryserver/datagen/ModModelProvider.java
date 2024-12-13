@@ -27,7 +27,23 @@ public class ModModelProvider extends FabricModelProvider {
 
 
 
+        itemModelGenerator.register(ModItems.COIN, Models.GENERATED);
+
+
+
+
         itemModelGenerator.register(ModItems.DARKNESS_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DARKNESS_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DARKNESS_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DARKNESS_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DARKNESS_AXE, Models.HANDHELD);
+
+
+
+        itemModelGenerator.register(ModItems.LIGHT_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.LIGHT_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.LIGHT_HOE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.LIGHT_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.LIGHT_SWORD, Models.HANDHELD);
 
 

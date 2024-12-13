@@ -22,10 +22,52 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.DARK_CORE);
 
 
+        getOrCreateTagBuilder(ModTags.Items.TRANSFORMABLE_ITEMS)
+                .add(ModItems.COIN);
+
+        getOrCreateTagBuilder(ItemTags.PICKAXES)
+                .add(ModItems.LIGHT_PICKAXE)
+                .add(ModItems.DARKNESS_PICKAXE);
+
+
+
+
+
+
+
+        getOrCreateTagBuilder(ItemTags.HOES)
+                .add(ModItems.DARKNESS_HOE)
+                .add(ModItems.LIGHT_HOE);
+
+
+        getOrCreateTagBuilder(ItemTags.SHOVELS)
+                .add(ModItems.LIGHT_SHOVEL)
+                .add(ModItems.DARKNESS_SHOVEL);
+
+
+
+
+
+
+
+        getOrCreateTagBuilder(ItemTags.AXES)
+                .add(ModItems.DARKNESS_AXE)
+                .add(ModItems.LIGHT_AXE);
+
+
+
 
 
         getOrCreateTagBuilder(ItemTags.SWORDS)
-                .add(ModItems.LIGHT_SWORD);
+                .add(ModItems.LIGHT_SWORD)
+
+
+
+
+
+                .add(ModItems.DARKNESS_SWORD);
+
+
 
 
 

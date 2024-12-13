@@ -1,6 +1,7 @@
 {
   "values": [
     "lksls:light_core",
-    "lksls:dark_core"
+    "lksls:dark_core",
+    "lksls:coin"
   ]
 }

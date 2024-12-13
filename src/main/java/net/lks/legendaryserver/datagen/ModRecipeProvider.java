@@ -22,6 +22,102 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     @Override
     public void generate(RecipeExporter exporter) {
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.LIGHT_AXE)
+                        .pattern("AC ")
+                        .pattern("AB ")
+                        .pattern(" B ")
+                        .input('A', Items.PRISMARINE_SHARD)
+                        .input('B', Items.END_ROD)
+                        .input('C', ModItems.LIGHT_CORE)
+                .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DARKNESS_AXE)
+                        .pattern("AC ")
+                        .pattern("AB ")
+                        .pattern(" B ")
+                        .input('A', Items.TINTED_GLASS)
+                        .input('B', Items.BLAZE_ROD)
+                        .input('C', ModItems.DARK_CORE)
+                .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DARKNESS_PICKAXE)
+                        .pattern("ACA")
+                        .pattern(" B ")
+                        .pattern(" B ")
+                        .input('A', Items.TINTED_GLASS)
+                        .input('B', Items.BLAZE_ROD)
+                        .input('C', ModItems.DARK_CORE)
+                .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.LIGHT_PICKAXE)
+                        .pattern("ACA")
+                        .pattern(" B ")
+                        .pattern(" B ")
+                        .input('A', Items.PRISMARINE_SHARD)
+                        .input('B', Items.END_ROD)
+                        .input('C', ModItems.LIGHT_CORE)
+                .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.LIGHT_SHOVEL)
+                        .pattern(" C ")
+                        .pattern(" B ")
+                        .pattern(" B ")
+
+                        .input('B', Items.END_ROD)
+                        .input('C', ModItems.LIGHT_CORE)
+                .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
+                .offerTo(exporter);
+
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DARKNESS_SHOVEL)
+                        .pattern(" C ")
+                        .pattern(" B ")
+                        .pattern(" B ")
+
+                        .input('B', Items.BLAZE_ROD)
+                        .input('C', ModItems.DARK_CORE)
+                .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DARKNESS_HOE)
+                        .pattern("AC ")
+                        .pattern(" B ")
+                        .pattern(" B ")
+
+                        .input('B', Items.BLAZE_ROD)
+                        .input('C', ModItems.DARK_CORE)
+                        .input('A', Items.TINTED_GLASS)
+                .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.LIGHT_HOE)
+                        .pattern("AC ")
+                        .pattern(" B ")
+                        .pattern(" B ")
+
+                        .input('B', Items.END_ROD)
+                        .input('C', ModItems.LIGHT_CORE)
+                        .input('A', Items.PRISMARINE_SHARD)
+                .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COIN)
+                        .pattern(" C ")
+                        .pattern("CCC")
+                        .pattern(" C ")
+
+
+                         .input('C', Items.DIAMOND)
+                         .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
+                .offerTo(exporter);
+
+
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_CORE_BLOCK)
                         .pattern("AAA")
                         .pattern("AAA")
@@ -30,8 +126,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(ModItems.LIGHT_CORE), conditionsFromItem(ModItems.LIGHT_CORE))
                         .offerTo(exporter);
 
-        ;
 
+
+        ;
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.LIGHT_SWORD)
                 .pattern(" A ")
                 .pattern("AXA")
@@ -71,6 +168,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('X', ModItems.LIGHT_CORE)
                 .criterion(hasItem(ModItems.LIGHT_CORE), conditionsFromItem(ModItems.LIGHT_CORE))
                 .offerTo(exporter);
+
+
+
+
+
+
+
 
     }
 }

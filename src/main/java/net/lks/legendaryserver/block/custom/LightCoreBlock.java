@@ -13,6 +13,7 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
@@ -38,5 +39,9 @@ public class LightCoreBlock extends Block {
         super.onSteppedOn(world, pos, state, entity);
     }
 
-
+    @Override
+    protected VoxelShape getRaycastShape(BlockState state, BlockView world, BlockPos pos) {
+        
+        return super.getRaycastShape(state, world, pos);
+    }
 }
