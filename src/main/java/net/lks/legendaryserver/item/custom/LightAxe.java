@@ -14,7 +14,7 @@ public class LightAxe extends AxeItem {
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         target.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 36000,1));
-        target.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA,60,1));
+        target.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA,200,1));
         return super.postHit(stack, target, attacker);
     }
 

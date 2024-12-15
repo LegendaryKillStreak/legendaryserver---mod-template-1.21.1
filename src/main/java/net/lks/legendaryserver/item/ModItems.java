@@ -63,6 +63,22 @@ public class ModItems {
 
     public static final Item COIN = registerItem("coin", new Item(new Item.Settings()));
 
+    public static final Item COIN_FIVE = registerItem("coin_five", new Item(new Item.Settings()));
+    public static final Item COIN_TEN = registerItem("coin_ten", new Item(new Item.Settings()));
+    public static final Item COIN_TWENTY = registerItem("coin_twenty", new Item(new Item.Settings()));
+    public static final Item COIN_FIFTY = registerItem("coin_fifty", new Item(new Item.Settings()));
+    public static final Item COIN_100 = registerItem("coin_100", new Item(new Item.Settings()));
+    public static final Item COIN_150 = registerItem("coin_150", new Item(new Item.Settings()));
+    public static final Item COIN_200 = registerItem("coin_200", new Item(new Item.Settings()));
+    public static final Item COIN_250 = registerItem("coin_250", new Item(new Item.Settings()));
+    public static final Item COIN_500 = registerItem("coin_500", new Item(new Item.Settings()));
+    public static final Item COIN_750 = registerItem("coin_750", new Item(new Item.Settings()));
+    public static final Item COIN_1000 = registerItem("coin_1000", new Item(new Item.Settings()));
+    public static final Item COIN_2000 = registerItem("coin_2000", new Item(new Item.Settings()));
+    public static final Item COIN_5000 = registerItem("coin_5000", new Item(new Item.Settings()));
+    public static final Item COIN_10000 = registerItem("coin_10000", new Item(new Item.Settings()));
+    public static final Item COIN_15000 = registerItem("coin_15000", new Item(new Item.Settings()));
+
 
 
 

@@ -2,6 +2,21 @@
   "values": [
     "lksls:light_core",
     "lksls:dark_core",
-    "lksls:coin"
+    "lksls:coin",
+    "lksls:coin_ten",
+    "lksls:coin_five",
+    "lksls:coin_fifty",
+    "lksls:coin_100",
+    "lksls:coin_150",
+    "lksls:coin_200",
+    "lksls:coin_250",
+    "lksls:coin_500",
+    "lksls:coin_750",
+    "lksls:coin_1000",
+    "lksls:coin_2000",
+    "lksls:coin_5000",
+    "lksls:coin_10000",
+    "lksls:coin_15000",
+    "lksls:coin_twenty"
   ]
 }

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_glowstone_dust": {
+    "has_light_core_block": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:glowstone_dust"
+            "items": "lksls:light_core_block"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_glowstone_dust"
+      "has_light_core_block"
     ]
   ],
   "rewards": {

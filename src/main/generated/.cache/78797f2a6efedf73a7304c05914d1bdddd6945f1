@@ -1,6 +1,7 @@
-// 1.21.1	2024-12-13T06:28:25.9115042	LegendaryServer - Mod/Recipes
+// 1.21.1	2024-12-15T20:15:30.2617831	LegendaryServer - Mod/Recipes
 3ee23bf2f07f1a5c957ed059a0a0c45a71cf42ea data\lks\advancement\recipes\combat\darkness_sword.json
 186dcc19d3c53bd3326e912521115e1da6a1f321 data\lks\recipe\light_core_block.json
+34556ece6e8bf58b7f2fee2adf18987d430d6e5f data\lks\advancement\recipes\misc\coin_five.json
 ffb5b566eb201c11bc9bb16af3c5040b2b3e7f8c data\lks\advancement\recipes\tools\light_shovel.json
 ee473254b28cf63a753e0e1595b72a3eb46aaa20 data\lks\advancement\recipes\misc\light_core.json
 ceef5575fcfa071aaa392e4216e74d205f8f580f data\lks\recipe\dark_core.json
@@ -9,6 +10,8 @@ ceef5575fcfa071aaa392e4216e74d205f8f580f data\lks\recipe\dark_core.json
 ba1249983e5539965d51d93f829998fa629cefe8 data\lks\recipe\light_core.json
 6acbda1de76971229c615b8b9e7185fcc53e7adf data\lks\advancement\recipes\tools\light_pickaxe.json
 2fa788d165269811fe208ad05e7b4e5b6d5460d0 data\lks\recipe\darkness_hoe.json
+f4eaf792fe03e5f267206af07a2a8a35449a90b8 data\lks\advancement\recipes\misc\coin_twenty.json
+3bdac47be6128621b55668e0c991da5329b7220d data\lks\recipe\coin_twenty.json
 6b1e8eebf97444d210583461284a963ab83197df data\lks\advancement\recipes\tools\darkness_hoe.json
 bd14e2386e7eca6577fba0c7bbf1f951e36fa421 data\lks\advancement\recipes\tools\darkness_pickaxe.json
 bb8af9f64fb2f827fda6c86dd45fc37b6690fb05 data\lks\advancement\recipes\tools\light_axe.json
@@ -18,6 +21,7 @@ bb8af9f64fb2f827fda6c86dd45fc37b6690fb05 data\lks\advancement\recipes\tools\ligh
 2e0d29636934335d728285b4f6467c52447b3304 data\lks\recipe\light_axe.json
 ee4c44d0eecb3aa16c995c08a5f6ee8d50f19bc2 data\lks\recipe\light_hoe.json
 398fbdcd113689fa26717c8c7bf6e6a8a531dad2 data\lks\recipe\light_sword.json
+ef0c5e9719287b40129ce87953aa348fca1b039c data\lks\recipe\coin_five.json
 23599b3dd4f76ae14eaf0e981346f78dbe12ae65 data\lks\advancement\recipes\misc\coin.json
 660379c7fc594f1135b59324fb9ee9b5315c47dd data\lks\recipe\light_pickaxe.json
 d4b827ed8e7cbff13569a1c869bce070405c5bc8 data\lks\advancement\recipes\combat\light_sword.json

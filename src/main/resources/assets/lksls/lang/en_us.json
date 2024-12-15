@@ -12,6 +12,11 @@
   "item.lksls.light_shovel": "Light Shovel",
   "item.lksls.light_hoe": "Light Hoe",
   "item.lksls.coin": "Coin",
+  "item.lksls.coin_five": "Coin Five",
+  "item.lksls.coin_ten": "Coin Ten",
+  "item.lksls.coin_twenty": "Coin Twenty",
+  "item.lksls.coin_150": "Coin 150",
+  "item.lksls.coin_1000": "Coin 1K",
 
 
   "itemgroup.lksls.season_one_items": "Season One Items",

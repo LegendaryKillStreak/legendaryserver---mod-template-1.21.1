@@ -23,7 +23,22 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
 
         getOrCreateTagBuilder(ModTags.Items.TRANSFORMABLE_ITEMS)
-                .add(ModItems.COIN);
+                .add(ModItems.COIN)
+                .add(ModItems.COIN_TEN)
+                .add(ModItems.COIN_FIVE)
+                .add(ModItems.COIN_FIFTY)
+                .add(ModItems.COIN_100)
+                .add(ModItems.COIN_150)
+                .add(ModItems.COIN_200)
+                .add(ModItems.COIN_250)
+                .add(ModItems.COIN_500)
+                .add(ModItems.COIN_750)
+                .add(ModItems.COIN_1000)
+                .add(ModItems.COIN_2000)
+                .add(ModItems.COIN_5000)
+                .add(ModItems.COIN_10000)
+                .add(ModItems.COIN_15000)
+                .add(ModItems.COIN_TWENTY);
 
         getOrCreateTagBuilder(ItemTags.PICKAXES)
                 .add(ModItems.LIGHT_PICKAXE)

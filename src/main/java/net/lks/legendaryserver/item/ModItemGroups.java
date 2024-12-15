@@ -30,6 +30,21 @@ public class ModItemGroups {
                         entries.add(ModItems.DARKNESS_SHOVEL);
                         entries.add(ModItems.DARKNESS_HOE);
                         entries.add(ModItems.COIN);
+                        entries.add(ModItems.COIN_TEN);
+                        entries.add(ModItems.COIN_FIVE);
+                        entries.add(ModItems.COIN_TWENTY);
+                        entries.add(ModItems.COIN_FIFTY);
+                        entries.add(ModItems.COIN_100);
+                        entries.add(ModItems.COIN_150);
+                        entries.add(ModItems.COIN_200);
+                        entries.add(ModItems.COIN_250);
+                        entries.add(ModItems.COIN_500);
+                        entries.add(ModItems.COIN_750);
+                        entries.add(ModItems.COIN_1000);
+                        entries.add(ModItems.COIN_2000);
+                        entries.add(ModItems.COIN_5000);
+                        entries.add(ModItems.COIN_10000);
+                        entries.add(ModItems.COIN_15000);
 
 
                     }).build());

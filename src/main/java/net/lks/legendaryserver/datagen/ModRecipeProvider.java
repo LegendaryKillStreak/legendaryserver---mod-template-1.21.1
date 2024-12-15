@@ -2,11 +2,13 @@ package net.lks.legendaryserver.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.lks.legendaryserver.LegendaryServerMod;
 import net.lks.legendaryserver.block.ModBlocks;
 import net.lks.legendaryserver.item.ModItems;
 import net.lks.legendaryserver.util.ModTags;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
@@ -115,16 +117,33 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                          .input('C', Items.DIAMOND)
                          .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
                 .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COIN_FIVE)
+                        .pattern(" C ")
+                        .pattern("CCC")
+                        .pattern(" C ")
+
+
+                         .input('C', ModItems.COIN)
+                         .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COIN_TWENTY)
+                        .pattern(" C ")
+                        .pattern("C C")
+                        .pattern(" C ")
+
+
+                         .input('C', ModItems.COIN_FIVE)
+                         .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COIN_TEN);
 
 
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_CORE_BLOCK)
-                        .pattern("AAA")
-                        .pattern("AAA")
-                        .pattern("AAA")
-                        .input('A', ModItems.LIGHT_CORE)
-                        .criterion(hasItem(ModItems.LIGHT_CORE), conditionsFromItem(ModItems.LIGHT_CORE))
-                        .offerTo(exporter);
+
+
+
+
 
 
 
@@ -138,6 +157,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('X', ModItems.LIGHT_CORE)
                 .criterion(hasItem(ModItems.LIGHT_CORE), conditionsFromItem(ModItems.LIGHT_CORE))
                 .offerTo(exporter);
+        ;
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LIGHT_CORE_BLOCK)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .input('A', ModItems.LIGHT_CORE)
+                .criterion(hasItem(ModItems.LIGHT_CORE), conditionsFromItem(ModItems.LIGHT_CORE))
+                .offerTo(exporter);
+
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LIGHT_CORE)
                 .pattern(" A ")
