@@ -78,6 +78,12 @@ public class ModItems {
     public static final Item COIN_5000 = registerItem("coin_5000", new Item(new Item.Settings()));
     public static final Item COIN_10000 = registerItem("coin_10000", new Item(new Item.Settings()));
     public static final Item COIN_15000 = registerItem("coin_15000", new Item(new Item.Settings()));
+    public static final Item COIN_100000 = registerItem("coin_100000", new Item(new Item.Settings()));
+
+
+    public static final Item DUNGEON_KEY_SHADOWY_CREATURES = registerItem("dungeon_key_shadowy_creatures", new Item(new Item.Settings()));
+    public static final Item DUNGEON_KEY_ICY_CAVES = registerItem("dungeon_key_icy_caves", new Item(new Item.Settings()));
+
 
 
 

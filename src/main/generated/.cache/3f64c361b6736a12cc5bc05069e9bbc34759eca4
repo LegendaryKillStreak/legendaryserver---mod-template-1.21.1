@@ -1,7 +1,8 @@
-// 1.21.1	2024-12-15T20:15:30.2607831	LegendaryServer - Mod/Model Definitions
+// 1.21.1	2024-12-21T20:01:39.7946655	LegendaryServer - Mod/Model Definitions
 81d3358ca9906e36a19ab70ff96017b9d652bddb assets\lksls\models\item\darkness_sword.json
 3f6d7971b2e2d61c4704892bc3b6ecb6bffaa924 assets\lksls\models\item\light_hoe.json
 c4d8ed4f76ed28e526d0da79cf53bb157a58bd55 assets\lksls\models\item\light_axe.json
+6c48b083cbe501e1113e3da96e38d6f1e2d2c53b assets\lksls\models\item\coin_100000.json
 51549d2281784b23b71eb206b5cd412f4b4c200a assets\lksls\models\item\coin_750.json
 b7f8d7a760219e1043b23d8ab4747675fc0d30f7 assets\lksls\models\item\darkness_hoe.json
 c0c2b0be5761457516cce495cbab73f73202652b assets\lksls\models\item\darkness_axe.json
@@ -12,14 +13,16 @@ c0c2b0be5761457516cce495cbab73f73202652b assets\lksls\models\item\darkness_axe.j
 001eeed9f1703bc09d224d9a59dd9dcbec602cfc assets\lksls\models\item\coin_250.json
 a58eb490f9d4ec7dc4d31329e50d0360dd5e3618 assets\lksls\models\item\coin_1000.json
 412ebfbb86a7a76a50c53357a480eefd61e41b57 assets\lksls\models\item\coin_500.json
-30e494e2a3f19d72f2876f9e42fe7ebea8b35187 assets\lksls\models\item\coin_200.json
 20eae33b1230762b90441c3b25a34adad0551648 assets\lksls\models\item\coin_100.json
+30e494e2a3f19d72f2876f9e42fe7ebea8b35187 assets\lksls\models\item\coin_200.json
 712dd24dca43f464d4bc3bac1cf601229f409d32 assets\lksls\models\item\darkness_pickaxe.json
 404bd97521bab5cded52e82455e51c8b15f71aa0 assets\lksls\models\item\coin_five.json
+ae961a539cfe11c476d5f877670b8eda97b38919 assets\lksls\models\item\dungeon_key_icy_caves.json
 50aeca2a5d66504fc30d2840ca4a379791d365b2 assets\lksls\models\item\coin_twenty.json
 efca2ca9b39dbe00e2438db1b1d4442a1dc30181 assets\lksls\models\item\darkness_shovel.json
 c99cc51cb97ef87b343b7e78fdb57b23acf02fc5 assets\lksls\models\item\coin_ten.json
 eaab09150f538b315d310600417d284b7cd6b05b assets\lksls\models\item\dark_core.json
+e46837dae124a77926b6ab1db6469374b5d51143 assets\lksls\models\item\dungeon_key_shadowy_creatures.json
 af3cd2270ee9f406a7d509971d925ad02d084e32 assets\lksls\blockstates\light_core_block.json
 5602a7cc39cf2deab76d0445a1a4767fae225f12 assets\lksls\models\item\coin_10000.json
 c8fceb367ec9a2c87ca724bce88a1cdbbad21d4a assets\lksls\models\block\light_core_block.json

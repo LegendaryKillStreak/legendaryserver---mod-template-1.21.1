@@ -44,7 +44,10 @@ public class ModItemGroups {
                         entries.add(ModItems.COIN_2000);
                         entries.add(ModItems.COIN_5000);
                         entries.add(ModItems.COIN_10000);
+                        entries.add(ModItems.COIN_100000);
                         entries.add(ModItems.COIN_15000);
+                        entries.add(ModItems.DUNGEON_KEY_SHADOWY_CREATURES);
+                        entries.add(ModItems.DUNGEON_KEY_ICY_CAVES);
 
 
                     }).build());

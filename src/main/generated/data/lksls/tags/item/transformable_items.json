@@ -16,7 +16,10 @@
     "lksls:coin_2000",
     "lksls:coin_5000",
     "lksls:coin_10000",
+    "lksls:coin_100000",
     "lksls:coin_15000",
-    "lksls:coin_twenty"
+    "lksls:coin_twenty",
+    "lksls:dungeon_key_shadowy_creatures",
+    "lksls:dungeon_key_icy_caves"
   ]
 }

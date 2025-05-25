@@ -37,8 +37,12 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.COIN_2000)
                 .add(ModItems.COIN_5000)
                 .add(ModItems.COIN_10000)
+                .add(ModItems.COIN_100000)
                 .add(ModItems.COIN_15000)
-                .add(ModItems.COIN_TWENTY);
+                .add(ModItems.COIN_TWENTY)
+                .add(ModItems.DUNGEON_KEY_SHADOWY_CREATURES)
+                .add(ModItems.DUNGEON_KEY_ICY_CAVES);
+
 
         getOrCreateTagBuilder(ItemTags.PICKAXES)
                 .add(ModItems.LIGHT_PICKAXE)

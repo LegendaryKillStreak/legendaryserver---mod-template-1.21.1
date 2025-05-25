@@ -25,14 +25,15 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.LIGHT_CORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.DARK_CORE, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.DUNGEON_KEY_SHADOWY_CREATURES, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DUNGEON_KEY_ICY_CAVES, Models.GENERATED);
+
+
 
 
         itemModelGenerator.register(ModItems.COIN, Models.GENERATED);
-
         itemModelGenerator.register(ModItems.COIN_FIVE, Models.GENERATED);
-
         itemModelGenerator.register(ModItems.COIN_TEN, Models.GENERATED);
-
         itemModelGenerator.register(ModItems.COIN_TWENTY, Models.GENERATED);
         itemModelGenerator.register(ModItems.COIN_150, Models.GENERATED);
         itemModelGenerator.register(ModItems.COIN_1000, Models.GENERATED);
@@ -41,12 +42,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.COIN_250, Models.GENERATED);
         itemModelGenerator.register(ModItems.COIN_200, Models.GENERATED);
         itemModelGenerator.register(ModItems.COIN_2000, Models.GENERATED);
-
         itemModelGenerator.register(ModItems.COIN_750, Models.GENERATED);
-
         itemModelGenerator.register(ModItems.COIN_FIFTY, Models.GENERATED);
         itemModelGenerator.register(ModItems.COIN_100, Models.GENERATED);
         itemModelGenerator.register(ModItems.COIN_10000, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COIN_100000, Models.GENERATED);
         itemModelGenerator.register(ModItems.COIN_15000, Models.GENERATED);
 
 

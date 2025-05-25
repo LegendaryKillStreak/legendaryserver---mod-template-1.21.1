@@ -12,6 +12,7 @@ import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
@@ -124,7 +125,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
                          .input('C', ModItems.COIN)
-                         .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
+                         .criterion(hasItem(ModItems.COIN), conditionsFromItem(ModItems.COIN_FIVE))
                 .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COIN_TWENTY)
                         .pattern(" C ")
@@ -133,10 +134,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
                          .input('C', ModItems.COIN_FIVE)
-                         .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
+                         .criterion(hasItem(ModItems.COIN_FIVE), conditionsFromItem(ModItems.COIN_TWENTY))
                 .offerTo(exporter);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COIN_TEN);
+
+
+
 
 
 
@@ -176,6 +180,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
                 .offerTo(exporter);
 
+
+
+
+
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.DARKNESS_SWORD)
                 .pattern(" A ")
                 .pattern("CXC")
@@ -188,6 +197,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
 
 
+
+
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DARK_CORE)
                 .pattern(" A ")
                 .pattern("AXA")
@@ -196,6 +208,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('X', ModItems.LIGHT_CORE)
                 .criterion(hasItem(ModItems.LIGHT_CORE), conditionsFromItem(ModItems.LIGHT_CORE))
                 .offerTo(exporter);
+
 
 
 
