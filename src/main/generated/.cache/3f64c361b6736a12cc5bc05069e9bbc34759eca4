@@ -1,4 +1,4 @@
-// 1.21.1	2025-05-29T02:32:20.9651633	LegendaryServer - Mod/Model Definitions
+// 1.21.1	2025-05-29T04:55:16.7143939	LegendaryServer - Mod/Model Definitions
 62534ac2b895fa074c5c95a06be17fa95ca65d5a assets\lksls\models\item\light_core_boots_emerald_trim.json
 81d3358ca9906e36a19ab70ff96017b9d652bddb assets\lksls\models\item\darkness_sword.json
 113cbe759e5f0c472409aa2c9cb4a9f990e31a57 assets\lksls\models\item\light_core_boots_amethyst_trim.json
@@ -13,8 +13,8 @@ c0c2b0be5761457516cce495cbab73f73202652b assets\lksls\models\item\darkness_axe.j
 ea3b712d0354170aa120b785d0ad896b9b9444dd assets\lksls\models\item\light_core_helmet_quartz_trim.json
 6f3788d52cb890cecd2cfd4c9d0766825107190a assets\lksls\models\item\light_sword.json
 30e494e2a3f19d72f2876f9e42fe7ebea8b35187 assets\lksls\models\item\coin_200.json
-20eae33b1230762b90441c3b25a34adad0551648 assets\lksls\models\item\coin_100.json
 412ebfbb86a7a76a50c53357a480eefd61e41b57 assets\lksls\models\item\coin_500.json
+20eae33b1230762b90441c3b25a34adad0551648 assets\lksls\models\item\coin_100.json
 712dd24dca43f464d4bc3bac1cf601229f409d32 assets\lksls\models\item\darkness_pickaxe.json
 c44ecaa1dc415f99a36cbf5f2c09561f66fb96d1 assets\lksls\models\item\dungeon_icon_shadowy_creatures.json
 ec4b1c29852b4bac69e27b5cf6dffed6572d853b assets\lksls\models\item\light_core_leggings_amethyst_trim.json
@@ -27,6 +27,7 @@ f8b34663f3f8ce65917d0579735ad083208bc79d assets\lksls\models\item\dungeon_icon_d
 d468badf35407cfc17ffa46d948367efe9cd2e40 assets\lksls\models\item\light_core_helmet_emerald_trim.json
 e46837dae124a77926b6ab1db6469374b5d51143 assets\lksls\models\item\dungeon_key_shadowy_creatures.json
 965ffd3a8ef878ddbdb764b789bda0652822485d assets\lksls\models\item\light_core_chestplate_quartz_trim.json
+9ac97152ba9b09a7f55c8cf127bf0122a2432601 assets\lksls\models\item\coin_75000.json
 937b365451a66fd766964ca4fea3e28c2ddca8e4 assets\lksls\models\item\light_core_leggings_gold_trim.json
 78fa2225ec408c97cc34622e2ea44a19841b9117 assets\lksls\models\item\light_core_chestplate.json
 759de952d0282843d690f0dd83feba845c493a42 assets\lksls\models\item\light_core_boots.json
@@ -49,6 +50,8 @@ bc70ab714cdab04abeb3000e17d93bfe1e930adc assets\lksls\models\item\light_core_leg
 4fb0c34f08027d389d60bf6fd66b887bbeb367b8 assets\lksls\models\item\light_core_helmet_iron_trim.json
 6245a15d36140f8f15d9b3401dc288ecc533a9eb assets\lksls\models\item\light_core_leggings_netherite_trim.json
 3f6d7971b2e2d61c4704892bc3b6ecb6bffaa924 assets\lksls\models\item\light_hoe.json
+a644b1c8bf3bfac772580770b0fb87807eca062a assets\lksls\models\item\coin_20000.json
+b14af916bba204c6cf48f017502608b2a42c0ff2 assets\lksls\models\item\coin_50000.json
 51549d2281784b23b71eb206b5cd412f4b4c200a assets\lksls\models\item\coin_750.json
 6cc932e3052149777d76ea531ada96f7d9e98e90 assets\lksls\models\item\light_core_leggings_diamond_trim.json
 b7f8d7a760219e1043b23d8ab4747675fc0d30f7 assets\lksls\models\item\darkness_hoe.json
@@ -64,8 +67,8 @@ e5eb058cbd263c57c9a8ef85eab2d45999e3c423 assets\lksls\models\item\light_core_boo
 f28307f0a1f6b41c718f387ed0fb88463d4093aa assets\lksls\models\item\light_core_chestplate_amethyst_trim.json
 3ef789943b12af6034be41f0ef4bf382765e90e2 assets\lksls\models\item\light_core_boots_redstone_trim.json
 50aeca2a5d66504fc30d2840ca4a379791d365b2 assets\lksls\models\item\coin_twenty.json
-64398626a31f5162637290d127edc92c78552761 assets\lksls\models\item\light_core_chestplate_gold_trim.json
 efca2ca9b39dbe00e2438db1b1d4442a1dc30181 assets\lksls\models\item\darkness_shovel.json
+64398626a31f5162637290d127edc92c78552761 assets\lksls\models\item\light_core_chestplate_gold_trim.json
 e24d4b44ec258fc1608916558b5b2655404bd99b assets\lksls\models\item\dungeon_icon_icy_caves.json
 56b93290edc56ef8ecf741b7f37beacd2ed2a153 assets\lksls\models\item\light_core_chestplate_redstone_trim.json
 af3cd2270ee9f406a7d509971d925ad02d084e32 assets\lksls\blockstates\light_core_block.json

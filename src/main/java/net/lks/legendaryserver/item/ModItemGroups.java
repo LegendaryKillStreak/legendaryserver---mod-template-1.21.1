@@ -30,8 +30,8 @@ public class ModItemGroups {
                         entries.add(ModItems.DARKNESS_SHOVEL);
                         entries.add(ModItems.DARKNESS_HOE);
                         entries.add(ModItems.COIN);
-                        entries.add(ModItems.COIN_TEN);
                         entries.add(ModItems.COIN_FIVE);
+                        entries.add(ModItems.COIN_TEN);
                         entries.add(ModItems.COIN_TWENTY);
                         entries.add(ModItems.COIN_FIFTY);
                         entries.add(ModItems.COIN_100);
@@ -44,8 +44,11 @@ public class ModItemGroups {
                         entries.add(ModItems.COIN_2000);
                         entries.add(ModItems.COIN_5000);
                         entries.add(ModItems.COIN_10000);
-                        entries.add(ModItems.COIN_100000);
                         entries.add(ModItems.COIN_15000);
+                        entries.add(ModItems.COIN_20000);
+                        entries.add(ModItems.COIN_50000);
+                        entries.add(ModItems.COIN_75000);
+                        entries.add(ModItems.COIN_100000);
                         entries.add(ModItems.DUNGEON_KEY_SHADOWY_CREATURES);
                         entries.add(ModItems.DUNGEON_KEY_ICY_CAVES);
                         entries.add(ModItems.DUNGEON_KEY_DEADLY_HEAT);

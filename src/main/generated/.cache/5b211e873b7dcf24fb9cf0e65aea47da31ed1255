@@ -1,8 +1,12 @@
-// 1.21.1	2025-05-29T02:32:20.9641629	LegendaryServer - Mod/Tags for minecraft:item
+// 1.21.1	2025-05-29T04:55:16.7134607	LegendaryServer - Mod/Tags for minecraft:item
+e1620d36fcaaf89c01838f15c9a9727acad11b59 data\minecraft\tags\item\enchantable\head_armor.json
 64fac7a29e1baed7db352e8aa2eaf8181662b596 data\minecraft\tags\item\trimmable_armor.json
+a0800899f25777b469afee3fda5d47d327131d86 data\minecraft\tags\item\enchantable\leg_armor.json
 3eb4dc179cb3a3b66d4c3d31727741a5d8375b85 data\minecraft\tags\item\axes.json
 544c931be0148c58a605dd2c6eef5c856b5280ce data\minecraft\tags\item\swords.json
 714a257d68a4e7e6d28e1cdae0e9bc792a8513cb data\minecraft\tags\item\pickaxes.json
 daf7586bce0445a402cc352e603baae0e7927f4e data\minecraft\tags\item\hoes.json
-e8cbd194dd2f24c9b0b9f4f6394fe5b3f4bbaf9a data\lksls\tags\item\transformable_items.json
+f83735da95703d46d446c1f7be2e3006dcc181ed data\minecraft\tags\item\enchantable\chest_armor.json
+99b32fbe33c0f9bf9a233eeef6e176c00f2a1290 data\lksls\tags\item\transformable_items.json
 3ea45b5582fd00aa2db3fd6211dc5c8a4bb03133 data\minecraft\tags\item\shovels.json
+54c9dd09c2622447878adaf7b17d1ab176d7083b data\minecraft\tags\item\enchantable\foot_armor.json

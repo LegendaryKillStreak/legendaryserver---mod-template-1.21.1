@@ -196,6 +196,44 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.DARK_CORE), conditionsFromItem(ModItems.DARK_CORE))
                 .offerTo(exporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.LIGHT_CORE_CHESTPLATE)
+                .pattern("X X")
+                .pattern("AXA")
+                .pattern("XAX")
+                .input('A', Items.DIAMOND)
+                .input('X', ModItems.LIGHT_CORE)
+                .criterion(hasItem(ModItems.LIGHT_CORE), conditionsFromItem(ModItems.LIGHT_CORE))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.LIGHT_CORE_HELMET)
+                .pattern("AXA")
+                .pattern("X X")
+                .pattern("   ")
+                .input('A', Items.DIAMOND)
+                .input('X', ModItems.LIGHT_CORE)
+                .criterion(hasItem(ModItems.LIGHT_CORE), conditionsFromItem(ModItems.LIGHT_CORE))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.LIGHT_CORE_LEGGINGS)
+                .pattern("AXA")
+                .pattern("A A")
+                .pattern("X X")
+                .input('A', Items.DIAMOND)
+                .input('X', ModItems.LIGHT_CORE)
+                .criterion(hasItem(ModItems.LIGHT_CORE), conditionsFromItem(ModItems.LIGHT_CORE))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.LIGHT_CORE_BOOTS)
+                .pattern("X X")
+                .pattern("A A")
+                .pattern("   ")
+                .input('A', Items.DIAMOND)
+                .input('X', ModItems.LIGHT_CORE)
+                .criterion(hasItem(ModItems.LIGHT_CORE), conditionsFromItem(ModItems.LIGHT_CORE))
+                .offerTo(exporter);
+
+
+
 
 
 

@@ -54,6 +54,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.COIN_10000, Models.GENERATED);
         itemModelGenerator.register(ModItems.COIN_100000, Models.GENERATED);
         itemModelGenerator.register(ModItems.COIN_15000, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COIN_20000, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COIN_50000, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COIN_75000, Models.GENERATED);
+
 
 
 

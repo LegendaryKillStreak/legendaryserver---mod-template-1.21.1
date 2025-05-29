@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.lks.legendaryserver.block.ModBlocks;
 import net.lks.legendaryserver.item.ModItemGroups;
 import net.lks.legendaryserver.item.ModItems;
+import net.lks.legendaryserver.sound.ModSounds;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,8 +18,11 @@ public class LegendaryServerMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
 		ModBlocks.registerModBlocks();
+		ModSounds.registerSounds();
 
 
 
 	}
+
+
 }
