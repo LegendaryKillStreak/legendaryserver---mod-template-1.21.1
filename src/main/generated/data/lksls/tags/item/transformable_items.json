@@ -20,6 +20,10 @@
     "lksls:coin_15000",
     "lksls:coin_twenty",
     "lksls:dungeon_key_shadowy_creatures",
-    "lksls:dungeon_key_icy_caves"
+    "lksls:dungeon_key_icy_caves",
+    "lksls:dungeon_key_deadly_heat",
+    "lksls:dungeon_icon_shadowy_creatures",
+    "lksls:dungeon_icon_icy_caves",
+    "lksls:dungeon_icon_deadly_heat"
   ]
 }

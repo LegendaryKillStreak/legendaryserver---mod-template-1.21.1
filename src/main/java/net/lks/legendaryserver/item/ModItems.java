@@ -56,6 +56,20 @@ public class ModItems {
             new DarknessShovel(ModToolMaterials.DARK, new Item.Settings()
                     .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.DARK, 1.5f, -3f))));
 
+    public static final Item LIGHT_CORE_HELMET = registerItem("light_core_helmet",
+            new ModArmorItem(ModArmorMaterials.LIGHT_CORE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(41))));
+    public static final Item LIGHT_CORE_CHESTPLATE = registerItem("light_core_chestplate",
+            new ModArmorItem(ModArmorMaterials.LIGHT_CORE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(41))));
+    public static final Item LIGHT_CORE_LEGGINGS = registerItem("light_core_leggings",
+            new ArmorItem(ModArmorMaterials.LIGHT_CORE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(41))));
+    public static final Item LIGHT_CORE_BOOTS = registerItem("light_core_boots",
+            new ModArmorItem(ModArmorMaterials.LIGHT_CORE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(41))));
+
+
 
 
     public static final  Item LIGHT_CORE = registerItem("light_core", new Item(new Item.Settings()));
@@ -83,6 +97,11 @@ public class ModItems {
 
     public static final Item DUNGEON_KEY_SHADOWY_CREATURES = registerItem("dungeon_key_shadowy_creatures", new Item(new Item.Settings()));
     public static final Item DUNGEON_KEY_ICY_CAVES = registerItem("dungeon_key_icy_caves", new Item(new Item.Settings()));
+    public static final Item DUNGEON_KEY_DEADLY_HEAT = registerItem("dungeon_key_deadly_heat", new Item(new Item.Settings()));
+    public static final Item DUNGEON_ICON_SHADOWY_CREATURES = registerItem("dungeon_icon_shadowy_creatures", new Item(new Item.Settings()));
+    public static final Item DUNGEON_ICON_ICY_CAVES = registerItem("dungeon_icon_icy_caves", new Item(new Item.Settings()));
+    public static final Item DUNGEON_ICON_DEADLY_HEAT = registerItem("dungeon_icon_deadly_heat", new Item(new Item.Settings()));
+
 
 
 

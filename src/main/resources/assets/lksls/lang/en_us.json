@@ -11,6 +11,10 @@
   "item.lksls.light_axe": "Light Axe",
   "item.lksls.light_shovel": "Light Shovel",
   "item.lksls.light_hoe": "Light Hoe",
+  "item.lksls.light_core_helmet": "Light Core Helmet",
+  "item.lksls.light_core_chestplate": "Light Core Chestplate",
+  "item.lksls.light_core_leggings": "Light Core Leggings",
+  "item.lksls.light_core_boots": "Light Core Boots",
   "item.lksls.coin": "Coin 1",
   "item.lksls.coin_five": "Coin 5",
   "item.lksls.coin_ten": "Coin 10",
@@ -29,7 +33,12 @@
   "item.lksls.coin_500": "Coin 500",
   "item.lksls.coin_750": "Coin 750",
   "item.lksls.dungeon_key_shadowy_creatures": "Dungeon Key: Shadowy Creatures",
+  "item.lksls.dungeon_key_deadly_heat": "Dungeon Key: Deadly Heat",
   "item.lksls.dungeon_key_icy_caves": "Dungeon Key: Icy Caves",
+  "item.lksls.dungeon_icon_deadly_heat": "Dungeon Icon Deadly Heat",
+  "item.lksls.dungeon_icon_icy_caves": "Dungeon Icon Icy Caves",
+  "item.lksls.dungeon_icon_shadowy_creatures": "Dungeon Icon Shadowy Creatures",
+
 
 
   "itemgroup.lksls.season_one_items": "Season One Items",

@@ -41,7 +41,13 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.COIN_15000)
                 .add(ModItems.COIN_TWENTY)
                 .add(ModItems.DUNGEON_KEY_SHADOWY_CREATURES)
-                .add(ModItems.DUNGEON_KEY_ICY_CAVES);
+                .add(ModItems.DUNGEON_KEY_ICY_CAVES)
+                .add(ModItems.DUNGEON_KEY_DEADLY_HEAT)
+                .add(ModItems.DUNGEON_ICON_SHADOWY_CREATURES)
+                .add(ModItems.DUNGEON_ICON_ICY_CAVES)
+                .add(ModItems.DUNGEON_ICON_DEADLY_HEAT);
+
+
 
 
         getOrCreateTagBuilder(ItemTags.PICKAXES)
@@ -85,6 +91,17 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
 
                 .add(ModItems.DARKNESS_SWORD);
+
+
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.LIGHT_CORE_HELMET)
+                .add(ModItems.LIGHT_CORE_CHESTPLATE)
+                .add(ModItems.LIGHT_CORE_LEGGINGS)
+                .add(ModItems.LIGHT_CORE_BOOTS);
+
+
+
+
 
 
 

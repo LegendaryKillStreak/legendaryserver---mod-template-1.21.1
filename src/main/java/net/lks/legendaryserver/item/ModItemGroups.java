@@ -48,6 +48,16 @@ public class ModItemGroups {
                         entries.add(ModItems.COIN_15000);
                         entries.add(ModItems.DUNGEON_KEY_SHADOWY_CREATURES);
                         entries.add(ModItems.DUNGEON_KEY_ICY_CAVES);
+                        entries.add(ModItems.DUNGEON_KEY_DEADLY_HEAT);
+                        entries.add(ModItems.DUNGEON_ICON_SHADOWY_CREATURES);
+                        entries.add(ModItems.DUNGEON_ICON_ICY_CAVES);
+                        entries.add(ModItems.DUNGEON_ICON_DEADLY_HEAT);
+                        entries.add(ModItems.LIGHT_CORE_HELMET);
+                        entries.add(ModItems.LIGHT_CORE_CHESTPLATE);
+                        entries.add(ModItems.LIGHT_CORE_LEGGINGS);
+                        entries.add(ModItems.LIGHT_CORE_BOOTS);
+
+
 
 
                     }).build());

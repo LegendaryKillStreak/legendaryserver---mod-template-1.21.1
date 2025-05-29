@@ -1,7 +1,8 @@
-// 1.21.1	2024-12-21T20:01:39.7946655	LegendaryServer - Mod/Tags for minecraft:item
+// 1.21.1	2025-05-29T02:32:20.9641629	LegendaryServer - Mod/Tags for minecraft:item
+64fac7a29e1baed7db352e8aa2eaf8181662b596 data\minecraft\tags\item\trimmable_armor.json
 3eb4dc179cb3a3b66d4c3d31727741a5d8375b85 data\minecraft\tags\item\axes.json
 544c931be0148c58a605dd2c6eef5c856b5280ce data\minecraft\tags\item\swords.json
 714a257d68a4e7e6d28e1cdae0e9bc792a8513cb data\minecraft\tags\item\pickaxes.json
 daf7586bce0445a402cc352e603baae0e7927f4e data\minecraft\tags\item\hoes.json
-32603e0aff5693c20701582008fa97191b2d7cad data\lksls\tags\item\transformable_items.json
+e8cbd194dd2f24c9b0b9f4f6394fe5b3f4bbaf9a data\lksls\tags\item\transformable_items.json
 3ea45b5582fd00aa2db3fd6211dc5c8a4bb03133 data\minecraft\tags\item\shovels.json
