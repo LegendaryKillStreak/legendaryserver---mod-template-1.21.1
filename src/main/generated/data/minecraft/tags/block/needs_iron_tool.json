@@ -1,5 +1,6 @@
 {
   "values": [
-    "lksls:light_core_block"
+    "lksls:light_core_block",
+    "lksls:dark_core_block"
   ]
 }

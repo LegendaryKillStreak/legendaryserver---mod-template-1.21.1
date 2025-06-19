@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.lksls.tears_music_disc.desc"
+  },
+  "length_in_seconds": 176.0,
+  "sound_event": "lksls:tears"
+}

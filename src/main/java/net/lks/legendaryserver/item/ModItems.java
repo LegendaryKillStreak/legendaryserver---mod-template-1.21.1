@@ -3,9 +3,11 @@ package net.lks.legendaryserver.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.lks.legendaryserver.LegendaryServerMod;
 import net.lks.legendaryserver.item.custom.*;
+import net.lks.legendaryserver.sound.ModSounds;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.resource.featuretoggle.FeatureFlags;
 import net.minecraft.util.Identifier;
 
 
@@ -69,14 +71,31 @@ public class ModItems {
             new ModArmorItem(ModArmorMaterials.LIGHT_CORE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(41))));
 
+    public static final Item DARK_CORE_HELMET = registerItem("dark_core_helmet",
+            new ModArmorItem(ModArmorMaterials.DARK_CORE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(54))));
+    public static final Item DARK_CORE_CHESTPLATE = registerItem("dark_core_chestplate",
+            new ModArmorItem(ModArmorMaterials.DARK_CORE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(54))));
+    public static final Item DARK_CORE_LEGGINGS = registerItem("dark_core_leggings",
+            new ArmorItem(ModArmorMaterials.DARK_CORE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(54))));
+    public static final Item DARK_CORE_BOOTS = registerItem("dark_core_boots",
+            new ModArmorItem(ModArmorMaterials.DARK_CORE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(54))));
+
 
 
 
     public static final  Item LIGHT_CORE = registerItem("light_core", new Item(new Item.Settings()));
     public static final  Item DARK_CORE = registerItem("dark_core", new Item(new Item.Settings()));
+    public static final  Item DARK_SOUL_CORE = registerItem("dark_soul_core", new Item(new Item.Settings()));
+    public static final  Item DARK_SHARD = registerItem("dark_shard", new Item(new Item.Settings()));
+
+    public static final Item ECHO_DUST = registerItem("echo_dust", new Item(new Item.Settings()));
+
 
     public static final Item COIN = registerItem("coin", new Item(new Item.Settings()));
-
     public static final Item COIN_FIVE = registerItem("coin_five", new Item(new Item.Settings()));
     public static final Item COIN_TEN = registerItem("coin_ten", new Item(new Item.Settings()));
     public static final Item COIN_TWENTY = registerItem("coin_twenty", new Item(new Item.Settings()));
@@ -105,10 +124,18 @@ public class ModItems {
     public static final Item DUNGEON_ICON_ICY_CAVES = registerItem("dungeon_icon_icy_caves", new Item(new Item.Settings()));
     public static final Item DUNGEON_ICON_DEADLY_HEAT = registerItem("dungeon_icon_deadly_heat", new Item(new Item.Settings()));
 
+    public static final Item DAVY_JONES_THEME_MUSIC_DISC = registerItem("davy_jones_theme_music_disc",
+            new Item(new Item.Settings().jukeboxPlayable(ModSounds.DAVY_JONES_THEME_KEY).maxCount(1)));
+
+    public static final Item PAIN_RESONANCE_MUSIC_DISC = registerItem("pain_resonance_music_disc",
+            new Item(new Item.Settings().jukeboxPlayable(ModSounds.PAIN_RESONANCE_KEY).maxCount(1)));
+
+    public static final Item TEARS_MUSIC_DISC = registerItem("tears_music_disc",
+            new Item(new Item.Settings().jukeboxPlayable(ModSounds.TEARS_KEY).maxCount(1)));
 
 
-
-
+    public static final Item SOUL_CORE_SMITHING_TEMPLATE = registerItem("soul_core_armor_trim_smithing_template",
+            SmithingTemplateItem.of(Identifier.of(LegendaryServerMod.MOD_ID, "soul_core"), FeatureFlags.VANILLA));
 
 
 
@@ -125,6 +152,8 @@ public class ModItems {
             entries.add(LIGHT_CORE);
             entries.add(ModItems.LIGHT_SWORD);
             entries.add(ModItems.DARK_CORE);
+            entries.add(ModItems.SOUL_CORE_SMITHING_TEMPLATE);
+            entries.add(ModItems.ECHO_DUST);
         });
     }
 }

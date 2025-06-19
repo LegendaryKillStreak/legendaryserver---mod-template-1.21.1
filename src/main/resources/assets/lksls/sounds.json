@@ -1,0 +1,27 @@
+{
+
+  "davy_jones_theme": {
+    "sounds": [
+      {
+        "name": "lksls:davy_jones_theme",
+        "stream": true
+      }
+    ]
+  },
+  "tears": {
+    "sounds": [
+      {
+        "name": "lksls:tears",
+        "stream": true
+      }
+    ]
+  },
+  "pain_resonance": {
+    "sounds": [
+      {
+        "name": "lksls:pain_resonance",
+        "stream": true
+      }
+    ]
+  }
+}

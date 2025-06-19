@@ -2,6 +2,7 @@ package net.lks.legendaryserver.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.lks.legendaryserver.LegendaryServerMod;
+import net.lks.legendaryserver.block.custom.DarkCoreBlock;
 import net.lks.legendaryserver.block.custom.LightCoreBlock;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -16,7 +17,10 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
     public static final Block LIGHT_CORE_BLOCK = registerBlock("light_core_block",
             new LightCoreBlock(AbstractBlock.Settings.create()
-                    .requiresTool().sounds(BlockSoundGroup.HEAVY_CORE).strength(20f,1200f)));
+                    .requiresTool().sounds(BlockSoundGroup.HEAVY_CORE).strength(20f,1200f).luminance(value -> 15)));
+    public static final Block DARK_CORE_BLOCK = registerBlock("dark_core_block",
+            new DarkCoreBlock(AbstractBlock.Settings.create()
+                    .requiresTool().sounds(BlockSoundGroup.HEAVY_CORE).strength(50f,1200f).luminance(value -> 0)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -34,6 +38,7 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.LIGHT_CORE_BLOCK);
+            entries.add(ModBlocks.DARK_CORE_BLOCK);
         });
 
     }

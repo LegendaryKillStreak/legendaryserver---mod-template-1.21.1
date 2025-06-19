@@ -2,6 +2,7 @@
   "item.lksls.light_sword": "Sword of Light",
   "item.lksls.light_core": "Light Core",
   "item.lksls.dark_core": "Dark Core",
+  "item.lksls.dark_soul_core": "Dark Soul Core",
   "item.lksls.darkness_sword": "Sword of Darkness",
   "item.lksls.darkness_axe": "Darkness Axe",
   "item.lksls.darkness_pickaxe": "Darkness Pickaxe",
@@ -15,6 +16,10 @@
   "item.lksls.light_core_chestplate": "Light Core Chestplate",
   "item.lksls.light_core_leggings": "Light Core Leggings",
   "item.lksls.light_core_boots": "Light Core Boots",
+  "item.lksls.dark_core_helmet": "Dark Core Helmet",
+  "item.lksls.dark_core_chestplate": "Dark Core Chestplate",
+  "item.lksls.dark_core_leggings": "Dark Core Leggings",
+  "item.lksls.dark_core_boots": "Dark Core Boots",
   "item.lksls.coin": "Coin 1",
   "item.lksls.coin_five": "Coin 5",
   "item.lksls.coin_ten": "Coin 10",
@@ -41,10 +46,21 @@
   "item.lksls.dungeon_icon_deadly_heat": "Dungeon Icon Deadly Heat",
   "item.lksls.dungeon_icon_icy_caves": "Dungeon Icon Icy Caves",
   "item.lksls.dungeon_icon_shadowy_creatures": "Dungeon Icon Shadowy Creatures",
+  "item.lksls.davy_jones_theme_music_disc":  "Davy Jones Theme Music Disc",
+  "item.lksls.davy_jones_theme_music_disc.desc":  "Hans Zimmer - Davy Jones Theme (CC BY-NC-SA)",
+  "item.lksls.pain_resonance_music_disc.desc":  "LegendaryKillStreak - PainResonance (CC0)",
+  "item.lksls.pain_resonance_music_disc":  "Pain Resonance Music Disc",
+  "item.lksls.tears_music_disc.desc":  "Amos Roddy - Tears",
+  "item.lksls.tears_music_disc":  "Tears Music Disc",
+  "item.lksls.echo_dust":  "Echo Dust",
+  "item.lksls.soul_core_smithing_template":  " Dark Soul Core Smithing Template",
+  "trim_material.lksls.echo_dust":  "Echo Dust Material",
+  "trim_pattern.lksls.soul_core":  "Dark Soul Core Armor Pattern",
 
 
 
   "itemgroup.lksls.season_one_items": "Season One Items",
 
-  "block.lksls.light_core_block": "Light Core Block"
+  "block.lksls.light_core_block": "Light Core Block",
+  "block.lksls.dark_core_block": "Dark Core Block"
 }

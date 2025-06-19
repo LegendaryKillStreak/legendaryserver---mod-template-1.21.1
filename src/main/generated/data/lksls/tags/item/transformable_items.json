@@ -1,6 +1,7 @@
 {
   "values": [
     "lksls:light_core",
+    "lksls:dark_soul_core",
     "lksls:dark_core",
     "lksls:coin",
     "lksls:coin_ten",
@@ -27,6 +28,8 @@
     "lksls:dungeon_key_deadly_heat",
     "lksls:dungeon_icon_shadowy_creatures",
     "lksls:dungeon_icon_icy_caves",
-    "lksls:dungeon_icon_deadly_heat"
+    "lksls:dungeon_icon_deadly_heat",
+    "lksls:echo_dust",
+    "lksls:tears_music_disc"
   ]
 }

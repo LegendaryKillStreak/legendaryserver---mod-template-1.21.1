@@ -1,21 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "A": {
-      "item": "minecraft:tinted_glass"
-    },
-    "X": {
-      "item": "lksls:light_core"
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "lksls:dark_core_block"
     }
-  },
-  "pattern": [
-    " A ",
-    "AXA",
-    " A "
   ],
   "result": {
-    "count": 1,
+    "count": 9,
     "id": "lksls:dark_core"
   }
 }

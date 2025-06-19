@@ -19,6 +19,9 @@ public class ModItemGroups {
                         entries.add(ModItems.LIGHT_SWORD);
                         entries.add(ModItems.LIGHT_CORE);
                         entries.add(ModBlocks.LIGHT_CORE_BLOCK);
+                        entries.add(ModBlocks.DARK_CORE_BLOCK);
+                        entries.add(ModItems.DARK_SOUL_CORE);
+                        entries.add(ModItems.DARK_SHARD);
                         entries.add(ModItems.DARK_CORE);
                         entries.add(ModItems.DARKNESS_SWORD);
                         entries.add(ModItems.LIGHT_AXE);
@@ -59,6 +62,15 @@ public class ModItemGroups {
                         entries.add(ModItems.LIGHT_CORE_CHESTPLATE);
                         entries.add(ModItems.LIGHT_CORE_LEGGINGS);
                         entries.add(ModItems.LIGHT_CORE_BOOTS);
+                        entries.add(ModItems.DARK_CORE_HELMET);
+                        entries.add(ModItems.DARK_CORE_CHESTPLATE);
+                        entries.add(ModItems.DARK_CORE_LEGGINGS);
+                        entries.add(ModItems.DARK_CORE_BOOTS);
+                        entries.add(ModItems.DAVY_JONES_THEME_MUSIC_DISC);
+                        entries.add(ModItems.PAIN_RESONANCE_MUSIC_DISC);
+                        entries.add(ModItems.TEARS_MUSIC_DISC);
+                        entries.add(ModItems.SOUL_CORE_SMITHING_TEMPLATE);
+                        entries.add(ModItems.ECHO_DUST);
 
 
 

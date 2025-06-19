@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "misc",
+  "category": "building",
   "ingredients": [
     {
       "item": "lksls:light_core_block"
@@ -8,28 +8,6 @@
   ],
   "result": {
     "count": 9,
-    "id": "lksls:light_core"
-  },
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "A": {
-      "item": "minecraft:nether_star"
-    },
-    "B": {
-      "item": "minecraft:glowstone_dust"
-    },
-    "C": {
-      "item": "minecraft:prismarine_crystals"
-    }
-  },
-  "pattern": [
-    "CBC",
-    "BAB",
-    "CBC"
-  ],
-  "result": {
-    "count": 1,
     "id": "lksls:light_core"
   }
 }

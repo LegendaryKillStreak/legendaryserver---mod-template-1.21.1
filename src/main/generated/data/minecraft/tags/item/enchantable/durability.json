@@ -1,0 +1,12 @@
+{
+  "values": [
+    "lksls:light_core_helmet",
+    "lksls:light_core_chestplate",
+    "lksls:light_core_leggings",
+    "lksls:light_core_boots",
+    "lksls:dark_core_boots",
+    "lksls:dark_core_chestplate",
+    "lksls:dark_core_helmet",
+    "lksls:dark_core_leggings"
+  ]
+}

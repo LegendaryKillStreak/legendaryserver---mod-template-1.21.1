@@ -4,7 +4,6 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.lks.legendaryserver.item.ModItems;
 import net.lks.legendaryserver.util.ModTags;
-import net.minecraft.data.server.tag.ItemTagProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 
@@ -19,6 +18,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ModTags.Items.TRANSFORMABLE_ITEMS)
                 .add(ModItems.LIGHT_CORE)
+                .add(ModItems.DARK_SOUL_CORE)
                 .add(ModItems.DARK_CORE);
 
 
@@ -48,7 +48,18 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.DUNGEON_KEY_DEADLY_HEAT)
                 .add(ModItems.DUNGEON_ICON_SHADOWY_CREATURES)
                 .add(ModItems.DUNGEON_ICON_ICY_CAVES)
-                .add(ModItems.DUNGEON_ICON_DEADLY_HEAT);
+                .add(ModItems.DUNGEON_ICON_DEADLY_HEAT)
+                .add(ModItems.ECHO_DUST)
+                .add(ModItems.TEARS_MUSIC_DISC);
+
+
+        getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.ECHO_DUST);
+
+        getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
+                .add(ModItems.SOUL_CORE_SMITHING_TEMPLATE);
+
+
 
 
 
@@ -56,6 +67,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.PICKAXES)
                 .add(ModItems.LIGHT_PICKAXE)
                 .add(ModItems.DARKNESS_PICKAXE);
+
+
 
 
 
@@ -100,19 +113,41 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.LIGHT_CORE_HELMET)
                 .add(ModItems.LIGHT_CORE_CHESTPLATE)
                 .add(ModItems.LIGHT_CORE_LEGGINGS)
-                .add(ModItems.LIGHT_CORE_BOOTS);
+                .add(ModItems.LIGHT_CORE_BOOTS)
+                .add(ModItems.DARK_CORE_HELMET)
+                .add(ModItems.DARK_CORE_CHESTPLATE)
+                .add(ModItems.DARK_CORE_LEGGINGS)
+                .add(ModItems.DARK_CORE_BOOTS);
 
         getOrCreateTagBuilder(ItemTags.CHEST_ARMOR_ENCHANTABLE)
-                .add(ModItems.LIGHT_CORE_CHESTPLATE);
+                .add(ModItems.LIGHT_CORE_CHESTPLATE)
+                .add(ModItems.DARK_CORE_CHESTPLATE);
 
         getOrCreateTagBuilder(ItemTags.HEAD_ARMOR_ENCHANTABLE)
-                .add(ModItems.LIGHT_CORE_HELMET);
+                .add(ModItems.LIGHT_CORE_HELMET)
+                .add(ModItems.DARK_CORE_HELMET);
 
         getOrCreateTagBuilder(ItemTags.LEG_ARMOR_ENCHANTABLE)
-                .add(ModItems.LIGHT_CORE_LEGGINGS);
+                .add(ModItems.LIGHT_CORE_LEGGINGS)
+                .add(ModItems.DARK_CORE_LEGGINGS);
 
         getOrCreateTagBuilder(ItemTags.FOOT_ARMOR_ENCHANTABLE)
-                .add(ModItems.LIGHT_CORE_BOOTS);
+                .add(ModItems.LIGHT_CORE_BOOTS)
+                .add(ModItems.DARK_CORE_BOOTS);
+
+
+        getOrCreateTagBuilder(ItemTags.DURABILITY_ENCHANTABLE)
+                .add(ModItems.LIGHT_CORE_HELMET)
+                .add(ModItems.LIGHT_CORE_CHESTPLATE)
+                .add(ModItems.LIGHT_CORE_LEGGINGS)
+                .add(ModItems.LIGHT_CORE_BOOTS)
+                .add(ModItems.DARK_CORE_BOOTS)
+                .add(ModItems.DARK_CORE_CHESTPLATE)
+                .add(ModItems.DARK_CORE_HELMET)
+                .add(ModItems.DARK_CORE_LEGGINGS);
+
+
+
 
 
 

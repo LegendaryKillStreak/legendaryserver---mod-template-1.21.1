@@ -8,7 +8,6 @@ import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.minecraft.item.ArmorItem;
-import net.minecraft.item.Item;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -18,6 +17,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIGHT_CORE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DARK_CORE_BLOCK);
 
     }
 
@@ -25,6 +25,8 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.LIGHT_CORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.DARK_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_SOUL_CORE, Models.GENERATED);
+
 
         itemModelGenerator.register(ModItems.DUNGEON_KEY_SHADOWY_CREATURES, Models.GENERATED);
         itemModelGenerator.register(ModItems.DUNGEON_KEY_ICY_CAVES, Models.GENERATED);
@@ -33,6 +35,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DUNGEON_ICON_ICY_CAVES, Models.GENERATED);
         itemModelGenerator.register(ModItems.DUNGEON_ICON_DEADLY_HEAT, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.SOUL_CORE_SMITHING_TEMPLATE, Models.GENERATED);
+
+
+        itemModelGenerator.register(ModItems.ECHO_DUST, Models.GENERATED);
 
 
 
@@ -61,6 +67,13 @@ public class ModModelProvider extends FabricModelProvider {
 
 
 
+        itemModelGenerator.register(ModItems.DAVY_JONES_THEME_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PAIN_RESONANCE_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.TEARS_MUSIC_DISC, Models.GENERATED);
+
+
+
+
 
 
 
@@ -82,6 +95,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.LIGHT_CORE_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.LIGHT_CORE_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.LIGHT_CORE_BOOTS));
+
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.DARK_CORE_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.DARK_CORE_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.DARK_CORE_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.DARK_CORE_BOOTS));
 
 
 

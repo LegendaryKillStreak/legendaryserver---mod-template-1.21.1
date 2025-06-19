@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:diamond"
+    },
+    "X": {
+      "item": "lksls:light_core"
+    }
+  },
+  "pattern": [
+    "X X",
+    "AXA",
+    "XAX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "lksls:light_core_chestplate"
+  }
+}
