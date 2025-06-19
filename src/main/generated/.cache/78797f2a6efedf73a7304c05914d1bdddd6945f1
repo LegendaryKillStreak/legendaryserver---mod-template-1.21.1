@@ -1,4 +1,4 @@
-// 1.21.1	2025-06-19T22:27:02.2702902	LegendaryServer - Mod/Recipes
+// 1.21.1	2025-06-19T23:57:31.448653	LegendaryServer - Mod/Recipes
 3ee23bf2f07f1a5c957ed059a0a0c45a71cf42ea data\lks\advancement\recipes\combat\darkness_sword.json
 fb7981c306f65375d1e98765412c6aca4e7f5f2f data\lks\recipe\light_core_block.json
 309eb3cbb8a5c09efa40333f8f1ae401749d535d data\lks\advancement\recipes\misc\coin_five.json
@@ -13,7 +13,7 @@ c14017c783b365efc3f3f68543c4f0c097e9c73d data\lks\recipe\dark_core_chestplate.js
 2fa788d165269811fe208ad05e7b4e5b6d5460d0 data\lks\recipe\darkness_hoe.json
 c2ced03f9d883409f6b54c53f3c874d364153e17 data\lks\advancement\recipes\misc\coin_twenty.json
 409af144b412e4d866872f9761c6049bc59c9962 data\lks\recipe\dark_core_shaped.json
-b7465eed4d11022c09faf33f9b53285d31247263 data\lks\recipe\soul_core.json
+3b6bdf890a94ab42f49269cea92132e341d56ec5 data\lks\recipe\soul_core.json
 9d40255ef08e175b39db6cce1b790680f73466d3 data\lks\recipe\dark_core_block.json
 bd14e2386e7eca6577fba0c7bbf1f951e36fa421 data\lks\advancement\recipes\tools\darkness_pickaxe.json
 2e0d29636934335d728285b4f6467c52447b3304 data\lks\recipe\light_axe.json
@@ -42,7 +42,7 @@ eaaeb21b013a9be7b37748779161cc106d23ca4a data\lks\recipe\dark_soul_core.json
 786f8ebbe424d144f515e13041ea487f6f80822a data\lks\advancement\recipes\building_blocks\light_core.json
 3bdac47be6128621b55668e0c991da5329b7220d data\lks\recipe\coin_twenty.json
 4b2389a9c82b663aab56f6af1ed5bb167b2c959f data\lks\advancement\recipes\misc\light_core_block.json
-55cb8a5e3741a601d0fd32eb8c75fdc7883f94d6 data\lks\advancement\recipes\misc\soul_core.json
+1f910090bdc3923ea96b74fc1d04af99bdf8f68f data\lks\advancement\recipes\misc\soul_core.json
 df0de905ae9fb57ca7e39f6ab732be93c68bbae1 data\lks\recipe\dark_core_leggings.json
 6b1e8eebf97444d210583461284a963ab83197df data\lks\advancement\recipes\tools\darkness_hoe.json
 fc779c93f15b44a0e3fbe1411506622be9763cff data\lks\advancement\recipes\combat\light_core_helmet.json

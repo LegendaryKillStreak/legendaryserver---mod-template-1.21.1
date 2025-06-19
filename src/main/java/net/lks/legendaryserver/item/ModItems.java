@@ -95,6 +95,7 @@ public class ModItems {
     public static final Item ECHO_DUST = registerItem("echo_dust", new Item(new Item.Settings()));
 
 
+
     public static final Item COIN = registerItem("coin", new Item(new Item.Settings()));
     public static final Item COIN_FIVE = registerItem("coin_five", new Item(new Item.Settings()));
     public static final Item COIN_TEN = registerItem("coin_ten", new Item(new Item.Settings()));
@@ -134,8 +135,11 @@ public class ModItems {
             new Item(new Item.Settings().jukeboxPlayable(ModSounds.TEARS_KEY).maxCount(1)));
 
 
-    public static final Item SOUL_CORE_SMITHING_TEMPLATE = registerItem("soul_core_armor_trim_smithing_template",
-            SmithingTemplateItem.of(Identifier.of(LegendaryServerMod.MOD_ID, "soul_core"), FeatureFlags.VANILLA));
+     public static final Item SOUL_CORE_SMITHING_TEMPLATE = registerItem("soul_core_armor_smithing_template",
+             SmithingTemplateItem.of(Identifier.of(LegendaryServerMod.MOD_ID, "soul_core"),FeatureFlags.VANILLA));
+
+
+
 
 
 
@@ -152,8 +156,7 @@ public class ModItems {
             entries.add(LIGHT_CORE);
             entries.add(ModItems.LIGHT_SWORD);
             entries.add(ModItems.DARK_CORE);
-            entries.add(ModItems.SOUL_CORE_SMITHING_TEMPLATE);
-            entries.add(ModItems.ECHO_DUST);
+
         });
     }
 }

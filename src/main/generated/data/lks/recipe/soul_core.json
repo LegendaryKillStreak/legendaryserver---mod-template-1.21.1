@@ -7,6 +7,6 @@
     "tag": "minecraft:trimmable_armor"
   },
   "template": {
-    "item": "lksls:soul_core_armor_trim_smithing_template"
+    "item": "lksls:soul_core_armor_smithing_template"
   }
 }
