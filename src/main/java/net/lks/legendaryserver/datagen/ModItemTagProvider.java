@@ -57,7 +57,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.ECHO_DUST);
 
         getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
-                .add(ModItems.SOUL_CORE_SMITHING_TEMPLATE);
+                .add(ModItems.SOUL_CORE_ARMOR_SMITHING_TEMPLATE);
 
 
 

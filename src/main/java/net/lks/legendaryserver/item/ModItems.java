@@ -135,7 +135,7 @@ public class ModItems {
             new Item(new Item.Settings().jukeboxPlayable(ModSounds.TEARS_KEY).maxCount(1)));
 
 
-     public static final Item SOUL_CORE_SMITHING_TEMPLATE = registerItem("soul_core_armor_smithing_template",
+     public static final Item SOUL_CORE_ARMOR_SMITHING_TEMPLATE = registerItem("soul_core_armor_smithing_template",
              SmithingTemplateItem.of(Identifier.of(LegendaryServerMod.MOD_ID, "soul_core"),FeatureFlags.VANILLA));
 
 

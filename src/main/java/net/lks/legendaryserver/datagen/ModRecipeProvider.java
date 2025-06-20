@@ -24,40 +24,39 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     public void generate(RecipeExporter exporter) {
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.LIGHT_AXE)
-                        .pattern("AC ")
-                        .pattern("AB ")
+                        .pattern("CC ")
+                        .pattern("CB ")
                         .pattern(" B ")
-                        .input('A', Items.PRISMARINE_SHARD)
+
                         .input('B', Items.END_ROD)
                         .input('C', ModItems.LIGHT_CORE)
                 .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DARKNESS_AXE)
-                        .pattern("AC ")
-                        .pattern("AB ")
+                        .pattern("CC ")
+                        .pattern("CB ")
                         .pattern(" B ")
-                        .input('A', Items.TINTED_GLASS)
                         .input('B', Items.BLAZE_ROD)
                         .input('C', ModItems.DARK_CORE)
                 .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DARKNESS_PICKAXE)
-                        .pattern("ACA")
+                        .pattern("CCC")
                         .pattern(" B ")
                         .pattern(" B ")
-                        .input('A', Items.TINTED_GLASS)
+
                         .input('B', Items.BLAZE_ROD)
                         .input('C', ModItems.DARK_CORE)
-                .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
+                .criterion(hasItem(ModItems.DARKNESS_PICKAXE), conditionsFromItem(ModItems.DARKNESS_PICKAXE))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.LIGHT_PICKAXE)
-                        .pattern("ACA")
+                        .pattern("CCC")
                         .pattern(" B ")
                         .pattern(" B ")
-                        .input('A', Items.PRISMARINE_SHARD)
+
                         .input('B', Items.END_ROD)
                         .input('C', ModItems.LIGHT_CORE)
                 .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
@@ -86,24 +85,24 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DARKNESS_HOE)
-                        .pattern("AC ")
+                        .pattern("CC ")
                         .pattern(" B ")
                         .pattern(" B ")
 
                         .input('B', Items.BLAZE_ROD)
                         .input('C', ModItems.DARK_CORE)
-                        .input('A', Items.TINTED_GLASS)
+
                 .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.LIGHT_HOE)
-                        .pattern("AC ")
+                        .pattern("CC ")
                         .pattern(" B ")
                         .pattern(" B ")
 
                         .input('B', Items.END_ROD)
                         .input('C', ModItems.LIGHT_CORE)
-                        .input('A', Items.PRISMARINE_SHARD)
+
                 .criterion(hasItem(Items.GLOWSTONE_DUST), conditionsFromItem(Items.GLOWSTONE_DUST))
                 .offerTo(exporter);
 
@@ -151,7 +150,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, "light_core_shaped");
 
 
-        offerSmithingTrimRecipe(exporter, ModItems.SOUL_CORE_SMITHING_TEMPLATE, Identifier.of(LegendaryServerMod.MOD_ID, "soul_core"));
+        offerSmithingTrimRecipe(exporter, ModItems.SOUL_CORE_ARMOR_SMITHING_TEMPLATE, Identifier.of(LegendaryServerMod.MOD_ID, "soul_core"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SOUL_CORE_ARMOR_SMITHING_TEMPLATE, 2)
+                .pattern("ABA")
+                .pattern("AXA")
+                .pattern("AAA")
+                .input('A', Items.DIAMOND)
+                .input('X', ModItems.DARK_SOUL_CORE)
+                .input('B', ModItems.SOUL_CORE_ARMOR_SMITHING_TEMPLATE)
+                .criterion(hasItem(ModItems.SOUL_CORE_ARMOR_SMITHING_TEMPLATE), conditionsFromItem(ModItems.SOUL_CORE_ARMOR_SMITHING_TEMPLATE))
+                .offerTo(exporter, "soul_core_template_shaped");
 
 
 
@@ -176,10 +185,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         ;
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.LIGHT_SWORD)
-                .pattern(" A ")
-                .pattern("AXA")
+                .pattern(" X ")
+                .pattern(" X ")
                 .pattern(" B ")
-                .input('A', Items.PRISMARINE_SHARD)
                 .input('B', Items.END_ROD)
                 .input('X', ModItems.LIGHT_CORE)
                 .criterion(hasItem(ModItems.LIGHT_CORE), conditionsFromItem(ModItems.LIGHT_CORE))
@@ -198,13 +206,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.DARKNESS_SWORD)
-                .pattern(" A ")
-                .pattern("CXC")
+                .pattern(" X ")
+                .pattern(" X ")
                 .pattern(" B ")
-                .input('A', Items.WITHER_SKELETON_SKULL)
                 .input('B', Items.BLAZE_ROD)
                 .input('X', ModItems.DARK_CORE)
-                .input('C', Items.AMETHYST_SHARD)
                 .criterion(hasItem(ModItems.DARK_CORE), conditionsFromItem(ModItems.DARK_CORE))
                 .offerTo(exporter);
 
@@ -303,6 +309,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('A', Items.NETHERITE_INGOT)
                 .input('X', Items.SOUL_SAND)
                 .criterion(hasItem(ModItems.LIGHT_CORE), conditionsFromItem(ModItems.LIGHT_CORE))
+                .offerTo(exporter);
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ECHO_DUST)
+                .pattern(" X")
+                .pattern("X ")
+                .input('X', Items.ECHO_SHARD)
+                .criterion(hasItem(Items.ECHO_SHARD), conditionsFromItem(Items.ECHO_SHARD))
                 .offerTo(exporter);
 
 

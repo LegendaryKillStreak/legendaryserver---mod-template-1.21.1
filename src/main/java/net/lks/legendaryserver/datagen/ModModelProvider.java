@@ -35,7 +35,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DUNGEON_ICON_ICY_CAVES, Models.GENERATED);
         itemModelGenerator.register(ModItems.DUNGEON_ICON_DEADLY_HEAT, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.SOUL_CORE_SMITHING_TEMPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SOUL_CORE_ARMOR_SMITHING_TEMPLATE, Models.GENERATED);
 
 
         itemModelGenerator.register(ModItems.ECHO_DUST, Models.GENERATED);

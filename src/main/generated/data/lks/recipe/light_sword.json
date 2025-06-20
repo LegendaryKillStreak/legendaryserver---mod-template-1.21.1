@@ -2,9 +2,6 @@
   "type": "minecraft:crafting_shaped",
   "category": "equipment",
   "key": {
-    "A": {
-      "item": "minecraft:prismarine_shard"
-    },
     "B": {
       "item": "minecraft:end_rod"
     },
@@ -13,8 +10,8 @@
     }
   },
   "pattern": [
-    " A ",
-    "AXA",
+    " X ",
+    " X ",
     " B "
   ],
   "result": {

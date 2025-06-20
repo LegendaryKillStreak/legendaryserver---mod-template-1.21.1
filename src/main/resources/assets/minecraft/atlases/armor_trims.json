@@ -40,8 +40,8 @@
         "trims/models/armor/raiser_leggings",
         "trims/models/armor/host",
         "trims/models/armor/host_leggings",
-        "lksls:trims/models/armor/dark_soul_core",
-        "lksls:trims/models/armor/dark_soul_core_leggings"
+        "lksls:trims/models/armor/soul_core",
+        "lksls:trims/models/armor/soul_core_leggings"
 
       ],
       "palette_key": "trims/color_palettes/trim_palette",

@@ -69,7 +69,7 @@ public class ModItemGroups {
                         entries.add(ModItems.DAVY_JONES_THEME_MUSIC_DISC);
                         entries.add(ModItems.PAIN_RESONANCE_MUSIC_DISC);
                         entries.add(ModItems.TEARS_MUSIC_DISC);
-                        entries.add(ModItems.SOUL_CORE_SMITHING_TEMPLATE);
+                        entries.add(ModItems.SOUL_CORE_ARMOR_SMITHING_TEMPLATE);
                         entries.add(ModItems.ECHO_DUST);
 
 

@@ -18,7 +18,7 @@ public class ModTrimPatterns {
             Identifier.of(LegendaryServerMod.MOD_ID, "soul_core"));
 
     public static void bootstrap(Registerable<ArmorTrimPattern> context) {
-        register(context, ModItems.SOUL_CORE_SMITHING_TEMPLATE, SOUL_CORE);
+        register(context, ModItems.SOUL_CORE_ARMOR_SMITHING_TEMPLATE, SOUL_CORE);
     }
 
     private static void register(Registerable<ArmorTrimPattern> context, Item item, RegistryKey<ArmorTrimPattern> key) {
