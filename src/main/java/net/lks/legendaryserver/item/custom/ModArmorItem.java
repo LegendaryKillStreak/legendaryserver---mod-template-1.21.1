@@ -22,6 +22,8 @@ import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.registry.tag.TagKey;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.StringIdentifiable;
 import net.minecraft.world.World;
@@ -52,6 +54,8 @@ public class ModArmorItem extends ArmorItem {
     public ModArmorItem(RegistryEntry<ArmorMaterial> material, Type type, Settings settings) {
         super(material, type, settings);
     }
+
+
 
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
@@ -115,6 +119,8 @@ public class ModArmorItem extends ArmorItem {
                  leggings.getMaterial() == material && boots.getMaterial() == material;
 
     }
+
+
     @Override
     public int getEnchantability() {
         return this.material.value().enchantability();

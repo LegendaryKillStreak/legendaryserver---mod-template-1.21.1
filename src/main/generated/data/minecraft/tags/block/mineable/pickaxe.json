@@ -1,6 +1,10 @@
 {
   "values": [
     "lksls:light_core_block",
-    "lksls:dark_core_block"
+    "lksls:dark_core_block",
+    "lksls:raw_nickel_block",
+    "lksls:nickel_block",
+    "lksls:nickel_ore",
+    "lksls:nickel_deepslate_ore"
   ]
 }

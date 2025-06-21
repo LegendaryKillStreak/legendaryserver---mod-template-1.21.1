@@ -5,6 +5,8 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.lks.legendaryserver.datagen.*;
 import net.lks.legendaryserver.trim.ModTrimMaterials;
 import net.lks.legendaryserver.trim.ModTrimPatterns;
+import net.lks.legendaryserver.world.ModConfiguredFeatures;
+import net.lks.legendaryserver.world.ModPlacedFeatures;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 
@@ -29,5 +31,7 @@ public class LegendaryServerModDataGenerator implements DataGeneratorEntrypoint 
 	public void buildRegistry(RegistryBuilder registryBuilder) {
 		registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.TRIM_PATTERN, ModTrimPatterns::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 	}
 }

@@ -30,6 +30,7 @@ public class ModItemGroups {
                         entries.add(ModItems.LIGHT_SHOVEL);
                         entries.add(ModItems.DARKNESS_AXE);
                         entries.add(ModItems.DARKNESS_PICKAXE);
+                        entries.add(ModItems.DARKNESS_DRILL);
                         entries.add(ModItems.DARKNESS_SHOVEL);
                         entries.add(ModItems.DARKNESS_HOE);
                         entries.add(ModItems.COIN);
@@ -69,8 +70,15 @@ public class ModItemGroups {
                         entries.add(ModItems.DAVY_JONES_THEME_MUSIC_DISC);
                         entries.add(ModItems.PAIN_RESONANCE_MUSIC_DISC);
                         entries.add(ModItems.TEARS_MUSIC_DISC);
+                        entries.add(ModItems.HORIZON_ZERO_DAWN_MUSIC_DISC);
                         entries.add(ModItems.SOUL_CORE_ARMOR_SMITHING_TEMPLATE);
                         entries.add(ModItems.ECHO_DUST);
+                        entries.add(ModItems.RAW_NICKEL);
+                        entries.add(ModItems.NICKEL_INGOT);
+                        entries.add(ModBlocks.NICKEL_DEEPSLATE_ORE);
+                        entries.add(ModBlocks.NICKEL_ORE);
+                        entries.add(ModBlocks.RAW_NICKEL_BLOCK);
+                        entries.add(ModBlocks.NICKEL_BLOCK);
 
 
 

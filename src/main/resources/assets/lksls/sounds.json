@@ -23,5 +23,13 @@
         "stream": true
       }
     ]
+  },
+  "horizon_zero_dawn": {
+    "sounds": [
+      {
+        "name": "lksls:horizon_zero_dawn",
+        "stream": true
+      }
+    ]
   }
 }

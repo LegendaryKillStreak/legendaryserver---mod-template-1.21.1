@@ -14,6 +14,8 @@ import net.minecraft.server.command.PlaySoundCommand;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -49,6 +51,11 @@ public class LightPickaxe extends PickaxeItem {
 
 
         super.inventoryTick(stack, world, entity, slot, selected);
+    }
+    @Override
+    public Text getName(ItemStack stack) {
+        return Text.literal("Light Pickaxe")
+                .formatted(Formatting.RED);
     }
 
 

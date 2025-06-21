@@ -8,6 +8,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
 
 public class DarknessPickaxe extends PickaxeItem {
@@ -29,4 +31,10 @@ public class DarknessPickaxe extends PickaxeItem {
 
         super.inventoryTick(stack, world, entity, slot, selected);
     }
+    @Override
+    public Text getName(ItemStack stack) {
+        return Text.literal("Darkness Pickaxe")
+                .formatted(Formatting.RED);
+    }
+
 }

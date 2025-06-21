@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:recovery_compass"
+    },
+    "B": {
+      "item": "minecraft:piston"
+    },
+    "C": {
+      "item": "minecraft:redstone"
+    },
+    "X": {
+      "item": "lksls:dark_core"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "CXC",
+    "BAB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "lksls:darkness_drill"
+  }
+}

@@ -50,7 +50,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.DUNGEON_ICON_ICY_CAVES)
                 .add(ModItems.DUNGEON_ICON_DEADLY_HEAT)
                 .add(ModItems.ECHO_DUST)
+                .add(ModItems.RAW_NICKEL)
+                .add(ModItems.NICKEL_INGOT)
                 .add(ModItems.TEARS_MUSIC_DISC);
+
 
 
         getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)

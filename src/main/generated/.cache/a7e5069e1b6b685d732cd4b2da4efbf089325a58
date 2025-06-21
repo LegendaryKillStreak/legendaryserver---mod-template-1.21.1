@@ -1,3 +1,7 @@
-// 1.21.1	2025-06-20T05:37:54.3622231	LegendaryServer - Mod/Block Loot Tables
+// 1.21.1	2025-06-21T05:02:44.0801967	LegendaryServer - Mod/Block Loot Tables
 d1c227195cfee74f65294f98d2d177604d9147e5 data\lksls\loot_table\blocks\dark_core_block.json
 ccd22f2362dc421b48a0f7429be19a20fe88c018 data\lksls\loot_table\blocks\light_core_block.json
+624357d159bc383d8624ab1c61b350d46b3d1fe2 data\lksls\loot_table\blocks\nickel_ore.json
+23d7ddd0b0933d006ab67cd3fe3ef67b0fb09675 data\lksls\loot_table\blocks\nickel_deepslate_ore.json
+baa7c196c1e8060cfe115c5a4101a172025fc658 data\lksls\loot_table\blocks\nickel_block.json
+500711ac71a10a5624dc8d6547e89d8b173f3d7f data\lksls\loot_table\blocks\raw_nickel_block.json

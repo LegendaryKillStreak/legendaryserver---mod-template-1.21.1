@@ -18,6 +18,10 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.LIGHT_CORE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DARK_CORE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NICKEL_DEEPSLATE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NICKEL_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NICKEL_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_NICKEL_BLOCK);
 
     }
 
@@ -39,6 +43,8 @@ public class ModModelProvider extends FabricModelProvider {
 
 
         itemModelGenerator.register(ModItems.ECHO_DUST, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_NICKEL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NICKEL_INGOT, Models.GENERATED);
 
 
 
@@ -70,6 +76,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DAVY_JONES_THEME_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.PAIN_RESONANCE_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.TEARS_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HORIZON_ZERO_DAWN_MUSIC_DISC, Models.GENERATED);
 
 
 
@@ -82,6 +89,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DARKNESS_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.DARKNESS_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.DARKNESS_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.DARKNESS_DRILL, Models.HANDHELD);
 
 
 
@@ -100,6 +108,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.DARK_CORE_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.DARK_CORE_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.DARK_CORE_BOOTS));
+
+
 
 
 

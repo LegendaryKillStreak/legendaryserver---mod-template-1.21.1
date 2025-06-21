@@ -6,6 +6,7 @@
   "item.lksls.darkness_sword": "Sword of Darkness",
   "item.lksls.darkness_axe": "Darkness Axe",
   "item.lksls.darkness_pickaxe": "Darkness Pickaxe",
+  "item.lksls.darkness_drill": "Drill of Darkness",
   "item.lksls.darkness_shovel": "Darkness Shovel",
   "item.lksls.darkness_hoe": "Darkness Hoe",
   "item.lksls.light_pickaxe": "Light Pickaxe",
@@ -40,6 +41,8 @@
   "item.lksls.coin_200": "Coin 200",
   "item.lksls.coin_500": "Coin 500",
   "item.lksls.coin_750": "Coin 750",
+  "item.lksls.raw_nickel": "Raw Nickel",
+  "item.lksls.nickel_ingot": "Nickel Ingot",
   "item.lksls.dungeon_key_shadowy_creatures": "Dungeon Key: Shadowy Creatures",
   "item.lksls.dungeon_key_deadly_heat": "Dungeon Key: Deadly Heat",
   "item.lksls.dungeon_key_icy_caves": "Dungeon Key: Icy Caves",
@@ -52,9 +55,11 @@
   "item.lksls.pain_resonance_music_disc":  "Pain Resonance Music Disc",
   "item.lksls.tears_music_disc.desc":  "Amos Roddy - Tears",
   "item.lksls.tears_music_disc":  "Tears Music Disc",
+  "item.lksls.horizon_zero_dawn_music_disc.desc":  "LegendaryKillStreak - Horizon Zero Dawn",
+  "item.lksls.horizon_zero_dawn_music_disc":  "Horizon Zero Dawn Music Disc",
   "item.lksls.echo_dust":  "Echo Dust",
-  "item.lksls.soul_core_armor_smithing_template":  "Soul Core Smithing Template",
-  "trim_material.lksls.echo_dust":  "Echo Dust Material",
+  "item.lksls.soul_core_armor_smithing_template":  "Soul Core Trim Smithing Template",
+  "trim_material.lksls.echo_dust":  "§3Echo Dust Material",
   "trim_pattern.lksls.soul_core":  "Soul Core Armor Pattern",
 
 
@@ -62,5 +67,9 @@
   "itemgroup.lksls.season_one_items": "Season One Items",
 
   "block.lksls.light_core_block": "Light Core Block",
-  "block.lksls.dark_core_block": "Dark Core Block"
+  "block.lksls.dark_core_block": "Dark Core Block",
+  "block.lksls.nickel_block": "Nickel Block",
+  "block.lksls.nickel_ore": "Nickel Ore",
+  "block.lksls.nickel_deepslate_ore": "Nickel Deepslate Ore",
+  "block.lksls.raw_nickel_block": "Raw Nickel Block"
 }

@@ -22,12 +22,21 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.LIGHT_CORE_BLOCK)
-                .add(ModBlocks.DARK_CORE_BLOCK);
+                .add(ModBlocks.DARK_CORE_BLOCK)
+                .add(ModBlocks.RAW_NICKEL_BLOCK)
+                .add(ModBlocks.NICKEL_BLOCK)
+                .add(ModBlocks.NICKEL_ORE)
+                .add(ModBlocks.NICKEL_DEEPSLATE_ORE);
 
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.LIGHT_CORE_BLOCK)
-                .add(ModBlocks.DARK_CORE_BLOCK);
+                .add(ModBlocks.DARK_CORE_BLOCK)
+                .add(ModBlocks.NICKEL_BLOCK)
+                .add(ModBlocks.NICKEL_ORE)
+                .add(ModBlocks.NICKEL_DEEPSLATE_ORE)
+                .add(ModBlocks.RAW_NICKEL_BLOCK);
+
 
 
 

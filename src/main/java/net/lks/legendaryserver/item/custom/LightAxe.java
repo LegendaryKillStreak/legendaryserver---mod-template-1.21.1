@@ -6,6 +6,8 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 
 public class LightAxe extends AxeItem {
     public LightAxe(ToolMaterial toolMaterial, Settings settings) {
@@ -23,6 +25,12 @@ public class LightAxe extends AxeItem {
         attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.SPEED,80,0));
 
         super.postDamageEntity(stack, target, attacker);
+    }
+
+    @Override
+    public Text getName(ItemStack stack) {
+        return Text.literal("Light Axe")
+                .formatted(Formatting.RED);
     }
 
 }

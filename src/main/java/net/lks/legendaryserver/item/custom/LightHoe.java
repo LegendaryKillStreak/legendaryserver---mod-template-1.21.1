@@ -6,6 +6,8 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.HoeItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 
 public class LightHoe extends HoeItem {
     public LightHoe(ToolMaterial toolMaterial, Settings settings) {
@@ -17,4 +19,10 @@ public class LightHoe extends HoeItem {
         target.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA,60,1));
         return super.postHit(stack, target, attacker);
     }
+    @Override
+    public Text getName(ItemStack stack) {
+        return Text.literal("Light Hoe")
+                .formatted(Formatting.RED);
+    }
+
 }

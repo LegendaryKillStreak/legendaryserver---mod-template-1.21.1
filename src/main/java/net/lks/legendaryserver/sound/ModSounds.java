@@ -34,4 +34,8 @@ public class ModSounds {
     public static final SoundEvent PAIN_RESONANCE = registerSoundEvent("pain_resonance");
     public static final RegistryKey<JukeboxSong> PAIN_RESONANCE_KEY =
             RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(LegendaryServerMod.MOD_ID, "pain_resonance"));
+
+    public static final SoundEvent HORIZON_ZERO_DAWN = registerSoundEvent("horizon_zero_dawn");
+    public static final RegistryKey<JukeboxSong> HORIZON_ZERO_DAWN_KEY =
+            RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(LegendaryServerMod.MOD_ID, "horizon_zero_dawn"));
 }

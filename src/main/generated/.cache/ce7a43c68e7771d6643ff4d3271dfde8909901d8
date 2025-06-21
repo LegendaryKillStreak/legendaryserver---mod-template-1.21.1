@@ -1,5 +1,5 @@
-// 1.21.1	2025-06-20T05:37:54.3632239	LegendaryServer - Mod/Tags for minecraft:block
+// 1.21.1	2025-06-21T05:02:44.0821972	LegendaryServer - Mod/Tags for minecraft:block
 af1e9dcb3ecb909bde41700ab3e478a302ea9b2e data\lksls\tags\block\needs_dark_tool.json
 af1e9dcb3ecb909bde41700ab3e478a302ea9b2e data\lksls\tags\block\needs_light_tool.json
-bf3d3276ff0ffb131b501f986d22343887555477 data\minecraft\tags\block\needs_iron_tool.json
-bf3d3276ff0ffb131b501f986d22343887555477 data\minecraft\tags\block\mineable\pickaxe.json
+9fb6bcab1129f37ad4adad1ce7ce1e31e6d6ec95 data\minecraft\tags\block\needs_iron_tool.json
+b1451e507df64b8c99ae42824edd9881985643e9 data\minecraft\tags\block\mineable\pickaxe.json

@@ -6,6 +6,8 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ShovelItem;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 
 public class DarknessShovel extends ShovelItem {
     public DarknessShovel(ToolMaterial toolMaterial, Settings settings) {
@@ -17,4 +19,10 @@ public class DarknessShovel extends ShovelItem {
 
         return super.postHit(stack, target, attacker);
     }
+    @Override
+    public Text getName(ItemStack stack) {
+        return Text.literal("Darkness Shovel")
+                .formatted(Formatting.RED);
+    }
+
 }

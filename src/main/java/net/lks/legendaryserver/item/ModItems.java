@@ -9,6 +9,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.resource.featuretoggle.FeatureFlags;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.Rarity;
 
 
 public class ModItems {
@@ -50,6 +51,10 @@ public class ModItems {
             new DarknessPickaxe(ModToolMaterials.DARK, new Item.Settings()
                     .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.DARK, 1, -2.8f))));
 
+    public static final Item DARKNESS_DRILL = registerItem("darkness_drill",
+            new DarkDrill(ModToolMaterials.DARK, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.DARK, -10, -1f))));
+
     public static final Item DARKNESS_AXE = registerItem("darkness_axe",
             new DarknessAxe(ModToolMaterials.DARK, new Item.Settings()
                     .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.DARK, 6, -3.2f))));
@@ -87,10 +92,10 @@ public class ModItems {
 
 
 
-    public static final  Item LIGHT_CORE = registerItem("light_core", new Item(new Item.Settings()));
-    public static final  Item DARK_CORE = registerItem("dark_core", new Item(new Item.Settings()));
-    public static final  Item DARK_SOUL_CORE = registerItem("dark_soul_core", new Item(new Item.Settings()));
-    public static final  Item DARK_SHARD = registerItem("dark_shard", new Item(new Item.Settings()));
+    public static final  Item LIGHT_CORE = registerItem("light_core", new Item(new Item.Settings().rarity(Rarity.EPIC)));
+    public static final  Item DARK_CORE = registerItem("dark_core", new Item(new Item.Settings().rarity(Rarity.EPIC)));
+    public static final  Item DARK_SOUL_CORE = registerItem("dark_soul_core", new Item(new Item.Settings().rarity(Rarity.EPIC)));
+    public static final  Item DARK_SHARD = registerItem("dark_shard", new Item(new Item.Settings().rarity(Rarity.EPIC)));
 
     public static final Item ECHO_DUST = registerItem("echo_dust", new Item(new Item.Settings()));
 
@@ -118,24 +123,34 @@ public class ModItems {
     public static final Item COIN_100000 = registerItem("coin_100000", new Item(new Item.Settings()));
 
 
-    public static final Item DUNGEON_KEY_SHADOWY_CREATURES = registerItem("dungeon_key_shadowy_creatures", new Item(new Item.Settings()));
-    public static final Item DUNGEON_KEY_ICY_CAVES = registerItem("dungeon_key_icy_caves", new Item(new Item.Settings()));
-    public static final Item DUNGEON_KEY_DEADLY_HEAT = registerItem("dungeon_key_deadly_heat", new Item(new Item.Settings()));
-    public static final Item DUNGEON_ICON_SHADOWY_CREATURES = registerItem("dungeon_icon_shadowy_creatures", new Item(new Item.Settings()));
-    public static final Item DUNGEON_ICON_ICY_CAVES = registerItem("dungeon_icon_icy_caves", new Item(new Item.Settings()));
-    public static final Item DUNGEON_ICON_DEADLY_HEAT = registerItem("dungeon_icon_deadly_heat", new Item(new Item.Settings()));
+    public static final Item DUNGEON_KEY_SHADOWY_CREATURES = registerItem("dungeon_key_shadowy_creatures", new Item(new Item.Settings().rarity(Rarity.UNCOMMON)));
+    public static final Item DUNGEON_KEY_ICY_CAVES = registerItem("dungeon_key_icy_caves", new Item(new Item.Settings().rarity(Rarity.UNCOMMON)));
+    public static final Item DUNGEON_KEY_DEADLY_HEAT = registerItem("dungeon_key_deadly_heat", new Item(new Item.Settings().rarity(Rarity.UNCOMMON)));
+    public static final Item DUNGEON_ICON_SHADOWY_CREATURES = registerItem("dungeon_icon_shadowy_creatures", new Item(new Item.Settings().rarity(Rarity.UNCOMMON)));
+    public static final Item DUNGEON_ICON_ICY_CAVES = registerItem("dungeon_icon_icy_caves", new Item(new Item.Settings().rarity(Rarity.UNCOMMON)));
+    public static final Item DUNGEON_ICON_DEADLY_HEAT = registerItem("dungeon_icon_deadly_heat", new Item(new Item.Settings().rarity(Rarity.UNCOMMON)));
 
     public static final Item DAVY_JONES_THEME_MUSIC_DISC = registerItem("davy_jones_theme_music_disc",
-            new Item(new Item.Settings().jukeboxPlayable(ModSounds.DAVY_JONES_THEME_KEY).maxCount(1)));
+            new Item(new Item.Settings().rarity(Rarity.EPIC).jukeboxPlayable(ModSounds.DAVY_JONES_THEME_KEY).maxCount(1)));
 
     public static final Item PAIN_RESONANCE_MUSIC_DISC = registerItem("pain_resonance_music_disc",
-            new Item(new Item.Settings().jukeboxPlayable(ModSounds.PAIN_RESONANCE_KEY).maxCount(1)));
+            new Item(new Item.Settings().rarity(Rarity.EPIC).jukeboxPlayable(ModSounds.PAIN_RESONANCE_KEY).maxCount(1)));
 
     public static final Item TEARS_MUSIC_DISC = registerItem("tears_music_disc",
-            new Item(new Item.Settings().jukeboxPlayable(ModSounds.TEARS_KEY).maxCount(1)));
+            new Item(new Item.Settings().rarity(Rarity.RARE).jukeboxPlayable(ModSounds.TEARS_KEY).maxCount(1)));
+
+    public static final Item HORIZON_ZERO_DAWN_MUSIC_DISC = registerItem("horizon_zero_dawn_music_disc",
+            new Item(new Item.Settings().rarity(Rarity.EPIC).jukeboxPlayable(ModSounds.HORIZON_ZERO_DAWN_KEY).maxCount(1)));
+
+    public static final Item RAW_NICKEL = registerItem("raw_nickel",
+            new Item(new Item.Settings()));
+
+    public static final Item NICKEL_INGOT = registerItem("nickel_ingot",
+            new Item(new Item.Settings()));
 
 
-     public static final Item SOUL_CORE_ARMOR_SMITHING_TEMPLATE = registerItem("soul_core_armor_smithing_template",
+
+    public static final Item SOUL_CORE_ARMOR_SMITHING_TEMPLATE = registerItem("soul_core_armor_smithing_template",
              SmithingTemplateItem.of(Identifier.of(LegendaryServerMod.MOD_ID, "soul_core"),FeatureFlags.VANILLA));
 
 
@@ -154,7 +169,8 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(LIGHT_CORE);
-            entries.add(ModItems.LIGHT_SWORD);
+            entries.add(ModItems.NICKEL_INGOT);
+            entries.add(ModItems.RAW_NICKEL);
             entries.add(ModItems.DARK_CORE);
 
         });

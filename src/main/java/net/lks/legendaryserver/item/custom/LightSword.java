@@ -6,6 +6,8 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 
 public class LightSword extends SwordItem {
     public LightSword(ToolMaterial toolMaterial, Settings settings) {
@@ -24,6 +26,11 @@ public class LightSword extends SwordItem {
         attacker.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION,400,1));
 
         super.postDamageEntity(stack, target, attacker);
+    }
+    @Override
+    public Text getName(ItemStack stack) {
+        return Text.literal("Sword of Light")
+                .formatted(Formatting.RED);
     }
 
 
