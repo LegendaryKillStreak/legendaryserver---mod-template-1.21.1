@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "net.lks.legendaryserver.mixin",
+	"package": "net.lksls.legendaryserver.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ExampleMixin"

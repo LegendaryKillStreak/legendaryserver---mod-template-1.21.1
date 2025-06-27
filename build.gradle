@@ -30,20 +30,27 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	
 }
+	
 
-processResources {
+java {
+	withSourcesJar()
+}
+tasks.named("sourcesJar", Jar).configure {
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+tasks.processResources {
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
 	inputs.property "version", project.version
-
 	filesMatching("fabric.mod.json") {
 		expand "version": project.version
 	}
 }
 
-tasks.withType(JavaCompile).configureEach {
-	it.options.release = 21
-}
+
+
+
 
 java {
 	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task

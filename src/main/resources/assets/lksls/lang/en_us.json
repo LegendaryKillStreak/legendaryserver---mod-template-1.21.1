@@ -41,6 +41,12 @@
   "item.lksls.coin_200": "Coin 200",
   "item.lksls.coin_500": "Coin 500",
   "item.lksls.coin_750": "Coin 750",
+  "item.lksls.coin_25000": "Coin 750",
+  "item.lksls.coin_150000": "Coin 750",
+  "item.lksls.coin_200000": "Coin 750",
+  "item.lksls.coin_250000": "Coin 750",
+  "item.lksls.coin_500000": "Coin 750",
+  "item.lksls.drill_engine": "Drill Engine",
   "item.lksls.raw_nickel": "Raw Nickel",
   "item.lksls.nickel_ingot": "Nickel Ingot",
   "item.lksls.dungeon_key_shadowy_creatures": "Dungeon Key: Shadowy Creatures",
@@ -59,8 +65,12 @@
   "item.lksls.horizon_zero_dawn_music_disc":  "Horizon Zero Dawn Music Disc",
   "item.lksls.echo_dust":  "Echo Dust",
   "item.lksls.soul_core_armor_smithing_template":  "Soul Core Trim Smithing Template",
-  "trim_material.lksls.echo_dust":  "§3Echo Dust Material",
+  "trim_material.lksls.echo_dust":  "Echo Dust Material",
+  "trim_material.lksls.nickel_ingot":  "Nickel Material",
   "trim_pattern.lksls.soul_core":  "Soul Core Armor Pattern",
+
+
+  "enchantment.lksls.charged": "Charged",
 
 
 

@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.lks.legendaryserver.LegendaryServerMod"
+			"net.lksls.legendaryserver.LegendaryServerMod"
 		],
 		"fabric-datagen": [
-			"net.lks.legendaryserver.LegendaryServerModDataGenerator"
+			"net.lksls.legendaryserver.LegendaryServerModDataGenerator"
 		],
 		"client": [
-			"net.lks.legendaryserver.LkslsModClient"
+			"net.lksls.legendaryserver.LkslsModClient"
 		]
 	},
 	"mixins": [
