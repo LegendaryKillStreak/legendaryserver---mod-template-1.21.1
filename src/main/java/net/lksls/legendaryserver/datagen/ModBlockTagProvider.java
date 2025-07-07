@@ -24,7 +24,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RAW_NICKEL_BLOCK)
                 .add(ModBlocks.NICKEL_BLOCK)
                 .add(ModBlocks.NICKEL_ORE)
-                .add(ModBlocks.NICKEL_DEEPSLATE_ORE);
+                .add(ModBlocks.NICKEL_DEEPSLATE_ORE)
+                .add(ModBlocks.RAW_TITANIUM_BLOCK)
+                .add(ModBlocks.TITANIUM_ORE)
+                .add(ModBlocks.TITANIUM_BLOCK)
+                .add(ModBlocks.TITANIUM_DEEPSLATE_ORE);
 
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
@@ -33,7 +37,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.NICKEL_BLOCK)
                 .add(ModBlocks.NICKEL_ORE)
                 .add(ModBlocks.NICKEL_DEEPSLATE_ORE)
-                .add(ModBlocks.RAW_NICKEL_BLOCK);
+                .add(ModBlocks.RAW_NICKEL_BLOCK)
+                .add(ModBlocks.TITANIUM_ORE)
+                .add(ModBlocks.TITANIUM_BLOCK)
+                .add(ModBlocks.TITANIUM_DEEPSLATE_ORE)
+                .add(ModBlocks.RAW_TITANIUM_BLOCK);
 
 
 

@@ -103,6 +103,8 @@ public class ModItems {
 
 
 
+
+
     public static final Item COIN = registerItem("coin", new Item(new Item.Settings()));
     public static final Item COIN_FIVE = registerItem("coin_five", new Item(new Item.Settings()));
     public static final Item COIN_TEN = registerItem("coin_ten", new Item(new Item.Settings()));
@@ -154,6 +156,12 @@ public class ModItems {
             new Item(new Item.Settings()));
 
     public static final Item NICKEL_INGOT = registerItem("nickel_ingot",
+            new Item(new Item.Settings()));
+
+    public static final Item RAW_TITANIUM = registerItem("raw_titanium",
+            new Item(new Item.Settings()));
+
+    public static final Item TITANIUM_INGOT = registerItem("titanium_ingot",
             new Item(new Item.Settings()));
 
 

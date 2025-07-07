@@ -1,7 +1,10 @@
-// 1.21.1	2025-06-27T18:15:41.9564223	LegendaryServer - Mod/
+// 1.21.1	2025-07-07T20:53:37.3051709	LegendaryServer - Mod/
 54be1b5c74f02b534fd67c0a6def51b97bd854f9 data\lksls\enchantment\charged.json
 39bf793a02ec581889f499d5d58beeae86436aa8 data\lksls\trim_material\echo_dust.json
 1f2e67a36ce94f47cac7b9d44485da90a4c6fcbe data\lksls\trim_pattern\soul_core.json
 f8b54506d2b0d3a527eaf5dfac47bd07e061d911 data\lksls\worldgen\configured_feature\nickel_ore.json
 2449db75793816f6cb3cb86664fd88b9c08279e4 data\lksls\worldgen\placed_feature\nickel_ore_placed.json
+b89f775cd599b1712fbe289ee92fd25ce9afb574 data\lksls\trim_material\titanium_ingot.json
 41ee6a97e933595ee5535b642313fb013b8b03ae data\lksls\trim_material\nickel_ingot.json
+09500a5f6247586b1654428d00620a83e24512c5 data\lksls\worldgen\placed_feature\titanium_ore_placed.json
+38722e7a07bee68992d05892138f6e3cb4687e34 data\lksls\worldgen\configured_feature\titanium_ore.json

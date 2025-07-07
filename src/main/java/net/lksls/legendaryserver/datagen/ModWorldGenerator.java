@@ -7,26 +7,21 @@ import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
 
-public class ModRegistryDataGenerator extends FabricDynamicRegistryProvider {
-
-    public ModRegistryDataGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+public class ModWorldGenerator extends FabricDynamicRegistryProvider {
+    public ModWorldGenerator(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
     }
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup registries, Entries entries) {
-        entries.addAll(registries.getWrapperOrThrow(RegistryKeys.TRIM_MATERIAL));
-        entries.addAll(registries.getWrapperOrThrow(RegistryKeys.TRIM_PATTERN));
         entries.addAll(registries.getWrapperOrThrow(RegistryKeys.CONFIGURED_FEATURE));
         entries.addAll(registries.getWrapperOrThrow(RegistryKeys.PLACED_FEATURE));
-        entries.addAll(registries.getWrapperOrThrow(RegistryKeys.ENCHANTMENT));
-
-
+        entries.addAll(registries.getWrapperOrThrow(RegistryKeys.BIOME));
 
     }
 
     @Override
     public String getName() {
-        return "";
+        return "World Gen";
     }
 }

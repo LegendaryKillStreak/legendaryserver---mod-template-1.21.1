@@ -20,6 +20,7 @@ import java.util.List;
 
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<? , ?>> NICKEL_ORE_KEY = registryKey("nickel_ore");
+    public static final RegistryKey<ConfiguredFeature<? , ?>> TITANIUM_ORE_KEY = registryKey("titanium_ore");
 
     public static void bootstrap(Registerable<ConfiguredFeature<? , ?>> context) {
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -30,9 +31,13 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> overworldNickelOres =
                 List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.NICKEL_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.NICKEL_DEEPSLATE_ORE.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldTitaniumOres =
+                List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.TITANIUM_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.TITANIUM_DEEPSLATE_ORE.getDefaultState()));
 
 
         register(context, NICKEL_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldNickelOres, 4));
+        register(context, TITANIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTitaniumOres, 7));
 
 
     }

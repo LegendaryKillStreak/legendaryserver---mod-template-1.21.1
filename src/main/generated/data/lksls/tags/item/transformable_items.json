@@ -32,6 +32,8 @@
     "lksls:echo_dust",
     "lksls:raw_nickel",
     "lksls:nickel_ingot",
+    "lksls:raw_titanium",
+    "lksls:titanium_ingot",
     "lksls:tears_music_disc",
     "lksls:drill_engine"
   ]

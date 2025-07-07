@@ -52,6 +52,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.ECHO_DUST)
                 .add(ModItems.RAW_NICKEL)
                 .add(ModItems.NICKEL_INGOT)
+                .add(ModItems.RAW_TITANIUM)
+                .add(ModItems.TITANIUM_INGOT)
                 .add(ModItems.TEARS_MUSIC_DISC)
                 .add(ModItems.DRILL_ENGINE);
 
@@ -59,7 +61,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
                 .add(ModItems.ECHO_DUST)
-                .add(ModItems.NICKEL_INGOT);
+                .add(ModItems.NICKEL_INGOT)
+                .add(ModItems.TITANIUM_INGOT);
 
         getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
                 .add(ModItems.SOUL_CORE_ARMOR_SMITHING_TEMPLATE);

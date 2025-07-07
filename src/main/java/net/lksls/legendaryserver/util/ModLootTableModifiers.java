@@ -154,6 +154,24 @@ public class  ModLootTableModifiers {
 
             }
 
+            if (LootTables.DESERT_PYRAMID_CHEST.equals(key))
+            {
+
+
+
+
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.33f))
+                        .with(ItemEntry.builder(ModItems.DUNGEON_KEY_DEADLY_HEAT))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+
+
+                tableBuilder.pool(poolBuilder.build());
+
+            }
+
 
 
 

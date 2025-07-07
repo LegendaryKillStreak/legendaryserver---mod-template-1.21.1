@@ -19,7 +19,8 @@ import java.util.List;
 public class ModPlacedFeatures {
 
     public static final RegistryKey<PlacedFeature> NICKEL_ORE_PLACED_KEY = registerKey("nickel_ore_placed");
-
+    public static final RegistryKey<PlacedFeature> TITANIUM_ORE_PLACED_KEY = registerKey("titanium_ore_placed");
+//why are you in my code!!! also you do NOT wanna know the number of errors i fixxed with this mod
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
@@ -27,6 +28,11 @@ public class ModPlacedFeatures {
                 ModOrePlacement.modifiersWithCount(7,
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(-60), YOffset.fixed(20)))
                 );
+        register(context, TITANIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.TITANIUM_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(9,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(-60), YOffset.fixed(64)))
+        );
+
 
     }
 

@@ -41,14 +41,16 @@
   "item.lksls.coin_200": "Coin 200",
   "item.lksls.coin_500": "Coin 500",
   "item.lksls.coin_750": "Coin 750",
-  "item.lksls.coin_25000": "Coin 750",
-  "item.lksls.coin_150000": "Coin 750",
-  "item.lksls.coin_200000": "Coin 750",
-  "item.lksls.coin_250000": "Coin 750",
-  "item.lksls.coin_500000": "Coin 750",
+  "item.lksls.coin_25000": "Coin 25k",
+  "item.lksls.coin_150000": "Coin 150k",
+  "item.lksls.coin_200000": "Coin 200k",
+  "item.lksls.coin_250000": "Coin 250k",
+  "item.lksls.coin_500000": "Coin 500k",
   "item.lksls.drill_engine": "Drill Engine",
   "item.lksls.raw_nickel": "Raw Nickel",
   "item.lksls.nickel_ingot": "Nickel Ingot",
+  "item.lksls.raw_titanium": "Raw Titanium",
+  "item.lksls.titanium_ingot": "Titanium Ingot",
   "item.lksls.dungeon_key_shadowy_creatures": "Dungeon Key: Shadowy Creatures",
   "item.lksls.dungeon_key_deadly_heat": "Dungeon Key: Deadly Heat",
   "item.lksls.dungeon_key_icy_caves": "Dungeon Key: Icy Caves",
@@ -67,6 +69,7 @@
   "item.lksls.soul_core_armor_smithing_template":  "Soul Core Trim Smithing Template",
   "trim_material.lksls.echo_dust":  "Echo Dust Material",
   "trim_material.lksls.nickel_ingot":  "Nickel Material",
+  "trim_material.lksls.titanium_ingot":  "Titanium Material",
   "trim_pattern.lksls.soul_core":  "Soul Core Armor Pattern",
 
 
@@ -81,5 +84,9 @@
   "block.lksls.nickel_block": "Nickel Block",
   "block.lksls.nickel_ore": "Nickel Ore",
   "block.lksls.nickel_deepslate_ore": "Nickel Deepslate Ore",
-  "block.lksls.raw_nickel_block": "Raw Nickel Block"
+  "block.lksls.raw_nickel_block": "Raw Nickel Block",
+  "block.lksls.titanium_block": "Titanium Block",
+  "block.lksls.titanium_ore": "Titanium Ore",
+  "block.lksls.titanium_deepslate_ore": "Titanium Deepslate Ore",
+  "block.lksls.raw_titanium_block": "Raw Titanium Block"
 }

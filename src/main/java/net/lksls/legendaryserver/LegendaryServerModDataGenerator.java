@@ -8,6 +8,7 @@ import net.lksls.legendaryserver.trim.ModTrimMaterials;
 import net.lksls.legendaryserver.trim.ModTrimPatterns;
 import net.lksls.legendaryserver.world.ModConfiguredFeatures;
 import net.lksls.legendaryserver.world.ModPlacedFeatures;
+import net.lksls.legendaryserver.world.biome.ModBiomes;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 
@@ -25,6 +26,7 @@ public class LegendaryServerModDataGenerator implements DataGeneratorEntrypoint 
 		pack.addProvider(ModItemTagProvider::new);;
 		pack.addProvider(ModBlockLootTableProvider::new);
 		pack.addProvider(ModRegistryDataGenerator::new);
+		pack.addProvider(ModWorldGenerator::new);
 
 	}
 
@@ -35,5 +37,6 @@ public class LegendaryServerModDataGenerator implements DataGeneratorEntrypoint 
 		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantments::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, ModBiomes::bootstrap);
 	}
 }

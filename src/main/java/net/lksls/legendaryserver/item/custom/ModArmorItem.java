@@ -19,16 +19,14 @@ public class ModArmorItem extends ArmorItem {
     private static final Map<RegistryEntry<ArmorMaterial>, List<StatusEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<RegistryEntry<ArmorMaterial>, List<StatusEffectInstance>>())
                     .put(ModArmorMaterials.DARK_CORE_ARMOR_MATERIAL,
-                            List.of(new StatusEffectInstance(StatusEffects.RESISTANCE,30,1,false,false),
-                                    new StatusEffectInstance(StatusEffects.STRENGTH,30,0,false,false),
-                                    new StatusEffectInstance(StatusEffects.DARKNESS,30,0,false,false)))
+                            List.of(new StatusEffectInstance(StatusEffects.RESISTANCE,30,0,false,false),
+                                    new StatusEffectInstance(StatusEffects.DARKNESS,45,0,false,false)))
 
                     .put(ModArmorMaterials.LIGHT_CORE_ARMOR_MATERIAL,
-                            List.of(new StatusEffectInstance(StatusEffects.DARKNESS, 0, 1, false, false),
-                                    new StatusEffectInstance(StatusEffects.NIGHT_VISION,400,1,false,false),
-                                    new StatusEffectInstance(StatusEffects.HASTE,20,0,false,false),
+                            List.of(new StatusEffectInstance(StatusEffects.DARKNESS, 0, 0, false, false),
+                                    new StatusEffectInstance(StatusEffects.NIGHT_VISION,400,0,false,false),
                                     new StatusEffectInstance(StatusEffects.GLOWING,20,0,false,false),
-                                    new StatusEffectInstance(StatusEffects.HEALTH_BOOST,200,1,false,false))).build();
+                                    new StatusEffectInstance(StatusEffects.HEALTH_BOOST,200,0,false,false))).build();
 
 
 

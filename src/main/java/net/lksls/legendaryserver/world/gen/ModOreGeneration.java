@@ -10,5 +10,9 @@ public class ModOreGeneration {
     public static void generateOres() {
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.DEEP_DARK, BiomeKeys.DARK_FOREST, BiomeKeys.LUSH_CAVES), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.NICKEL_ORE_PLACED_KEY);
+    BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PLAINS, BiomeKeys.JUNGLE, BiomeKeys.TAIGA, BiomeKeys.SNOWY_TAIGA, BiomeKeys.SAVANNA_PLATEAU, BiomeKeys.SAVANNA, BiomeKeys.SNOWY_PLAINS, BiomeKeys.DARK_FOREST, BiomeKeys.LUSH_CAVES), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.TITANIUM_ORE_PLACED_KEY);
+
     }
+
 }

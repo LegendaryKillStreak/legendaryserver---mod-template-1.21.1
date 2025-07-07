@@ -31,12 +31,26 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create()
                     .requiresTool().sounds(BlockSoundGroup.METAL).strength(4f,5f).luminance(value -> 0)));
 
+    public static final Block RAW_TITANIUM_BLOCK = registerBlock("raw_titanium_block",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool().sounds(BlockSoundGroup.METAL).strength(7f,6f).luminance(value -> 0)));
+    public static final Block TITANIUM_BLOCK = registerBlock("titanium_block",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool().sounds(BlockSoundGroup.METAL).strength(5f,5f).luminance(value -> 0)));
+
     public static final Block NICKEL_ORE = registerBlock("nickel_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
                     AbstractBlock.Settings.create().strength(4f).requiresTool()));
     public static final Block NICKEL_DEEPSLATE_ORE = registerBlock("nickel_deepslate_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
                     AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+
+    public static final Block TITANIUM_ORE = registerBlock("titanium_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+                    AbstractBlock.Settings.create().strength(5f).requiresTool()));
+    public static final Block TITANIUM_DEEPSLATE_ORE = registerBlock("titanium_deepslate_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
+                    AbstractBlock.Settings.create().strength(6f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

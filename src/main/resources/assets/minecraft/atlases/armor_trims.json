@@ -61,7 +61,8 @@
         "diamond_darker": "trims/color_palettes/diamond_darker",
         "netherite_darker": "trims/color_palettes/netherite_darker",
         "echo_dust": "lksls:trims/color_palettes/echo_dust",
-        "nickel_ingot": "lksls:trims/color_palettes/nickel_ingot"
+        "nickel_ingot": "lksls:trims/color_palettes/nickel_ingot",
+        "titanium_ingot": "lksls:trims/color_palettes/titanium_ingot"
 
       }
     }
