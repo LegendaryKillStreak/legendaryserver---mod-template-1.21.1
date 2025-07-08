@@ -2,6 +2,9 @@ package net.lksls.legendaryserver.sound;
 
 import net.lksls.legendaryserver.LegendaryServerMod;
 import net.minecraft.block.jukebox.JukeboxSong;
+import net.minecraft.client.sound.AmbientSoundLoops;
+import net.minecraft.client.sound.AmbientSoundPlayer;
+import net.minecraft.network.packet.CustomPayload;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -16,9 +19,13 @@ public class ModSounds {
         Identifier id = Identifier.of(LegendaryServerMod.MOD_ID, name);
         return Registry.register(Registries.SOUND_EVENT, id, SoundEvent.of(id));
     }
+
     public static void registerSounds() {
         LegendaryServerMod.LOGGER.info("Registering Mod Sounds for "+ LegendaryServerMod.MOD_ID);
     }
+    public static final SoundEvent DARK_AMBIENCE_ONE = registerSoundEvent("dark_ambience_one");
+    public static final RegistryKey<SoundEvent> AMBIENT_SOUND_LOOPS_REGISTRY_KEY =
+            RegistryKey.of(RegistryKeys.SOUND_EVENT, Identifier.of(LegendaryServerMod.MOD_ID,"dark_ambience_one"));
 
 
 
@@ -37,4 +44,8 @@ public class ModSounds {
     public static final SoundEvent HORIZON_ZERO_DAWN = registerSoundEvent("horizon_zero_dawn");
     public static final RegistryKey<JukeboxSong> HORIZON_ZERO_DAWN_KEY =
             RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(LegendaryServerMod.MOD_ID, "horizon_zero_dawn"));
+
+
 }
+
+

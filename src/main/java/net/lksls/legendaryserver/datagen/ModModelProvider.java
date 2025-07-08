@@ -7,6 +7,7 @@ import net.lksls.legendaryserver.item.ModItems;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.data.client.TexturedModel;
 import net.minecraft.item.ArmorItem;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -26,6 +27,15 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TITANIUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TITANIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_TITANIUM_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DARKROOT_SOIL);
+        blockStateModelGenerator.registerLog(ModBlocks.MIDNIGHTWOOD_LOG).log(ModBlocks.MIDNIGHTWOOD_LOG).wood(ModBlocks.MIDNIGHTWOOD_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_MIDNIGHTWOOD_LOG).log(ModBlocks.STRIPPED_MIDNIGHTWOOD_LOG).wood(ModBlocks.STRIPPED_MIDNIGHTWOOD_WOOD);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MIDNIGHTWOOD_PLANKS);
+        blockStateModelGenerator.registerSingleton(ModBlocks.MIDNIGHTWOOD_LEAVES, TexturedModel.LEAVES);
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.MIDNIGHTWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.LOST_GRASS, ModBlocks.POTTED_LOST_GRASS, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.ENDLESS_VIOLET, ModBlocks.POTTED_ENDLESS_VIOLET, BlockStateModelGenerator.TintType.NOT_TINTED);
 
     }
 
@@ -90,6 +100,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PAIN_RESONANCE_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.TEARS_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.HORIZON_ZERO_DAWN_MUSIC_DISC, Models.GENERATED);
+
+
 
 
 

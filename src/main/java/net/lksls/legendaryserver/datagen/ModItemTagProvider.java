@@ -2,6 +2,7 @@ package net.lksls.legendaryserver.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.lksls.legendaryserver.block.ModBlocks;
 import net.lksls.legendaryserver.item.ModItems;
 import net.lksls.legendaryserver.util.ModTags;
 import net.minecraft.registry.RegistryWrapper;
@@ -75,6 +76,13 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.PICKAXES)
                 .add(ModItems.LIGHT_PICKAXE)
                 .add(ModItems.DARKNESS_PICKAXE);
+
+        getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.MIDNIGHTWOOD_LOG.asItem(), ModBlocks.MIDNIGHTWOOD_WOOD.asItem(),
+                        ModBlocks.STRIPPED_MIDNIGHTWOOD_LOG.asItem(), ModBlocks.STRIPPED_MIDNIGHTWOOD_WOOD.asItem());
+
+        getOrCreateTagBuilder(ItemTags.PLANKS)
+                .add(ModBlocks.MIDNIGHTWOOD_PLANKS.asItem());
 
 
 

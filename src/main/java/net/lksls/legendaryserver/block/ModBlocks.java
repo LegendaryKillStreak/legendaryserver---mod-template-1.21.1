@@ -3,10 +3,12 @@ package net.lksls.legendaryserver.block;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.lksls.legendaryserver.LegendaryServerMod;
 import net.lksls.legendaryserver.block.custom.DarkCoreBlock;
+import net.lksls.legendaryserver.block.custom.DarkrootSoil;
 import net.lksls.legendaryserver.block.custom.LightCoreBlock;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.ExperienceDroppingBlock;
+import net.lksls.legendaryserver.block.custom.ModSaplingBlock;
+import net.lksls.legendaryserver.world.tree.ModSaplingGenerators;
+import net.minecraft.block.*;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -20,6 +22,8 @@ public class ModBlocks {
     public static final Block LIGHT_CORE_BLOCK = registerBlock("light_core_block",
             new LightCoreBlock(AbstractBlock.Settings.create()
                     .requiresTool().sounds(BlockSoundGroup.HEAVY_CORE).strength(20f,1200f).luminance(value -> 15)));
+
+
     public static final Block DARK_CORE_BLOCK = registerBlock("dark_core_block",
             new DarkCoreBlock(AbstractBlock.Settings.create()
                     .requiresTool().sounds(BlockSoundGroup.HEAVY_CORE).strength(50f,1200f).luminance(value -> 0)));
@@ -37,6 +41,9 @@ public class ModBlocks {
     public static final Block TITANIUM_BLOCK = registerBlock("titanium_block",
             new Block(AbstractBlock.Settings.create()
                     .requiresTool().sounds(BlockSoundGroup.METAL).strength(5f,5f).luminance(value -> 0)));
+    public static final Block DARKROOT_SOIL = registerBlock("darkroot_soil",
+            new DarkrootSoil(AbstractBlock.Settings.copy(Blocks.DIRT)
+                    .requiresTool().sounds(BlockSoundGroup.ROOTED_DIRT).strength(2f,3f).luminance(value -> 0)));
 
     public static final Block NICKEL_ORE = registerBlock("nickel_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
@@ -54,6 +61,42 @@ public class ModBlocks {
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, Identifier.of(LegendaryServerMod.MOD_ID, name), block);
+
+
+
+    }
+
+    public static final Block MIDNIGHTWOOD_LOG = registerBlock("midnightwood_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG).strength(3f).luminance(value -> 3)));
+    public static final Block MIDNIGHTWOOD_WOOD = registerBlock("midnightwood_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD).strength(3f).luminance(value -> 3)));
+    public static final Block STRIPPED_MIDNIGHTWOOD_LOG = registerBlock("stripped_midnightwood_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG).strength(3f).luminance(value -> 3)));
+    public static final Block STRIPPED_MIDNIGHTWOOD_WOOD = registerBlock("stripped_midnightwood_wood",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD).strength(3f).luminance(value -> 3)));
+
+    public static final Block MIDNIGHTWOOD_PLANKS = registerBlock("midnightwood_planks",
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS).strength(3f).luminance(value -> 3)));
+    public static final Block MIDNIGHTWOOD_LEAVES = registerBlock("midnightwood_leaves",
+            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES).luminance(value -> 3)));
+
+    public static final Block MIDNIGHTWOOD_SAPLING = registerBlock("midnightwood_sapling",
+            new ModSaplingBlock(ModSaplingGenerators.MIDNIGHTWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING).luminance(value -> 3), ModBlocks.DARKROOT_SOIL));
+
+    public static final Block LOST_GRASS = registerBlock("lost_grass",
+            new FlowerBlock(StatusEffects.DARKNESS, 4, AbstractBlock.Settings.copy(Blocks.ALLIUM).luminance(value -> 3)));
+
+    public static final Block POTTED_LOST_GRASS = registerBlockWithoutBlockItem("potted_lost_grass",
+            new FlowerPotBlock(LOST_GRASS, AbstractBlock.Settings.copy(Blocks.POTTED_ALLIUM)));
+
+    public static final Block ENDLESS_VIOLET = registerBlock("endless_violet",
+            new FlowerBlock(StatusEffects.DARKNESS, 4, AbstractBlock.Settings.copy(Blocks.ALLIUM).luminance(value -> 2)));
+
+    public static final Block POTTED_ENDLESS_VIOLET = registerBlockWithoutBlockItem("potted_endless_violet",
+            new FlowerPotBlock(ENDLESS_VIOLET, AbstractBlock.Settings.copy(Blocks.POTTED_ALLIUM)));
+
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
         return Registry.register(Registries.BLOCK, Identifier.of(LegendaryServerMod.MOD_ID, name), block);
     }
 

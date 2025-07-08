@@ -1,5 +1,6 @@
 package net.lksls.legendaryserver.world.biome;
 
+import net.lksls.legendaryserver.block.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.world.gen.YOffset;
@@ -10,6 +11,7 @@ public class ModMaterialRules {
     private static final MaterialRules.MaterialRule GRASS_BLOCK = makeStateRule(Blocks.GRASS_BLOCK);
     private static final MaterialRules.MaterialRule GREEN_TERRACOTTA = makeStateRule(Blocks.GREEN_TERRACOTTA);
     private static final MaterialRules.MaterialRule RED_TERRACOTTA = makeStateRule(Blocks.RED_TERRACOTTA);
+    private static final MaterialRules.MaterialRule DARKROOT_SOIL = makeStateRule(ModBlocks.DARKROOT_SOIL);
     private static final MaterialRules.MaterialRule BLUE_TERRACOTTA = makeStateRule(Blocks.BLUE_TERRACOTTA);
 
     private static final MaterialRules.MaterialRule OBSIDIAN = makeStateRule(Blocks.OBSIDIAN);
@@ -20,10 +22,10 @@ public class ModMaterialRules {
     private static final MaterialRules.MaterialRule BEDROCK = makeStateRule(Blocks.BEDROCK);
 
 
-    public static MaterialRules.MaterialRule makeEnlightenedPlainsRules() {
+    public static MaterialRules.MaterialRule makeNocturneValeRules() {
         return MaterialRules.sequence(
-                MaterialRules.condition(MaterialRules.biome(ModBiomes.ENLIGHTENED_PLAINS),
-                        MaterialRules.sequence(MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH, RED_TERRACOTTA), BLUE_TERRACOTTA)),
+                MaterialRules.condition(MaterialRules.biome(ModBiomes.NOCTURNE_VALE),
+                        MaterialRules.sequence(MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH, DARKROOT_SOIL), BLUE_TERRACOTTA)),
                 // Default to green terracotta
                 MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, GREEN_TERRACOTTA)
         );

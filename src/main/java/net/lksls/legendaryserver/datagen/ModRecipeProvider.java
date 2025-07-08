@@ -2,12 +2,14 @@ package net.lksls.legendaryserver.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.lksls.legendaryserver.LegendaryServerMod;
 import net.lksls.legendaryserver.block.ModBlocks;
 import net.lksls.legendaryserver.item.ModItems;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.datafixer.mapping.WoodRecipeMapping;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
@@ -276,6 +278,26 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('X', ModItems.LIGHT_CORE)
                 .criterion(hasItem(ModItems.LIGHT_CORE), conditionsFromItem(ModItems.LIGHT_CORE))
                 .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.MIDNIGHTWOOD_PLANKS,4)
+                .input(ModBlocks.MIDNIGHTWOOD_LOG)
+                .criterion(hasItem(ModBlocks.MIDNIGHTWOOD_LOG), conditionsFromItem(ModBlocks.MIDNIGHTWOOD_LOG))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.MIDNIGHTWOOD_WOOD, 3)
+                .pattern("AA")
+                .pattern("AA")
+                .input('A', ModBlocks.MIDNIGHTWOOD_LOG)
+                .criterion(hasItem(ModBlocks.MIDNIGHTWOOD_LOG), conditionsFromItem(ModBlocks.MIDNIGHTWOOD_LOG))
+                .offerTo(exporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.DECORATIONS, ModBlocks.MIDNIGHTWOOD_PLANKS,4)
+                .input(ModBlocks.MIDNIGHTWOOD_WOOD  )
+                .criterion(hasItem(ModBlocks.MIDNIGHTWOOD_WOOD), conditionsFromItem(ModBlocks.MIDNIGHTWOOD_WOOD))
+                .offerTo(exporter, "wood_to_planks_midnight");
+
+
+
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModItems.LIGHT_CORE_BOOTS)
                 .pattern("X X")

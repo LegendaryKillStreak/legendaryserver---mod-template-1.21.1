@@ -14,12 +14,12 @@ import terrablender.api.EndBiomeRegistry;
 import terrablender.api.Regions;
 
 public class ModBiomes {
-    public static final RegistryKey<Biome> ENLIGHTENED_PLAINS = registerBiomeKey("enlightened_plains");
+    public static final RegistryKey<Biome> NOCTURNE_VALE = registerBiomeKey("nocturne_vale");
     public static final RegistryKey<Biome> LUMINARA_DEPTHS = registerBiomeKey("luminara_depths");
     public static final RegistryKey<Biome> ABYSS_OF_LAMENT = registerBiomeKey("abyss_of_lament");
 
     public static void registerBiomes() {
-        Regions.register(new OverworldRegion(Identifier.of(LegendaryServerMod.MOD_ID, "lksls_overworld"), 20));
+        Regions.register(new OverworldRegion(Identifier.of(LegendaryServerMod.MOD_ID, "lksls_overworld"), 1));
         Regions.register(new NetherRegion(Identifier.of(LegendaryServerMod.MOD_ID, "lksls_nether"), 3));
 
         EndBiomeRegistry.registerHighlandsBiome(ABYSS_OF_LAMENT, 20);
@@ -34,7 +34,7 @@ public class ModBiomes {
         var carver = context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER);
         var placedFeatures = context.getRegistryLookup(RegistryKeys.PLACED_FEATURE);
 
-        register(context, ENLIGHTENED_PLAINS, ModOverworldBiomes.enlightedPlains(placedFeatures, carver));
+        register(context, NOCTURNE_VALE, ModOverworldBiomes.nocturneVale(placedFeatures, carver));
         register(context, LUMINARA_DEPTHS, ModNetherBiomes.luminaraDepths(placedFeatures, carver));
         register(context, ABYSS_OF_LAMENT, ModEndBiomes.abyssOfLament(placedFeatures, carver));
     }

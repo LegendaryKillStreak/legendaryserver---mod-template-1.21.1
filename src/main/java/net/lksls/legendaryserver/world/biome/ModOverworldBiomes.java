@@ -1,7 +1,11 @@
 package net.lksls.legendaryserver.world.biome;
 
 
+import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
+import net.lksls.legendaryserver.sound.ModSounds;
 import net.lksls.legendaryserver.world.ModPlacedFeatures;
+import net.lksls.legendaryserver.world.gen.ModTreeGeneration;
+import net.minecraft.client.sound.AmbientSoundLoops;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.particle.ParticleTypes;
@@ -14,17 +18,16 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.biome.*;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.carver.ConfiguredCarver;
-import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
-import net.minecraft.world.gen.feature.OceanPlacedFeatures;
-import net.minecraft.world.gen.feature.PlacedFeature;
-import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
+import net.minecraft.world.gen.chunk.NoiseChunkGenerator;
+import net.minecraft.world.gen.feature.*;
 
 public class ModOverworldBiomes {
     private static void addFeature(GenerationSettings.LookupBackedBuilder builder, GenerationStep.Feature step, RegistryKey<PlacedFeature> feature) {
         builder.feature(step, feature);
+        ModTreeGeneration.generateTrees();
     }
 
-    public static Biome enlightedPlains(RegistryEntryLookup<PlacedFeature> placedFeatureGetter, RegistryEntryLookup<ConfiguredCarver<?>> carverGetter) {
+    public static Biome nocturneVale(RegistryEntryLookup<PlacedFeature> placedFeatureGetter, RegistryEntryLookup<ConfiguredCarver<?>> carverGetter) {
         // Mob spawns
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
         DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder, 30);
@@ -40,6 +43,12 @@ public class ModOverworldBiomes {
         DefaultBiomeFeatures.addDefaultMushrooms(biomeBuilder);
         addFeature(biomeBuilder, GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlacedFeatures.PATCH_SUGAR_CANE);
         addFeature(biomeBuilder, GenerationStep.Feature.VEGETAL_DECORATION, OceanPlacedFeatures.SEAGRASS_SWAMP);
+        addFeature(biomeBuilder, GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.MIDNIGHTWOOD_PLACED_KEY);
+        addFeature(biomeBuilder, GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.LOST_GRASS_PLACED_KEY);
+        addFeature(biomeBuilder, GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.ENDLESS_VIOLET_PLACED_KEY);
+
+
+
 
 
         // Custom Placed Feature
@@ -47,10 +56,11 @@ public class ModOverworldBiomes {
 
         return new Biome.Builder()
                 .precipitation(false).temperature(4.0F).downfall(0.0F)
-                .effects((new BiomeEffects.Builder()).waterColor(0x38eadc).waterFogColor(0x38eadc).fogColor(0x38eadc)
+                .effects((new BiomeEffects.Builder()).waterColor(0x280041).waterFogColor(0x280041).fogColor(0x280041)
                         .skyColor(getSkyColor(2.0F)).particleConfig(new BiomeParticleConfig(ParticleTypes.GLOW, 0.00725f))
-                        .loopSound(SoundEvents.AMBIENT_SOUL_SAND_VALLEY_LOOP
-                        ).moodSound(new BiomeMoodSound(SoundEvents.AMBIENT_BASALT_DELTAS_MOOD, 90000, 8, 2.0D))
+                        .loopSound(SoundEvents.AMBIENT_SOUL_SAND_VALLEY_LOOP)
+                        .fogColor(0x280041).grassColor(0x004e4a)
+                        .moodSound(new BiomeMoodSound(SoundEvents.AMBIENT_BASALT_DELTAS_MOOD, 90000, 8, 2.0D))
                         .music(MusicType.createIngameMusic(SoundEvents.AMBIENT_SOUL_SAND_VALLEY_LOOP)).build())
                 .spawnSettings(spawnBuilder.build()).generationSettings(biomeBuilder.build()).build();
     }

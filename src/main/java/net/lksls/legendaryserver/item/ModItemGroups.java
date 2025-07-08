@@ -3,7 +3,6 @@ package net.lksls.legendaryserver.item;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.lksls.legendaryserver.LegendaryServerMod;
 import net.lksls.legendaryserver.block.ModBlocks;
-import net.lksls.legendaryserver.enchantment.ModEnchantments;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -91,7 +90,19 @@ public class ModItemGroups {
                         entries.add(ModBlocks.TITANIUM_ORE);
                         entries.add(ModBlocks.RAW_TITANIUM_BLOCK);
                         entries.add(ModBlocks.TITANIUM_BLOCK);
+                        entries.add(ModBlocks.DARKROOT_SOIL);
                         entries.add(ModItems.DRILL_ENGINE);
+                        entries.add(ModBlocks.MIDNIGHTWOOD_LOG);
+                        entries.add(ModBlocks.MIDNIGHTWOOD_WOOD);
+                        entries.add(ModBlocks.STRIPPED_MIDNIGHTWOOD_LOG);
+                        entries.add(ModBlocks.STRIPPED_MIDNIGHTWOOD_WOOD);
+
+                        entries.add(ModBlocks.MIDNIGHTWOOD_PLANKS);
+                        entries.add(ModBlocks.MIDNIGHTWOOD_LEAVES);
+
+                        entries.add(ModBlocks.MIDNIGHTWOOD_SAPLING);
+
+                        entries.add(ModBlocks.LOST_GRASS);
 
 
 

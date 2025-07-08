@@ -39,6 +39,21 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.TITANIUM_ORE, oreDrops(ModBlocks.TITANIUM_ORE, ModItems.RAW_TITANIUM));
         addDrop(ModBlocks.TITANIUM_DEEPSLATE_ORE, multipleOreDrops(ModBlocks.TITANIUM_DEEPSLATE_ORE, ModItems.RAW_TITANIUM, 1, 1));
 
+        addDrop(ModBlocks.MIDNIGHTWOOD_LOG);
+        addDrop(ModBlocks.MIDNIGHTWOOD_WOOD);
+        addDrop(ModBlocks.STRIPPED_MIDNIGHTWOOD_LOG);
+        addDrop(ModBlocks.STRIPPED_MIDNIGHTWOOD_WOOD);
+        addDrop(ModBlocks.MIDNIGHTWOOD_PLANKS);
+        addDrop(ModBlocks.MIDNIGHTWOOD_SAPLING);
+        addDrop(ModBlocks.DARKROOT_SOIL);
+        addDrop(ModBlocks.LOST_GRASS);
+        addDrop(ModBlocks.POTTED_LOST_GRASS, pottedPlantDrops(ModBlocks.LOST_GRASS));
+        addDrop(ModBlocks.ENDLESS_VIOLET);
+        addDrop(ModBlocks.POTTED_ENDLESS_VIOLET, pottedPlantDrops(ModBlocks.ENDLESS_VIOLET));
+
+        addDrop(ModBlocks.MIDNIGHTWOOD_LEAVES, leavesDrops(ModBlocks.MIDNIGHTWOOD_LEAVES, ModBlocks.MIDNIGHTWOOD_SAPLING, 0.0625f));
+
+
 
 
 

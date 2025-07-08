@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.lksls.legendaryserver.datagen.ModItemTagProvider;
 import net.lksls.legendaryserver.enchantment.ModEnchantments;
 import net.lksls.legendaryserver.item.ModItems;
+import net.minecraft.block.LeavesBlock;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
@@ -171,6 +172,7 @@ public class  ModLootTableModifiers {
                 tableBuilder.pool(poolBuilder.build());
 
             }
+
 
 
 

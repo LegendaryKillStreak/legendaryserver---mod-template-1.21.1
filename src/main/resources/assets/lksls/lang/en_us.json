@@ -88,5 +88,16 @@
   "block.lksls.titanium_block": "Titanium Block",
   "block.lksls.titanium_ore": "Titanium Ore",
   "block.lksls.titanium_deepslate_ore": "Titanium Deepslate Ore",
-  "block.lksls.raw_titanium_block": "Raw Titanium Block"
+  "block.lksls.raw_titanium_block": "Raw Titanium Block",
+  "block.lksls.lost_grass": "Lost Grass",
+  "block.lksls.potted_lost_grass": "Potted Lost Grass",
+  "block.lksls.midnightwood_planks": "Midnightwood Planks",
+  "block.lksls.midnightwood_sapling": "Midnightwood Sapling",
+  "block.lksls.stripped_midnightwood_wood": "Stipped Midnightwood Wood",
+  "block.lksls.stripped_midnightwood_log": "Stripped Midnightwood Log",
+  "block.lksls.midnightwood_leaves": "Midnightwood Leaves",
+  "block.lksls.midnightwood_wood": "Midnightwood Wood",
+  "block.lksls.darkroot_soil": "Darkroot Soil",
+  "block.lksls.endless_violet": "Violet Of Infinity",
+  "block.lksls.midnightwood_log": "Midnightwood Log"
 }

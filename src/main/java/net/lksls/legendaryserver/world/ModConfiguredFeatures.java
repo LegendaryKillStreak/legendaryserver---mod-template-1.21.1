@@ -11,16 +11,21 @@ import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
-import net.minecraft.world.gen.feature.ConfiguredFeature;
-import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.FeatureConfig;
-import net.minecraft.world.gen.feature.OreFeatureConfig;
+import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
+import net.minecraft.world.gen.foliage.CherryFoliagePlacer;
+import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 import java.util.List;
 
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<? , ?>> NICKEL_ORE_KEY = registryKey("nickel_ore");
     public static final RegistryKey<ConfiguredFeature<? , ?>> TITANIUM_ORE_KEY = registryKey("titanium_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> MIDNIGHTWOOD_KEY = registryKey("midnightwood");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> LOST_GRASS_KEY = registryKey("lost_grass");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ENDLESS_VIOLET_KEY = registryKey("endless_violet");
 
     public static void bootstrap(Registerable<ConfiguredFeature<? , ?>> context) {
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -38,6 +43,20 @@ public class ModConfiguredFeatures {
 
         register(context, NICKEL_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldNickelOres, 4));
         register(context, TITANIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTitaniumOres, 7));
+
+        register(context, MIDNIGHTWOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.MIDNIGHTWOOD_LOG),
+                new StraightTrunkPlacer(5, 6, 3),
+                BlockStateProvider.of(ModBlocks.MIDNIGHTWOOD_LEAVES),
+                new CherryFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(1), ConstantIntProvider.create(5),
+                        0.25f, 0.5f, 0.15f, 0.05f),
+                new TwoLayersFeatureSize(1, 0, 2)).dirtProvider(BlockStateProvider.of(ModBlocks.DARKROOT_SOIL)).build());
+
+        register(context, LOST_GRASS_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(128,6,2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.LOST_GRASS)))));
+        register(context, ENDLESS_VIOLET_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(256,4,5, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.ENDLESS_VIOLET)))));
+
 
 
     }
