@@ -13,6 +13,7 @@ public class ModMaterialRules {
     private static final MaterialRules.MaterialRule RED_TERRACOTTA = makeStateRule(Blocks.RED_TERRACOTTA);
     private static final MaterialRules.MaterialRule DARKROOT_SOIL = makeStateRule(ModBlocks.DARKROOT_SOIL);
     private static final MaterialRules.MaterialRule BLUE_TERRACOTTA = makeStateRule(Blocks.BLUE_TERRACOTTA);
+    private static final MaterialRules.MaterialRule MIDNIGHT_GRASS = makeStateRule(ModBlocks.MIDNIGHT_GRASS);
 
     private static final MaterialRules.MaterialRule OBSIDIAN = makeStateRule(Blocks.OBSIDIAN);
     private static final MaterialRules.MaterialRule END_STONE = makeStateRule(Blocks.END_STONE);
@@ -25,7 +26,7 @@ public class ModMaterialRules {
     public static MaterialRules.MaterialRule makeNocturneValeRules() {
         return MaterialRules.sequence(
                 MaterialRules.condition(MaterialRules.biome(ModBiomes.NOCTURNE_VALE),
-                        MaterialRules.sequence(MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH, DARKROOT_SOIL), BLUE_TERRACOTTA)),
+                        MaterialRules.sequence(MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH, MIDNIGHT_GRASS), DARKROOT_SOIL, BLUE_TERRACOTTA)),
                 // Default to green terracotta
                 MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, GREEN_TERRACOTTA)
         );

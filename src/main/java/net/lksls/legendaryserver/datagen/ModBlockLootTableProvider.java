@@ -46,6 +46,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MIDNIGHTWOOD_PLANKS);
         addDrop(ModBlocks.MIDNIGHTWOOD_SAPLING);
         addDrop(ModBlocks.DARKROOT_SOIL);
+        addDrop(ModBlocks.MIDNIGHT_GRASS);
         addDrop(ModBlocks.LOST_GRASS);
         addDrop(ModBlocks.POTTED_LOST_GRASS, pottedPlantDrops(ModBlocks.LOST_GRASS));
         addDrop(ModBlocks.ENDLESS_VIOLET);

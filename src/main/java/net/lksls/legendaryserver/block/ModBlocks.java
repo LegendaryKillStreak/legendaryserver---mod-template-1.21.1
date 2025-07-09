@@ -2,10 +2,7 @@ package net.lksls.legendaryserver.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.lksls.legendaryserver.LegendaryServerMod;
-import net.lksls.legendaryserver.block.custom.DarkCoreBlock;
-import net.lksls.legendaryserver.block.custom.DarkrootSoil;
-import net.lksls.legendaryserver.block.custom.LightCoreBlock;
-import net.lksls.legendaryserver.block.custom.ModSaplingBlock;
+import net.lksls.legendaryserver.block.custom.*;
 import net.lksls.legendaryserver.world.tree.ModSaplingGenerators;
 import net.minecraft.block.*;
 import net.minecraft.entity.effect.StatusEffects;
@@ -44,6 +41,9 @@ public class ModBlocks {
     public static final Block DARKROOT_SOIL = registerBlock("darkroot_soil",
             new DarkrootSoil(AbstractBlock.Settings.copy(Blocks.DIRT)
                     .requiresTool().sounds(BlockSoundGroup.ROOTED_DIRT).strength(2f,3f).luminance(value -> 0)));
+    public static final Block MIDNIGHT_GRASS = registerBlock("midnight_grass",
+            new MidnightGrass(AbstractBlock.Settings.create()
+                    .requiresTool().ticksRandomly().sounds(BlockSoundGroup.ROOTED_DIRT).strength(1f,3f).luminance(value -> 0)));
 
     public static final Block NICKEL_ORE = registerBlock("nickel_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),

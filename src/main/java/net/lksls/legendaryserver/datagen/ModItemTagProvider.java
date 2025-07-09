@@ -160,7 +160,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.DARK_CORE_BOOTS)
                 .add(ModItems.DARK_CORE_CHESTPLATE)
                 .add(ModItems.DARK_CORE_HELMET)
-                .add(ModItems.DARK_CORE_LEGGINGS);
+                .add(ModItems.DARK_CORE_LEGGINGS)
+                .add(ModItems.DARKNESS_DRILL);
 
 
 

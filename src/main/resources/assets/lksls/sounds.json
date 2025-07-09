@@ -31,5 +31,14 @@
         "stream": true
       }
     ]
+  },
+  "dark_ambience_one": {
+    "sounds": [
+      {
+        "name": "lksls:dark_ambience_one",
+        "stream": true
+      }
+    ]
   }
+
 }

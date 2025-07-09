@@ -28,7 +28,7 @@ public class OverworldRegion extends Region {
         // The parameters for this biome are chosen arbitrarily.
         new ParameterPointListBuilder()
             .temperature(Temperature.span(Temperature.NEUTRAL, Temperature.UNFROZEN))
-            .humidity(Humidity.span(Humidity.NEUTRAL, Humidity.WET))
+            .humidity(Humidity.span(Humidity.ARID, Humidity.WET))
             .continentalness(Continentalness.FAR_INLAND)
             .erosion(Erosion.EROSION_0, Erosion.EROSION_1)
             .depth(Depth.SURFACE)

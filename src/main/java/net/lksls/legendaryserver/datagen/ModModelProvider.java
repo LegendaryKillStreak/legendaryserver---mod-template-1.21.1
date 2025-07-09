@@ -4,11 +4,9 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.lksls.legendaryserver.block.ModBlocks;
 import net.lksls.legendaryserver.item.ModItems;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
-import net.minecraft.data.client.TexturedModel;
+import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -28,6 +26,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TITANIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_TITANIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DARKROOT_SOIL);
+
         blockStateModelGenerator.registerLog(ModBlocks.MIDNIGHTWOOD_LOG).log(ModBlocks.MIDNIGHTWOOD_LOG).wood(ModBlocks.MIDNIGHTWOOD_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_MIDNIGHTWOOD_LOG).log(ModBlocks.STRIPPED_MIDNIGHTWOOD_LOG).wood(ModBlocks.STRIPPED_MIDNIGHTWOOD_WOOD);
 
@@ -143,4 +142,5 @@ public class ModModelProvider extends FabricModelProvider {
         
 
     }
+
 }

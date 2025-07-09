@@ -51,6 +51,7 @@ public class ModOverworldBiomes {
 
 
 
+
         // Custom Placed Feature
 
 
@@ -59,7 +60,7 @@ public class ModOverworldBiomes {
                 .effects((new BiomeEffects.Builder()).waterColor(0x280041).waterFogColor(0x280041).fogColor(0x280041)
                         .skyColor(getSkyColor(2.0F)).particleConfig(new BiomeParticleConfig(ParticleTypes.GLOW, 0.00725f))
                         .loopSound(SoundEvents.AMBIENT_SOUL_SAND_VALLEY_LOOP)
-                        .fogColor(0x280041).grassColor(0x004e4a)
+                        .fogColor(0x280041).grassColor(0x492151)
                         .moodSound(new BiomeMoodSound(SoundEvents.AMBIENT_BASALT_DELTAS_MOOD, 90000, 8, 2.0D))
                         .music(MusicType.createIngameMusic(SoundEvents.AMBIENT_SOUL_SAND_VALLEY_LOOP)).build())
                 .spawnSettings(spawnBuilder.build()).generationSettings(biomeBuilder.build()).build();

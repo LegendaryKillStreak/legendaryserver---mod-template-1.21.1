@@ -25,6 +25,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<? , ?>> TITANIUM_ORE_KEY = registryKey("titanium_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> MIDNIGHTWOOD_KEY = registryKey("midnightwood");
     public static final RegistryKey<ConfiguredFeature<?, ?>> LOST_GRASS_KEY = registryKey("lost_grass");
+
     public static final RegistryKey<ConfiguredFeature<?, ?>> ENDLESS_VIOLET_KEY = registryKey("endless_violet");
 
     public static void bootstrap(Registerable<ConfiguredFeature<? , ?>> context) {
@@ -50,7 +51,7 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.MIDNIGHTWOOD_LEAVES),
                 new CherryFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(1), ConstantIntProvider.create(5),
                         0.25f, 0.5f, 0.15f, 0.05f),
-                new TwoLayersFeatureSize(1, 0, 2)).dirtProvider(BlockStateProvider.of(ModBlocks.DARKROOT_SOIL)).build());
+                new TwoLayersFeatureSize(1, 0, 2)).dirtProvider(BlockStateProvider.of(ModBlocks.MIDNIGHT_GRASS)).build());
 
         register(context, LOST_GRASS_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(128,6,2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
                 new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.LOST_GRASS)))));

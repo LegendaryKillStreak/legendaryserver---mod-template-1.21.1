@@ -92,6 +92,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.TITANIUM_BLOCK);
                         entries.add(ModBlocks.DARKROOT_SOIL);
                         entries.add(ModItems.DRILL_ENGINE);
+                        entries.add(ModBlocks.MIDNIGHT_GRASS);
                         entries.add(ModBlocks.MIDNIGHTWOOD_LOG);
                         entries.add(ModBlocks.MIDNIGHTWOOD_WOOD);
                         entries.add(ModBlocks.STRIPPED_MIDNIGHTWOOD_LOG);

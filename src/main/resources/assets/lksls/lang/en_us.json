@@ -98,6 +98,11 @@
   "block.lksls.midnightwood_leaves": "Midnightwood Leaves",
   "block.lksls.midnightwood_wood": "Midnightwood Wood",
   "block.lksls.darkroot_soil": "Darkroot Soil",
+  "block.lksls.midnight_grass": "Midnight Grass",
   "block.lksls.endless_violet": "Violet Of Infinity",
-  "block.lksls.midnightwood_log": "Midnightwood Log"
+  "block.lksls.midnightwood_log": "Midnightwood Log",
+
+
+
+  "sounds.lksls.dark_ambience_one":"Dark Ambience 1"
 }
