@@ -10,6 +10,7 @@ public class ModMaterialRules {
     private static final MaterialRules.MaterialRule DIRT = makeStateRule(Blocks.DIRT);
     private static final MaterialRules.MaterialRule GRASS_BLOCK = makeStateRule(Blocks.GRASS_BLOCK);
     private static final MaterialRules.MaterialRule GREEN_TERRACOTTA = makeStateRule(Blocks.GREEN_TERRACOTTA);
+    private static final MaterialRules.MaterialRule SCULK = makeStateRule(Blocks.SCULK);
     private static final MaterialRules.MaterialRule RED_TERRACOTTA = makeStateRule(Blocks.RED_TERRACOTTA);
     private static final MaterialRules.MaterialRule DARKROOT_SOIL = makeStateRule(ModBlocks.DARKROOT_SOIL);
     private static final MaterialRules.MaterialRule BLUE_TERRACOTTA = makeStateRule(Blocks.BLUE_TERRACOTTA);
@@ -24,11 +25,15 @@ public class ModMaterialRules {
 
 
     public static MaterialRules.MaterialRule makeNocturneValeRules() {
+        // These are the rules for your biome's blocks.
+        // Default to green terracotta
         return MaterialRules.sequence(
                 MaterialRules.condition(MaterialRules.biome(ModBiomes.NOCTURNE_VALE),
-                        MaterialRules.sequence(MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH, MIDNIGHT_GRASS), DARKROOT_SOIL, BLUE_TERRACOTTA)),
+                        MaterialRules.sequence(MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH, MIDNIGHT_GRASS))
+                ), MaterialRules.sequence(MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH_RANGE_6, DARKROOT_SOIL), SCULK),
                 // Default to green terracotta
                 MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, GREEN_TERRACOTTA)
+
         );
     }
 

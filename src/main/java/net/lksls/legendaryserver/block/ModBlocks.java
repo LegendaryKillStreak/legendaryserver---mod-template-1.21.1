@@ -39,11 +39,9 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create()
                     .requiresTool().sounds(BlockSoundGroup.METAL).strength(5f,5f).luminance(value -> 0)));
     public static final Block DARKROOT_SOIL = registerBlock("darkroot_soil",
-            new DarkrootSoil(AbstractBlock.Settings.copy(Blocks.DIRT)
-                    .requiresTool().sounds(BlockSoundGroup.ROOTED_DIRT).strength(2f,3f).luminance(value -> 0)));
+            new Block(AbstractBlock.Settings.copy(Blocks.DIRT)));
     public static final Block MIDNIGHT_GRASS = registerBlock("midnight_grass",
-            new MidnightGrass(AbstractBlock.Settings.create()
-                    .requiresTool().ticksRandomly().sounds(BlockSoundGroup.ROOTED_DIRT).strength(1f,3f).luminance(value -> 0)));
+            new MidnightGrassBlock(AbstractBlock.Settings.copy(Blocks.GRASS_BLOCK).ticksRandomly()));
 
     public static final Block NICKEL_ORE = registerBlock("nickel_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
@@ -82,7 +80,7 @@ public class ModBlocks {
             new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES).luminance(value -> 3)));
 
     public static final Block MIDNIGHTWOOD_SAPLING = registerBlock("midnightwood_sapling",
-            new ModSaplingBlock(ModSaplingGenerators.MIDNIGHTWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING).luminance(value -> 3), ModBlocks.DARKROOT_SOIL));
+            new ModSaplingBlock(ModSaplingGenerators.MIDNIGHTWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING).luminance(value -> 3), ModBlocks.MIDNIGHT_GRASS));
 
     public static final Block LOST_GRASS = registerBlock("lost_grass",
             new FlowerBlock(StatusEffects.DARKNESS, 4, AbstractBlock.Settings.copy(Blocks.ALLIUM).luminance(value -> 3)));

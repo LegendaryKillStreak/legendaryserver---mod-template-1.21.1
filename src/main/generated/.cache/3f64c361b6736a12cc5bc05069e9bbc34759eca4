@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-09T02:20:31.7432968	LegendaryServer - Mod/Model Definitions
+// 1.21.1	2025-07-09T21:40:32.2739017	LegendaryServer - Mod/Model Definitions
 b9176c1ed5cdfd2525370627435c104b43ebb2f8 assets\lksls\models\block\raw_nickel_block.json
 24f8bbfba903536cf9fc951649b0f123008b833a assets\lksls\blockstates\titanium_deepslate_ore.json
 30e494e2a3f19d72f2876f9e42fe7ebea8b35187 assets\lksls\models\item\coin_200.json
@@ -95,8 +95,8 @@ e72498e4099231fff95159a6ae18d5062a3af037 assets\lksls\models\item\dark_core_helm
 62d265b9ee5b334190beeb86aef9b004a9e77c4b assets\lksls\models\item\light_core_chestplate_iron_trim.json
 5602a7cc39cf2deab76d0445a1a4767fae225f12 assets\lksls\models\item\coin_10000.json
 af1483416452d38fe2b937b106338d044e05a49b assets\lksls\models\item\dark_core_chestplate_lapis_trim.json
-7ccfb2b76bba9043332565e9853a8bb77188f794 assets\lksls\models\item\dark_core_boots_iron_trim.json
 a3cd548a5d9f5cbc5608a293823b02e0a8fe8fe8 assets\lksls\models\item\light_core_chestplate_netherite_trim.json
+7ccfb2b76bba9043332565e9853a8bb77188f794 assets\lksls\models\item\dark_core_boots_iron_trim.json
 f28307f0a1f6b41c718f387ed0fb88463d4093aa assets\lksls\models\item\light_core_chestplate_amethyst_trim.json
 feb9f8473bf4b68172fec4f2f685d40b887f2fb9 assets\lksls\blockstates\midnightwood_leaves.json
 3f6d7971b2e2d61c4704892bc3b6ecb6bffaa924 assets\lksls\models\item\light_hoe.json
