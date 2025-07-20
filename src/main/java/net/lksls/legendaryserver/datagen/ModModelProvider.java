@@ -26,6 +26,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TITANIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_TITANIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DARKROOT_SOIL);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STRANGE_DARKROOT_SOIL);
 
         blockStateModelGenerator.registerLog(ModBlocks.MIDNIGHTWOOD_LOG).log(ModBlocks.MIDNIGHTWOOD_LOG).wood(ModBlocks.MIDNIGHTWOOD_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_MIDNIGHTWOOD_LOG).log(ModBlocks.STRIPPED_MIDNIGHTWOOD_LOG).wood(ModBlocks.STRIPPED_MIDNIGHTWOOD_WOOD);
@@ -35,6 +36,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.MIDNIGHTWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.LOST_GRASS, ModBlocks.POTTED_LOST_GRASS, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.ENDLESS_VIOLET, ModBlocks.POTTED_ENDLESS_VIOLET, BlockStateModelGenerator.TintType.NOT_TINTED);
+
 
     }
 
@@ -62,6 +64,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.NICKEL_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_TITANIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.TITANIUM_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.IMPURE_NOCTYRIAN, Models.GENERATED);
 
 
 

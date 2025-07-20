@@ -96,6 +96,7 @@ public class ModItems {
     public static final  Item DARK_CORE = registerItem("dark_core", new Item(new Item.Settings().rarity(Rarity.EPIC)));
     public static final  Item DARK_SOUL_CORE = registerItem("dark_soul_core", new Item(new Item.Settings().rarity(Rarity.EPIC)));
     public static final  Item DARK_SHARD = registerItem("dark_shard", new Item(new Item.Settings().rarity(Rarity.EPIC)));
+    public static final  Item IMPURE_NOCTYRIAN = registerItem("impure_noctyrian", new Item(new Item.Settings().rarity(Rarity.EPIC)));
 
     public static final  Item DRILL_ENGINE = registerItem("drill_engine", new Item(new Item.Settings().rarity(Rarity.UNCOMMON)));
 
@@ -188,6 +189,7 @@ public class ModItems {
             entries.add(ModItems.NICKEL_INGOT);
             entries.add(ModItems.RAW_NICKEL);
             entries.add(ModItems.DARK_CORE);
+            entries.add(ModItems.IMPURE_NOCTYRIAN);
 
         });
     }

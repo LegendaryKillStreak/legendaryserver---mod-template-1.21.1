@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.lksls.legendaryserver.block.ModBlocks;
 import net.lksls.legendaryserver.item.ModItems;
 import net.minecraft.block.Block;
+import net.minecraft.block.GrassBlock;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
@@ -49,7 +50,8 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.LOST_GRASS);
         addDrop(ModBlocks.POTTED_LOST_GRASS, pottedPlantDrops(ModBlocks.LOST_GRASS));
-        addDrop(ModBlocks.MIDNIGHT_GRASS, pottedPlantDrops(ModBlocks.DARKROOT_SOIL));
+        addDrop(ModBlocks.MIDNIGHT_GRASS, (ModBlocks.DARKROOT_SOIL));
+        addDrop(ModBlocks.MIDNIGHT_GRASS, dropsWithSilkTouch(ModBlocks.MIDNIGHT_GRASS));
         addDrop(ModBlocks.ENDLESS_VIOLET);
         addDrop(ModBlocks.POTTED_ENDLESS_VIOLET, pottedPlantDrops(ModBlocks.ENDLESS_VIOLET));
 

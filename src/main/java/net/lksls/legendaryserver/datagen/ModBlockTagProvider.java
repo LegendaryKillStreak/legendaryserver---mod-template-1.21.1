@@ -43,6 +43,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.TITANIUM_DEEPSLATE_ORE)
                 .add(ModBlocks.RAW_TITANIUM_BLOCK);
 
+        getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
+                .add(ModBlocks.STRANGE_DARKROOT_SOIL);
+
+
 
 
 

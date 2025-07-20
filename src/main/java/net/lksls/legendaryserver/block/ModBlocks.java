@@ -6,14 +6,14 @@ import net.lksls.legendaryserver.block.custom.*;
 import net.lksls.legendaryserver.world.tree.ModSaplingGenerators;
 import net.minecraft.block.*;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
+
+import javax.tools.Tool;
 
 public class ModBlocks {
     public static final Block LIGHT_CORE_BLOCK = registerBlock("light_core_block",
@@ -53,9 +53,14 @@ public class ModBlocks {
     public static final Block TITANIUM_ORE = registerBlock("titanium_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
                     AbstractBlock.Settings.create().strength(5f).requiresTool()));
+
     public static final Block TITANIUM_DEEPSLATE_ORE = registerBlock("titanium_deepslate_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
                     AbstractBlock.Settings.create().strength(6f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
+
+    public static final Block STRANGE_DARKROOT_SOIL = registerBlock("strange_darkroot_soil",
+            new ExperienceDroppingBlock(UniformIntProvider.create(1, 2),
+                    AbstractBlock.Settings.create().strength(3f,1f).luminance(value -> 9).sounds(BlockSoundGroup.SUSPICIOUS_GRAVEL)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

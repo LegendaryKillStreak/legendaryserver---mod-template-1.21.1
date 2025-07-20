@@ -26,12 +26,15 @@ public class ModMaterialRules {
 
     public static MaterialRules.MaterialRule makeNocturneValeRules() {
         // These are the rules for your biome's blocks.
-        // Default to green terracotta
         return MaterialRules.sequence(
+                // Rule for Midnight Grass:
+                // Apply Midnight Grass ONLY to the very top surface layer
                 MaterialRules.condition(MaterialRules.biome(ModBiomes.NOCTURNE_VALE),
-                        MaterialRules.sequence(MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH, MIDNIGHT_GRASS))
-                ), MaterialRules.sequence(MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH_RANGE_6, DARKROOT_SOIL), SCULK),
-                // Default to green terracotta
+                        MaterialRules.sequence(MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, MIDNIGHT_GRASS)) // Changed from STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH
+                ),
+                // Rule for Darkroot Soil and Sculk below the surface
+                MaterialRules.sequence(MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH_RANGE_6, DARKROOT_SOIL), SCULK),
+                // Default rule for the deepest layers (if not covered by above rules)
                 MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, GREEN_TERRACOTTA)
 
         );

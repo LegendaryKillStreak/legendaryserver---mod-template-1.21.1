@@ -55,6 +55,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.NICKEL_INGOT)
                 .add(ModItems.RAW_TITANIUM)
                 .add(ModItems.TITANIUM_INGOT)
+                .add(ModItems.IMPURE_NOCTYRIAN)
                 .add(ModItems.TEARS_MUSIC_DISC)
                 .add(ModItems.DRILL_ENGINE);
 

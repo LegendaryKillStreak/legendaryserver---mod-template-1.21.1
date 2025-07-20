@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-09T21:40:32.2709008	LegendaryServer - Mod/Block Loot Tables
+// 1.21.1	2025-07-21T00:05:35.1170877	LegendaryServer - Mod/Block Loot Tables
 c94a70717c1b1e7a4692a76b1f72a5936604b06d data\lksls\loot_table\blocks\lost_grass.json
 d1c227195cfee74f65294f98d2d177604d9147e5 data\lksls\loot_table\blocks\dark_core_block.json
 24f6cc0d2bd90b150b0cab76afca9f04bd983be3 data\lksls\loot_table\blocks\titanium_deepslate_ore.json
@@ -17,6 +17,6 @@ c99fbe63f5e28fa23900f1ae17a75ece47097cc2 data\lksls\loot_table\blocks\potted_end
 57faa3469ae231e5e75d84531526ced6d3df98d0 data\lksls\loot_table\blocks\darkroot_soil.json
 500711ac71a10a5624dc8d6547e89d8b173f3d7f data\lksls\loot_table\blocks\raw_nickel_block.json
 5c817580362bb7f5f38703465879af341be470ac data\lksls\loot_table\blocks\endless_violet.json
-ba5d7ed3d3875f2adf10f1f10ffc0ab71e1c91be data\lksls\loot_table\blocks\midnight_grass.json
+3f5cf29f66fc0db2e91e3571cbc741571a095bce data\lksls\loot_table\blocks\midnight_grass.json
 ad2758ce89da4b1e9233817d837fe58642747e7c data\lksls\loot_table\blocks\midnightwood_sapling.json
 ada32a87a68921b5dac94160d59ec30f6f0fda69 data\lksls\loot_table\blocks\midnightwood_leaves.json

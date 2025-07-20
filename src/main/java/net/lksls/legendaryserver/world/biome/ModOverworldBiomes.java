@@ -11,8 +11,10 @@ import net.minecraft.entity.SpawnGroup;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.RegistryEntryLookup;
 import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.sound.BiomeMoodSound;
 import net.minecraft.sound.MusicType;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.biome.*;
@@ -27,7 +29,7 @@ public class ModOverworldBiomes {
         ModTreeGeneration.generateTrees();
     }
 
-    public static Biome nocturneVale(RegistryEntryLookup<PlacedFeature> placedFeatureGetter, RegistryEntryLookup<ConfiguredCarver<?>> carverGetter) {
+    public static Biome nocturneVale(RegistryEntryLookup<PlacedFeature> placedFeatureGetter, RegistryEntryLookup<ConfiguredCarver<?>> carverGetter, RegistryEntryLookup<SoundEvent> soundEventGetter) {
         // Mob spawns
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
         DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder, 30);
@@ -46,6 +48,11 @@ public class ModOverworldBiomes {
         addFeature(biomeBuilder, GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.MIDNIGHTWOOD_PLACED_KEY);
         addFeature(biomeBuilder, GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.LOST_GRASS_PLACED_KEY);
         addFeature(biomeBuilder, GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.ENDLESS_VIOLET_PLACED_KEY);
+        // Get the RegistryEntry for your custom sound event using the provided lookup
+        RegistryEntry<SoundEvent> darkAmbienceEntry = soundEventGetter.getOrThrow(ModSounds.AMBIENT_SOUND_LOOPS_REGISTRY_KEY);
+
+
+
 
 
 
@@ -59,10 +66,11 @@ public class ModOverworldBiomes {
                 .precipitation(false).temperature(4.0F).downfall(0.0F)
                 .effects((new BiomeEffects.Builder()).waterColor(0x280041).waterFogColor(0x280041).fogColor(0x280041)
                         .skyColor(getSkyColor(2.0F)).particleConfig(new BiomeParticleConfig(ParticleTypes.GLOW, 0.00725f))
-                        .loopSound(SoundEvents.AMBIENT_SOUL_SAND_VALLEY_LOOP)
+                        .loopSound(SoundEvents.AMBIENT_BASALT_DELTAS_LOOP)
                         .fogColor(0x280041).grassColor(0x492151)
+                        .foliageColor(0x6A0DAD) // Example: A deep purple color (Hex: #6A0DAD)
                         .moodSound(new BiomeMoodSound(SoundEvents.AMBIENT_BASALT_DELTAS_MOOD, 90000, 8, 2.0D))
-                        .music(MusicType.createIngameMusic(SoundEvents.AMBIENT_SOUL_SAND_VALLEY_LOOP)).build())
+                        .music(MusicType.createIngameMusic(darkAmbienceEntry)).build())
                 .spawnSettings(spawnBuilder.build()).generationSettings(biomeBuilder.build()).build();
     }
 

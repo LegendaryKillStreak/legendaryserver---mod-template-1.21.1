@@ -86,6 +86,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.NICKEL_BLOCK);
                         entries.add(ModItems.RAW_TITANIUM);
                         entries.add(ModItems.TITANIUM_INGOT);
+                        entries.add(ModItems.IMPURE_NOCTYRIAN);
                         entries.add(ModBlocks.TITANIUM_DEEPSLATE_ORE);
                         entries.add(ModBlocks.TITANIUM_ORE);
                         entries.add(ModBlocks.RAW_TITANIUM_BLOCK);
@@ -95,6 +96,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MIDNIGHT_GRASS);
                         entries.add(ModBlocks.MIDNIGHTWOOD_LOG);
                         entries.add(ModBlocks.MIDNIGHTWOOD_WOOD);
+                        entries.add(ModBlocks.STRANGE_DARKROOT_SOIL);
+                        entries.add(ModBlocks.ENDLESS_VIOLET);
                         entries.add(ModBlocks.STRIPPED_MIDNIGHTWOOD_LOG);
                         entries.add(ModBlocks.STRIPPED_MIDNIGHTWOOD_WOOD);
 

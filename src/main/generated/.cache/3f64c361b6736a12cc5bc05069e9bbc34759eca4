@@ -1,9 +1,10 @@
-// 1.21.1	2025-07-09T21:40:32.2739017	LegendaryServer - Mod/Model Definitions
+// 1.21.1	2025-07-21T00:05:35.120088	LegendaryServer - Mod/Model Definitions
 b9176c1ed5cdfd2525370627435c104b43ebb2f8 assets\lksls\models\block\raw_nickel_block.json
 24f8bbfba903536cf9fc951649b0f123008b833a assets\lksls\blockstates\titanium_deepslate_ore.json
 30e494e2a3f19d72f2876f9e42fe7ebea8b35187 assets\lksls\models\item\coin_200.json
 960051a48a4461d6a2eee971e5e7eb45e994e5bd assets\lksls\models\block\dark_core_block.json
 062b20bc7fcd60568679db4ed3325adb0fd045c2 assets\lksls\models\item\light_pickaxe.json
+5bd07f207fb646b41333988f12e57e47f7b8806c assets\lksls\models\block\strange_darkroot_soil.json
 c5fe3eda54a04a6006d8e2d2c5ad0d5c6bd64b17 assets\lksls\models\item\dark_core_chestplate_quartz_trim.json
 ae961a539cfe11c476d5f877670b8eda97b38919 assets\lksls\models\item\dungeon_key_icy_caves.json
 10b4bcc84d67c391d45ac2bf472e5772a93a8a19 assets\lksls\models\item\davy_jones_theme_music_disc.json
@@ -78,6 +79,7 @@ a1388abde97744fb4b69f4f0071482824103958f assets\lksls\models\item\dark_core_legg
 738a23cb15843e792fb8093425554072abda8693 assets\lksls\models\item\light_core_leggings_quartz_trim.json
 c44ecaa1dc415f99a36cbf5f2c09561f66fb96d1 assets\lksls\models\item\dungeon_icon_shadowy_creatures.json
 bca0a0f3f42dc2e032141b653c38bf8f5771e744 assets\lksls\models\item\light_core_helmet_gold_trim.json
+e0a501437e65d26e6334c06e3cfd15e0f86326d5 assets\lksls\models\item\impure_noctyrian.json
 43d54d01f69908dba8ecf6e9c8ee5ffc4b27d7bd assets\lksls\models\item\dark_core_helmet_copper_trim.json
 ba34273fa75627df5a8f03f9b1fce57d0b292cc8 assets\lksls\models\item\light_core_boots_quartz_trim.json
 68dfc95b41efa9f131dce214a05fe356d86afcb2 assets\lksls\models\item\light_core_leggings.json
@@ -95,8 +97,8 @@ e72498e4099231fff95159a6ae18d5062a3af037 assets\lksls\models\item\dark_core_helm
 62d265b9ee5b334190beeb86aef9b004a9e77c4b assets\lksls\models\item\light_core_chestplate_iron_trim.json
 5602a7cc39cf2deab76d0445a1a4767fae225f12 assets\lksls\models\item\coin_10000.json
 af1483416452d38fe2b937b106338d044e05a49b assets\lksls\models\item\dark_core_chestplate_lapis_trim.json
-a3cd548a5d9f5cbc5608a293823b02e0a8fe8fe8 assets\lksls\models\item\light_core_chestplate_netherite_trim.json
 7ccfb2b76bba9043332565e9853a8bb77188f794 assets\lksls\models\item\dark_core_boots_iron_trim.json
+a3cd548a5d9f5cbc5608a293823b02e0a8fe8fe8 assets\lksls\models\item\light_core_chestplate_netherite_trim.json
 f28307f0a1f6b41c718f387ed0fb88463d4093aa assets\lksls\models\item\light_core_chestplate_amethyst_trim.json
 feb9f8473bf4b68172fec4f2f685d40b887f2fb9 assets\lksls\blockstates\midnightwood_leaves.json
 3f6d7971b2e2d61c4704892bc3b6ecb6bffaa924 assets\lksls\models\item\light_hoe.json
@@ -134,6 +136,7 @@ f463bffcf49f45c7812ccb217a5b81b19e54ebb0 assets\lksls\models\item\dark_core_helm
 c9ce4e7edc5fde33db3b2771728597faf9026199 assets\lksls\models\block\potted_lost_grass.json
 82ab2430e34e91cfb6aba1a493307dffb01736bd assets\lksls\models\item\light_core_block.json
 51549d2281784b23b71eb206b5cd412f4b4c200a assets\lksls\models\item\coin_750.json
+92d0dc5aeaf6a496405d22d9973e0167f4fc08a7 assets\lksls\models\item\strange_darkroot_soil.json
 ed402ae4ca54f507beb5f12a78e0c5702b378bf9 assets\lksls\models\item\titanium_ingot.json
 91a5e60e7fe9253e227345c217614e333f14fb36 assets\lksls\models\item\soul_core_armor_smithing_template.json
 163c41a0060e3ee3545b9f3a58103c0b10bc730c assets\lksls\models\item\coin.json
@@ -148,6 +151,7 @@ b7f8d7a760219e1043b23d8ab4747675fc0d30f7 assets\lksls\models\item\darkness_hoe.j
 c0c2b0be5761457516cce495cbab73f73202652b assets\lksls\models\item\darkness_axe.json
 d30d932779d471a6171798e20e5127e1466f4880 assets\lksls\models\item\horizon_zero_dawn_music_disc.json
 c99cc51cb97ef87b343b7e78fdb57b23acf02fc5 assets\lksls\models\item\coin_ten.json
+d19f1e44f443182027062653faaf23cd10b3a695 assets\lksls\blockstates\strange_darkroot_soil.json
 25821241e6fdae8200bcf2273c184ef43c31b9ee assets\lksls\models\item\coin_150000.json
 9a8d103dec89cede7db3a787877164e3ef8e7bec assets\lksls\models\item\raw_titanium_block.json
 63345fd7b31065519631d82941aa36331a0e1f81 assets\lksls\blockstates\stripped_midnightwood_wood.json

@@ -1,5 +1,10 @@
 {
   "variants": {
-    "": { "model": "lksls:block/midnight_grass" }
+    "": [
+      { "model": "lksls:block/midnight_grass" },
+      { "model": "lksls:block/midnight_grass", "y": 90 },
+      { "model": "lksls:block/midnight_grass", "y": 180 },
+      { "model": "lksls:block/midnight_grass", "y": 270 }
+    ]
   }
 }

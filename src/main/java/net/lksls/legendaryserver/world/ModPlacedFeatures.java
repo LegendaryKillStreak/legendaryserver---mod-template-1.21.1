@@ -24,20 +24,27 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> LOST_GRASS_PLACED_KEY = registerKey("lost_grass_placed");
     public static final RegistryKey<PlacedFeature> ENDLESS_VIOLET_PLACED_KEY = registerKey("endless_violet_placed");
 
-//why are you in my code!!! also you do NOT wanna know the number of errors i fixxed with this mod
+    // NEW: Define the RegistryKey for the PlacedFeature version of the bone meal feature
+    public static final RegistryKey<PlacedFeature> MIDNIGHT_GRASS_BONEMEAL_PLACED_KEY = registerKey("midnight_grass_bonemeal_placed");
+
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeaturesRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
+
+        // NEW: Register the PlacedFeature for Midnight Grass bone meal.
+        // It references the ConfiguredFeature from ModConfiguredFeatures and uses an empty list of placement modifiers,
+        // as the RandomPatchFeatureConfig itself handles the spread.
+        register(context, MIDNIGHT_GRASS_BONEMEAL_PLACED_KEY,
+                configuredFeaturesRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MIDNIGHT_GRASS_BONEMEAL),
+                List.of() // No additional placement modifiers needed here, as RandomPatchFeatureConfig handles spread
+        );
 
         register(context, NICKEL_ORE_PLACED_KEY, configuredFeaturesRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.NICKEL_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(7,
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(-60), YOffset.fixed(20)))
-                );
+        );
         register(context, TITANIUM_ORE_PLACED_KEY, configuredFeaturesRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.TITANIUM_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(9,
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(-60), YOffset.fixed(64)))
-
-
-
         );
         register(context, MIDNIGHTWOOD_PLACED_KEY, configuredFeaturesRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MIDNIGHTWOOD_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
@@ -48,13 +55,10 @@ public class ModPlacedFeatures {
 
         register(context, ENDLESS_VIOLET_PLACED_KEY, configuredFeaturesRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ENDLESS_VIOLET_KEY),
                 RarityFilterPlacementModifier.of(3), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
-
-
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {
         return RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of(LegendaryServerMod.MOD_ID, name));
-
     }
 
     private static void register(Registerable<PlacedFeature> context, RegistryKey<PlacedFeature> key, RegistryEntry<ConfiguredFeature<?, ?>> configuration,

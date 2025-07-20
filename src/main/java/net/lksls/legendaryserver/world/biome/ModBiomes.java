@@ -19,6 +19,7 @@ public class ModBiomes {
     public static final RegistryKey<Biome> ABYSS_OF_LAMENT = registerBiomeKey("abyss_of_lament");
 
     public static void registerBiomes() {
+
         Regions.register(new OverworldRegion(Identifier.of(LegendaryServerMod.MOD_ID, "lksls_overworld"), 1));
         Regions.register(new NetherRegion(Identifier.of(LegendaryServerMod.MOD_ID, "lksls_nether"), 3));
 
@@ -33,8 +34,9 @@ public class ModBiomes {
     public static void bootstrap(Registerable<Biome> context) {
         var carver = context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER);
         var placedFeatures = context.getRegistryLookup(RegistryKeys.PLACED_FEATURE);
+        var soundEvents = context.getRegistryLookup(RegistryKeys.SOUND_EVENT);
 
-        register(context, NOCTURNE_VALE, ModOverworldBiomes.nocturneVale(placedFeatures, carver));
+        register(context, NOCTURNE_VALE, ModOverworldBiomes.nocturneVale(placedFeatures, carver, soundEvents));
         register(context, LUMINARA_DEPTHS, ModNetherBiomes.luminaraDepths(placedFeatures, carver));
         register(context, ABYSS_OF_LAMENT, ModEndBiomes.abyssOfLament(placedFeatures, carver));
     }
