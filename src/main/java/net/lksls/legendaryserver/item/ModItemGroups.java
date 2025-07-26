@@ -80,6 +80,11 @@ public class ModItemGroups {
                         entries.add(ModItems.ECHO_DUST);
                         entries.add(ModItems.RAW_NICKEL);
                         entries.add(ModItems.NICKEL_INGOT);
+                        entries.add(ModItems.GAMMA_RADIATING_XENTHRITE);
+                        entries.add(ModItems.BETA_RADIATING_XENTHRITE);
+                        entries.add(ModItems.DIM_ROSE_QUARTZ);
+                        entries.add(ModBlocks.MYSTERIOUS_END_ORE);
+                        entries.add(ModBlocks.DIM_ROSE_QUARTZ_BLOCK);
                         entries.add(ModBlocks.NICKEL_DEEPSLATE_ORE);
                         entries.add(ModBlocks.NICKEL_ORE);
                         entries.add(ModBlocks.RAW_NICKEL_BLOCK);
@@ -97,6 +102,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.MIDNIGHTWOOD_LOG);
                         entries.add(ModBlocks.MIDNIGHTWOOD_WOOD);
                         entries.add(ModBlocks.STRANGE_DARKROOT_SOIL);
+                        entries.add(ModBlocks.ALMOST_DIM_STONE);
+                        entries.add(ModBlocks.DIM_STONE);
+                        entries.add(ModBlocks.EXCITING_DIM_STONE);
                         entries.add(ModBlocks.ENDLESS_VIOLET);
                         entries.add(ModBlocks.STRIPPED_MIDNIGHTWOOD_LOG);
                         entries.add(ModBlocks.STRIPPED_MIDNIGHTWOOD_WOOD);

@@ -10,6 +10,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.resource.featuretoggle.FeatureFlags;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
+import net.lksls.legendaryserver.item.custom.GammaRadiatingXenthrite;
+
 
 
 public class ModItems {
@@ -34,6 +36,10 @@ public class ModItems {
     public static final  Item LIGHT_HOE = registerItem("light_hoe",
             new LightHoe(ModToolMaterials.LIGHT, new Item.Settings()
                     .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.LIGHT, 0, -3f))));
+    public static final  Item GAMMA_RADIATING_XENTHRITE = registerItem("gamma_radiating_xenthrite",
+            new GammaRadiatingXenthrite(new Item.Settings().rarity(Rarity.EPIC)));
+    public static final  Item BETA_RADIATING_XENTHRITE = registerItem("beta_radiating_xenthrite",
+            new BetaRadiatingXenthrite(new Item.Settings().rarity(Rarity.EPIC)));
 
 
 
@@ -97,6 +103,7 @@ public class ModItems {
     public static final  Item DARK_SOUL_CORE = registerItem("dark_soul_core", new Item(new Item.Settings().rarity(Rarity.EPIC)));
     public static final  Item DARK_SHARD = registerItem("dark_shard", new Item(new Item.Settings().rarity(Rarity.EPIC)));
     public static final  Item IMPURE_NOCTYRIAN = registerItem("impure_noctyrian", new Item(new Item.Settings().rarity(Rarity.EPIC)));
+    public static final  Item DIM_ROSE_QUARTZ = registerItem("dim_rose_quartz", new Item(new Item.Settings().rarity(Rarity.RARE)));
 
     public static final  Item DRILL_ENGINE = registerItem("drill_engine", new Item(new Item.Settings().rarity(Rarity.UNCOMMON)));
 
@@ -175,8 +182,11 @@ public class ModItems {
 
 
 
+
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(LegendaryServerMod.MOD_ID, name), item);
+
     }
 
     public static void registerModItems() {

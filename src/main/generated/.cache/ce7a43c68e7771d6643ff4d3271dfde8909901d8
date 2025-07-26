@@ -1,7 +1,10 @@
-// 1.21.1	2025-07-21T00:05:35.1190886	LegendaryServer - Mod/Tags for minecraft:block
+// 1.21.1	2025-07-26T21:09:59.1385386	LegendaryServer - Mod/Tags for minecraft:block
 af1e9dcb3ecb909bde41700ab3e478a302ea9b2e data\lksls\tags\block\needs_light_tool.json
 af1e9dcb3ecb909bde41700ab3e478a302ea9b2e data\lksls\tags\block\needs_dark_tool.json
 e25cf7f903ae689e9878c3010ab121d652cb56f2 data\minecraft\tags\block\logs_that_burn.json
+a3040d3b9997a4dcab28a5bb5d19a10a75134812 data\lksls\tags\block\dim_stone_replaceables.json
+86748ffa747c2b7d004c407d6cb10cedb4f91be8 data\lksls\tags\block\darkroot_soil_replaceables.json
 bca6e8be0cfe2945d7ce169e81e8af4dc8854a2c data\minecraft\tags\block\mineable\shovel.json
-765318b90c37ec6215dd0635a606b1366359e92f data\minecraft\tags\block\needs_iron_tool.json
-dcf4083e354ac77320b4d9bfb455fbe6f0c2cbac data\minecraft\tags\block\mineable\pickaxe.json
+41da896b2ed78c343c73f205298b85fe9b0f9044 data\minecraft\tags\block\replaceable.json
+d71b81f04e197624c38362c20d3d4189ba12d722 data\minecraft\tags\block\needs_iron_tool.json
+c9bd85273a101c5b5de8f7cb691e711ee15a01a9 data\minecraft\tags\block\mineable\pickaxe.json

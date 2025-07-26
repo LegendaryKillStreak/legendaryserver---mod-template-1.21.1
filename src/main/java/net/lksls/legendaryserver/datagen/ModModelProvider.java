@@ -2,11 +2,15 @@ package net.lksls.legendaryserver.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.lksls.legendaryserver.LegendaryServerMod;
 import net.lksls.legendaryserver.block.ModBlocks;
 import net.lksls.legendaryserver.item.ModItems;
 import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.registry.Registries;
 import net.minecraft.util.Identifier;
+
+import java.util.Optional;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -27,6 +31,23 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_TITANIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DARKROOT_SOIL);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STRANGE_DARKROOT_SOIL);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.EXCITING_DIM_STONE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ALMOST_DIM_STONE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DIM_STONE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MYSTERIOUS_END_ORE);
+        blockStateModelGenerator.registerSingleton(
+                ModBlocks.DIM_ROSE_QUARTZ_BLOCK,
+                TexturedModel.CUBE_BOTTOM_TOP
+        );
+
+
+
+
+
+
+
+
+
 
         blockStateModelGenerator.registerLog(ModBlocks.MIDNIGHTWOOD_LOG).log(ModBlocks.MIDNIGHTWOOD_LOG).wood(ModBlocks.MIDNIGHTWOOD_WOOD);
         blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_MIDNIGHTWOOD_LOG).log(ModBlocks.STRIPPED_MIDNIGHTWOOD_LOG).wood(ModBlocks.STRIPPED_MIDNIGHTWOOD_WOOD);
@@ -40,12 +61,16 @@ public class ModModelProvider extends FabricModelProvider {
 
     }
 
+
+
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.LIGHT_CORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.DARK_CORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.DARK_SOUL_CORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.DRILL_ENGINE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BETA_RADIATING_XENTHRITE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GAMMA_RADIATING_XENTHRITE, Models.GENERATED);
 
 
         itemModelGenerator.register(ModItems.DUNGEON_KEY_SHADOWY_CREATURES, Models.GENERATED);
@@ -65,6 +90,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_TITANIUM, Models.GENERATED);
         itemModelGenerator.register(ModItems.TITANIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.IMPURE_NOCTYRIAN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DIM_ROSE_QUARTZ, Models.GENERATED);
 
 
 
@@ -145,5 +171,6 @@ public class ModModelProvider extends FabricModelProvider {
         
 
     }
+
 
 }

@@ -3,6 +3,7 @@ package net.lksls.legendaryserver.world;
 import net.lksls.legendaryserver.LegendaryServerMod;
 import net.lksls.legendaryserver.block.ModBlocks;
 import net.lksls.legendaryserver.datagen.ModBlockTagProvider;
+import net.lksls.legendaryserver.tag.ModBlockTags;
 import net.lksls.legendaryserver.util.ModTags;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
@@ -24,11 +25,14 @@ import java.util.List;
 
 public class ModConfiguredFeatures {
 
-    public static final RegistryKey<ConfiguredFeature<? , ?>> NICKEL_ORE_KEY = registryKey("nickel_ore");
-    public static final RegistryKey<ConfiguredFeature<? , ?>> TITANIUM_ORE_KEY = registryKey("titanium_ore");
-    public static final RegistryKey<ConfiguredFeature<? , ?>> STRANGE_DARKROOTSOIL_KEY = registryKey("strange_darkrootsoil_key");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> NICKEL_ORE_KEY = registryKey("nickel_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> TITANIUM_ORE_KEY = registryKey("titanium_ore");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> STRANGE_DARKROOTSOIL_KEY = registryKey("strange_darkrootsoil_key");
     public static final RegistryKey<ConfiguredFeature<?, ?>> MIDNIGHTWOOD_KEY = registryKey("midnightwood");
     public static final RegistryKey<ConfiguredFeature<?, ?>> LOST_GRASS_KEY = registryKey("lost_grass");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> TORCHFLOWER_KEY = registryKey("torch_flower");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> EXCITING_DIM_STONE_KEY = registryKey("exciting_dim_stone");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> MYTHICAL_END_ORE_KEY = registryKey("mythical_end_ore");
 
     // Define the RegistryKey for your bone meal configured feature (random patch)
     public static final RegistryKey<ConfiguredFeature<?, ?>> MIDNIGHT_GRASS_BONEMEAL =
@@ -41,7 +45,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> ENDLESS_VIOLET_KEY = registryKey("endless_violet");
 
     // REVERTED: bootstrap method now accepts a single Registerable context for ConfiguredFeatures
-    public static void bootstrap(Registerable<ConfiguredFeature<? , ?>> context) {
+    public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         // --- START: Midnight Grass Bonemeal Feature ---
         // Register the ConfiguredFeature for the bone meal effect.
         // The PlacedFeature is created inline for the RandomPatchFeatureConfig.
@@ -65,23 +69,35 @@ public class ModConfiguredFeatures {
 
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceables = new TagMatchRuleTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
-        RuleTest darkrootsoilReplaceables = new TagMatchRuleTest(ModBlocks.DARKROOT_SOIL);
+        RuleTest darkrootsoilReplaceables = new TagMatchRuleTest(ModBlockTags.DARKROOT_SOIL_REPLACEABLES);
+        RuleTest dimstoneReplaceables = new TagMatchRuleTest(ModBlockTags.DIM_STONE_REPLACABLES);
         RuleTest netherReplaceables = new TagMatchRuleTest(BlockTags.BASE_STONE_NETHER);
         RuleTest endReplaceables = new BlockMatchRuleTest(Blocks.END_STONE);
 
         List<OreFeatureConfig.Target> overworldNickelOres =
                 List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.NICKEL_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.NICKEL_DEEPSLATE_ORE.getDefaultState()));
+
         List<OreFeatureConfig.Target> overworldTitaniumOres =
                 List.of(OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.TITANIUM_ORE.getDefaultState()),
                         OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.TITANIUM_DEEPSLATE_ORE.getDefaultState()));
-        List<OreFeatureConfig.Target> overworldStrangeDarkrootsoil =
-                List.of(OreFeatureConfig.createTarget(darkrootsoilReplaceables, ModBlocks.STRANGE_DARKROOT_SOIL.getDefaultState()),
 
+        List<OreFeatureConfig.Target> overworldStrangeDarkrootsoil =
+                List.of(OreFeatureConfig.createTarget(darkrootsoilReplaceables, ModBlocks.STRANGE_DARKROOT_SOIL.getDefaultState())); // <--- Added ')' here
+
+        List<OreFeatureConfig.Target> netherExcitingDimStone =
+                List.of(OreFeatureConfig.createTarget(dimstoneReplaceables, ModBlocks.EXCITING_DIM_STONE.getDefaultState())); // <--- Added ')' here
+
+
+        List<OreFeatureConfig.Target> endMysteriousEndOres =
+                List.of(OreFeatureConfig.createTarget(endReplaceables, ModBlocks.MYSTERIOUS_END_ORE.getDefaultState())); // <--- Added ')' here
 
 
         register(context, NICKEL_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldNickelOres, 4));
         register(context, TITANIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTitaniumOres, 7));
+        register(context, STRANGE_DARKROOTSOIL_KEY, Feature.ORE, new OreFeatureConfig(overworldStrangeDarkrootsoil, 10));
+        register(context, EXCITING_DIM_STONE_KEY, Feature.ORE, new OreFeatureConfig(netherExcitingDimStone, 14));
+        register(context, MYTHICAL_END_ORE_KEY, Feature.ORE, new OreFeatureConfig(endMysteriousEndOres, 3));
 
         register(context, MIDNIGHTWOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.MIDNIGHTWOOD_LOG),
@@ -91,11 +107,14 @@ public class ModConfiguredFeatures {
                         0.25f, 0.5f, 0.15f, 0.05f),
                 new TwoLayersFeatureSize(1, 0, 2)).dirtProvider(BlockStateProvider.of(ModBlocks.MIDNIGHT_GRASS)).build());
 
-        register(context, LOST_GRASS_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(128,6,2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+        register(context, LOST_GRASS_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(128, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
                 new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.LOST_GRASS)))));
-        register(context, ENDLESS_VIOLET_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(256,4,5, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+        register(context, ENDLESS_VIOLET_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(256, 4, 5, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
                 new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.ENDLESS_VIOLET)))));
-    }
+
+    register(context, TORCHFLOWER_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(3,1,2,PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(Blocks.TORCHFLOWER)))));
+}
 
     public static RegistryKey<ConfiguredFeature<? , ?>> registryKey(String name) {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, Identifier.of(LegendaryServerMod.MOD_ID, name));

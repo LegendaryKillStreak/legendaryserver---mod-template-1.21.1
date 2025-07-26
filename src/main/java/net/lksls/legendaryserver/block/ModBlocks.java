@@ -13,8 +13,6 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 
-import javax.tools.Tool;
-
 public class ModBlocks {
     public static final Block LIGHT_CORE_BLOCK = registerBlock("light_core_block",
             new LightCoreBlock(AbstractBlock.Settings.create()
@@ -24,6 +22,22 @@ public class ModBlocks {
     public static final Block DARK_CORE_BLOCK = registerBlock("dark_core_block",
             new DarkCoreBlock(AbstractBlock.Settings.create()
                     .requiresTool().sounds(BlockSoundGroup.HEAVY_CORE).strength(50f,1200f).luminance(value -> 0)));
+
+    public static final Block EXCITING_DIM_STONE = registerBlock("exciting_dim_stone",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool().sounds(BlockSoundGroup.STONE).strength(12f,100f).luminance(value -> 9)));
+
+    public static final Block ALMOST_DIM_STONE = registerBlock("almost_dim_stone",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool().sounds(BlockSoundGroup.STONE).strength(5f,120f).luminance(value -> 15)));
+
+    public static final Block DIM_STONE = registerBlock("dim_stone",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool().sounds(BlockSoundGroup.STONE).strength(20f,120f).luminance(value -> 6)));
+
+    public static final Block DIM_ROSE_QUARTZ_BLOCK = registerBlock("dim_rose_quartz_block",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool().sounds(BlockSoundGroup.STONE).strength(20f,120f).luminance(value -> 3)));
 
     public static final Block RAW_NICKEL_BLOCK = registerBlock("raw_nickel_block",
             new Block(AbstractBlock.Settings.create()
@@ -61,6 +75,10 @@ public class ModBlocks {
     public static final Block STRANGE_DARKROOT_SOIL = registerBlock("strange_darkroot_soil",
             new ExperienceDroppingBlock(UniformIntProvider.create(1, 2),
                     AbstractBlock.Settings.create().strength(3f,1f).luminance(value -> 9).sounds(BlockSoundGroup.SUSPICIOUS_GRAVEL)));
+
+    public static final Block MYSTERIOUS_END_ORE = registerBlock("mysterious_end_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(1, 9),
+                    AbstractBlock.Settings.create().strength(2f,1f).luminance(value -> 5).sounds(BlockSoundGroup.GLASS)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

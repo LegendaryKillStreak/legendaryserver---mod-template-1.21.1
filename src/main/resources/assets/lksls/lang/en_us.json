@@ -75,6 +75,8 @@
 
   "enchantment.lksls.charged": "Charged",
 
+  "effect.lksls.radiation": "Radiation",
+
 
 
   "itemgroup.lksls.season_one_items": "Season One Items",
@@ -101,6 +103,13 @@
   "block.lksls.midnight_grass": "Midnight Grass",
   "block.lksls.endless_violet": "Violet Of Infinity",
   "block.lksls.midnightwood_log": "Midnightwood Log",
+  "block.lksls.dim_stone": "Dim Stone",
+  "block.lksls.almost_dim_stone": "Almost Dim Stone",
+  "block.lksls.exciting_dim_stone": "Exciting Dim Stone",
+  "block.lksls.dim_rose_quartz_block": "Dim Rose Quartz Block",
+  "block.lksls.mysterious_end_ore": "Mysterious End Ore",
+  "block.lksls.strange_darkroot_soil": "Strange Darkroot Soil",
+
 
 
 

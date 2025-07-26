@@ -48,6 +48,7 @@ public class ModOverworldBiomes {
         addFeature(biomeBuilder, GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.MIDNIGHTWOOD_PLACED_KEY);
         addFeature(biomeBuilder, GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.LOST_GRASS_PLACED_KEY);
         addFeature(biomeBuilder, GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.ENDLESS_VIOLET_PLACED_KEY);
+        addFeature(biomeBuilder, GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.TORCHFLOWER_PLACED_KEY);
         // Get the RegistryEntry for your custom sound event using the provided lookup
         RegistryEntry<SoundEvent> darkAmbienceEntry = soundEventGetter.getOrThrow(ModSounds.AMBIENT_SOUND_LOOPS_REGISTRY_KEY);
 

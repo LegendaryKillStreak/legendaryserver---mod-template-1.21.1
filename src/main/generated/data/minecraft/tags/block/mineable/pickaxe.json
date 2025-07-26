@@ -9,6 +9,11 @@
     "lksls:raw_titanium_block",
     "lksls:titanium_ore",
     "lksls:titanium_block",
+    "lksls:almost_dim_stone",
+    "lksls:dim_stone",
+    "lksls:exciting_dim_stone",
+    "lksls:dim_rose_quartz_block",
+    "lksls:mysterious_end_ore",
     "lksls:titanium_deepslate_ore"
   ]
 }

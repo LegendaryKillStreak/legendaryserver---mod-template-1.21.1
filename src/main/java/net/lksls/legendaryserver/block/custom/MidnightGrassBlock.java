@@ -114,7 +114,7 @@ public class MidnightGrassBlock extends PillarBlock implements Fertilizable {
     public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {
         // Define the radius for spreading
         int radius = 2; // e.g., 2 blocks in each direction (5x5 square area)
-        final int ENDLESS_VIOLET_CHANCE = 250; // 1 in 250 chance for Endless Violet
+        final int ENDLESS_VIOLET_CHANCE = 30; // 1 in 30 chance for Endless Violet
 
         // Iterate through a square area around the fertilized block
         for (BlockPos iteratePos : BlockPos.iterate(pos.add(-radius, -radius, -radius), pos.add(radius, radius, radius))) {
