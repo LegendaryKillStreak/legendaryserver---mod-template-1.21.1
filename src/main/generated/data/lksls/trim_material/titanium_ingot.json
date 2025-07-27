@@ -1,0 +1,9 @@
+{
+  "asset_name": "titanium_ingot",
+  "description": {
+    "color": "#5D586E",
+    "translate": "trim_material.lksls.titanium_ingot"
+  },
+  "ingredient": "lksls:titanium_ingot",
+  "item_model_index": 0.2
+}

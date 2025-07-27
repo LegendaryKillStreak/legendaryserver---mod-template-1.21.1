@@ -1,0 +1,21 @@
+{//yeah, so this determens (or whatever the english term is) the structure to pick and try to spawn if a spot passes the placement check.
+//if two or more structures in this list can spawn in a biome at a spot, a random one based on weight is chosen to spawn
+"structures": [
+  {
+    "structure":  "lksls:strange_altar",
+    "weight": 1
+  }
+],
+"placement":{
+  //kind of placement
+  "type": "minecraft:random_spread",
+  "salt": 71313956,
+  //avg distance
+  "spacing": 10,
+
+
+  //minimum distance ofcourse smaller than spacing
+  "separation": 5
+
+}
+}

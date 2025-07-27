@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "minecraft:blaze_rod"
+    },
+    "X": {
+      "item": "lksls:dark_core"
+    }
+  },
+  "pattern": [
+    " X ",
+    " X ",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "lksls:darkness_sword"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "lksls:dark_core_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "lksls:dark_core"
+  }
+}

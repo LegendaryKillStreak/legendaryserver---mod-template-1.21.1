@@ -1,0 +1,9 @@
+{
+  "asset_name": "echo_dust",
+  "description": {
+    "color": "#093231",
+    "translate": "trim_material.lksls.echo_dust"
+  },
+  "ingredient": "lksls:echo_dust",
+  "item_model_index": 0.9
+}

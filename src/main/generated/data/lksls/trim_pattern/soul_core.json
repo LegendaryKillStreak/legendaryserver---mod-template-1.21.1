@@ -1,0 +1,8 @@
+{
+  "asset_id": "lksls:soul_core",
+  "decal": false,
+  "description": {
+    "translate": "trim_pattern.lksls.soul_core"
+  },
+  "template_item": "lksls:soul_core_armor_smithing_template"
+}

@@ -23,6 +23,11 @@ public class ModBlocks {
             new DarkCoreBlock(AbstractBlock.Settings.create()
                     .requiresTool().sounds(BlockSoundGroup.HEAVY_CORE).strength(50f,1200f).luminance(value -> 0)));
 
+
+    public static final Block ALTERNATIVE_END_STONE = registerBlock("alternative_end_stone",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool().sounds(BlockSoundGroup.STONE).strength(10f,1100f).luminance(value -> 1)));
+
     public static final Block EXCITING_DIM_STONE = registerBlock("exciting_dim_stone",
             new Block(AbstractBlock.Settings.create()
                     .requiresTool().sounds(BlockSoundGroup.STONE).strength(12f,100f).luminance(value -> 9)));
@@ -79,6 +84,8 @@ public class ModBlocks {
     public static final Block MYSTERIOUS_END_ORE = registerBlock("mysterious_end_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(1, 9),
                     AbstractBlock.Settings.create().strength(2f,1f).luminance(value -> 5).sounds(BlockSoundGroup.GLASS)));
+
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

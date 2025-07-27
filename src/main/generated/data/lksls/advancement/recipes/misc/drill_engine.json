@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_drill_engine": {
+      "conditions": {
+        "items": [
+          {
+            "items": "lksls:drill_engine"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "lksls:drill_engine"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_drill_engine"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "lksls:drill_engine"
+    ]
+  }
+}

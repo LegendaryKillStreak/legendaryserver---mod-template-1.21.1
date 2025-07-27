@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "lksls:block/dim_rose_quartz_block_bottom",
+    "side": "lksls:block/dim_rose_quartz_block_side",
+    "top": "lksls:block/dim_rose_quartz_block_top"
+  }
+}

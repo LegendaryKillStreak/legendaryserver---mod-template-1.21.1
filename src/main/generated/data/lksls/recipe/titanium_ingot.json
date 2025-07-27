@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "lksls:titanium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "lksls:titanium_ingot"
+  }
+}

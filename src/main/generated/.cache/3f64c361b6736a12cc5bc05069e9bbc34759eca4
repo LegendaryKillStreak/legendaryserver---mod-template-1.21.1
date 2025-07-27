@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-26T21:09:59.1395381	LegendaryServer - Mod/Model Definitions
+// 1.21.1	2025-07-27T13:24:30.4613558	LegendaryServer - Mod/Model Definitions
 b9176c1ed5cdfd2525370627435c104b43ebb2f8 assets\lksls\models\block\raw_nickel_block.json
 24f8bbfba903536cf9fc951649b0f123008b833a assets\lksls\blockstates\titanium_deepslate_ore.json
 a903b1cfdc8de1481ee1e6912a9d7557ab634456 assets\lksls\models\item\dim_stone.json
@@ -108,8 +108,8 @@ e72498e4099231fff95159a6ae18d5062a3af037 assets\lksls\models\item\dark_core_helm
 5602a7cc39cf2deab76d0445a1a4767fae225f12 assets\lksls\models\item\coin_10000.json
 9597c09695afd30cfb5476c52b156a12ab3b23f2 assets\lksls\models\item\dim_rose_quartz_block.json
 af1483416452d38fe2b937b106338d044e05a49b assets\lksls\models\item\dark_core_chestplate_lapis_trim.json
-a3cd548a5d9f5cbc5608a293823b02e0a8fe8fe8 assets\lksls\models\item\light_core_chestplate_netherite_trim.json
 7ccfb2b76bba9043332565e9853a8bb77188f794 assets\lksls\models\item\dark_core_boots_iron_trim.json
+a3cd548a5d9f5cbc5608a293823b02e0a8fe8fe8 assets\lksls\models\item\light_core_chestplate_netherite_trim.json
 f28307f0a1f6b41c718f387ed0fb88463d4093aa assets\lksls\models\item\light_core_chestplate_amethyst_trim.json
 c42a8a444336a4ff568cd4a99802ccd3187f5b7c assets\lksls\models\item\gamma_radiating_xenthrite.json
 feb9f8473bf4b68172fec4f2f685d40b887f2fb9 assets\lksls\blockstates\midnightwood_leaves.json
@@ -128,8 +128,8 @@ a4eda82e49d559f4937d245a93f1c4d9490bd02b assets\lksls\blockstates\dim_rose_quart
 560127d9dd4fc8d95f7783695f3b0ae59b98bda8 assets\lksls\models\block\dim_stone.json
 5526d8cf31efdedeafb8f40881902532179b9f93 assets\lksls\models\item\dark_core_leggings_emerald_trim.json
 9ddedf8d92e8be5bd41c805a302fbc50d54cff20 assets\lksls\models\item\mysterious_end_ore.json
-58ba3fd096366f791562bfe84766786c2008b18e assets\lksls\models\item\nickel_block.json
 a43bb71fab6af2bdb59fa54f1992eff5d01427bd assets\lksls\models\item\tears_music_disc.json
+58ba3fd096366f791562bfe84766786c2008b18e assets\lksls\models\item\nickel_block.json
 759de952d0282843d690f0dd83feba845c493a42 assets\lksls\models\item\light_core_boots.json
 a98504bdd69970ef05f1690d8800d6e836cbea47 assets\lksls\models\item\dark_core_helmet_redstone_trim.json
 e46837dae124a77926b6ab1db6469374b5d51143 assets\lksls\models\item\dungeon_key_shadowy_creatures.json

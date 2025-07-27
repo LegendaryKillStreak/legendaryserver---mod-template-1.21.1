@@ -1,7 +1,7 @@
-// 1.21.1	2025-07-26T21:09:59.1385386	LegendaryServer - Mod/Tags for minecraft:block
-af1e9dcb3ecb909bde41700ab3e478a302ea9b2e data\lksls\tags\block\needs_light_tool.json
-af1e9dcb3ecb909bde41700ab3e478a302ea9b2e data\lksls\tags\block\needs_dark_tool.json
+// 1.21.1	2025-07-27T13:24:30.4603558	LegendaryServer - Mod/Tags for minecraft:block
 e25cf7f903ae689e9878c3010ab121d652cb56f2 data\minecraft\tags\block\logs_that_burn.json
+af1e9dcb3ecb909bde41700ab3e478a302ea9b2e data\lksls\tags\block\needs_dark_tool.json
+af1e9dcb3ecb909bde41700ab3e478a302ea9b2e data\lksls\tags\block\needs_light_tool.json
 a3040d3b9997a4dcab28a5bb5d19a10a75134812 data\lksls\tags\block\dim_stone_replaceables.json
 86748ffa747c2b7d004c407d6cb10cedb4f91be8 data\lksls\tags\block\darkroot_soil_replaceables.json
 bca6e8be0cfe2945d7ce169e81e8af4dc8854a2c data\minecraft\tags\block\mineable\shovel.json

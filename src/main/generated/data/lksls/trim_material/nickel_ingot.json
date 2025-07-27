@@ -1,0 +1,9 @@
+{
+  "asset_name": "nickel_ingot",
+  "description": {
+    "color": "#D3C1C0",
+    "translate": "trim_material.lksls.nickel_ingot"
+  },
+  "ingredient": "lksls:nickel_ingot",
+  "item_model_index": 0.2
+}

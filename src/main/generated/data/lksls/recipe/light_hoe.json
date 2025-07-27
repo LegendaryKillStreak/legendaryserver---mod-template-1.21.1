@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "minecraft:end_rod"
+    },
+    "C": {
+      "item": "lksls:light_core"
+    }
+  },
+  "pattern": [
+    "CC ",
+    " B ",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "id": "lksls:light_hoe"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_darkness_drill": {
+      "conditions": {
+        "items": [
+          {
+            "items": "lksls:darkness_drill"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "lksls:darkness_drill"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_darkness_drill"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "lksls:darkness_drill"
+    ]
+  }
+}

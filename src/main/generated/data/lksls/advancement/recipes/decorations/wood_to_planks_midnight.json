@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_midnightwood_wood": {
+      "conditions": {
+        "items": [
+          {
+            "items": "lksls:midnightwood_wood"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:wood_to_planks_midnight"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_midnightwood_wood"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:wood_to_planks_midnight"
+    ]
+  }
+}
