@@ -1,11 +1,11 @@
-// 1.21.1	2025-07-27T13:24:30.4603558	LegendaryServer - Mod/World Gen
+// 1.21.1	2025-07-27T14:20:01.81398	LegendaryServer - Mod/World Gen
 c83f0140b90aa3fbae59b6ea502d0e969287300f data\lksls\worldgen\configured_feature\midnightwood.json
 3c41a301ad4c3c29731c4e3dfdadd55165d3c38e data\lksls\worldgen\configured_feature\midnight_grass_bonemeal.json
 e950daeb6e6d36f8579b670794227101181f8a60 data\lksls\worldgen\biome\nocturne_vale.json
 6e2118f4a3c72ab8cce13c720b1a24244dbf3eee data\lksls\worldgen\configured_feature\strange_darkrootsoil_key.json
 970374247f64b4e98b066f0a1343eb47befdd76c data\lksls\worldgen\placed_feature\lost_grass_placed.json
-e63c3beeb5df75f5f4fa5825a206dd05c753b351 data\lksls\worldgen\placed_feature\endless_violet_placed.json
 2449db75793816f6cb3cb86664fd88b9c08279e4 data\lksls\worldgen\placed_feature\nickel_ore_placed.json
+e63c3beeb5df75f5f4fa5825a206dd05c753b351 data\lksls\worldgen\placed_feature\endless_violet_placed.json
 545bc3541fd98674340adb791c07fe722aa575f6 data\lksls\worldgen\configured_feature\mythical_end_ore.json
 2249391007c8f70e2934242646d23999ca0283d0 data\lksls\worldgen\placed_feature\mythical_end_ore_placed.json
 abbc7dc7a2a70b881281227024caae64d20ebddb data\lksls\worldgen\biome\luminara_depths.json

@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-27T13:24:30.4613558	LegendaryServer - Mod/Model Definitions
+// 1.21.1	2025-07-27T14:20:01.8159804	LegendaryServer - Mod/Model Definitions
 b9176c1ed5cdfd2525370627435c104b43ebb2f8 assets\lksls\models\block\raw_nickel_block.json
 24f8bbfba903536cf9fc951649b0f123008b833a assets\lksls\blockstates\titanium_deepslate_ore.json
 a903b1cfdc8de1481ee1e6912a9d7557ab634456 assets\lksls\models\item\dim_stone.json
@@ -33,8 +33,8 @@ eaab09150f538b315d310600417d284b7cd6b05b assets\lksls\models\item\dark_core.json
 572a12e2717eee6dca66343b84e47d56b2dbd33d assets\lksls\models\block\stripped_midnightwood_wood.json
 e1fa7bcd761dd53ae919559bbb9c1c3d62598cc0 assets\lksls\models\item\nickel_deepslate_ore.json
 64398626a31f5162637290d127edc92c78552761 assets\lksls\models\item\light_core_chestplate_gold_trim.json
-ceec56a3585face1635520377d2d43332bee1647 assets\lksls\models\item\dark_core_helmet_iron_trim.json
 3e5618bcbf4985513f13e1b813c005817e1a7a00 assets\lksls\models\item\dark_core_boots_copper_trim.json
+ceec56a3585face1635520377d2d43332bee1647 assets\lksls\models\item\dark_core_helmet_iron_trim.json
 2aed686e081c2ed384d9d8a0bbac2f0eb20b32f7 assets\lksls\models\item\light_core_helmet_netherite_trim.json
 f4ddd44aa0772f0f24f18bde79d30ed93e81678b assets\lksls\models\item\light_core_leggings_iron_trim.json
 001eeed9f1703bc09d224d9a59dd9dcbec602cfc assets\lksls\models\item\coin_250.json
@@ -108,8 +108,8 @@ e72498e4099231fff95159a6ae18d5062a3af037 assets\lksls\models\item\dark_core_helm
 5602a7cc39cf2deab76d0445a1a4767fae225f12 assets\lksls\models\item\coin_10000.json
 9597c09695afd30cfb5476c52b156a12ab3b23f2 assets\lksls\models\item\dim_rose_quartz_block.json
 af1483416452d38fe2b937b106338d044e05a49b assets\lksls\models\item\dark_core_chestplate_lapis_trim.json
-7ccfb2b76bba9043332565e9853a8bb77188f794 assets\lksls\models\item\dark_core_boots_iron_trim.json
 a3cd548a5d9f5cbc5608a293823b02e0a8fe8fe8 assets\lksls\models\item\light_core_chestplate_netherite_trim.json
+7ccfb2b76bba9043332565e9853a8bb77188f794 assets\lksls\models\item\dark_core_boots_iron_trim.json
 f28307f0a1f6b41c718f387ed0fb88463d4093aa assets\lksls\models\item\light_core_chestplate_amethyst_trim.json
 c42a8a444336a4ff568cd4a99802ccd3187f5b7c assets\lksls\models\item\gamma_radiating_xenthrite.json
 feb9f8473bf4b68172fec4f2f685d40b887f2fb9 assets\lksls\blockstates\midnightwood_leaves.json
@@ -166,8 +166,8 @@ d5647433a4f11838dd6c8ffb16f747e6a9438aa3 assets\lksls\models\item\exciting_dim_s
 6c48b083cbe501e1113e3da96e38d6f1e2d2c53b assets\lksls\models\item\coin_100000.json
 c0c2b0be5761457516cce495cbab73f73202652b assets\lksls\models\item\darkness_axe.json
 b7f8d7a760219e1043b23d8ab4747675fc0d30f7 assets\lksls\models\item\darkness_hoe.json
-c99cc51cb97ef87b343b7e78fdb57b23acf02fc5 assets\lksls\models\item\coin_ten.json
 d30d932779d471a6171798e20e5127e1466f4880 assets\lksls\models\item\horizon_zero_dawn_music_disc.json
+c99cc51cb97ef87b343b7e78fdb57b23acf02fc5 assets\lksls\models\item\coin_ten.json
 d19f1e44f443182027062653faaf23cd10b3a695 assets\lksls\blockstates\strange_darkroot_soil.json
 9a8d103dec89cede7db3a787877164e3ef8e7bec assets\lksls\models\item\raw_titanium_block.json
 25821241e6fdae8200bcf2273c184ef43c31b9ee assets\lksls\models\item\coin_150000.json
@@ -180,8 +180,8 @@ a1d1872fa52e186dd2b67f1fcde0fe0094f3e196 assets\lksls\models\item\dark_core_ches
 24e7ee09b7d45a120b86707b3703b8e375d55667 assets\lksls\models\item\dark_core_leggings_amethyst_trim.json
 7515c9defed6af32c683042f3b4c55e4eba849e7 assets\lksls\models\item\dark_core_leggings_gold_trim.json
 af001bf7e2b205306d41943f8c4466e564e3ac4e assets\lksls\models\item\dark_core_helmet_netherite_trim.json
-b1d8a2415c2a791e2f26087683ec1d4d5bdce10c assets\lksls\models\item\dark_core_helmet_lapis_trim.json
 68c7d70efa31df845d9ac70e9b551daa3bf60953 assets\lksls\models\item\dark_core_helmet.json
+b1d8a2415c2a791e2f26087683ec1d4d5bdce10c assets\lksls\models\item\dark_core_helmet_lapis_trim.json
 b6ff442434ab07b76127f8fa1811cb7d0c0c5c87 assets\lksls\models\block\nickel_block.json
 ecc42a6815a1655f666990d9be0fe59f4fbc5a22 assets\lksls\models\item\light_core_chestplate_copper_trim.json
 8125c32286df8690b7021386c2da1d81ba69dc0c assets\lksls\models\item\titanium_block.json
