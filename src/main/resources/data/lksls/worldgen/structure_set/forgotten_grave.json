@@ -2,14 +2,14 @@
 //if two or more structures in this list can spawn in a biome at a spot, a random one based on weight is chosen to spawn
 "structures": [
   {
-    "structure":  "lksls:strange_altar",
+    "structure":  "lksls:forgotten_grave",
     "weight": 1
   }
 ],
 "placement":{
   //kind of placement
   "type": "minecraft:random_spread",
-  "salt": 71313956,
+  "salt": 71313957,
   //avg distance
   "spacing": 90,
 

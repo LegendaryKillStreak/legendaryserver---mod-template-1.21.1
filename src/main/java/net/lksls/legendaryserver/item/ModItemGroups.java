@@ -3,6 +3,7 @@ package net.lksls.legendaryserver.item;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.lksls.legendaryserver.LegendaryServerMod;
 import net.lksls.legendaryserver.block.ModBlocks;
+import net.lksls.legendaryserver.effect.ModEffects;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -108,6 +109,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.ENDLESS_VIOLET);
                         entries.add(ModBlocks.STRIPPED_MIDNIGHTWOOD_LOG);
                         entries.add(ModBlocks.STRIPPED_MIDNIGHTWOOD_WOOD);
+                        entries.add(ModBlocks.ALTERNATIVE_END_STONE);
 
                         entries.add(ModBlocks.MIDNIGHTWOOD_PLANKS);
                         entries.add(ModBlocks.MIDNIGHTWOOD_LEAVES);
@@ -121,6 +123,20 @@ public class ModItemGroups {
 
 
                     }).build());
+
+
+
+    public static final ItemGroup NUCLEAR_ITEMS = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(LegendaryServerMod.MOD_ID, "nuclear_items"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.NUCLEAR_ITEM_GROUP_ICON))
+                    .displayName(Text.translatable("itemgroup.lksls.nuclear_items"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.BETA_RADIATING_XENTHRITE);
+                        entries.add(ModItems.GAMMA_RADIATING_XENTHRITE);
+
+
+                    }).build());
+
 
     public static void registerItemGroups() {
         LegendaryServerMod.LOGGER.info("Registering Item Groups for " + LegendaryServerMod.MOD_ID);

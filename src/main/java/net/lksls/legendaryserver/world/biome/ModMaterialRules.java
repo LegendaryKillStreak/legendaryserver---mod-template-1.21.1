@@ -23,6 +23,8 @@ public class ModMaterialRules {
     private static final MaterialRules.MaterialRule BLUE_TERRACOTTA = makeStateRule(Blocks.BLUE_TERRACOTTA);
     private static final MaterialRules.MaterialRule MIDNIGHT_GRASS = makeStateRule(ModBlocks.MIDNIGHT_GRASS);
 
+    private static final MaterialRules.MaterialRule ALTERNATIVE_END_STONE = makeStateRule(ModBlocks.ALTERNATIVE_END_STONE);
+
     private static final MaterialRules.MaterialRule OBSIDIAN = makeStateRule(Blocks.OBSIDIAN);
     private static final MaterialRules.MaterialRule END_STONE = makeStateRule(Blocks.END_STONE);
     private static final MaterialRules.MaterialRule MYSTERIOUS_END_ORE = makeStateRule(ModBlocks.MYSTERIOUS_END_ORE);
@@ -91,7 +93,7 @@ public class ModMaterialRules {
 
     public static MaterialRules.MaterialRule makeAbyssOfLamentRules() {
         return MaterialRules.sequence(
-                MaterialRules.condition(MaterialRules.biome(ModBiomes.ABYSS_OF_LAMENT), OBSIDIAN),
+                MaterialRules.condition(MaterialRules.biome(ModBiomes.ABYSS_OF_LAMENT), ALTERNATIVE_END_STONE),
                 // Default to end stone
                 MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, END_STONE)
         );

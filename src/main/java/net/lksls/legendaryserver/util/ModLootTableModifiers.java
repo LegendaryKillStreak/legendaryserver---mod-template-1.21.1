@@ -25,6 +25,7 @@ public class  ModLootTableModifiers {
 
 
 
+
     public static void modifyLootTables() {
         LootTableEvents.MODIFY.register((key, tableBuilder, source,registry) -> {
             if (LootTables.ANCIENT_CITY_CHEST.equals(key))
@@ -62,6 +63,8 @@ public class  ModLootTableModifiers {
                 tableBuilder.pool(poolBuilder.build());
 
             }
+
+
 
 
             if (LootTables.ANCIENT_CITY_CHEST.equals(key))

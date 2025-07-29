@@ -28,6 +28,7 @@ public class LegendaryServerModDataGenerator implements DataGeneratorEntrypoint 
 		pack.addProvider(ModRegistryDataGenerator::new);
 		pack.addProvider(ModWorldGenerator::new);
 
+
 	}
 
 	@Override

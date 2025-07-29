@@ -41,6 +41,9 @@ public class ModItems {
     public static final  Item BETA_RADIATING_XENTHRITE = registerItem("beta_radiating_xenthrite",
             new BetaRadiatingXenthrite(new Item.Settings().rarity(Rarity.EPIC)));
 
+    public static final Item NUCLEAR_ITEM_GROUP_ICON = registerItem("nuclear_item_group_icon", new Item(new Item.Settings()));
+
+
 
 
 

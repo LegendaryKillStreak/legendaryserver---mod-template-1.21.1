@@ -39,8 +39,19 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.EXCITING_DIM_STONE)
                 .add(ModBlocks.DIM_ROSE_QUARTZ_BLOCK)
                 .add(ModBlocks.MYSTERIOUS_END_ORE)
-                .add(ModBlocks.TITANIUM_DEEPSLATE_ORE);
+                .add(ModBlocks.TITANIUM_DEEPSLATE_ORE)
+                .add(ModBlocks.ALTERNATIVE_END_STONE);
 
+        getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
+
+
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.ALTERNATIVE_END_STONE)
+                .add(ModBlocks.ALMOST_DIM_STONE)
+                .add(ModBlocks.DIM_STONE)
+                .add(ModBlocks.EXCITING_DIM_STONE)
+                .add(ModBlocks.DIM_ROSE_QUARTZ_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.LIGHT_CORE_BLOCK)
@@ -53,6 +64,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.TITANIUM_BLOCK)
                 .add(ModBlocks.EXCITING_DIM_STONE)
                 .add(ModBlocks.TITANIUM_DEEPSLATE_ORE)
+                .add(ModBlocks.MYSTERIOUS_END_ORE)
                 .add(ModBlocks.RAW_TITANIUM_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)

@@ -115,6 +115,9 @@ public class ModBlocks {
     public static final Block LOST_GRASS = registerBlock("lost_grass",
             new FlowerBlock(StatusEffects.DARKNESS, 4, AbstractBlock.Settings.copy(Blocks.ALLIUM).luminance(value -> 3)));
 
+    public static final Block LAMENT_SPINDLE = registerBlock("lament_spindle",
+            new FlowerBlock(StatusEffects.DARKNESS, 4, AbstractBlock.Settings.copy(Blocks.ALLIUM).luminance(value -> 3)));
+
     public static final Block POTTED_LOST_GRASS = registerBlockWithoutBlockItem("potted_lost_grass",
             new FlowerPotBlock(LOST_GRASS, AbstractBlock.Settings.copy(Blocks.POTTED_ALLIUM)));
 

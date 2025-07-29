@@ -23,6 +23,7 @@ import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.damage.DamageType;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.util.Identifier;
 import net.minecraft.world.World;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -91,6 +92,7 @@ public class LegendaryServerMod implements ModInitializer, TerraBlenderApi {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.MIDNIGHTWOOD_LEAVES, 30, 60);
 
 	}
+	public static final Identifier FORGOTTEN_GRAVE_LOOT_TABLE_ID = Identifier.of(MOD_ID, "chests/forgotten_grave");
 
 	public static RegistryEntry<DamageType> RADIATION_DAMAGE_TYPE_ENTRY;
 	public static DamageSource GENERIC_RADIATION_SOURCE; // If you want a static source without attacker/pos

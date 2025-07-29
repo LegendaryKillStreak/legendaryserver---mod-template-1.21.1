@@ -35,6 +35,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ALMOST_DIM_STONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DIM_STONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MYSTERIOUS_END_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ALTERNATIVE_END_STONE);
         blockStateModelGenerator.registerSingleton(
                 ModBlocks.DIM_ROSE_QUARTZ_BLOCK,
                 TexturedModel.CUBE_BOTTOM_TOP
@@ -65,6 +66,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(ModItems.NUCLEAR_ITEM_GROUP_ICON, Models.GENERATED);
         itemModelGenerator.register(ModItems.LIGHT_CORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.DARK_CORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.DARK_SOUL_CORE, Models.GENERATED);

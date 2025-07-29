@@ -1,4 +1,4 @@
-// 1.21.1	2025-07-27T14:20:01.8119794	LegendaryServer - Mod/Block Loot Tables
+// 1.21.1	2025-07-29T19:36:30.9284054	LegendaryServer - Mod/Block Loot Tables
 c94a70717c1b1e7a4692a76b1f72a5936604b06d data\lksls\loot_table\blocks\lost_grass.json
 d1c227195cfee74f65294f98d2d177604d9147e5 data\lksls\loot_table\blocks\dark_core_block.json
 ccd22f2362dc421b48a0f7429be19a20fe88c018 data\lksls\loot_table\blocks\light_core_block.json
@@ -7,8 +7,8 @@ af30affc68f9536012a57495ea3f19a93bae6e75 data\lksls\loot_table\blocks\dim_rose_q
 baa7c196c1e8060cfe115c5a4101a172025fc658 data\lksls\loot_table\blocks\nickel_block.json
 2d4efe53ee05880d7984e09e5f4210c48c20af52 data\lksls\loot_table\blocks\dim_stone.json
 72c8d45e9e2a807c475da26bcacf34f852a3b3a8 data\lksls\loot_table\blocks\exciting_dim_stone.json
-57faa3469ae231e5e75d84531526ced6d3df98d0 data\lksls\loot_table\blocks\darkroot_soil.json
 c99fbe63f5e28fa23900f1ae17a75ece47097cc2 data\lksls\loot_table\blocks\potted_endless_violet.json
+57faa3469ae231e5e75d84531526ced6d3df98d0 data\lksls\loot_table\blocks\darkroot_soil.json
 500711ac71a10a5624dc8d6547e89d8b173f3d7f data\lksls\loot_table\blocks\raw_nickel_block.json
 d4bb1ea1d5f651308d0906064acc08ba8e0f5a6f data\lksls\loot_table\blocks\mysterious_end_ore.json
 5c817580362bb7f5f38703465879af341be470ac data\lksls\loot_table\blocks\endless_violet.json
@@ -20,6 +20,7 @@ ada32a87a68921b5dac94160d59ec30f6f0fda69 data\lksls\loot_table\blocks\midnightwo
 c3b745aa8fcf116abbd5435ba7312381aa82f789 data\lksls\loot_table\blocks\stripped_midnightwood_wood.json
 57ad0170fbf546e202c75aa117e0e10b51c45b06 data\lksls\loot_table\blocks\potted_lost_grass.json
 439a1a47afdaeda1206a5fa9fff63a32bf3ba517 data\lksls\loot_table\blocks\titanium_ore.json
+f6a61d4ea26c9cd05bdef60ae08526a713177e57 data\lksls\loot_table\blocks\alternative_end_stone.json
 23d7ddd0b0933d006ab67cd3fe3ef67b0fb09675 data\lksls\loot_table\blocks\nickel_deepslate_ore.json
 b1116fe506298872367d34fb163b6a8dc4c148bb data\lksls\loot_table\blocks\midnightwood_log.json
 34188b46ba10a537a865a62b894009ad1d38a89e data\lksls\loot_table\blocks\midnightwood_planks.json
