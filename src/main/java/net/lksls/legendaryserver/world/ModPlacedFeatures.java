@@ -23,6 +23,7 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> STRANGE_DARKROOTSOIL_PLACED_KEY = registerKey("strange_darkrootsoil_placed");
     public static final RegistryKey<PlacedFeature> MIDNIGHTWOOD_PLACED_KEY = registerKey("midnightwood_placed");
     public static final RegistryKey<PlacedFeature> LOST_GRASS_PLACED_KEY = registerKey("lost_grass_placed");
+    public static final RegistryKey<PlacedFeature> LAMENT_SPINDLE_PLACED_KEY = registerKey("lament_spindle_placed");
     public static final RegistryKey<PlacedFeature> ENDLESS_VIOLET_PLACED_KEY = registerKey("endless_violet_placed");
     public static final RegistryKey<PlacedFeature> EXCITING_DIM_STONE_PLACED_KEY = registerKey("exciting_dim_stone_placed");
     public static final RegistryKey<PlacedFeature> MYTHICAL_END_ORE_PLACED_KEY = registerKey("mythical_end_ore_placed");
