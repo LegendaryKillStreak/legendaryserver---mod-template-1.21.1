@@ -65,8 +65,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.TITANIUM_ORE, oreDrops(ModBlocks.TITANIUM_ORE, ModItems.RAW_TITANIUM));
         addDrop(ModBlocks.TITANIUM_DEEPSLATE_ORE, multipleOreDrops(ModBlocks.TITANIUM_DEEPSLATE_ORE, ModItems.RAW_TITANIUM, 1, 1));
 
-///So, this is broken. 1.21.1 fabric. yes, enchantment/enchantments is the issue. yes we tried a few things and now there is arrays :<
-///******************************************************
+
 // Get the enchantment registry wrapper
         RegistryWrapper.Impl<Enchantment> enchantmentRegistry = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
 
@@ -106,7 +105,7 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
                         )
                 )
         );
-///***********************************************************************************************************
+
 
 
         addDrop(ModBlocks.MIDNIGHTWOOD_LOG);
@@ -116,7 +115,12 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MIDNIGHTWOOD_SAPLING);
         addDrop(ModBlocks.DARKROOT_SOIL);
 
+
+
+
+
         addDrop(ModBlocks.LOST_GRASS);
+        addDrop(ModBlocks.LAMENT_SPINDLE);
         addDrop(ModBlocks.POTTED_LOST_GRASS, pottedPlantDrops(ModBlocks.LOST_GRASS));
         addDrop(ModBlocks.MIDNIGHT_GRASS, (block -> this.drops(block, ModBlocks.DARKROOT_SOIL)));
 // Drop MIDNIGHT_GRASS if using shovels, because its a grass block <3 and the SILKTOUCH_OR_SHEARS was the first and only method i could think of, for some reason it also doesn't recognize SHEARS as a itemtag
@@ -145,6 +149,9 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
                 ItemEntry.builder(item).apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(minDrops, maxDrops))))
                 .apply(ApplyBonusLootFunction.oreDrops(impl.getOrThrow(Enchantments.FORTUNE)))));
     }
+
+
+
 
 
 

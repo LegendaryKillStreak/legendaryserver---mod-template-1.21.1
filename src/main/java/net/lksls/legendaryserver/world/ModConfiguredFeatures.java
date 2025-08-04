@@ -30,6 +30,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> STRANGE_DARKROOTSOIL_KEY = registryKey("strange_darkrootsoil_key");
     public static final RegistryKey<ConfiguredFeature<?, ?>> MIDNIGHTWOOD_KEY = registryKey("midnightwood");
     public static final RegistryKey<ConfiguredFeature<?, ?>> LOST_GRASS_KEY = registryKey("lost_grass");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> LAMENT_SPINDLE_KEY = registryKey("lament_spindle");
     public static final RegistryKey<ConfiguredFeature<?, ?>> TORCHFLOWER_KEY = registryKey("torch_flower");
     public static final RegistryKey<ConfiguredFeature<?, ?>> EXCITING_DIM_STONE_KEY = registryKey("exciting_dim_stone");
     public static final RegistryKey<ConfiguredFeature<?, ?>> MYTHICAL_END_ORE_KEY = registryKey("mythical_end_ore");
@@ -109,6 +110,10 @@ public class ModConfiguredFeatures {
 
         register(context, LOST_GRASS_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(128, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
                 new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.LOST_GRASS)))));
+
+        register(context, LAMENT_SPINDLE_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(128, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.LAMENT_SPINDLE)))));
+
         register(context, ENDLESS_VIOLET_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(256, 4, 5, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
                 new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.ENDLESS_VIOLET)))));
 

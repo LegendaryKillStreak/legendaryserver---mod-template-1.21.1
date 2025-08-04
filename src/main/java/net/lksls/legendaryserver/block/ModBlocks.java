@@ -120,6 +120,8 @@ public class ModBlocks {
 
     public static final Block POTTED_LOST_GRASS = registerBlockWithoutBlockItem("potted_lost_grass",
             new FlowerPotBlock(LOST_GRASS, AbstractBlock.Settings.copy(Blocks.POTTED_ALLIUM)));
+    public static final Block POTTED_LAMENT_SPINDLE = registerBlockWithoutBlockItem("potted_lament_spindle",
+            new FlowerPotBlock(LAMENT_SPINDLE, AbstractBlock.Settings.copy(Blocks.POTTED_ALLIUM)));
 
     public static final Block ENDLESS_VIOLET = registerBlock("endless_violet",
             new FlowerBlock(StatusEffects.DARKNESS, 4, AbstractBlock.Settings.copy(Blocks.ALLIUM).luminance(value -> 2)));

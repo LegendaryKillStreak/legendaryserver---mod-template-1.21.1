@@ -13,5 +13,8 @@ public class ModFlowerGeneration {
 
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.NOCTURNE_VALE),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.ENDLESS_VIOLET_PLACED_KEY);
+
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.ABYSS_OF_LAMENT),
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.LAMENT_SPINDLE_PLACED_KEY);
     }
 }

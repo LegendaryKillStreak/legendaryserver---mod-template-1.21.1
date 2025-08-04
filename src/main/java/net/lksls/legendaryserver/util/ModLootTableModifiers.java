@@ -6,15 +6,20 @@ import net.lksls.legendaryserver.datagen.ModItemTagProvider;
 import net.lksls.legendaryserver.enchantment.ModEnchantments;
 import net.lksls.legendaryserver.item.ModItems;
 import net.minecraft.block.LeavesBlock;
+import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTables;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
+import net.minecraft.loot.context.LootContext;
 import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.function.LootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.predicate.item.EnchantmentsPredicate;
 import net.minecraft.util.Identifier;
 
 public class  ModLootTableModifiers {
@@ -63,6 +68,7 @@ public class  ModLootTableModifiers {
                 tableBuilder.pool(poolBuilder.build());
 
             }
+
 
 
 

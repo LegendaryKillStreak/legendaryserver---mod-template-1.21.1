@@ -27,6 +27,7 @@ public class LegendaryServerModDataGenerator implements DataGeneratorEntrypoint 
 		pack.addProvider(ModBlockLootTableProvider::new);
 		pack.addProvider(ModRegistryDataGenerator::new);
 		pack.addProvider(ModWorldGenerator::new);
+		pack.addProvider(ModChestLootTableProvider::new);
 
 
 	}

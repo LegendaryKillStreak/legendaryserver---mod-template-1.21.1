@@ -57,6 +57,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSingleton(ModBlocks.MIDNIGHTWOOD_LEAVES, TexturedModel.LEAVES);
         blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.MIDNIGHTWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.LOST_GRASS, ModBlocks.POTTED_LOST_GRASS, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.LAMENT_SPINDLE, ModBlocks.POTTED_LAMENT_SPINDLE, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.ENDLESS_VIOLET, ModBlocks.POTTED_ENDLESS_VIOLET, BlockStateModelGenerator.TintType.NOT_TINTED);
 
 
