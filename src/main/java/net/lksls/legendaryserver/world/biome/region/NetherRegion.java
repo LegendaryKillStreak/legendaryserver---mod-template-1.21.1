@@ -21,15 +21,15 @@ public class NetherRegion extends Region {
     @Override
     public void addBiomes(Registry<Biome> registry, Consumer<Pair<MultiNoiseUtil.NoiseHypercube, RegistryKey<Biome>>> mapper) {
         this.addBiome(mapper,
-                MultiNoiseUtil.ParameterRange.of(-0.1F, 0.1F), // temperature
-                MultiNoiseUtil.ParameterRange.of(-0.1F, 0.1F), // humidity
-                MultiNoiseUtil.ParameterRange.of(-0.1F, 0.1F), // continentalness
-                MultiNoiseUtil.ParameterRange.of(-0.1F, 0.1F), // erosion
-                MultiNoiseUtil.ParameterRange.of(-0.05F, 0.05F), // weirdness
-                MultiNoiseUtil.ParameterRange.of(-0.2F, 0.1F), // depth
+                MultiNoiseUtil.ParameterRange.of(-0.4F, 0.4F), // temperature (wide)
+                MultiNoiseUtil.ParameterRange.of(-0.1F, 0.1F), // humidity (rare)
+                MultiNoiseUtil.ParameterRange.of(-0.8F, 0.8F), // continentalness (VERY wide)
+                MultiNoiseUtil.ParameterRange.of(-0.6F, 0.7F), // erosion (VERY wide)
+                MultiNoiseUtil.ParameterRange.of(-0.02F, 0.02F), // weirdness (tight = rare)
+                MultiNoiseUtil.ParameterRange.of(-0.3F, 0.3F), // depth (medium)
                 0.0F,
                 ModBiomes.LUMINARA_DEPTHS
         );
-
     }
+
 }
