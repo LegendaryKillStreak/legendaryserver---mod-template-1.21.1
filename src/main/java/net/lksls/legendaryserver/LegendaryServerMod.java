@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.lksls.legendaryserver.block.ModBlocks;
+import net.lksls.legendaryserver.block.entity.ModBlockEntities;
 import net.lksls.legendaryserver.damagesource.ModDamageSources;
 import net.lksls.legendaryserver.damagetype.ModDamageTypes;
 import net.lksls.legendaryserver.effect.ModEffects;
@@ -18,6 +19,7 @@ import net.lksls.legendaryserver.util.DrillUsageEvent;
 import net.lksls.legendaryserver.util.ModLootTableModifiers;
 import net.lksls.legendaryserver.world.biome.ModBiomes;
 import net.lksls.legendaryserver.world.biome.ModMaterialRules;
+import net.lksls.legendaryserver.world.gen.ModTreeGeneration;
 import net.lksls.legendaryserver.world.gen.ModWorldGeneration;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.damage.DamageType;
@@ -50,6 +52,10 @@ public class LegendaryServerMod implements ModInitializer, TerraBlenderApi {
 		ModWorldGeneration.generateModWorldGen();
 		ModDamageTypes.registerModDamageTypes();
 		ModEffects.registerEffects();
+		ModBlockEntities.registerBlockEntities();
+		ModTreeGeneration.generateTrees();
+
+
 
 		ServerLifecycleEvents.SERVER_STARTED.register(server -> {
 			// When the server starts, get its RegistryManager (which is a WrapperLookup)

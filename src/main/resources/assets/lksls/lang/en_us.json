@@ -47,6 +47,11 @@
   "item.lksls.coin_250000": "Coin 250k",
   "item.lksls.coin_500000": "Coin 500k",
   "item.lksls.drill_engine": "Drill Engine",
+  "item.lksls.beta_radiating_xenthrite": "Beta Radiating Xenthrite",
+  "item.lksls.gamma_radiating_xenthrite": "Gamma Radiating Xenthrite",
+  "item.lksls.refined_xenthrite": "Refinded Xenthrite",
+  "item.lksls.dim_rose_quartz": "Dim Rose Quartz",
+  "item.lksls.impure_noctyrian": "Impure Noctyrian",
   "item.lksls.raw_nickel": "Raw Nickel",
   "item.lksls.nickel_ingot": "Nickel Ingot",
   "item.lksls.raw_titanium": "Raw Titanium",
@@ -108,7 +113,13 @@
   "block.lksls.exciting_dim_stone": "Exciting Dim Stone",
   "block.lksls.dim_rose_quartz_block": "Dim Rose Quartz Block",
   "block.lksls.mysterious_end_ore": "Mysterious End Ore",
+  "block.lksls.lament_spindle": "Lament Spindle",
   "block.lksls.strange_darkroot_soil": "Strange Darkroot Soil",
+  "block.lksls.alternative_end_stone": "alternative_end_stone",
+
+  "death.attack.radiation_damage": "%1$s's Geiger counter screamed its last",
+  "death.attack.radiation_damage.death_screen":"You dissolved into radioactive silence",
+
 
 
 

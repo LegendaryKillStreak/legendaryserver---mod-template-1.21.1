@@ -19,7 +19,7 @@ public class ModArmorItem extends ArmorItem {
     private static final Map<RegistryEntry<ArmorMaterial>, List<StatusEffectInstance>> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<RegistryEntry<ArmorMaterial>, List<StatusEffectInstance>>())
                     .put(ModArmorMaterials.DARK_CORE_ARMOR_MATERIAL,
-                            List.of(new StatusEffectInstance(StatusEffects.RESISTANCE,30,0,false,false),
+                            List.of(new StatusEffectInstance(StatusEffects.RESISTANCE,30,2,false,false),
                                     new StatusEffectInstance(StatusEffects.DARKNESS,45,0,false,false)))
 
                     .put(ModArmorMaterials.LIGHT_CORE_ARMOR_MATERIAL,

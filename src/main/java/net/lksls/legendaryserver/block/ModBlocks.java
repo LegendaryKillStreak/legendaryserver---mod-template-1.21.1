@@ -24,6 +24,11 @@ public class ModBlocks {
                     .requiresTool().sounds(BlockSoundGroup.HEAVY_CORE).strength(50f,1200f).luminance(value -> 0)));
 
 
+    public static final Block CORE_FUSIONER_BLOCK = registerBlock("core_fusioner_block",
+            new CoreFusionerBlock(AbstractBlock.Settings.create()
+                    .requiresTool().sounds(BlockSoundGroup.DEEPSLATE_BRICKS).strength(75f,1900f).luminance(value -> 0)));
+
+
     public static final Block ALTERNATIVE_END_STONE = registerBlock("alternative_end_stone",
             new Block(AbstractBlock.Settings.create()
                     .requiresTool().sounds(BlockSoundGroup.STONE).strength(10f,1100f).luminance(value -> 1)));

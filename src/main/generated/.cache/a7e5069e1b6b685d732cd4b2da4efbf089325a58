@@ -1,5 +1,6 @@
-// 1.21.1	2025-08-03T21:34:14.6474364	LegendaryServer - Mod/Block Loot Tables
+// 1.21.1	2025-08-22T00:30:37.7483574	LegendaryServer - Mod/Block Loot Tables
 c94a70717c1b1e7a4692a76b1f72a5936604b06d data\lksls\loot_table\blocks\lost_grass.json
+54791424cf0970bf82225e6c85a0e148d6c24372 data\lksls\loot_table\blocks\lament_spindle.json
 d1c227195cfee74f65294f98d2d177604d9147e5 data\lksls\loot_table\blocks\dark_core_block.json
 ccd22f2362dc421b48a0f7429be19a20fe88c018 data\lksls\loot_table\blocks\light_core_block.json
 af30affc68f9536012a57495ea3f19a93bae6e75 data\lksls\loot_table\blocks\dim_rose_quartz_block.json

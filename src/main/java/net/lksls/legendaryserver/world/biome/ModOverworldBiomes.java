@@ -26,7 +26,6 @@ import net.minecraft.world.gen.feature.*;
 public class ModOverworldBiomes {
     private static void addFeature(GenerationSettings.LookupBackedBuilder builder, GenerationStep.Feature step, RegistryKey<PlacedFeature> feature) {
         builder.feature(step, feature);
-        ModTreeGeneration.generateTrees();
     }
 
     public static Biome nocturneVale(RegistryEntryLookup<PlacedFeature> placedFeatureGetter, RegistryEntryLookup<ConfiguredCarver<?>> carverGetter, RegistryEntryLookup<SoundEvent> soundEventGetter) {

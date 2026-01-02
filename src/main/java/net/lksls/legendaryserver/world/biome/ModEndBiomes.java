@@ -1,5 +1,6 @@
 package net.lksls.legendaryserver.world.biome;
 
+import net.lksls.legendaryserver.world.ModPlacedFeatures;
 import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.RegistryEntryLookup;
 import net.minecraft.registry.RegistryKey;
@@ -25,15 +26,18 @@ public class ModEndBiomes {
         // Biome features
         GenerationSettings.LookupBackedBuilder biomeBuilder = new GenerationSettings.LookupBackedBuilder(placedFeatureGetter, carverGetter);
 
+        addFeature(biomeBuilder, GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.LAMENT_SPINDLE_PLACED_KEY);
+
         addFeature(biomeBuilder, GenerationStep.Feature.UNDERGROUND_DECORATION, EndPlacedFeatures.END_SPIKE);
 
         return new Biome.Builder()
                 .precipitation(false).temperature(4.0F).downfall(0.0F)
-                .effects((new BiomeEffects.Builder()).waterColor(0x2f004a).waterFogColor(0x2f004a).fogColor(0x2f004a)
+                .effects((new BiomeEffects.Builder()).waterColor(0x66ff10).waterFogColor(0x66ff10).fogColor(0x66ff10).grassColor(0x98FF98)
                         .skyColor(getSkyColor(2.0F)).particleConfig(new BiomeParticleConfig(ParticleTypes.SOUL, 0.00725f))
-                        .loopSound(SoundEvents.AMBIENT_SOUL_SAND_VALLEY_LOOP
-                        ).moodSound(new BiomeMoodSound(SoundEvents.AMBIENT_BASALT_DELTAS_MOOD, 90000, 8, 2.0D))
+                        .loopSound(SoundEvents.AMBIENT_SOUL_SAND_VALLEY_LOOP)
+                        .moodSound(new BiomeMoodSound(SoundEvents.AMBIENT_BASALT_DELTAS_MOOD, 90000, 8, 2.0D))
                         .music(MusicType.createIngameMusic(SoundEvents.AMBIENT_SOUL_SAND_VALLEY_LOOP)).build())
+
                 .spawnSettings(spawnBuilder.build()).generationSettings(biomeBuilder.build()).build();
     }
 

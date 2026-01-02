@@ -21,11 +21,10 @@ public class ModBiomes {
     public static void registerBiomes() {
 
         Regions.register(new OverworldRegion(Identifier.of(LegendaryServerMod.MOD_ID, "lksls_overworld"), 1));
-        Regions.register(new NetherRegion(Identifier.of(LegendaryServerMod.MOD_ID, "lksls_nether"), 3));
+        Regions.register(new NetherRegion(Identifier.of(LegendaryServerMod.MOD_ID, "lksls_nether"), 1));
 
-        EndBiomeRegistry.registerHighlandsBiome(ABYSS_OF_LAMENT, 20);
+        EndBiomeRegistry.registerHighlandsBiome(ABYSS_OF_LAMENT, 1);
         EndBiomeRegistry.registerHighlandsBiome(BiomeKeys.END_HIGHLANDS, 30);
-        EndBiomeRegistry.registerMidlandsBiome(BiomeKeys.END_MIDLANDS, 20);
 
 
 

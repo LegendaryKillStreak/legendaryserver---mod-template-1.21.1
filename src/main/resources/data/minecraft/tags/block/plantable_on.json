@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "lksls:darkroot_soil","lksls:midnight_grass"
+    "lksls:darkroot_soil","lksls:midnight_grass", "lksls:alternative_end_stone"
   ]
 }

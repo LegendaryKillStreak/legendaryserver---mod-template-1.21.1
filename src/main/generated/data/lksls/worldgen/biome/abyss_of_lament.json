@@ -3,7 +3,8 @@
   "downfall": 0.0,
   "effects": {
     "ambient_sound": "minecraft:ambient.soul_sand_valley.loop",
-    "fog_color": 3080266,
+    "fog_color": 6749968,
+    "grass_color": 10026904,
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2.0,
@@ -23,8 +24,8 @@
       "probability": 0.00725
     },
     "sky_color": 7254527,
-    "water_color": 3080266,
-    "water_fog_color": 3080266
+    "water_color": 6749968,
+    "water_fog_color": 6749968
   },
   "features": [
     [],
@@ -36,6 +37,10 @@
     [],
     [
       "minecraft:end_spike"
+    ],
+    [],
+    [
+      "lksls:lament_spindle_placed"
     ]
   ],
   "has_precipitation": false,

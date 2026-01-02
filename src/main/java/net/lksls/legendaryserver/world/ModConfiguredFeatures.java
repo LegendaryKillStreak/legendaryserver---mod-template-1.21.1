@@ -111,15 +111,15 @@ public class ModConfiguredFeatures {
         register(context, LOST_GRASS_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(128, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
                 new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.LOST_GRASS)))));
 
-        register(context, LAMENT_SPINDLE_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(128, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+        register(context, LAMENT_SPINDLE_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(128, 6, 3, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
                 new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.LAMENT_SPINDLE)))));
 
         register(context, ENDLESS_VIOLET_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(256, 4, 5, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
                 new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.ENDLESS_VIOLET)))));
 
-    register(context, TORCHFLOWER_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(3,1,2,PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+        register(context, TORCHFLOWER_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(3,1,2,PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
                 new SimpleBlockFeatureConfig(BlockStateProvider.of(Blocks.TORCHFLOWER)))));
-}
+    }
 
     public static RegistryKey<ConfiguredFeature<? , ?>> registryKey(String name) {
         return RegistryKey.of(RegistryKeys.CONFIGURED_FEATURE, Identifier.of(LegendaryServerMod.MOD_ID, name));

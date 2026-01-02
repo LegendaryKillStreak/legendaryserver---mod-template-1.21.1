@@ -59,6 +59,17 @@ public class MidnightGrassBlock extends PillarBlock implements Fertilizable {
                     !stateAbove.isOf(Blocks.DEAD_BUSH) && // Explicitly check for vanilla dead bush
                     !stateAbove.isOf(Blocks.DANDELION) && // Explicitly check for vanilla dandelion
                     !stateAbove.isOf(Blocks.POPPY) && // Explicitly check for vanilla poppy
+                    !stateAbove.isOf(Blocks.OAK_SAPLING) && // mod made by legendarykillstreak btw
+                    !stateAbove.isOf(Blocks.DARK_OAK_SAPLING) && // yata yata, you get the hang godang
+                    !stateAbove.isOf(Blocks.CHERRY_SAPLING) &&
+                    !stateAbove.isOf(Blocks.SPRUCE_SAPLING) &&
+                    !stateAbove.isOf(Blocks.BROWN_MUSHROOM) &&
+                    !stateAbove.isOf(Blocks.RED_MUSHROOM) &&
+                    !stateAbove.isOf(Blocks.ACACIA_SAPLING) &&
+                    !stateAbove.isOf(Blocks.BAMBOO_SAPLING) &&
+                    !stateAbove.isOf(Blocks.JUNGLE_SAPLING) &&
+                    !stateAbove.isOf(Blocks.BIRCH_SAPLING) &&
+                    !stateAbove.isOf(Blocks.WITHER_ROSE) &&
                     // Add any other vanilla plants you want to consider "non-decaying" here
                     !stateAbove.isOf(ModBlocks.LOST_GRASS) && // Your custom plant
                     !stateAbove.isOf(ModBlocks.ENDLESS_VIOLET) && // Your custom plant

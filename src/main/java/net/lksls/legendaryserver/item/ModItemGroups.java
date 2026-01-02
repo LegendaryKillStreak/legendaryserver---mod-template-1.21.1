@@ -110,6 +110,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STRIPPED_MIDNIGHTWOOD_LOG);
                         entries.add(ModBlocks.STRIPPED_MIDNIGHTWOOD_WOOD);
                         entries.add(ModBlocks.ALTERNATIVE_END_STONE);
+                        entries.add(ModBlocks.LAMENT_SPINDLE);
 
                         entries.add(ModBlocks.MIDNIGHTWOOD_PLANKS);
                         entries.add(ModBlocks.MIDNIGHTWOOD_LEAVES);
