@@ -1,0 +1,11 @@
+{
+  "type": "lksls:refining",
+  "ingredient": {
+    "item": "lksls:crushed_sphalerite"
+  },
+  "result": {
+    "id": "lksls:refined_sphalerite"
+  },
+  "count": 1,
+  "processingTime": 65
+}

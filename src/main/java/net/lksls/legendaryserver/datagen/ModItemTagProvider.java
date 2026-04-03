@@ -64,7 +64,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
                 .add(ModItems.ECHO_DUST)
                 .add(ModItems.NICKEL_INGOT)
-                .add(ModItems.TITANIUM_INGOT);
+                .add(ModItems.TITANIUM_INGOT)
+                .add(ModItems.REFINED_XENTHRITE);
 
         getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
                 .add(ModItems.SOUL_CORE_ARMOR_SMITHING_TEMPLATE);

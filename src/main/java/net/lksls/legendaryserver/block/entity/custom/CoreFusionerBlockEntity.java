@@ -32,9 +32,10 @@ public class CoreFusionerBlockEntity extends BlockEntity implements Inventory {
         for (int i = 0; i < size(); i++) {
             ItemStack stack = getStack(i);
             if(!stack.isEmpty()) {
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
     @Override

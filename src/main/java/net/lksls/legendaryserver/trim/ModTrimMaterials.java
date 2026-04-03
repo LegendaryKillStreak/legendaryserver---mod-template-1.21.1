@@ -24,6 +24,7 @@ public class ModTrimMaterials {
     public static void bootstrap(Registerable<ArmorTrimMaterial> registerable) {
         register(registerable, ECHO_DUST, Registries.ITEM.getEntry(ModItems.ECHO_DUST), Style.EMPTY.withColor(TextColor.parse("#093231").getOrThrow()), 0.9f);
         register(registerable, NICKEL_INGOT, Registries.ITEM.getEntry(ModItems.NICKEL_INGOT), Style.EMPTY.withColor(TextColor.parse("#d3c1c0").getOrThrow()), 0.2f);
+        register(registerable, REFINED_XENTHRITE, Registries.ITEM.getEntry(ModItems.REFINED_XENTHRITE), Style.EMPTY.withColor(TextColor.parse("#39ff14").getOrThrow()), 0.9f);
         register(registerable, TITANIUM_INGOT, Registries.ITEM.getEntry(ModItems.TITANIUM_INGOT), Style.EMPTY.withColor(TextColor.parse("#5d586e").getOrThrow()), 0.2f);
     }
 
@@ -32,6 +33,8 @@ public class ModTrimMaterials {
             Identifier.of(LegendaryServerMod.MOD_ID, "nickel_ingot"));
     public static final RegistryKey<ArmorTrimMaterial> TITANIUM_INGOT = RegistryKey.of(RegistryKeys.TRIM_MATERIAL,
             Identifier.of(LegendaryServerMod.MOD_ID, "titanium_ingot"));
+    public static final RegistryKey<ArmorTrimMaterial> REFINED_XENTHRITE = RegistryKey.of(RegistryKeys.TRIM_MATERIAL,
+            Identifier.of(LegendaryServerMod.MOD_ID, "refined_xenthrite"));
 
 
 

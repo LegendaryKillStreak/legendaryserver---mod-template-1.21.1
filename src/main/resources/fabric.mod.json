@@ -29,7 +29,7 @@
 		]
 	},
 	"mixins": [
-		"legendaryserver.mixins.json"
+		"mixins.legendaryserver.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.9",

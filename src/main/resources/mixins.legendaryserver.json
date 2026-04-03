@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "net.lksls.legendaryserver.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"EntityPositionClampMixin",
+		"MinecartLimiterMixin",
+		"MinecartVelocityClampMixin",
+		"ArrowVelocityClampMixin",
+		"ArrowArmorDamageMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_darkness_drill": {
+    "has_drill_engine": {
       "conditions": {
         "items": [
           {
-            "items": "lksls:darkness_drill"
+            "items": "lksls:drill_engine"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_darkness_drill"
+      "has_drill_engine"
     ]
   ],
   "rewards": {

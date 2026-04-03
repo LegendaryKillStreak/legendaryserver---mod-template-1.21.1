@@ -17,11 +17,19 @@ import net.minecraft.util.ItemActionResult;
 import net.minecraft.util.ItemScatterer;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.shape.VoxelShape;
+import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
 public class CoreFusionerBlock extends BlockWithEntity {
     public CoreFusionerBlock(Settings settings) {super(settings);}
+
+    @Override
+    protected VoxelShape getRaycastShape(BlockState state, BlockView world, BlockPos pos) {
+
+        return super.getRaycastShape(state, world, pos);
+    }
 
     public static final MapCodec<CoreFusionerBlock> CODEC = CoreFusionerBlock.createCodec(CoreFusionerBlock::new);
 

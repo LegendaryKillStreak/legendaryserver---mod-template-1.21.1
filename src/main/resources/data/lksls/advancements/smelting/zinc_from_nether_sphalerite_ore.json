@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "has_nether_sphalerite_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": ["lksls:nether_sphalerite_ore"] }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": ["lksls:zinc_from_nether_sphalerite_ore"]
+  },
+  "display": {
+    "icon": { "item": "lksls:zinc" },
+    "title": "Zinc Extraction",
+    "description": "Extract zinc from nether sphalerite ore",
+    "announce_to_chat": false,
+    "show_toast": true,
+    "hidden": false
+  }
+}

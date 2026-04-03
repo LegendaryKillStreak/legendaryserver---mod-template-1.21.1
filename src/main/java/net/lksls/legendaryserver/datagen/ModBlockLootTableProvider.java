@@ -58,9 +58,14 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DIM_ROSE_QUARTZ_BLOCK);
         addDrop(ModBlocks.ALMOST_DIM_STONE);
         addDrop(ModBlocks.ALTERNATIVE_END_STONE);
+        addDrop(ModBlocks.POLISHED_SANDSTONE);
+        addDrop(ModBlocks.REFINERY);
 
         addDrop(ModBlocks.NICKEL_ORE, oreDrops(ModBlocks.NICKEL_ORE, ModItems.RAW_NICKEL));
         addDrop(ModBlocks.NICKEL_DEEPSLATE_ORE, multipleOreDrops(ModBlocks.NICKEL_DEEPSLATE_ORE, ModItems.RAW_NICKEL, 3, 7));
+
+        addDrop(ModBlocks.NETHER_SPHALERITE_ORE, oreDrops(ModBlocks.NETHER_SPHALERITE_ORE, ModItems.CRUSHED_SPHALERITE));
+
 
         addDrop(ModBlocks.TITANIUM_ORE, oreDrops(ModBlocks.TITANIUM_ORE, ModItems.RAW_TITANIUM));
         addDrop(ModBlocks.TITANIUM_DEEPSLATE_ORE, multipleOreDrops(ModBlocks.TITANIUM_DEEPSLATE_ORE, ModItems.RAW_TITANIUM, 1, 1));

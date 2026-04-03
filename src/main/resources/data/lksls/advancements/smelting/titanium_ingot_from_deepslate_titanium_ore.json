@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "has_deepslate_titanium_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": ["lksls:deepslate_titanium_ore"] }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": ["lksls:titanium_ingot_from_deepslate_titanium_ore"]
+  },
+  "display": {
+    "icon": { "item": "lksls:titanium_ingot" },
+    "title": "Titanium Smelting",
+    "description": "Smelt deepslate titanium ore into an ingot",
+    "announce_to_chat": false,
+    "show_toast": true,
+    "hidden": false
+  }
+}

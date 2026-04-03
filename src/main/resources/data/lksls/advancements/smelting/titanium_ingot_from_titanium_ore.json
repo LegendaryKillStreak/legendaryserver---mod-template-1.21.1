@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "has_titanium_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": ["lksls:titanium_ore"] }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": ["lksls:titanium_ingot_from_titanium_ore"]
+  },
+  "display": {
+    "icon": { "item": "lksls:titanium_ingot" },
+    "title": "Titanium Smelting",
+    "description": "Smelt titanium ore into an ingot",
+    "announce_to_chat": false,
+    "show_toast": true,
+    "hidden": false
+  }
+}

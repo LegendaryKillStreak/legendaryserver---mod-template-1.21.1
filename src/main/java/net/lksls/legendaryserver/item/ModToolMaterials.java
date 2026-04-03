@@ -14,7 +14,7 @@ public enum ModToolMaterials implements ToolMaterial {
     LIGHT(ModTags.Blocks.INCORRECT_FOR_LIGHT_TOOL,
             4602, 13.0F, 5.0F, 22, () -> Ingredient.ofItems(ModItems.LIGHT_CORE)),
     DARK(ModTags.Blocks.INCORRECT_FOR_DARK_TOOL,
-            6500, 12.0f, 6.0f,22, () -> Ingredient.ofItems(ModItems.DARK_CORE));
+            6900, 14.0f, 6.7f,22, () -> Ingredient.ofItems(ModItems.DARK_CORE));
 
 
 

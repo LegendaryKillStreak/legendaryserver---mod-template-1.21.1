@@ -1,13 +1,13 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "building",
-  "ingredients": [
-    {
-      "item": "lksls:nickel_block"
-    }
-  ],
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "nickel_ingot",
+  "ingredient": {
+    "item": "lksls:raw_nickel"
+  },
   "result": {
-    "count": 9,
     "id": "lksls:nickel_ingot"
   }
 }

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_drill_engine": {
+    "has_nickel_ingot": {
       "conditions": {
         "items": [
           {
-            "items": "lksls:drill_engine"
+            "items": "lksls:nickel_ingot"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_drill_engine"
+      "has_nickel_ingot"
     ]
   ],
   "rewards": {

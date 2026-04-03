@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-22T00:30:37.7553591	LegendaryServer - Mod/
+// 1.21.1	2026-04-03T13:01:46.0646673	LegendaryServer - Mod/
 2449db75793816f6cb3cb86664fd88b9c08279e4 data\lksls\worldgen\placed_feature\nickel_ore_placed.json
 545bc3541fd98674340adb791c07fe722aa575f6 data\lksls\worldgen\configured_feature\mythical_end_ore.json
 2249391007c8f70e2934242646d23999ca0283d0 data\lksls\worldgen\placed_feature\mythical_end_ore_placed.json
@@ -7,6 +7,8 @@ f90310502b3d11eccba417073538dba5ceb37b45 data\lksls\worldgen\placed_feature\lame
 39bf793a02ec581889f499d5d58beeae86436aa8 data\lksls\trim_material\echo_dust.json
 a3d84cc3444503cf8d7cc4be7b2dc45ae1ebf0b6 data\lksls\worldgen\configured_feature\lost_grass.json
 da59e1256d6735b709983d109396206ef05edc4e data\lksls\worldgen\configured_feature\exciting_dim_stone.json
+7f278a1fa130a556ff750491f4faa0f56734f56f data\lksls\trim_material\refined_xenthrite.json
+49ead3bd8ab6af716818463b6a621e6df6caa955 data\lksls\worldgen\placed_feature\nether_sphalerite_ore_placed.json
 f8b54506d2b0d3a527eaf5dfac47bd07e061d911 data\lksls\worldgen\configured_feature\nickel_ore.json
 ea86fa0b213d60bd4753a269d9c7ef13d128c5fb data\lksls\worldgen\configured_feature\torch_flower.json
 b89f775cd599b1712fbe289ee92fd25ce9afb574 data\lksls\trim_material\titanium_ingot.json
@@ -18,6 +20,7 @@ e63c3beeb5df75f5f4fa5825a206dd05c753b351 data\lksls\worldgen\placed_feature\endl
 38722e7a07bee68992d05892138f6e3cb4687e34 data\lksls\worldgen\configured_feature\titanium_ore.json
 df6dc5cc1e59e50bbac50e1d8cf953cd4847936c data\lksls\worldgen\placed_feature\exciting_dim_stone_placed.json
 54be1b5c74f02b534fd67c0a6def51b97bd854f9 data\lksls\enchantment\charged.json
+efd6edd6385a772bac0f5af44c000b45ab5fedf4 data\lksls\worldgen\configured_feature\nether_sphalerite_ore.json
 1f2e67a36ce94f47cac7b9d44485da90a4c6fcbe data\lksls\trim_pattern\soul_core.json
 9cba5d1b8052a68dc0104eeca2fcc4725f1ccdd1 data\lksls\worldgen\configured_feature\lament_spindle.json
 179bedc92e106af53ac528c1be138c10b9cf792b data\lksls\worldgen\placed_feature\midnightwood_placed.json

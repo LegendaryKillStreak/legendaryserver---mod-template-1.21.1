@@ -1,0 +1,11 @@
+{
+  "type": "lksls:refining",
+  "ingredient": {
+    "item": "lksls:impure_noctyrian"
+  },
+  "result": {
+    "id": "lksls:refined_noctyrian"
+  },
+  "count": 1,
+  "processingTime": 120
+}

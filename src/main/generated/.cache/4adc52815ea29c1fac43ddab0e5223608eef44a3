@@ -1,4 +1,4 @@
-// 1.21.1	2025-08-22T00:30:37.7499356	LegendaryServer - Mod/World Gen
+// 1.21.1	2026-04-03T13:01:46.0582524	LegendaryServer - Mod/World Gen
 2449db75793816f6cb3cb86664fd88b9c08279e4 data\lksls\worldgen\placed_feature\nickel_ore_placed.json
 545bc3541fd98674340adb791c07fe722aa575f6 data\lksls\worldgen\configured_feature\mythical_end_ore.json
 2249391007c8f70e2934242646d23999ca0283d0 data\lksls\worldgen\placed_feature\mythical_end_ore_placed.json
@@ -6,6 +6,7 @@
 f90310502b3d11eccba417073538dba5ceb37b45 data\lksls\worldgen\placed_feature\lament_spindle_placed.json
 a3d84cc3444503cf8d7cc4be7b2dc45ae1ebf0b6 data\lksls\worldgen\configured_feature\lost_grass.json
 da59e1256d6735b709983d109396206ef05edc4e data\lksls\worldgen\configured_feature\exciting_dim_stone.json
+49ead3bd8ab6af716818463b6a621e6df6caa955 data\lksls\worldgen\placed_feature\nether_sphalerite_ore_placed.json
 f8b54506d2b0d3a527eaf5dfac47bd07e061d911 data\lksls\worldgen\configured_feature\nickel_ore.json
 ea86fa0b213d60bd4753a269d9c7ef13d128c5fb data\lksls\worldgen\configured_feature\torch_flower.json
 c83f0140b90aa3fbae59b6ea502d0e969287300f data\lksls\worldgen\configured_feature\midnightwood.json
@@ -18,6 +19,7 @@ abbc7dc7a2a70b881281227024caae64d20ebddb data\lksls\worldgen\biome\luminara_dept
 38722e7a07bee68992d05892138f6e3cb4687e34 data\lksls\worldgen\configured_feature\titanium_ore.json
 bcbe7a1cbe6a42a31916452a1c0f5839d9b42ef5 data\lksls\worldgen\biome\abyss_of_lament.json
 df6dc5cc1e59e50bbac50e1d8cf953cd4847936c data\lksls\worldgen\placed_feature\exciting_dim_stone_placed.json
+efd6edd6385a772bac0f5af44c000b45ab5fedf4 data\lksls\worldgen\configured_feature\nether_sphalerite_ore.json
 9cba5d1b8052a68dc0104eeca2fcc4725f1ccdd1 data\lksls\worldgen\configured_feature\lament_spindle.json
 179bedc92e106af53ac528c1be138c10b9cf792b data\lksls\worldgen\placed_feature\midnightwood_placed.json
 5460e2b3fc37f388cbee272727d7837003e4de6e data\lksls\worldgen\placed_feature\torchflower_placed.json

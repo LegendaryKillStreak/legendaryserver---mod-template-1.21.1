@@ -2,6 +2,7 @@ package net.lksls.legendaryserver.world.gen;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+import net.fabricmc.fabric.api.biome.v1.NetherBiomes;
 import net.lksls.legendaryserver.world.ModPlacedFeatures;
 import net.lksls.legendaryserver.world.biome.ModBiomes;
 import net.minecraft.registry.tag.BiomeTags;
@@ -18,6 +19,8 @@ public class ModOreGeneration {
                 ModPlacedFeatures.STRANGE_DARKROOTSOIL_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModBiomes.LUMINARA_DEPTHS), GenerationStep.Feature.UNDERGROUND_ORES,
                 ModPlacedFeatures.EXCITING_DIM_STONE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.NETHER_WASTES, BiomeKeys.CRIMSON_FOREST, BiomeKeys.WARPED_FOREST), GenerationStep.Feature.UNDERGROUND_ORES,
+                ModPlacedFeatures.NETHER_SPHALERITE_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES,
             ModPlacedFeatures.MYTHICAL_END_ORE_PLACED_KEY);
 

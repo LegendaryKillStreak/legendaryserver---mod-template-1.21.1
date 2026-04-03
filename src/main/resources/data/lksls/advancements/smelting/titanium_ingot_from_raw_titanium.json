@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "has_raw_titanium": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": ["lksls:raw_titanium"] }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": ["lksls:titanium_ingot_from_raw_titanium"]
+  },
+  "display": {
+    "icon": { "item": "lksls:titanium_ingot" },
+    "title": "Titanium Smelting",
+    "description": "Smelt raw titanium into an ingot",
+    "announce_to_chat": false,
+    "show_toast": true,
+    "hidden": false
+  }
+}

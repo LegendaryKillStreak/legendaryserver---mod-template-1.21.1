@@ -40,7 +40,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DIM_ROSE_QUARTZ_BLOCK)
                 .add(ModBlocks.MYSTERIOUS_END_ORE)
                 .add(ModBlocks.TITANIUM_DEEPSLATE_ORE)
-                .add(ModBlocks.ALTERNATIVE_END_STONE);
+                .add(ModBlocks.ALTERNATIVE_END_STONE)
+                .add(ModBlocks.REFINERY)
+                .add(ModBlocks.NETHER_SPHALERITE_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
 
@@ -51,7 +53,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.ALMOST_DIM_STONE)
                 .add(ModBlocks.DIM_STONE)
                 .add(ModBlocks.EXCITING_DIM_STONE)
-                .add(ModBlocks.DIM_ROSE_QUARTZ_BLOCK);
+                .add(ModBlocks.DIM_ROSE_QUARTZ_BLOCK)
+                .add(ModBlocks.POLISHED_SANDSTONE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.LIGHT_CORE_BLOCK)
@@ -65,7 +68,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.EXCITING_DIM_STONE)
                 .add(ModBlocks.TITANIUM_DEEPSLATE_ORE)
                 .add(ModBlocks.MYSTERIOUS_END_ORE)
-                .add(ModBlocks.RAW_TITANIUM_BLOCK);
+                .add(ModBlocks.RAW_TITANIUM_BLOCK)
+                .add(ModBlocks.NETHER_SPHALERITE_ORE);
 
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE)
                 .add(ModBlocks.STRANGE_DARKROOT_SOIL);

@@ -3,7 +3,6 @@ package net.lksls.legendaryserver.item;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.lksls.legendaryserver.LegendaryServerMod;
 import net.lksls.legendaryserver.block.ModBlocks;
-import net.lksls.legendaryserver.effect.ModEffects;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -79,11 +78,23 @@ public class ModItemGroups {
                         entries.add(ModItems.HORIZON_ZERO_DAWN_MUSIC_DISC);
                         entries.add(ModItems.SOUL_CORE_ARMOR_SMITHING_TEMPLATE);
                         entries.add(ModItems.ECHO_DUST);
+                        entries.add(ModItems.REFINED_XENTHRITE);
+                        entries.add(ModItems.REFINED_NOCTYRIAN);
+                        entries.add(ModItems.REFINED_SPHALERITE);
+                        entries.add(ModItems.CRUSHED_SPHALERITE);
+                        entries.add(ModItems.WATER_CONTAINER);
+                        entries.add(ModItems.ZINC);
+                        entries.add(ModItems.ZINC_INGOT);
                         entries.add(ModItems.RAW_NICKEL);
                         entries.add(ModItems.NICKEL_INGOT);
                         entries.add(ModItems.GAMMA_RADIATING_XENTHRITE);
                         entries.add(ModItems.BETA_RADIATING_XENTHRITE);
                         entries.add(ModItems.DIM_ROSE_QUARTZ);
+                        entries.add(ModItems.NICKEL_ZINC_BATTERY);
+                        entries.add(ModItems.COPPER_CHIP);
+                        entries.add(ModItems.FUSED_SILICA_POWDER);
+                        entries.add(ModItems.XENTHRITE_ROD);
+                        entries.add(ModItems.CYLINDER_ENGINE);
                         entries.add(ModBlocks.MYSTERIOUS_END_ORE);
                         entries.add(ModBlocks.DIM_ROSE_QUARTZ_BLOCK);
                         entries.add(ModBlocks.NICKEL_DEEPSLATE_ORE);
@@ -119,6 +130,17 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.LOST_GRASS);
 
+                        entries.add(ModBlocks.POLISHED_SANDSTONE);
+
+                        entries.add(ModBlocks.REFINERY);
+
+
+                        entries.add(ModBlocks.NETHER_SPHALERITE_ORE);
+
+                        entries.add(ModBlocks.CORE_FUSIONER_BLOCK);
+
+                        entries.add(ModBlocks.RARE_EARTH_DIRT);
+
 
 
 
@@ -134,6 +156,24 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.BETA_RADIATING_XENTHRITE);
                         entries.add(ModItems.GAMMA_RADIATING_XENTHRITE);
+                        entries.add(ModItems.REFINED_XENTHRITE);
+                        entries.add(ModBlocks.REFINERY);
+                        entries.add(ModItems.XENTHRITE_ROD);
+
+
+                    }).build());
+
+    public static final ItemGroup ELECTRONICS = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(LegendaryServerMod.MOD_ID, "electronics"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.DRILL_ENGINE))
+                    .displayName(Text.translatable("itemgroup.lksls.electronics"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.NICKEL_ZINC_BATTERY);
+                        entries.add(ModItems.DRILL_ENGINE);
+                        entries.add(ModItems.COPPER_CHIP);
+                        entries.add(ModBlocks.CORE_FUSIONER_BLOCK);
+                        entries.add(ModBlocks.REFINERY);
+                        entries.add(ModItems.CYLINDER_ENGINE);
 
 
                     }).build());

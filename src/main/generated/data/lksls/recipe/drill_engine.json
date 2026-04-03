@@ -8,6 +8,9 @@
     "B": {
       "item": "minecraft:redstone_torch"
     },
+    "D": {
+      "item": "minecraft:lodestone"
+    },
     "X": {
       "item": "minecraft:recovery_compass"
     }
@@ -15,7 +18,7 @@
   "pattern": [
     "ABA",
     "AXA",
-    "AAA"
+    "ADA"
   ],
   "result": {
     "count": 1,

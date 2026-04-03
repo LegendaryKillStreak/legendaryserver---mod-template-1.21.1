@@ -17,7 +17,12 @@ repositories {
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
 	maven { url = 'https://maven.minecraftforge.net/' }
+
+	maven { url = "https://repo.spongepowered.org/maven" }
 }
+
+
+
 
 
 fabricApi {
@@ -33,6 +38,8 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	modImplementation 'com.github.glitchfiend:TerraBlender-fabric:1.21.1-4.1.0.0'
+
+
 }
 	
 

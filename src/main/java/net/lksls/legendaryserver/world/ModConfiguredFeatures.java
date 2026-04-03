@@ -33,6 +33,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> LAMENT_SPINDLE_KEY = registryKey("lament_spindle");
     public static final RegistryKey<ConfiguredFeature<?, ?>> TORCHFLOWER_KEY = registryKey("torch_flower");
     public static final RegistryKey<ConfiguredFeature<?, ?>> EXCITING_DIM_STONE_KEY = registryKey("exciting_dim_stone");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> NETHER_SPHALERITE_ORE_KEY = registryKey("nether_sphalerite_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> MYTHICAL_END_ORE_KEY = registryKey("mythical_end_ore");
 
     // Define the RegistryKey for your bone meal configured feature (random patch)
@@ -86,6 +87,9 @@ public class ModConfiguredFeatures {
         List<OreFeatureConfig.Target> overworldStrangeDarkrootsoil =
                 List.of(OreFeatureConfig.createTarget(darkrootsoilReplaceables, ModBlocks.STRANGE_DARKROOT_SOIL.getDefaultState())); // <--- Added ')' here
 
+        List<OreFeatureConfig.Target> netherNetherSphaleriteOre =
+                List.of(OreFeatureConfig.createTarget(netherReplaceables, ModBlocks.NETHER_SPHALERITE_ORE.getDefaultState()));
+
         List<OreFeatureConfig.Target> netherExcitingDimStone =
                 List.of(OreFeatureConfig.createTarget(dimstoneReplaceables, ModBlocks.EXCITING_DIM_STONE.getDefaultState())); // <--- Added ')' here
 
@@ -98,6 +102,7 @@ public class ModConfiguredFeatures {
         register(context, TITANIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldTitaniumOres, 7));
         register(context, STRANGE_DARKROOTSOIL_KEY, Feature.ORE, new OreFeatureConfig(overworldStrangeDarkrootsoil, 10));
         register(context, EXCITING_DIM_STONE_KEY, Feature.ORE, new OreFeatureConfig(netherExcitingDimStone, 14));
+        register(context, NETHER_SPHALERITE_ORE_KEY, Feature.ORE, new OreFeatureConfig(netherNetherSphaleriteOre, 4));
         register(context, MYTHICAL_END_ORE_KEY, Feature.ORE, new OreFeatureConfig(endMysteriousEndOres, 3));
 
         register(context, MIDNIGHTWOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(

@@ -2,15 +2,10 @@ package net.lksls.legendaryserver.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.lksls.legendaryserver.LegendaryServerMod;
 import net.lksls.legendaryserver.block.ModBlocks;
 import net.lksls.legendaryserver.item.ModItems;
 import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
-import net.minecraft.registry.Registries;
-import net.minecraft.util.Identifier;
-
-import java.util.Optional;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -35,11 +30,16 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ALMOST_DIM_STONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DIM_STONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MYSTERIOUS_END_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_SPHALERITE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.POLISHED_SANDSTONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ALTERNATIVE_END_STONE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RARE_EARTH_DIRT);
         blockStateModelGenerator.registerSingleton(
                 ModBlocks.DIM_ROSE_QUARTZ_BLOCK,
                 TexturedModel.CUBE_BOTTOM_TOP
         );
+
+        blockStateModelGenerator.registerCooker(ModBlocks.REFINERY, TexturedModel.ORIENTABLE);
 
 
 
@@ -72,6 +72,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.DARK_CORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.DARK_SOUL_CORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.DRILL_ENGINE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CYLINDER_ENGINE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COPPER_CHIP, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARK_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WATER_CONTAINER, Models.GENERATED);
         itemModelGenerator.register(ModItems.BETA_RADIATING_XENTHRITE, Models.GENERATED);
         itemModelGenerator.register(ModItems.GAMMA_RADIATING_XENTHRITE, Models.GENERATED);
 
@@ -94,6 +98,16 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.TITANIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.IMPURE_NOCTYRIAN, Models.GENERATED);
         itemModelGenerator.register(ModItems.DIM_ROSE_QUARTZ, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REFINED_XENTHRITE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CRUSHED_SPHALERITE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REFINED_SPHALERITE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FUSED_SILICA_POWDER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ZINC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ZINC_INGOT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NICKEL_ZINC_BATTERY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.XENTHRITE_ROD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REFINED_NOCTYRIAN, Models.GENERATED);
+
 
 
 

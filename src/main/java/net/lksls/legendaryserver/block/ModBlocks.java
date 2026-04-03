@@ -28,10 +28,18 @@ public class ModBlocks {
             new CoreFusionerBlock(AbstractBlock.Settings.create()
                     .requiresTool().sounds(BlockSoundGroup.DEEPSLATE_BRICKS).strength(75f,1900f).luminance(value -> 0)));
 
+    public static final Block REFINERY = registerBlock("refinery",
+            new RefineryBlock(AbstractBlock.Settings.create()
+                    .requiresTool().sounds(BlockSoundGroup.ANVIL).strength(75f,1f).luminance(value -> 2)));
+
 
     public static final Block ALTERNATIVE_END_STONE = registerBlock("alternative_end_stone",
             new Block(AbstractBlock.Settings.create()
                     .requiresTool().sounds(BlockSoundGroup.STONE).strength(10f,1100f).luminance(value -> 1)));
+
+    public static final Block RARE_EARTH_DIRT = registerBlock("rare_earth_dirt",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool().sounds(BlockSoundGroup.SUSPICIOUS_GRAVEL).strength(10f,1f).luminance(value -> 1)));
 
     public static final Block EXCITING_DIM_STONE = registerBlock("exciting_dim_stone",
             new Block(AbstractBlock.Settings.create()
@@ -48,6 +56,14 @@ public class ModBlocks {
     public static final Block DIM_ROSE_QUARTZ_BLOCK = registerBlock("dim_rose_quartz_block",
             new Block(AbstractBlock.Settings.create()
                     .requiresTool().sounds(BlockSoundGroup.STONE).strength(20f,120f).luminance(value -> 3)));
+
+    public static final Block CHEMICAL_TNT = registerBlock("chemical_tnt",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool().sounds(BlockSoundGroup.SPONGE).strength(0f,0f)));
+
+    public static final Block POLISHED_SANDSTONE = registerBlock("polished_sandstone",
+            new Block(AbstractBlock.Settings.create()
+                    .requiresTool().sounds(BlockSoundGroup.POLISHED_TUFF).strength(5f,5f)));
 
     public static final Block RAW_NICKEL_BLOCK = registerBlock("raw_nickel_block",
             new Block(AbstractBlock.Settings.create()
@@ -82,6 +98,10 @@ public class ModBlocks {
             new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
                     AbstractBlock.Settings.create().strength(6f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
+    public static final Block NETHER_SPHALERITE_ORE = registerBlock("nether_sphalerite_ore",
+            new ExperienceDroppingBlock(UniformIntProvider.create(3, 6),
+                    AbstractBlock.Settings.create().strength(12f).requiresTool().sounds(BlockSoundGroup.GILDED_BLACKSTONE)));
+
     public static final Block STRANGE_DARKROOT_SOIL = registerBlock("strange_darkroot_soil",
             new ExperienceDroppingBlock(UniformIntProvider.create(1, 2),
                     AbstractBlock.Settings.create().strength(3f,1f).luminance(value -> 9).sounds(BlockSoundGroup.SUSPICIOUS_GRAVEL)));
@@ -89,6 +109,7 @@ public class ModBlocks {
     public static final Block MYSTERIOUS_END_ORE = registerBlock("mysterious_end_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(1, 9),
                     AbstractBlock.Settings.create().strength(2f,1f).luminance(value -> 5).sounds(BlockSoundGroup.GLASS)));
+
 
 
 

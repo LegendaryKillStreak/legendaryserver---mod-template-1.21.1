@@ -41,6 +41,8 @@ public class ModItems {
     public static final  Item BETA_RADIATING_XENTHRITE = registerItem("beta_radiating_xenthrite",
             new BetaRadiatingXenthrite(new Item.Settings().rarity(Rarity.EPIC)));
 
+
+
     public static final Item NUCLEAR_ITEM_GROUP_ICON = registerItem("nuclear_item_group_icon", new Item(new Item.Settings()));
 
 
@@ -106,9 +108,16 @@ public class ModItems {
     public static final  Item DARK_SOUL_CORE = registerItem("dark_soul_core", new Item(new Item.Settings().rarity(Rarity.EPIC)));
     public static final  Item DARK_SHARD = registerItem("dark_shard", new Item(new Item.Settings().rarity(Rarity.EPIC)));
     public static final  Item IMPURE_NOCTYRIAN = registerItem("impure_noctyrian", new Item(new Item.Settings().rarity(Rarity.EPIC)));
+    public static final  Item REFINED_NOCTYRIAN = registerItem("refined_noctyrian", new Item(new Item.Settings().rarity(Rarity.EPIC)));
+    public static final  Item REFINED_XENTHRITE = registerItem("refined_xenthrite", new Item(new Item.Settings().rarity(Rarity.EPIC)));
     public static final  Item DIM_ROSE_QUARTZ = registerItem("dim_rose_quartz", new Item(new Item.Settings().rarity(Rarity.RARE)));
+    public static final  Item FUSED_SILICA_POWDER = registerItem("fused_silica_powder", new Item(new Item.Settings().rarity(Rarity.UNCOMMON)));
+    public static final  Item WATER_CONTAINER = registerItem("water_container", new Item(new Item.Settings().rarity(Rarity.COMMON)));
 
     public static final  Item DRILL_ENGINE = registerItem("drill_engine", new Item(new Item.Settings().rarity(Rarity.UNCOMMON)));
+    public static final  Item COPPER_CHIP = registerItem("copper_chip", new Item(new Item.Settings().rarity(Rarity.UNCOMMON)));
+    public static final  Item NICKEL_ZINC_BATTERY = registerItem("nickel_zinc_battery", new Item(new Item.Settings().rarity(Rarity.UNCOMMON)));
+    public static final  Item CYLINDER_ENGINE = registerItem("cylinder_engine", new Item(new Item.Settings().rarity(Rarity.UNCOMMON)));
 
     public static final Item ECHO_DUST = registerItem("echo_dust", new Item(new Item.Settings()));
 
@@ -175,6 +184,21 @@ public class ModItems {
     public static final Item TITANIUM_INGOT = registerItem("titanium_ingot",
             new Item(new Item.Settings()));
 
+    public static final Item ZINC = registerItem("zinc",
+            new Item(new Item.Settings()));
+
+    public static final Item ZINC_INGOT = registerItem("zinc_ingot",
+            new Item(new Item.Settings()));
+
+    public static final Item CRUSHED_SPHALERITE = registerItem("crushed_sphalerite",
+            new Item(new Item.Settings()));
+
+    public static final Item REFINED_SPHALERITE = registerItem("refined_sphalerite",
+            new Item(new Item.Settings().rarity(Rarity.UNCOMMON)));
+
+    public static final Item XENTHRITE_ROD = registerItem("xenthrite_rod",
+            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+
 
 
     public static final Item SOUL_CORE_ARMOR_SMITHING_TEMPLATE = registerItem("soul_core_armor_smithing_template",
@@ -203,6 +227,12 @@ public class ModItems {
             entries.add(ModItems.RAW_NICKEL);
             entries.add(ModItems.DARK_CORE);
             entries.add(ModItems.IMPURE_NOCTYRIAN);
+            entries.add(ModItems.REFINED_XENTHRITE);
+            entries.add(ModItems.REFINED_NOCTYRIAN);
+            entries.add(ModItems.ZINC);
+            entries.add(ModItems.ZINC_INGOT);
+            entries.add(ModItems.CRUSHED_SPHALERITE);
+            entries.add(ModItems.REFINED_SPHALERITE);
 
         });
     }

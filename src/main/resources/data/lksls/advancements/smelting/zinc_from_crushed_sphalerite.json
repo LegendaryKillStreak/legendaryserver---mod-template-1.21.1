@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "has_crushed_sphalerite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": ["lksls:crushed_sphalerite"] }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": ["lksls:zinc_from_crushed_sphalerite"]
+  },
+  "display": {
+    "icon": { "item": "lksls:zinc" },
+    "title": "Zinc Extraction",
+    "description": "Extract zinc from crushed sphalerite",
+    "announce_to_chat": false,
+    "show_toast": true,
+    "hidden": false
+  }
+}

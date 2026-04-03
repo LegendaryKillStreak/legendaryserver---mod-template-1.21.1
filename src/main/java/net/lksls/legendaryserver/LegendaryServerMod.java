@@ -14,6 +14,8 @@ import net.lksls.legendaryserver.effect.ModEffects;
 import net.lksls.legendaryserver.enchantment.ModEnchantmentEffects;
 import net.lksls.legendaryserver.item.ModItemGroups;
 import net.lksls.legendaryserver.item.ModItems;
+import net.lksls.legendaryserver.recipe.ModRecipes;
+import net.lksls.legendaryserver.screen.ModScreenHandlers;
 import net.lksls.legendaryserver.sound.ModSounds;
 import net.lksls.legendaryserver.util.DrillUsageEvent;
 import net.lksls.legendaryserver.util.ModLootTableModifiers;
@@ -42,7 +44,6 @@ public class LegendaryServerMod implements ModInitializer, TerraBlenderApi {
 
 
 
-
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
@@ -54,6 +55,7 @@ public class LegendaryServerMod implements ModInitializer, TerraBlenderApi {
 		ModEffects.registerEffects();
 		ModBlockEntities.registerBlockEntities();
 		ModTreeGeneration.generateTrees();
+		ModRecipes.registerRecipes();
 
 
 
@@ -81,6 +83,8 @@ public class LegendaryServerMod implements ModInitializer, TerraBlenderApi {
 
 		registerStrippables();
 		registerFlammables();
+
+		ModScreenHandlers.registerScreenHandlers();
 	}
 
 	private static void registerStrippables() {

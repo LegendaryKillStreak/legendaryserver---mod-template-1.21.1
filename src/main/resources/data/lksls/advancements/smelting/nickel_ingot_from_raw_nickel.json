@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "has_raw_nickel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": ["lksls:raw_nickel"] }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": ["lksls:nickel_ingot_from_raw_nickel"]
+  },
+  "display": {
+    "icon": { "item": "lksls:nickel_ingot" },
+    "title": "Nickel Smelting",
+    "description": "Smelt raw nickel into an ingot",
+    "announce_to_chat": false,
+    "show_toast": true,
+    "hidden": false
+  }
+}

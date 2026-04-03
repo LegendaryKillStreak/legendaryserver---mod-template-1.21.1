@@ -72,10 +72,27 @@
   "item.lksls.horizon_zero_dawn_music_disc":  "Horizon Zero Dawn Music Disc",
   "item.lksls.echo_dust":  "Echo Dust",
   "item.lksls.soul_core_armor_smithing_template":  "Soul Core Trim Smithing Template",
+  "item.lksls.zinc":  "Zinc",
+  "item.lksls.crushed_sphalerite":  "Crushed Sphalerite",
+  "item.lksls.zinc_ingot":  "Zinc Ingot",
+  "item.lksls.refined_sphalerite":  "Refined Sphalerite",
+  "item.lksls.dark_shard":  "Dark Shard",
+  "item.lksls.refined_noctyrian":  "Refined Noctyrian",
+  "item.lksls.copper_chip":  "Copper Chip",
+  "item.lksls.nickel_zinc_battery":  "Nickel Zinc Battery",
+  "item.lksls.xenthrite_rod":  "Xenthrite Rod",
+  "item.lksls.cylinder_engine":  "I1 Cylinder Engine",
+  "item.lksls.water_container":  "Water Container",
+  "item.lksls.fused_silica_powder":  "Fused Silica Powder",
+
+
   "trim_material.lksls.echo_dust":  "Echo Dust Material",
   "trim_material.lksls.nickel_ingot":  "Nickel Material",
   "trim_material.lksls.titanium_ingot":  "Titanium Material",
-  "trim_pattern.lksls.soul_core":  "Soul Core Armor Pattern",
+  "trim_material.lksls.refined_xenthrite":  "Xenthrite Material",
+
+
+  "trim_pattern.lksls.soul_core":  "Soul Core Armor Trim",
 
 
   "enchantment.lksls.charged": "Charged",
@@ -85,6 +102,8 @@
 
 
   "itemgroup.lksls.season_one_items": "Season One Items",
+  "itemgroup.lksls.nuclear_items": "Nuclear Sector",
+
 
   "block.lksls.light_core_block": "Light Core Block",
   "block.lksls.dark_core_block": "Dark Core Block",
@@ -115,10 +134,19 @@
   "block.lksls.mysterious_end_ore": "Mysterious End Ore",
   "block.lksls.lament_spindle": "Lament Spindle",
   "block.lksls.strange_darkroot_soil": "Strange Darkroot Soil",
-  "block.lksls.alternative_end_stone": "alternative_end_stone",
+  "block.lksls.alternative_end_stone": "Alternative End Stone",
+  "block.lksls.polished_sandstone": "Polished Sandstone",
+  "block.lksls.nether_sphalerite_ore": "Nether Sphalerite Ore",
+  "block.lksls.refinery": "Refinery",
+  "block.lksls.rare_earth_dirt": "Rare Earths Dirt",
+  "block.lksls.chemical_tnt": "Chemical TNT",
 
   "death.attack.radiation_damage": "%1$s's Geiger counter screamed its last",
   "death.attack.radiation_damage.death_screen":"You dissolved into radioactive silence",
+
+
+
+  "gui.lksls.refinery": "Refinery",
 
 
 

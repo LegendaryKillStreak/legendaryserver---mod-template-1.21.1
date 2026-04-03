@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_echo_dust": {
+    "has_echo_shard": {
       "conditions": {
         "items": [
           {
-            "items": "lksls:echo_dust"
+            "items": "minecraft:echo_shard"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_echo_dust"
+      "has_echo_shard"
     ]
   ],
   "rewards": {

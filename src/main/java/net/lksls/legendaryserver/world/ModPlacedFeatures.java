@@ -26,6 +26,7 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> LAMENT_SPINDLE_PLACED_KEY = registerKey("lament_spindle_placed");
     public static final RegistryKey<PlacedFeature> ENDLESS_VIOLET_PLACED_KEY = registerKey("endless_violet_placed");
     public static final RegistryKey<PlacedFeature> EXCITING_DIM_STONE_PLACED_KEY = registerKey("exciting_dim_stone_placed");
+    public static final RegistryKey<PlacedFeature> NETHER_SPHALERITE_ORE_PLACED_KEY = registerKey("nether_sphalerite_ore_placed");
     public static final RegistryKey<PlacedFeature> MYTHICAL_END_ORE_PLACED_KEY = registerKey("mythical_end_ore_placed");
     public static final RegistryKey<PlacedFeature> TORCHFLOWER_PLACED_KEY = registerKey("torchflower_placed");
 
@@ -54,6 +55,11 @@ public class ModPlacedFeatures {
 
         register(context, EXCITING_DIM_STONE_PLACED_KEY, configuredFeaturesRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.EXCITING_DIM_STONE_KEY),
                 ModOrePlacement.modifiersWithCount(9,
+                        HeightRangePlacementModifier.trapezoid(YOffset.fixed(0), YOffset.fixed(125)))
+        );
+
+        register(context, NETHER_SPHALERITE_ORE_PLACED_KEY, configuredFeaturesRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.NETHER_SPHALERITE_ORE_KEY),
+                ModOrePlacement.modifiersWithCount(4,
                         HeightRangePlacementModifier.trapezoid(YOffset.fixed(0), YOffset.fixed(125)))
         );
 

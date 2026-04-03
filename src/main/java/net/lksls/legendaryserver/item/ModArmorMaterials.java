@@ -29,11 +29,11 @@ public class ModArmorMaterials {
 
     public static final RegistryEntry<ArmorMaterial> DARK_CORE_ARMOR_MATERIAL = registerArmorMaterial("dark_core",
             () -> new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map -> {
-                map.put(ArmorItem.Type.HELMET, 5);
-                map.put(ArmorItem.Type.CHESTPLATE, 11);
-                map.put(ArmorItem.Type.LEGGINGS, 8);
-                map.put(ArmorItem.Type.BOOTS, 5);
-                map.put(ArmorItem.Type.BODY, 16);
+                map.put(ArmorItem.Type.HELMET, 6);
+                map.put(ArmorItem.Type.CHESTPLATE, 12);
+                map.put(ArmorItem.Type.LEGGINGS, 9);
+                map.put(ArmorItem.Type.BOOTS, 6);
+                map.put(ArmorItem.Type.BODY, 17);
             }), 27, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, () -> Ingredient.ofItems(ModItems.DARK_CORE),
                     List.of(new ArmorMaterial.Layer(Identifier.of(LegendaryServerMod.MOD_ID, "dark_core"))),5.0F, 0.2F));
     private int baseMaxDamage;

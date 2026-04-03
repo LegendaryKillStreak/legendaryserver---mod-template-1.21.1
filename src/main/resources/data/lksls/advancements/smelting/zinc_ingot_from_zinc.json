@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "has_zinc": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": ["lksls:zinc"] }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": ["lksls:zinc_ingot_from_zinc"]
+  },
+  "display": {
+    "icon": { "item": "lksls:zinc_ingot" },
+    "title": "Zinc Smelting",
+    "description": "Smelt zinc into an ingot",
+    "announce_to_chat": false,
+    "show_toast": true,
+    "hidden": false
+  }
+}

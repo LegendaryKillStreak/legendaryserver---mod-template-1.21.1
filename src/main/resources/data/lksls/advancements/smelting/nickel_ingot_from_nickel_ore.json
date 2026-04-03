@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "has_nickel_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          { "items": ["lksls:nickel_ore"] }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": ["lksls:nickel_ingot_from_nickel_ore"]
+  },
+  "display": {
+    "icon": { "item": "lksls:nickel_ingot" },
+    "title": "Nickel Smelting",
+    "description": "Smelt nickel ore into an ingot",
+    "announce_to_chat": false,
+    "show_toast": true,
+    "hidden": false
+  }
+}

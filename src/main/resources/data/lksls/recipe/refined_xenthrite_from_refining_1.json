@@ -1,0 +1,12 @@
+{
+  "type": "lksls:refining",
+  "ingredient": {
+    "item": "lksls:gamma_radiating_xenthrite"
+  },
+  "result": {
+    "id": "lksls:refined_xenthrite"
+  },
+  "count": 3,
+
+  "processingTime": 750
+}
