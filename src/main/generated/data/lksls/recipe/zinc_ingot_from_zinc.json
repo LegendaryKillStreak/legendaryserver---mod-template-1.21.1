@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 0.5,
+  "group": "zinc_ingot",
+  "ingredient": {
+    "item": "lksls:zinc"
+  },
+  "result": {
+    "id": "lksls:zinc_ingot"
+  }
+}

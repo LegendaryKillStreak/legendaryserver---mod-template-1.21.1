@@ -4,6 +4,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.entity.EquipmentSlot;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -19,7 +20,7 @@ public abstract class ArrowArmorDamageMixin {
         double speed = arrow.getVelocity().length();
 
         // Only apply armor damage if arrow is railgun-boosted
-        if (speed < 20.0) return;
+        if (speed < 15.0) return;
 
         // Scale armor damage based on velocity above 15
         double excess = speed - 15.0;
@@ -27,9 +28,13 @@ public abstract class ArrowArmorDamageMixin {
 
         LivingEntity self = (LivingEntity)(Object)this;
 
-        for (ItemStack armor : self.getArmorItems()) {
+        // Loop through armor slots properly
+        for (EquipmentSlot slot : EquipmentSlot.values()) {
+            if (!slot.isArmorSlot()) continue;
+
+            ItemStack armor = self.getEquippedStack(slot);
             if (!armor.isEmpty()) {
-                armor.damage(extraDurabilityLoss, self, e -> {});
+                armor.damage(extraDurabilityLoss, self, slot);
             }
         }
     }

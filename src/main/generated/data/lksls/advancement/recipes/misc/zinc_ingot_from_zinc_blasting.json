@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "lksls:zinc_ingot_from_zinc_blasting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zinc": {
+      "conditions": {
+        "items": [
+          {
+            "items": "lksls:zinc"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_zinc"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "lksls:zinc_ingot_from_zinc_blasting"
+    ]
+  }
+}

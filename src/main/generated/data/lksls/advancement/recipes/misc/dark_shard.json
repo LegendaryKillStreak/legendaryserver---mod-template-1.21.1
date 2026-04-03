@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_fused_silica_powder": {
+      "conditions": {
+        "items": [
+          {
+            "items": "lksls:fused_silica_powder"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "lksls:dark_shard"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_fused_silica_powder"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "lksls:dark_shard"
+    ]
+  }
+}

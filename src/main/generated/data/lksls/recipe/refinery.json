@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "lksls:water_container"
+    },
+    "B": {
+      "item": "minecraft:polished_deepslate"
+    },
+    "D": {
+      "item": "lksls:zinc_ingot"
+    },
+    "E": {
+      "item": "lksls:cylinder_engine"
+    },
+    "F": {
+      "item": "lksls:copper_chip"
+    },
+    "X": {
+      "item": "minecraft:iron_trapdoor"
+    }
+  },
+  "pattern": [
+    "ABF",
+    "DXD",
+    "BEB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "lksls:refinery"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "lksls:refined_xenthrite"
+    },
+    "X": {
+      "item": "lksls:titanium_ingot"
+    },
+    "Y": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "pattern": [
+    "XAX",
+    "YAY",
+    "XAX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "lksls:xenthrite_rod"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dim_rose_quartz": {
+      "conditions": {
+        "items": [
+          {
+            "items": "lksls:dim_rose_quartz"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "lksls:dim_rose_quartz_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dim_rose_quartz"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "lksls:dim_rose_quartz_block"
+    ]
+  }
+}

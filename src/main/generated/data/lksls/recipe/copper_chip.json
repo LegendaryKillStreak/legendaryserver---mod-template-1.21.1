@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "lksls:fused_silica_powder"
+    },
+    "Y": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "pattern": [
+    "YXX",
+    "XYX",
+    "XYX"
+  ],
+  "result": {
+    "count": 1,
+    "id": "lksls:copper_chip"
+  }
+}

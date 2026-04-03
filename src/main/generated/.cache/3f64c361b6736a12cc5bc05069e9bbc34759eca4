@@ -1,4 +1,4 @@
-// 1.21.1	2026-04-03T13:01:46.0602854	LegendaryServer - Mod/Model Definitions
+// 1.21.1	2026-04-03T13:06:38.4890271	LegendaryServer - Mod/Model Definitions
 b9176c1ed5cdfd2525370627435c104b43ebb2f8 assets\lksls\models\block\raw_nickel_block.json
 24f8bbfba903536cf9fc951649b0f123008b833a assets\lksls\blockstates\titanium_deepslate_ore.json
 a903b1cfdc8de1481ee1e6912a9d7557ab634456 assets\lksls\models\item\dim_stone.json
@@ -66,13 +66,13 @@ ee7e1af4404e907244699f094998641185a8f509 assets\lksls\models\block\dim_rose_quar
 36e9bcf161defb514b439b78eeffde1319389f94 assets\lksls\models\block\mysterious_end_ore.json
 3ec671af01613176c3fe0b7964b09a0d31474724 assets\lksls\blockstates\mysterious_end_ore.json
 9b211c23088f1dc02f8528fe04ecf7213eba29f9 assets\lksls\models\item\dark_core_chestplate_emerald_trim.json
-83a8486ceb0be91c91a31f18c00a6fd905e8a7ff assets\lksls\models\block\midnightwood_sapling.json
 7037da8a9b55bdf31c613b6ccad0c1f9607c6674 assets\lksls\models\item\light_core_helmet_redstone_trim.json
+83a8486ceb0be91c91a31f18c00a6fd905e8a7ff assets\lksls\models\block\midnightwood_sapling.json
 8fe77d31560f1089a29892b30ae84313ad13ebc3 assets\lksls\models\item\dark_core_boots_diamond_trim.json
 a644b1c8bf3bfac772580770b0fb87807eca062a assets\lksls\models\item\coin_20000.json
 8262f18f3e30fe60618bf99d60c95d0abbac1c53 assets\lksls\models\item\raw_nickel_block.json
-8975566ffa4a058c3fe0d25b3986cb8130513fb9 assets\lksls\models\item\dark_core_boots_netherite_trim.json
 7187eefc82508a1bfe6e5b3af37b302939f0ec65 assets\lksls\models\item\dark_core_helmet_quartz_trim.json
+8975566ffa4a058c3fe0d25b3986cb8130513fb9 assets\lksls\models\item\dark_core_boots_netherite_trim.json
 7c2724fd4276e76cc4d6889d01af6d8e8eec15e5 assets\lksls\models\item\coin_200000.json
 51069557a93ac1fe2da4a48a9ca5bcc7de97db38 assets\lksls\models\item\polished_sandstone.json
 74f8fce4583a07e400c9f5e1390977ef4ca3d96d assets\lksls\models\item\light_core.json
@@ -156,8 +156,8 @@ b14af916bba204c6cf48f017502608b2a42c0ff2 assets\lksls\models\item\coin_50000.jso
 25332b5f759ff95974f9f222edd534f8aa5d1722 assets\lksls\models\item\nuclear_item_group_icon.json
 6a06403443fc6bfd658a04ec1a883644416c6274 assets\lksls\models\block\darkroot_soil.json
 03b49b998ddbe3eef58997e7fcce56210475c5d6 assets\lksls\models\item\titanium_deepslate_ore.json
-61ea80b9f3e9dd353a6e5ca6264189123fe5a0c5 assets\lksls\models\block\titanium_ore.json
 047e56c5f8d73ee4c2d21b20ad8fdc13e01cc6ff assets\lksls\models\item\refined_sphalerite.json
+61ea80b9f3e9dd353a6e5ca6264189123fe5a0c5 assets\lksls\models\block\titanium_ore.json
 71a36a5f4b09a4b7f178654c40d002695f38c1d4 assets\lksls\models\item\refined_noctyrian.json
 ec4b1c29852b4bac69e27b5cf6dffed6572d853b assets\lksls\models\item\light_core_leggings_amethyst_trim.json
 937b365451a66fd766964ca4fea3e28c2ddca8e4 assets\lksls\models\item\light_core_leggings_gold_trim.json
@@ -249,8 +249,8 @@ bc047e5e50d28712c0b9ea55511f6031b0a310e2 assets\lksls\models\block\midnightwood_
 ec616426ca2fdc42f2d5a989860fd02dc2038ce0 assets\lksls\models\item\light_core_boots_lapis_trim.json
 9ac97152ba9b09a7f55c8cf127bf0122a2432601 assets\lksls\models\item\coin_75000.json
 ccedfd8d00350f29b7665e2885d3648118dda28a assets\lksls\models\item\coin_250000.json
-142107735234dd435af02c9d48afd062a2682782 assets\lksls\models\item\fused_silica_powder.json
 9171b05cc7f3bbb8996d4060145ec88707159870 assets\lksls\blockstates\nickel_deepslate_ore.json
+142107735234dd435af02c9d48afd062a2682782 assets\lksls\models\item\fused_silica_powder.json
 78fa2225ec408c97cc34622e2ea44a19841b9117 assets\lksls\models\item\light_core_chestplate.json
 af3cd2270ee9f406a7d509971d925ad02d084e32 assets\lksls\blockstates\light_core_block.json
 a742068e2729452698512c78599bacd166b71950 assets\lksls\models\item\dark_core_leggings_iron_trim.json

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "lksls:fused_silica_powder"
+    },
+    "B": {
+      "item": "lksls:refined_noctyrian"
+    },
+    "D": {
+      "item": "lksls:refined_xenthrite"
+    },
+    "X": {
+      "item": "lksls:dark_core"
+    }
+  },
+  "pattern": [
+    "DAB",
+    "AXA",
+    "BAD"
+  ],
+  "result": {
+    "count": 1,
+    "id": "lksls:dark_shard"
+  }
+}

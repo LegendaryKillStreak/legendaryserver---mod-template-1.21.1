@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "item": "minecraft:quartz"
+    },
+    "Y": {
+      "item": "minecraft:glass"
+    }
+  },
+  "pattern": [
+    "YX",
+    "XY"
+  ],
+  "result": {
+    "count": 1,
+    "id": "lksls:fused_silica_powder"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "asset_name": "refined_xenthrite",
+  "description": {
+    "color": "#39FF14",
+    "translate": "trim_material.lksls.refined_xenthrite"
+  },
+  "ingredient": "lksls:refined_xenthrite",
+  "item_model_index": 0.9
+}

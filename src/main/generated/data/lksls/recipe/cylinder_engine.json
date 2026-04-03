@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:heavy_core"
+    },
+    "D": {
+      "item": "minecraft:piston"
+    },
+    "Q": {
+      "item": "lksls:drill_engine"
+    }
+  },
+  "pattern": [
+    " Q ",
+    " D ",
+    "AQ "
+  ],
+  "result": {
+    "count": 1,
+    "id": "lksls:cylinder_engine"
+  }
+}

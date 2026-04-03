@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "lksls:nickel_ingot"
+    },
+    "B": {
+      "item": "minecraft:iron_ingot"
+    },
+    "X": {
+      "item": "lksls:zinc_ingot"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "AXA",
+    "AXA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "lksls:nickel_zinc_battery"
+  }
+}
