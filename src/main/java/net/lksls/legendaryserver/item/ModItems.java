@@ -3,6 +3,7 @@ package net.lksls.legendaryserver.item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.lksls.legendaryserver.LegendaryServerMod;
 import net.lksls.legendaryserver.item.custom.*;
+import net.lksls.legendaryserver.rarity.ModRarity;
 import net.lksls.legendaryserver.sound.ModSounds;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -12,12 +13,19 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.lksls.legendaryserver.item.custom.GammaRadiatingXenthrite;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 
 import static net.minecraft.item.Items.register;
 
 
 public class ModItems {
+
+
+    // Custom rarity map
+    public static final Map<Item, ModRarity> RARITIES = new HashMap<>();
+
 
 
     public static final  Item LIGHT_SWORD = registerItem("light_sword",
@@ -157,8 +165,8 @@ public class ModItems {
     public static final Item NAUTICUS_CORE = registerItem("nauticus_core",
             new Item(new Item.Settings().rarity(Rarity.EPIC)));
 
-    public static final Item GHOST_CORE = registerItem("wither_skeleton_core",
-            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+    public static final Item GHOST_CORE = registerItem("ghost_core",
+            new Item(new Item.Settings()));
 
 
 

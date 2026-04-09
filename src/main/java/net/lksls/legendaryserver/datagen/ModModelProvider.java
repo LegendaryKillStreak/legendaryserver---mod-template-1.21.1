@@ -35,6 +35,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ALTERNATIVE_END_STONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RARE_EARTH_DIRT);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CUSTOM_SPAWNER_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CORE_FUSIONER_BLOCK);
 
 
 

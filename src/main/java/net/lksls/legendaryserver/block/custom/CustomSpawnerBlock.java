@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.lksls.legendaryserver.block.ModBlocks;
 import net.lksls.legendaryserver.block.entity.ModBlockEntities;
 import net.lksls.legendaryserver.block.entity.custom.CustomSpawnerBlockEntity;
+import net.lksls.legendaryserver.block.entity.custom.RefineryBlockEntity;
 import net.lksls.legendaryserver.screen.custom.CustomSpawnerScreenHandler;
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
@@ -16,6 +17,8 @@ import net.minecraft.entity.ExperienceOrbEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.ItemStack;
+import net.minecraft.particle.ItemStackParticleEffect;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.server.world.ServerWorld;
@@ -26,7 +29,9 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.ItemScatterer;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 
 public class CustomSpawnerBlock extends BlockWithEntity {
@@ -65,7 +70,7 @@ public class CustomSpawnerBlock extends BlockWithEntity {
                     // Drop spawner blocks equal to stack count
                     int stackCount = spawner.getStackCount();
                     if (stackCount > 0) {
-                        ItemStack drop = new ItemStack(ModBlocks.CUSTOM_SPAWNER_BLOCK, stackCount);
+                        ItemStack drop = new ItemStack(ModBlocks.CUSTOM_SPAWNER_BLOCK, stackCount -1);
                         ItemScatterer.spawn(world, pos.getX(), pos.getY(), pos.getZ(), drop);
                     }
 
@@ -160,6 +165,7 @@ public class CustomSpawnerBlock extends BlockWithEntity {
 
         return ActionResult.SUCCESS;
     }
+
 
 
 

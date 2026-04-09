@@ -151,6 +151,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.NETHER_SPHALERITE_ORE);
 
                         entries.add(ModBlocks.CORE_FUSIONER_BLOCK);
+                        entries.add(ModBlocks.CUSTOM_SPAWNER_BLOCK);
 
                         entries.add(ModBlocks.RARE_EARTH_DIRT);
 
@@ -187,6 +188,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CORE_FUSIONER_BLOCK);
                         entries.add(ModBlocks.REFINERY);
                         entries.add(ModItems.CYLINDER_ENGINE);
+                        entries.add(ModBlocks.CUSTOM_SPAWNER_BLOCK);
 
 
                     }).build());public static final ItemGroup CORES = Registry.register(Registries.ITEM_GROUP,
@@ -210,6 +212,8 @@ public class ModItemGroups {
                         entries.add(ModItems.UNDEAD_SOUL_CORE);
                         entries.add(ModItems.WITHER_SKELETON_CORE);
                         entries.add(ModItems.NAUTICUS_CORE);
+                        entries.add(ModItems.GHOST_CORE);
+                        entries.add(ModBlocks.CORE_FUSIONER_BLOCK);
 
 
 
