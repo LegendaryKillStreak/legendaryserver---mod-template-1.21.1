@@ -7,7 +7,8 @@
 		"MinecartLimiterMixin",
 		"MinecartVelocityClampMixin",
 		"ArrowVelocityClampMixin",
-		"ArrowArmorDamageMixin"
+		"ArrowArmorDamageMixin",
+		"SpawnLogicMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

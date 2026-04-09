@@ -40,7 +40,9 @@
                 "minecraft:enchantments": [
                   {
                     "enchantments": "minecraft:silk_touch",
-                    "levels": 0
+                    "levels": {
+                      "min": 1
+                    }
                   }
                 ]
               }
@@ -51,12 +53,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "chance": 1.0,
-              "condition": "minecraft:random_chance"
-            }
-          ],
           "functions": [
             {
               "add": false,

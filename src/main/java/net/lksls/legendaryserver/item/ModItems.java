@@ -12,6 +12,9 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 import net.lksls.legendaryserver.item.custom.GammaRadiatingXenthrite;
 
+import java.util.Set;
+
+import static net.minecraft.item.Items.register;
 
 
 public class ModItems {
@@ -73,6 +76,9 @@ public class ModItems {
     public static final Item DARKNESS_SHOVEL = registerItem("darkness_shovel",
             new DarknessShovel(ModToolMaterials.DARK, new Item.Settings()
                     .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.DARK, 1.5f, -3f))));
+    public static final Item MOB_CORE_EXTRACTOR = registerItem("mob_core_extractor",
+            new DarknessShovel(ModToolMaterials.DARK, new Item.Settings()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.DARK, 1.5f, -3f))));
 
     public static final Item LIGHT_CORE_HELMET = registerItem("light_core_helmet",
             new ModArmorItem(ModArmorMaterials.LIGHT_CORE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()
@@ -103,9 +109,60 @@ public class ModItems {
 
 
 
-    public static final  Item LIGHT_CORE = registerItem("light_core", new Item(new Item.Settings().rarity(Rarity.EPIC)));
-    public static final  Item DARK_CORE = registerItem("dark_core", new Item(new Item.Settings().rarity(Rarity.EPIC)));
-    public static final  Item DARK_SOUL_CORE = registerItem("dark_soul_core", new Item(new Item.Settings().rarity(Rarity.EPIC)));
+    public static final Item LIGHT_CORE = registerItem("light_core",
+            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+
+    public static final Item DARK_CORE = registerItem("dark_core",
+            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+
+    public static final Item DARK_SOUL_CORE = registerItem("dark_soul_core",
+            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+
+    public static final Item CHICKEN_SPAWN_CORE = registerItem("chicken_spawn_core",
+            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+
+    public static final Item SOUL_CORE = registerItem("soul_core",
+            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+
+    public static final Item AMETHYST_CORE = registerItem("amethyst_core",
+            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+
+    public static final Item COW_CORE = registerItem("cow_core",
+            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+
+    public static final Item CREEPER_CORE = registerItem("creeper_core",
+            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+
+    public static final Item END_CORE = registerItem("end_core",
+            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+
+    public static final Item ENDERMAN_CORE = registerItem("enderman_core",
+            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+
+    public static final Item EMPTY_CORE_V2 = registerItem("empty_core_v2",
+            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+
+    public static final Item SHADOW_CORE = registerItem("shadow_core",
+            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+
+    public static final Item SKELETON_CORE = registerItem("skeleton_core",
+            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+
+    public static final Item UNDEAD_SOUL_CORE = registerItem("undead_soul_core",
+            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+
+    public static final Item WITHER_SKELETON_CORE = registerItem("wither_skeleton_core",
+            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+
+    public static final Item NAUTICUS_CORE = registerItem("nauticus_core",
+            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+
+    public static final Item GHOST_CORE = registerItem("wither_skeleton_core",
+            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+
+
+
+
     public static final  Item DARK_SHARD = registerItem("dark_shard", new Item(new Item.Settings().rarity(Rarity.EPIC)));
     public static final  Item IMPURE_NOCTYRIAN = registerItem("impure_noctyrian", new Item(new Item.Settings().rarity(Rarity.EPIC)));
     public static final  Item REFINED_NOCTYRIAN = registerItem("refined_noctyrian", new Item(new Item.Settings().rarity(Rarity.EPIC)));
@@ -201,6 +258,9 @@ public class ModItems {
 
 
 
+
+
+
     public static final Item SOUL_CORE_ARMOR_SMITHING_TEMPLATE = registerItem("soul_core_armor_smithing_template",
              SmithingTemplateItem.of(Identifier.of(LegendaryServerMod.MOD_ID, "soul_core"),FeatureFlags.VANILLA));
 
@@ -215,6 +275,17 @@ public class ModItems {
         return Registry.register(Registries.ITEM, Identifier.of(LegendaryServerMod.MOD_ID, name), item);
 
     }
+
+    public static final Set<Item> CORE_ITEMS = Set.of(
+            DARK_SOUL_CORE, //,
+            CHICKEN_SPAWN_CORE,
+            //NAUTICUS_CORE,
+            //GHOST_CORE,
+            SOUL_CORE,
+            LIGHT_CORE,
+            DARK_CORE
+    );
+
 
     public static void registerModItems() {
         LegendaryServerMod.LOGGER.info("Registering Mod Items for " + LegendaryServerMod.MOD_ID);

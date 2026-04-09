@@ -78,14 +78,14 @@ public class RefineryScreen extends HandledScreen<RefineryScreenHandler> {
         context.drawTexture(
                 REFINERY_BAR,
                 barX, barY,
-                0, 52 - height,                // UV inside the bar texture
+                0, 52 - height,          // UV inside the bar texture
                 18, height,                    // draw size
                 18, 52                         // full texture size
         );
         RenderSystem.setShaderTexture(0, GUI_TEXTURE);
 
     }
-
+/// /help i think im loosing my mind
     private void renderEnergyBar(DrawContext context, int x, int y) {
 
 

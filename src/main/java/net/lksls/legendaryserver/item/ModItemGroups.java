@@ -21,6 +21,19 @@ public class ModItemGroups {
                         entries.add(ModBlocks.LIGHT_CORE_BLOCK);
                         entries.add(ModBlocks.DARK_CORE_BLOCK);
                         entries.add(ModItems.DARK_SOUL_CORE);
+                        entries.add(ModItems.CHICKEN_SPAWN_CORE);
+                        entries.add(ModItems.SOUL_CORE);
+                        entries.add(ModItems.AMETHYST_CORE);
+                        entries.add(ModItems.COW_CORE);
+                        entries.add(ModItems.CREEPER_CORE);
+                        entries.add(ModItems.END_CORE);
+                        entries.add(ModItems.ENDERMAN_CORE);
+                        entries.add(ModItems.EMPTY_CORE_V2);
+                        entries.add(ModItems.SHADOW_CORE);
+                        entries.add(ModItems.SKELETON_CORE);
+                        entries.add(ModItems.UNDEAD_SOUL_CORE);
+                        entries.add(ModItems.WITHER_SKELETON_CORE);
+                        entries.add(ModItems.NAUTICUS_CORE);
                         entries.add(ModItems.DARK_SHARD);
                         entries.add(ModItems.DARK_CORE);
                         entries.add(ModItems.DARKNESS_SWORD);
@@ -174,6 +187,30 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CORE_FUSIONER_BLOCK);
                         entries.add(ModBlocks.REFINERY);
                         entries.add(ModItems.CYLINDER_ENGINE);
+
+
+                    }).build());public static final ItemGroup CORES = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(LegendaryServerMod.MOD_ID, "cores"),
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.DARK_SOUL_CORE))
+                    .displayName(Text.translatable("itemgroup.lksls.cores"))
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.LIGHT_CORE);
+                        entries.add(ModItems.DARK_CORE);
+                        entries.add(ModItems.DARK_SOUL_CORE);
+                        entries.add(ModItems.SOUL_CORE);
+                        entries.add(ModItems.CHICKEN_SPAWN_CORE);
+                        entries.add(ModItems.AMETHYST_CORE);
+                        entries.add(ModItems.COW_CORE);
+                        entries.add(ModItems.CREEPER_CORE);
+                        entries.add(ModItems.END_CORE);
+                        entries.add(ModItems.ENDERMAN_CORE);
+                        entries.add(ModItems.EMPTY_CORE_V2);
+                        entries.add(ModItems.SHADOW_CORE);
+                        entries.add(ModItems.SKELETON_CORE);
+                        entries.add(ModItems.UNDEAD_SOUL_CORE);
+                        entries.add(ModItems.WITHER_SKELETON_CORE);
+                        entries.add(ModItems.NAUTICUS_CORE);
+
 
 
                     }).build());

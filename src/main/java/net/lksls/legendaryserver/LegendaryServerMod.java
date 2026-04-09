@@ -131,5 +131,10 @@ public class LegendaryServerMod implements ModInitializer, TerraBlenderApi {
 			SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.END, MOD_ID, ModMaterialRules.makeAbyssOfLamentRules());
 		}
 
+	// in LegendaryServerMod (or other central class)
+	public static final Identifier XP_SYNC = Identifier.of("legendaryserver", "xp_sync");
 
-	}
+
+
+
+}

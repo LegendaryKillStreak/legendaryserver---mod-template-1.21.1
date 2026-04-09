@@ -60,6 +60,8 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.ALTERNATIVE_END_STONE);
         addDrop(ModBlocks.POLISHED_SANDSTONE);
         addDrop(ModBlocks.REFINERY);
+        addDrop(ModBlocks.CUSTOM_SPAWNER_BLOCK);
+
 
         addDrop(ModBlocks.NICKEL_ORE, oreDrops(ModBlocks.NICKEL_ORE, ModItems.RAW_NICKEL));
         addDrop(ModBlocks.NICKEL_DEEPSLATE_ORE, multipleOreDrops(ModBlocks.NICKEL_DEEPSLATE_ORE, ModItems.RAW_NICKEL, 3, 7));
@@ -78,38 +80,57 @@ public class ModBlockLootTableProvider extends FabricBlockLootTableProvider {
         RegistryEntry<Enchantment> silkTouchEntry = enchantmentRegistry.getOrThrow(Enchantments.SILK_TOUCH);
 
 // Loot table for MYSTERIOUS_END_ORE
-        addDrop(ModBlocks.MYSTERIOUS_END_ORE, BlockLootTableGenerator -> LootTable.builder()
+        addDrop(ModBlocks.MYSTERIOUS_END_ORE, LootTable.builder()
+                // -----------------------------------------
+                // 1. SILK TOUCH POOL → Drops the block itself
+                // -----------------------------------------
                 .pool(LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModBlocks.MYSTERIOUS_END_ORE))
                         .conditionally(MatchToolLootCondition.builder(
                                 ItemPredicate.Builder.create()
                                         .subPredicate(
-                                                ItemSubPredicateTypes.ENCHANTMENTS, // Correct constant location
-                                                // FINAL CORRECTION: Use the static factory method from the OUTER EnchantmentsPredicate class
-                                                EnchantmentsPredicate.enchantments(List.of(new EnchantmentPredicate(silkTouchEntry, NumberRange.IntRange.atLeast(1))))
+                                                ItemSubPredicateTypes.ENCHANTMENTS,
+                                                EnchantmentsPredicate.enchantments(
+                                                        List.of(new EnchantmentPredicate(
+                                                                silkTouchEntry,
+                                                                NumberRange.IntRange.atLeast(1) // Silk Touch ≥ 1
+                                                        ))
+                                                )
                                         )
                         ))
+                        .with(ItemEntry.builder(ModBlocks.MYSTERIOUS_END_ORE))
                 )
+
+                // ---------------------------------------------------
+                // 2. NON‑SILK‑TOUCH POOL → Drops custom items instead
+                // ---------------------------------------------------
                 .pool(LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .conditionally(MatchToolLootCondition.builder(
-                                ItemPredicate.Builder.create()
-                                        .subPredicate(
-                                                ItemSubPredicateTypes.ENCHANTMENTS, // Correct constant location
-                                                // FINAL CORRECTION: Use the static factory method from the OUTER EnchantmentsPredicate class
-                                                EnchantmentsPredicate.enchantments(List.of(new EnchantmentPredicate(silkTouchEntry, NumberRange.IntRange.exactly(0))))
-                                        )
-                        ).invert()) // Invert the condition: applies when Silk Touch is NOT present or level 0
+                        .conditionally(
+                                MatchToolLootCondition.builder(
+                                        ItemPredicate.Builder.create()
+                                                .subPredicate(
+                                                        ItemSubPredicateTypes.ENCHANTMENTS,
+                                                        EnchantmentsPredicate.enchantments(
+                                                                List.of(new EnchantmentPredicate(
+                                                                        silkTouchEntry,
+                                                                        NumberRange.IntRange.atLeast(1) // Silk Touch ≥ 1
+                                                                ))
+                                                        )
+                                                )
+                                ).invert() // invert → runs when Silk Touch is NOT present
+                        )
                         .with(ItemEntry.builder(ModItems.BETA_RADIATING_XENTHRITE)
-                                .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1, 3)))
-                                .conditionally(RandomChanceLootCondition.builder(1.0f))
+                                .apply(SetCountLootFunction.builder(
+                                        UniformLootNumberProvider.create(1, 3)
+                                ))
                         )
                         .with(ItemEntry.builder(ModItems.GAMMA_RADIATING_XENTHRITE)
                                 .conditionally(RandomChanceLootCondition.builder(0.05f))
                         )
                 )
         );
+
 
 
 

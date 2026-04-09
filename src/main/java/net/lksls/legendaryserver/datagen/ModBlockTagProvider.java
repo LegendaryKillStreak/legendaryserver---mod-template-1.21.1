@@ -42,7 +42,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.TITANIUM_DEEPSLATE_ORE)
                 .add(ModBlocks.ALTERNATIVE_END_STONE)
                 .add(ModBlocks.REFINERY)
-                .add(ModBlocks.NETHER_SPHALERITE_ORE);
+                .add(ModBlocks.NETHER_SPHALERITE_ORE)
+                .add(ModBlocks.CUSTOM_SPAWNER_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
 

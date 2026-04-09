@@ -17,6 +17,7 @@
     "lksls:titanium_deepslate_ore",
     "lksls:alternative_end_stone",
     "lksls:refinery",
-    "lksls:nether_sphalerite_ore"
+    "lksls:nether_sphalerite_ore",
+    "lksls:custom_spawner"
   ]
 }

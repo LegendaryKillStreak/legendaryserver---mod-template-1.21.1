@@ -1,6 +1,7 @@
 package net.lksls.legendaryserver.block;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.lksls.legendaryserver.LegendaryServerMod;
 import net.lksls.legendaryserver.block.custom.*;
 import net.lksls.legendaryserver.world.tree.ModSaplingGenerators;
@@ -31,6 +32,10 @@ public class ModBlocks {
     public static final Block REFINERY = registerBlock("refinery",
             new RefineryBlock(AbstractBlock.Settings.create()
                     .requiresTool().sounds(BlockSoundGroup.ANVIL).strength(75f,1f).luminance(value -> 2)));
+    public static final Block CUSTOM_SPAWNER_BLOCK = registerBlock("custom_spawner",
+            new CustomSpawnerBlock(AbstractBlock.Settings.create()
+                    .strength(3f,6f).sounds(BlockSoundGroup.TRIAL_SPAWNER).luminance(value -> 4)));
+
 
 
     public static final Block ALTERNATIVE_END_STONE = registerBlock("alternative_end_stone",

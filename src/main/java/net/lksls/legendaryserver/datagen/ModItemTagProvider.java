@@ -20,7 +20,20 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ModTags.Items.TRANSFORMABLE_ITEMS)
                 .add(ModItems.LIGHT_CORE)
                 .add(ModItems.DARK_SOUL_CORE)
-                .add(ModItems.DARK_CORE);
+                .add(ModItems.DARK_CORE)
+                .add(ModItems.SOUL_CORE)
+                .add(ModItems.AMETHYST_CORE)
+                .add(ModItems.COW_CORE)
+                .add(ModItems.CREEPER_CORE)
+                .add(ModItems.END_CORE)
+                .add(ModItems.ENDERMAN_CORE)
+                .add(ModItems.EMPTY_CORE_V2)
+                .add(ModItems.SHADOW_CORE)
+                .add(ModItems.SKELETON_CORE)
+                .add(ModItems.UNDEAD_SOUL_CORE)
+                .add(ModItems.WITHER_SKELETON_CORE)
+                .add(ModItems.CHICKEN_SPAWN_CORE)
+                .add(ModItems.NAUTICUS_CORE);
 
 
         getOrCreateTagBuilder(ModTags.Items.TRANSFORMABLE_ITEMS)

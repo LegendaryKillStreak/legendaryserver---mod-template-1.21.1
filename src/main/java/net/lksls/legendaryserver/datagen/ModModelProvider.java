@@ -34,6 +34,10 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.POLISHED_SANDSTONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ALTERNATIVE_END_STONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RARE_EARTH_DIRT);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CUSTOM_SPAWNER_BLOCK);
+
+
+
         blockStateModelGenerator.registerSingleton(
                 ModBlocks.DIM_ROSE_QUARTZ_BLOCK,
                 TexturedModel.CUBE_BOTTOM_TOP
@@ -109,6 +113,20 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.REFINED_NOCTYRIAN, Models.GENERATED);
 
 
+
+
+        itemModelGenerator.register(ModItems.CHICKEN_SPAWN_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SOUL_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.AMETHYST_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COW_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CREEPER_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.END_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ENDERMAN_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.EMPTY_CORE_V2, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SHADOW_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SKELETON_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.UNDEAD_SOUL_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WITHER_SKELETON_CORE, Models.GENERATED);
 
 
 
