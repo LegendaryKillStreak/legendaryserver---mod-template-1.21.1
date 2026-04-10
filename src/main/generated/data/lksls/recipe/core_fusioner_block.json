@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "lksls:raw_nickel"
+    },
+    "N": {
+      "item": "lksls:raw_nickel"
+    },
+    "R": {
+      "item": "lksls:raw_nickel"
+    }
+  },
+  "pattern": [
+    "RRR",
+    "ANR",
+    "RRR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "lksls:core_fusioner_block"
+  }
+}
