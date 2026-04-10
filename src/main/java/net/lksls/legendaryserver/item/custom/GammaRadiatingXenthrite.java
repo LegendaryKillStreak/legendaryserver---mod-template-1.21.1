@@ -50,7 +50,7 @@ public class GammaRadiatingXenthrite extends Item {
 
                 player.addStatusEffect(newRadiationEffect);
 
-                // Optional: Log only when the effect is actually applied/refreshed
+                // Optional: Log only when the effect is actually applied/refreshed. i might need this for testing in the future? so far it works well
                 // LegendaryServerMod.LOGGER.debug("Applied/Refreshed Radiation on " + player.getName().getString() + " to Level " + (desiredAmplifier + 1));
             }
         }

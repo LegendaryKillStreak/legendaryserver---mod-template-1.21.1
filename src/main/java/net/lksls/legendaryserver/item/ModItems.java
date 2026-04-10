@@ -165,6 +165,18 @@ public class ModItems {
     public static final Item NAUTICUS_CORE = registerItem("nauticus_core",
             new Item(new Item.Settings().rarity(Rarity.EPIC)));
 
+    public static final Item WATER_CORE = registerItem("water_core",
+            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+
+    public static final Item SEA_CORE = registerItem("sea_core",
+            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+
+    public static final Item STORM_CORE = registerItem("storm_core",
+            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+
+    public static final Item LIGHTNING_CORE = registerItem("lightning_core",
+            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+
     public static final Item GHOST_CORE = registerItem("ghost_core",
             new Item(new Item.Settings()));
 
@@ -215,6 +227,9 @@ public class ModItems {
     public static final Item COIN_25000 = registerItem("coin_25000", new Item(new Item.Settings()));
     public static final Item COIN_200000 = registerItem("coin_200000", new Item(new Item.Settings()));
     public static final Item COIN_150000 = registerItem("coin_150000", new Item(new Item.Settings()));
+    public static final Item COIN_1000000 = registerItem("coin_1000000", new Item(new Item.Settings()));
+    public static final Item COIN_750000 = registerItem("coin_750000", new Item(new Item.Settings()));
+    public static final Item COIN_10000000 = registerItem("coin_10000000", new Item(new Item.Settings()));
 
 
 
@@ -287,10 +302,11 @@ public class ModItems {
     public static final Set<Item> CORE_ITEMS = Set.of(
             DARK_SOUL_CORE, //,
             CHICKEN_SPAWN_CORE,
-            //NAUTICUS_CORE,
-            //GHOST_CORE,
+            NAUTICUS_CORE,
+            GHOST_CORE,
             SOUL_CORE,
             LIGHT_CORE,
+            WATER_CORE,
             DARK_CORE
     );
 

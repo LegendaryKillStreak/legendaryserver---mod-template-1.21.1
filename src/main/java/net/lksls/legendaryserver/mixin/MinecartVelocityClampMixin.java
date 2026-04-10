@@ -12,7 +12,7 @@ public class MinecartVelocityClampMixin {
     private void clampVelocity(CallbackInfo ci) {
         AbstractMinecartEntity self = (AbstractMinecartEntity)(Object)this;
 
-        double max = 2.0; // safe max speed
+        double max = 2.0; // safe max speed is unknown, i will keep at 2
         var v = self.getVelocity();
         double speedSq = v.lengthSquared();
 

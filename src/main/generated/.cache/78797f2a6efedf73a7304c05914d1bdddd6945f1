@@ -1,9 +1,10 @@
-// 1.21.1	2026-04-09T21:09:10.8799379	LegendaryServer - Mod/Recipes
+// 1.21.1	2026-04-10T03:45:24.7910498	LegendaryServer - Mod/Recipes
 6b1e8eebf97444d210583461284a963ab83197df data\lksls\advancement\recipes\tools\darkness_hoe.json
 23904b7a19b5ffcd6d09f0696d9555b2d62e2058 data\lksls\advancement\recipes\misc\raw_titanium_block.json
 ddce8a912dd1e78d8856c0869006ef4b6407d4c5 data\lksls\recipe\zinc_from_crushed_sphalerite.json
 5619dbdbb3dc27d64cfb28557ae9a89a9a552b4f data\lksls\recipe\dark_core_boots.json
 5a6c0ae222c9eb7821f87d6c1908ebf9c2287985 data\lksls\recipe\titanium_block.json
+37a207a44bc10c94d3045301868a3dbbb5891b97 data\lksls\recipe\core_fusioner_block.json
 1e09754ae8aea61195ef2b672759e1be1b8aa0d9 data\lksls\recipe\wood_to_planks_midnight.json
 4b2389a9c82b663aab56f6af1ed5bb167b2c959f data\lksls\advancement\recipes\misc\light_core_block.json
 8539443dc2a49821617deee666e7e2e3ab3ca6eb data\lksls\advancement\recipes\misc\nickel_ingot_from_nickel_ore.json
@@ -11,6 +12,7 @@ ddce8a912dd1e78d8856c0869006ef4b6407d4c5 data\lksls\recipe\zinc_from_crushed_sph
 74ed8e02248ff934387af1dd6101b7686b27918a data\lksls\recipe\fused_silica_powder.json
 03cb689697145f491934f78dacde1e702935c331 data\lksls\advancement\recipes\misc\nickel_zinc_battery.json
 de167dfb38bc26e90ac75f02eb22fb1a7e8aee65 data\lksls\recipe\light_pickaxe.json
+198dc24d89931715e2edd582a1d6d37d4aee69c2 data\lksls\advancement\recipes\misc\core_fusioner_block.json
 3d236511249e6ea9a15790cfc8b3bbd898a8ddd8 data\lksls\recipe\dark_core.json
 f7860e26afc5aa744be0e83f4d0027ee16120009 data\lksls\advancement\recipes\decorations\midnightwood_wood.json
 c9aafda80a961335c77f159518f9ed8bf0a583e1 data\lksls\recipe\raw_titanium.json
@@ -21,8 +23,8 @@ d3b5e08148126b183c7e17867072625eafa15ca1 data\lksls\advancement\recipes\misc\nic
 d7aad5f3b05d611211fcb5dfc8c9a0242dc4caa6 data\lksls\recipe\nickel_ingot_from_deepslate_nickel_ore_blasting.json
 8782713ac08391e9476cfda4a898f83d57feeb85 data\lksls\recipe\midnightwood_wood.json
 e10368f00fa7d590f156eb81777495e9b156b8b7 data\lksls\advancement\recipes\tools\light_shovel.json
-3b6bdf890a94ab42f49269cea92132e341d56ec5 data\lksls\recipe\soul_core.json
 1f910090bdc3923ea96b74fc1d04af99bdf8f68f data\lksls\advancement\recipes\misc\soul_core.json
+3b6bdf890a94ab42f49269cea92132e341d56ec5 data\lksls\recipe\soul_core.json
 bd51fe17316d5032248679d87a1d646f69a9d3a5 data\lksls\advancement\recipes\combat\dark_core_chestplate.json
 de03a00dcd0a1995b0e553ff4af203c11618cfc3 data\lksls\recipe\polished_sandstone.json
 beab111e2d91c0f5d880bc2699f06311b3f28381 data\lksls\recipe\darkness_drill.json

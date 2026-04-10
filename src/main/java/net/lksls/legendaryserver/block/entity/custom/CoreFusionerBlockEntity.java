@@ -39,7 +39,7 @@ public class CoreFusionerBlockEntity extends BlockEntity implements Inventory {
     private int maxProgress = 0;
     private boolean lit = false;
 
-    // 🔥 ADD THIS: property delegate for GUI syncing
+    // property delegate for GUI syncing
     private final PropertyDelegate propertyDelegate = new ArrayPropertyDelegate(2);
     public PropertyDelegate getPropertyDelegate() {
         return propertyDelegate;
@@ -49,7 +49,7 @@ public class CoreFusionerBlockEntity extends BlockEntity implements Inventory {
     private static final Map<List<Item>, FusionRecipe> RECIPES = new HashMap<>();
 
     static {
-        // example recipes
+        // not at all all recipes, don't forget. deadline about june ish
         RECIPES.put(List.of(Items.DIAMOND, Items.NETHER_STAR),
                 new FusionRecipe(new ItemStack(Items.END_CRYSTAL), 200));
         RECIPES.put(List.of(ModItems.LIGHT_CORE, ModItems.DARK_CORE),
@@ -58,6 +58,10 @@ public class CoreFusionerBlockEntity extends BlockEntity implements Inventory {
                 new FusionRecipe(new ItemStack(ModItems.END_CORE), 5500));
         RECIPES.put(List.of(ModItems.DARK_SOUL_CORE, ModItems.SKELETON_CORE),
                 new FusionRecipe(new ItemStack(ModItems.WITHER_SKELETON_CORE), 2000));
+        RECIPES.put(List.of(ModItems.SOUL_CORE, ModItems.WATER_CORE),
+                new FusionRecipe(new ItemStack(ModItems.NAUTICUS_CORE), 2000));
+        RECIPES.put(List.of(ModItems.SOUL_CORE, ModItems.WATER_CORE),
+                new FusionRecipe(new ItemStack(ModItems.NAUTICUS_CORE), 2000));
     }
 
     public CoreFusionerBlockEntity(BlockPos pos, BlockState state) {

@@ -35,7 +35,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ALTERNATIVE_END_STONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RARE_EARTH_DIRT);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CUSTOM_SPAWNER_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CORE_FUSIONER_BLOCK);
 
 
 
@@ -128,6 +127,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SKELETON_CORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.UNDEAD_SOUL_CORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.WITHER_SKELETON_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GHOST_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NAUTICUS_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SEA_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LIGHTNING_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WATER_CORE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STORM_CORE, Models.GENERATED);
 
 
 
@@ -156,6 +161,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.COIN_250000, Models.GENERATED);
         itemModelGenerator.register(ModItems.COIN_500000, Models.GENERATED);
         itemModelGenerator.register(ModItems.COIN_25000, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COIN_1000000, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COIN_750000, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COIN_10000000, Models.GENERATED);
 
 
 

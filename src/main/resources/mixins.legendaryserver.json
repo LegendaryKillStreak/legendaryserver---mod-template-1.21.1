@@ -8,7 +8,9 @@
 		"MinecartVelocityClampMixin",
 		"ArrowVelocityClampMixin",
 		"ArrowArmorDamageMixin",
-		"SpawnLogicMixin"
+		"SpawnLogicMixin",
+		"InGameHudMixin",
+		"InGameHudMixin_Radiated"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "lksls:block/core_fusioner_block_on"
+  }
+}

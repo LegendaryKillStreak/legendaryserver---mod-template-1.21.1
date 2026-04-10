@@ -75,4 +75,4 @@ public abstract class SpawnLogicMixin {
 
         return 10;
     }
-}
+} //falls ich das schaffe bin ich ein absuluter G

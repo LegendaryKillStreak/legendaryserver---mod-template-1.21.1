@@ -34,6 +34,7 @@ public class ModItemGroups {
                         entries.add(ModItems.UNDEAD_SOUL_CORE);
                         entries.add(ModItems.WITHER_SKELETON_CORE);
                         entries.add(ModItems.NAUTICUS_CORE);
+                        entries.add(ModItems.GHOST_CORE);
                         entries.add(ModItems.DARK_SHARD);
                         entries.add(ModItems.DARK_CORE);
                         entries.add(ModItems.DARKNESS_SWORD);
@@ -63,14 +64,19 @@ public class ModItemGroups {
                         entries.add(ModItems.COIN_10000);
                         entries.add(ModItems.COIN_15000);
                         entries.add(ModItems.COIN_20000);
+                        entries.add(ModItems.COIN_25000);
                         entries.add(ModItems.COIN_50000);
                         entries.add(ModItems.COIN_75000);
                         entries.add(ModItems.COIN_100000);
                         entries.add(ModItems.COIN_150000);
                         entries.add(ModItems.COIN_200000);
                         entries.add(ModItems.COIN_250000);
-                        entries.add(ModItems.COIN_25000);
                         entries.add(ModItems.COIN_500000);
+                        entries.add(ModItems.COIN_750000);
+                        entries.add(ModItems.COIN_1000000);
+                        entries.add(ModItems.COIN_10000000);
+
+
                         entries.add(ModItems.DUNGEON_KEY_SHADOWY_CREATURES);
                         entries.add(ModItems.DUNGEON_KEY_ICY_CAVES);
                         entries.add(ModItems.DUNGEON_KEY_DEADLY_HEAT);

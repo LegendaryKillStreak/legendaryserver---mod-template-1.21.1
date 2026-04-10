@@ -310,6 +310,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('R', ModItems.RAW_NICKEL)
                 .criterion(hasItem(ModItems.RAW_NICKEL), conditionsFromItem(ModItems.RAW_NICKEL))
                 .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.CORE_FUSIONER_BLOCK)
+                .pattern("RRR")
+                .pattern("ANR")
+                .pattern("RRR")
+                .input('R', ModItems.RAW_NICKEL)
+                .input('N', ModItems.RAW_NICKEL)
+                .input('A', ModItems.RAW_NICKEL)
+                .criterion(hasItem(ModItems.RAW_NICKEL), conditionsFromItem(ModItems.RAW_NICKEL))
+                .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIM_ROSE_QUARTZ_BLOCK)
                 .pattern("RRR")
                 .pattern("RRR")
