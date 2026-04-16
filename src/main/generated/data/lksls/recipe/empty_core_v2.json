@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:cyan_stained_glass"
+    },
+    "B": {
+      "item": "minecraft:red_stained_glass"
+    },
+    "C": {
+      "item": "minecraft:purple_stained_glass"
+    },
+    "F": {
+      "item": "minecraft:orange_stained_glass"
+    },
+    "G": {
+      "item": "minecraft:yellow_stained_glass"
+    },
+    "P": {
+      "item": "lksls:light_core"
+    },
+    "R": {
+      "item": "lksls:dark_core"
+    }
+  },
+  "pattern": [
+    "RBP",
+    "FGA",
+    "PCR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "lksls:empty_core_v2"
+  }
+}

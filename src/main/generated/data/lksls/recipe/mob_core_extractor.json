@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:glass"
+    },
+    "B": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "C": {
+      "item": "lksls:dark_core"
+    },
+    "D": {
+      "item": "lksls:dark_soul_core"
+    },
+    "F": {
+      "item": "lksls:drill_engine"
+    },
+    "G": {
+      "item": "lksls:empty_core_v2"
+    },
+    "X": {
+      "item": "lksls:dark_shard"
+    }
+  },
+  "pattern": [
+    "AXC",
+    "BDX",
+    "FBG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "lksls:mob_core_extractor"
+  }
+}
