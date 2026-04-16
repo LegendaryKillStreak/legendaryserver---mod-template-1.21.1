@@ -73,10 +73,10 @@ public class LkslsModClient implements ClientModInitializer {
         HandledScreens.register(ModScreenHandlers.CORE_FUSIONER_SCREEN_HANDLER, CoreFusionerScreen::new);
 
         HandledScreens.register(ModScreenHandlers.CUSTOM_SPAWNER_SCREEN_HANDLER, CustomSpawnerScreen::new);
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CUSTOM_SPAWNER_BLOCK, RenderLayer.getCutout());
-        EntityRendererRegistry.register(
-                ModBlockEntities.CHEMICAL_TNT_ENTITY,
-                PrimedTntEntityRenderer::new        );
+        //BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CUSTOM_SPAWNER_BLOCK, RenderLayer.getCutout());
+        // EntityRendererRegistry.register(
+                //  ModBlockEntities.CHEMICAL_TNT_ENTITY,
+                //PrimedTntEntityRenderer::new        );
 
 
 

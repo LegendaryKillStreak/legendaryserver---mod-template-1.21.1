@@ -24,23 +24,35 @@ public class MusicTypeMixin {
         Random random = new Random();
 
         // Pick a random track: 0 = Rubedo, 1 = Nether Wastes, 2 = End
-        int choice = random.nextInt(3);
+        int choice = random.nextInt(5);
 
         MusicSound selected;
 
         switch (choice) {
             case 0 -> selected = new MusicSound(
                     SoundEvents.MUSIC_NETHER_BASALT_DELTAS, // Rubedo
-                    20, 600, true
+                    20, 100, true
             );
             case 1 -> selected = new MusicSound(
                     SoundEvents.MUSIC_NETHER_NETHER_WASTES, // Nether Wastes
-                    20, 600, true
+                    20, 100, true
             );
+
+            case 2 -> selected = new MusicSound(
+                    SoundEvents.MUSIC_NETHER_NETHER_WASTES, // Rubedo
+                    20, 50, true
+            );
+
+            case 3 -> selected = new MusicSound(
+                    SoundEvents.MUSIC_NETHER_SOUL_SAND_VALLEY, // Rubedo
+                    20, 40, true
+            );
+
             default -> selected = new MusicSound(
                     SoundEvents.MUSIC_END, // End music
-                    20, 600, true
+                    20, 100, true
             );
+
         }
 
         MENU = selected;

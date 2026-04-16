@@ -27,7 +27,17 @@ public class TitleScreenMixin {
                 "set7",
                 "set8",
             "set9",
-            "set10"
+            "set10",
+         "set11",
+              "set12",
+               "set13",
+               "set14",
+                "set15",
+                "set16",
+                "set17",
+                "set18",
+            "set19",
+            "set20"
     };
 
     @Inject(method = "renderPanoramaBackground", at = @At("HEAD"), cancellable = true)
