@@ -58,10 +58,14 @@ public class CoreFusionerBlockEntity extends BlockEntity implements Inventory {
                 new FusionRecipe(new ItemStack(ModItems.END_CORE), 5500));
         RECIPES.put(List.of(ModItems.DARK_SOUL_CORE, ModItems.SKELETON_CORE),
                 new FusionRecipe(new ItemStack(ModItems.WITHER_SKELETON_CORE), 2000));
-        RECIPES.put(List.of(ModItems.SOUL_CORE, ModItems.WATER_CORE),
-                new FusionRecipe(new ItemStack(ModItems.NAUTICUS_CORE), 2000));
-        RECIPES.put(List.of(ModItems.SOUL_CORE, ModItems.WATER_CORE),
-                new FusionRecipe(new ItemStack(ModItems.NAUTICUS_CORE), 2000));
+        RECIPES.put(List.of(ModItems.SOUL_CORE, ModItems.ENDERMAN_CORE),
+                new FusionRecipe(new ItemStack(ModItems.DARK_SOUL_CORE), 2000));
+        RECIPES.put(List.of(ModItems.SOUL_CORE, ModItems.UNDEAD_SOUL_CORE),
+                new FusionRecipe(new ItemStack(ModItems.GHOST_CORE), 4000));
+        RECIPES.put(List.of(ModItems.EMPTY_CORE_V2, Items.BUDDING_AMETHYST),
+                new FusionRecipe(new ItemStack(ModItems.AMETHYST_CORE), 1000));
+        RECIPES.put(List.of(ModItems.UNDEAD_SOUL_CORE, Items.ENDER_EYE),
+                new FusionRecipe(new ItemStack(ModItems.ENDERMAN_CORE), 1000));
     }
 
     public CoreFusionerBlockEntity(BlockPos pos, BlockState state) {

@@ -35,7 +35,12 @@ public class ModBlocks {
     public static final Block CUSTOM_SPAWNER_BLOCK = registerBlock("custom_spawner",
             new CustomSpawnerBlock(AbstractBlock.Settings.create()
                     .strength(3f,6f).sounds(BlockSoundGroup.TRIAL_SPAWNER).luminance(value -> 4)));
-
+    public static final Block CHEMICAL_TNT = registerBlock("chemical_tnt",
+            new ChemicalTntBlock(AbstractBlock.Settings.create()
+                    .nonOpaque()
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.SPONGE)
+                    .strength(0f, 0f)));
 
 
     public static final Block ALTERNATIVE_END_STONE = registerBlock("alternative_end_stone",
@@ -62,9 +67,7 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create()
                     .requiresTool().sounds(BlockSoundGroup.STONE).strength(20f,120f).luminance(value -> 3)));
 
-    public static final Block CHEMICAL_TNT = registerBlock("chemical_tnt",
-            new Block(AbstractBlock.Settings.create()
-                    .requiresTool().sounds(BlockSoundGroup.SPONGE).strength(0f,0f)));
+
 
     public static final Block POLISHED_SANDSTONE = registerBlock("polished_sandstone",
             new Block(AbstractBlock.Settings.create()

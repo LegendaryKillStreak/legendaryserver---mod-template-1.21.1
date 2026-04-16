@@ -103,5 +103,25 @@
 "block.lksls.dim_rose_quartz_block": "Dunkler Rosenquarz-Block",
 "block.lksls.mysterious_end_ore": "Mysteriöses End-Erz",
 "block.lksls.strange_darkroot_soil": "Seltsame Dunkelwurzel-Erde",
-"sounds.lksls.dark_ambience_one": "Dunkle Atmosphäre 1"
+"sounds.lksls.dark_ambience_one": "Dunkle Atmosphäre 1",
+
+  "item.lksls.amethyst_core": "Amethystkern",
+  "item.lksls.chicken_spawn_core": "Hühnerkern",
+  "item.lksls.cow_core": "Kuhkern",
+  "item.lksls.end_core": "Endkern",
+  "item.lksls.enderman_core": "Endermankern",
+  "item.lksls.ghost_core": "Geisterkern",
+  "item.lksls.nauticus_core": "Nautikuskern",
+  "item.lksls.sea_core": "Meereskern",
+  "item.lksls.shadow_core": "Schattenkern",
+  "item.lksls.skeleton_core": "Skelettkern",
+  "item.lksls.soul_core": "Seelenkern",
+  "item.lksls.storm_core": "Sturmkern",
+  "item.lksls.undead_soul_core": "Untote Seelenkern",
+  "item.lksls.water_core": "Wasserkern",
+  "item.lksls.wither_skeleton_core": "Witherskelettkern",
+
+  "block.lksls.custom_spawner": "Benutzerdefinierter Spawner"
+
+
 }

@@ -28,6 +28,13 @@ public class ModItems {
 
 
 
+    public static final  Item MOB_CORE_EXTRACTOR = registerItem("mob_core_extractor",
+            new MobCoreExtractor(ModToolMaterials.CORE, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.CORE, 300, -2.4f))));
+
+
+
+
     public static final  Item LIGHT_SWORD = registerItem("light_sword",
             new LightSword(ModToolMaterials.LIGHT, new Item.Settings()
                     .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.LIGHT, 3, -2.4f))));
@@ -82,9 +89,6 @@ public class ModItems {
                     .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.DARK, 6, -3.2f))));
 
     public static final Item DARKNESS_SHOVEL = registerItem("darkness_shovel",
-            new DarknessShovel(ModToolMaterials.DARK, new Item.Settings()
-                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.DARK, 1.5f, -3f))));
-    public static final Item MOB_CORE_EXTRACTOR = registerItem("mob_core_extractor",
             new DarknessShovel(ModToolMaterials.DARK, new Item.Settings()
                     .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.DARK, 1.5f, -3f))));
 
@@ -255,6 +259,10 @@ public class ModItems {
     public static final Item RAW_NICKEL = registerItem("raw_nickel",
             new Item(new Item.Settings()));
 
+
+    public static final Item DARKUS_BUG_HUNTER_TROPHY = registerItem("darkus_bug_hunter_trophy",
+            new Item(new Item.Settings().rarity(Rarity.EPIC)));
+
     public static final Item NICKEL_INGOT = registerItem("nickel_ingot",
             new Item(new Item.Settings()));
 
@@ -307,7 +315,17 @@ public class ModItems {
             SOUL_CORE,
             LIGHT_CORE,
             WATER_CORE,
-            DARK_CORE
+            DARK_CORE,
+            SHADOW_CORE,
+            SKELETON_CORE,
+            SEA_CORE,
+            STORM_CORE,
+            UNDEAD_SOUL_CORE,
+            COW_CORE,
+            END_CORE,
+            ENDERMAN_CORE,
+            WITHER_SKELETON_CORE
+
     );
 
 

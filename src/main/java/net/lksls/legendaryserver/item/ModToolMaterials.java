@@ -14,8 +14,15 @@ public enum ModToolMaterials implements ToolMaterial {
     LIGHT(ModTags.Blocks.INCORRECT_FOR_LIGHT_TOOL,
             4602, 13.0F, 5.0F, 22, () -> Ingredient.ofItems(ModItems.LIGHT_CORE)),
     DARK(ModTags.Blocks.INCORRECT_FOR_DARK_TOOL,
-            6900, 14.0f, 6.7f,22, () -> Ingredient.ofItems(ModItems.DARK_CORE));
+            6900, 14.0f, 6.7f, 22, () -> Ingredient.ofItems(ModItems.DARK_CORE)),
 
+    // Single‑use, no mining, no repair, just for the Mob Core Extractor
+    CORE(ModTags.Blocks.INCORRECT_FOR_LIGHT_TOOL, // or a dedicated CORE tag if you add one
+            1,          // durability (we still manually decrement the stack)
+            0.0F,       // mining speed (not used)
+            0.0F,       // base attack damage (you override with attributeModifiers: 300)
+            0,          // enchantability
+            () -> Ingredient.EMPTY); // not repairable
 
 
     private final TagKey<Block> inverseTag;
@@ -25,8 +32,12 @@ public enum ModToolMaterials implements ToolMaterial {
     private final int enchantability;
     private final Supplier<Ingredient> repairIngredient;
 
-    ModToolMaterials(final TagKey<Block> inverseTag, final int itemDurability, final float miningSpeed, final float attackDamage, final int enchantability, final Supplier<Ingredient> repairIngredient
-    ) {
+    ModToolMaterials(final TagKey<Block> inverseTag,
+                     final int itemDurability,
+                     final float miningSpeed,
+                     final float attackDamage,
+                     final int enchantability,
+                     final Supplier<Ingredient> repairIngredient) {
         this.inverseTag = inverseTag;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;
@@ -34,7 +45,6 @@ public enum ModToolMaterials implements ToolMaterial {
         this.enchantability = enchantability;
         this.repairIngredient = Suppliers.memoize(repairIngredient::get);
     }
-
 
     @Override
     public int getDurability() {
@@ -63,6 +73,6 @@ public enum ModToolMaterials implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return (Ingredient)this.repairIngredient.get();
+        return this.repairIngredient.get();
     }
 }

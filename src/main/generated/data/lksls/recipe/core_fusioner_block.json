@@ -3,19 +3,19 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "lksls:raw_nickel"
+      "item": "lksls:dark_core"
     },
     "N": {
-      "item": "lksls:raw_nickel"
+      "item": "lksls:copper_chip"
     },
     "R": {
-      "item": "lksls:raw_nickel"
+      "item": "lksls:xenthrite_rod"
     }
   },
   "pattern": [
-    "RRR",
-    "ANR",
-    "RRR"
+    "RNR",
+    "NAN",
+    "RNR"
   ],
   "result": {
     "count": 1,

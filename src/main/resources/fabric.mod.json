@@ -28,6 +28,7 @@
 			"net.lksls.legendaryserver.LegendaryServerMod"
 		]
 	},
+
 	"mixins": [
 		"mixins.legendaryserver.json"
 	],

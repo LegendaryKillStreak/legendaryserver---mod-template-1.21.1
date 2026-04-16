@@ -1,5 +1,6 @@
 package net.lksls.legendaryserver.block.entity;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.lksls.legendaryserver.LegendaryServerMod;
 import net.lksls.legendaryserver.block.ModBlocks;
 import net.lksls.legendaryserver.block.custom.ChemicalTntBlock;
@@ -8,6 +9,9 @@ import net.lksls.legendaryserver.block.entity.custom.CoreFusionerBlockEntity;
 import net.lksls.legendaryserver.block.entity.custom.CustomSpawnerBlockEntity;
 import net.lksls.legendaryserver.block.entity.custom.RefineryBlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
+import net.minecraft.entity.EntityDimensions;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -33,6 +37,16 @@ public class ModBlockEntities {
                             CustomSpawnerBlockEntity::new,
                             ModBlocks.CUSTOM_SPAWNER_BLOCK
                     ).build(null)
+            );
+    public static final EntityType<ChemicalTntEntity> CHEMICAL_TNT_ENTITY =
+            Registry.register(
+                    Registries.ENTITY_TYPE,
+                    Identifier.of("lksls", "chemical_tnt"),
+                    FabricEntityTypeBuilder.<ChemicalTntEntity>create(SpawnGroup.MISC, ChemicalTntEntity::new)
+                            .dimensions(EntityDimensions.fixed(0.98f, 0.98f))
+                            .trackRangeBlocks(10)
+                            .trackedUpdateRate(10)
+                            .build()
             );
 
 

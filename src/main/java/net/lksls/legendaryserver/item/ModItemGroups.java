@@ -36,6 +36,7 @@ public class ModItemGroups {
                         entries.add(ModItems.NAUTICUS_CORE);
                         entries.add(ModItems.GHOST_CORE);
                         entries.add(ModItems.DARK_SHARD);
+                        entries.add(ModItems.MOB_CORE_EXTRACTOR);
                         entries.add(ModItems.DARK_CORE);
                         entries.add(ModItems.DARKNESS_SWORD);
                         entries.add(ModItems.LIGHT_AXE);
@@ -161,6 +162,8 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.RARE_EARTH_DIRT);
 
+                        entries.add(ModItems.DARKUS_BUG_HUNTER_TROPHY);
+
 
 
 
@@ -219,6 +222,7 @@ public class ModItemGroups {
                         entries.add(ModItems.WITHER_SKELETON_CORE);
                         entries.add(ModItems.NAUTICUS_CORE);
                         entries.add(ModItems.GHOST_CORE);
+                        entries.add(ModItems.MOB_CORE_EXTRACTOR);
                         entries.add(ModBlocks.CORE_FUSIONER_BLOCK);
 
 

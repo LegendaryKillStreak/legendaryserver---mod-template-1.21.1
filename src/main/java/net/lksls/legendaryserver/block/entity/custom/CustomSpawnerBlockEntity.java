@@ -92,18 +92,58 @@ public class CustomSpawnerBlockEntity extends BlockEntity implements SidedInvent
 
 
 
-    private static final Map<Item, Map<Integer, List<ItemStack>>> LEVEL_LOOT = Map.of(
-            ModItems.DARK_SOUL_CORE, Map.of(
-                    1, List.of(new ItemStack(Items.SOUL_SAND, 1), new ItemStack(Items.OBSIDIAN, 1)),
-                    5, List.of(new ItemStack(ModItems.FUSED_SILICA_POWDER, 2), new ItemStack(Items.OBSIDIAN, 1)),
-                    10, List.of(new ItemStack(ModItems.FUSED_SILICA_POWDER, 3), new ItemStack(Items.OBSIDIAN, 2))
-            ),
-            ModItems.LIGHT_CORE, Map.of(
-                    1, List.of(new ItemStack(ModItems.FUSED_SILICA_POWDER, 1), new ItemStack(Items.OBSIDIAN, 1)),
-                    5, List.of(new ItemStack(ModItems.FUSED_SILICA_POWDER, 2), new ItemStack(Items.OBSIDIAN, 1)),
-                    10, List.of(new ItemStack(ModItems.FUSED_SILICA_POWDER, 3), new ItemStack(Items.OBSIDIAN, 2))
-            )
-    );
+    private static final Map<Item, Map<Integer, List<ItemStack>>> LEVEL_LOOT =
+            Map.ofEntries(
+                    Map.entry(ModItems.DARK_SOUL_CORE, Map.of(
+                            1, List.of(new ItemStack(Items.SOUL_SAND, 1), new ItemStack(Items.BLACKSTONE, 1)),
+                            15, List.of(new ItemStack(Items.SOUL_SAND, 2), new ItemStack(Items.BLACKSTONE, 1)),
+                            30, List.of(new ItemStack(Items.SOUL_SAND, 3), new ItemStack(Items.BLACKSTONE, 2))
+                    )),
+                    Map.entry(ModItems.SKELETON_CORE, Map.of(
+                            1, List.of(new ItemStack(Items.BONE, 1)),
+                            64, List.of(new ItemStack(Items.BONE, 25), new ItemStack(Items.BONE_MEAL, 5))
+                    )),
+                    Map.entry(ModItems.SHADOW_CORE, Map.of(
+                            1, List.of(new ItemStack(ModItems.ECHO_DUST, 1)),
+                            64, List.of(new ItemStack(ModItems.ECHO_DUST, 25), new ItemStack(Items.LIGHT, 5))
+                    )),
+                    Map.entry(ModItems.LIGHT_CORE, Map.of(
+                            1, List.of(new ItemStack(Items.GLOWSTONE_DUST, 1)),
+                            5, List.of(new ItemStack(Items.GLOWSTONE_DUST, 2)),
+                            10, List.of(new ItemStack(Items.GLOWSTONE_DUST, 4)),
+                            50, List.of(new ItemStack(Items.GLOWSTONE_DUST, 9), new ItemStack(Items.PRISMARINE_CRYSTALS, 1)),
+                            64, List.of(new ItemStack(Items.GLOWSTONE_DUST, 9), new ItemStack(Items.PRISMARINE_CRYSTALS, 2), new ItemStack(ModItems.FUSED_SILICA_POWDER, 1))
+                    )),
+                    Map.entry(ModItems.WITHER_SKELETON_CORE, Map.of(
+                            1, List.of(new ItemStack(Items.COAL, 1), new ItemStack(Items.BONE, 1)),
+                            7, List.of(new ItemStack(Items.COAL, 2), new ItemStack(Items.BONE, 2)),
+                            10, List.of(new ItemStack(Items.COAL, 4), new ItemStack(Items.BONE, 4)),
+                            50, List.of(new ItemStack(Items.COAL, 9), new ItemStack(Items.BONE, 8), new ItemStack(Items.WITHER_ROSE, 1)),
+                            64, List.of(new ItemStack(Items.COAL, 9), new ItemStack(Items.BONE, 15), new ItemStack(Items.WITHER_ROSE, 1))
+                    )),
+                    Map.entry(ModItems.COW_CORE, Map.of(
+                            1, List.of(new ItemStack(Items.COOKED_BEEF, 1), new ItemStack(Items.LEATHER, 1)),
+                            10, List.of(new ItemStack(Items.COOKED_BEEF, 2), new ItemStack(Items.LEATHER, 2))
+                    )),
+                    Map.entry(ModItems.ENDERMAN_CORE, Map.of(
+                            1, List.of(new ItemStack(Items.ENDER_PEARL, 1))
+                    )),
+                    Map.entry(ModItems.CREEPER_CORE, Map.of(
+                            1, List.of(new ItemStack(Items.GUNPOWDER, 1))
+                    )),
+                    Map.entry(ModItems.AMETHYST_CORE, Map.of(
+                            1, List.of(new ItemStack(Items.AMETHYST_SHARD, 1))
+                    )),
+
+                    Map.entry(ModItems.CHICKEN_SPAWN_CORE, Map.of(
+                            1, List.of(new ItemStack(Items.COOKED_CHICKEN, 1), new ItemStack(Items.FEATHER))
+                    )),
+                    Map.entry(ModItems.NAUTICUS_CORE, Map.of(
+                            1, List.of(new ItemStack(Items.SEAGRASS, 1), new ItemStack(Items.COD, 1)),
+                            15, List.of(new ItemStack(Items.SEAGRASS, 4), new ItemStack(Items.COD, 2), new ItemStack(Items.PUFFERFISH, 1))
+                    ))
+            );
+
 
     // --- Vanilla BE update helpers (no @Override to be mapping-robust) ---
 
@@ -194,6 +234,15 @@ public class CustomSpawnerBlockEntity extends BlockEntity implements SidedInvent
 
     public static void tick(World world, BlockPos pos, BlockState state, CustomSpawnerBlockEntity be) {
         if (world.isClient) return;
+
+        // Update level based on core count
+        ItemStack coreItem = be.core.getStack(0);
+        if (!coreItem.isEmpty()) {
+            be.level = Math.min(coreItem.getCount(), 64); // cap at 64
+        } else {
+            be.level = 1;
+        }
+
 
         if (world.getTime() % 20 == 0) {
             be.addXp(be.getStackCount());

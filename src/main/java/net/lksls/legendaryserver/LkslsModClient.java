@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.client.rendering.v1.BlockEntityRendererRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.TooltipComponentCallback;
 import net.lksls.legendaryserver.block.ModBlocks;
 import net.lksls.legendaryserver.block.entity.ModBlockEntities;
@@ -61,12 +62,7 @@ public class LkslsModClient implements ClientModInitializer {
 
 
 
-        TooltipComponentCallback.EVENT.register((data) -> {
-            if (data instanceof RarityTooltipData rarityData) {
-                return new RarityTooltipRenderer(rarityData);
-            }
-            return null;
-        });
+
 
 
 
@@ -78,6 +74,9 @@ public class LkslsModClient implements ClientModInitializer {
 
         HandledScreens.register(ModScreenHandlers.CUSTOM_SPAWNER_SCREEN_HANDLER, CustomSpawnerScreen::new);
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.CUSTOM_SPAWNER_BLOCK, RenderLayer.getCutout());
+        EntityRendererRegistry.register(
+                ModBlockEntities.CHEMICAL_TNT_ENTITY,
+                PrimedTntEntityRenderer::new        );
 
 
 

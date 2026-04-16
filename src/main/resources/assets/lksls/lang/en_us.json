@@ -1,8 +1,22 @@
 {
-  "item.lksls.light_sword": "Sword of Light",
+
   "item.lksls.light_core": "Light Core",
   "item.lksls.dark_core": "Dark Core",
   "item.lksls.dark_soul_core": "Dark Soul Core",
+  "item.lksls.sea_core": "Sea Core",
+  "item.lksls.enderman_core": "Enderman Core",
+  "item.lksls.empty_core_v2": "Empty Core",
+  "item.lksls.shadow_core": "Shadow Core",
+  "item.lksls.skeleton_core": "Skeleton Core",
+  "item.lksls.undead_soul_core": "Undead Soul Core",
+  "item.lksls.wither_skeleton_core": "Wither Skeleton Core",
+  "item.lksls.water_core": "Water Core",
+  "item.lksls.storm_core": "Storm Core",
+  "item.lksls.lightning_core": "Lightning Core",
+  "item.lksls.ghost_core": "Ghost Core",
+
+
+  "item.lksls.light_sword": "Sword of Light",
   "item.lksls.darkness_sword": "Sword of Darkness",
   "item.lksls.darkness_axe": "Darkness Axe",
   "item.lksls.darkness_pickaxe": "Darkness Pickaxe",
@@ -84,9 +98,24 @@
   "item.lksls.cylinder_engine":  "I1 Cylinder Engine",
   "item.lksls.water_container":  "Water Container",
   "item.lksls.fused_silica_powder":  "Fused Silica Powder",
+  "item.lksls.amethyst_core": "Amethyst Core",
+  "item.lksls.chicken_spawn_core": "Chicken Core",
+  "item.lksls.cow_core": "Cow Core",
+  "item.lksls.end_core": "End Core",
+  "item.lksls.nauticus_core": "Nauticus Core",
+  "item.lksls.soul_core": "Soul Core",
+  "item.lksls.mob_core_extractor": "Mob Core Extractor",
+  "item.lksls.darkus_bug_hunter_trophy": "Danke für deine Unterstützung beim Bug Hunting",
 
 
-  "trim_material.lksls.echo_dust":  "Echo Dust Material",
+
+
+  "block.lksls.custom_spawner": "Custom Spawner",
+
+
+
+
+"trim_material.lksls.echo_dust":  "Echo Dust Material",
   "trim_material.lksls.nickel_ingot":  "Nickel Material",
   "trim_material.lksls.titanium_ingot":  "Titanium Material",
   "trim_material.lksls.refined_xenthrite":  "Xenthrite Material",
@@ -103,7 +132,8 @@
 
   "itemgroup.lksls.season_one_items": "Season One Items",
   "itemgroup.lksls.nuclear_items": "Nuclear Sector",
-  "itemgroup.lksls.cores": "Nuclear Sector",
+  "itemgroup.lksls.cores": "Cores",
+  "itemgroup.lksls.electronics": "Electronics",
 
 
   "block.lksls.light_core_block": "Light Core Block",
@@ -141,6 +171,9 @@
   "block.lksls.refinery": "Refinery",
   "block.lksls.rare_earth_dirt": "Rare Earths Dirt",
   "block.lksls.chemical_tnt": "Chemical TNT",
+  "block.lksls.core_fusioner_block": "Core Fusioner",
+  "block.lksls.custom_spawner_block": "Spawner",
+
 
   "death.attack.radiation_damage": "%1$s's Geiger counter screamed its last",
   "death.attack.radiation_damage.death_screen":"You dissolved into radioactive silence",

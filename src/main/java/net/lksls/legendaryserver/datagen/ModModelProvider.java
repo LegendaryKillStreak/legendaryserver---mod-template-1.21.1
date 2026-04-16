@@ -134,6 +134,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.WATER_CORE, Models.GENERATED);
         itemModelGenerator.register(ModItems.STORM_CORE, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.MOB_CORE_EXTRACTOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DARKUS_BUG_HUNTER_TROPHY, Models.GENERATED);
+
 
 
         itemModelGenerator.register(ModItems.COIN, Models.GENERATED);

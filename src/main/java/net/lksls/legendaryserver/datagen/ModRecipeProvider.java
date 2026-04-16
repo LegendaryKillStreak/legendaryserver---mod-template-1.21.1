@@ -312,13 +312,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.CORE_FUSIONER_BLOCK)
-                .pattern("RRR")
-                .pattern("ANR")
-                .pattern("RRR")
-                .input('R', ModItems.RAW_NICKEL)
-                .input('N', ModItems.RAW_NICKEL)
-                .input('A', ModItems.RAW_NICKEL)
-                .criterion(hasItem(ModItems.RAW_NICKEL), conditionsFromItem(ModItems.RAW_NICKEL))
+                .pattern("RNR")
+                .pattern("NAN")
+                .pattern("RNR")
+                .input('R', ModItems.XENTHRITE_ROD)
+                .input('N', ModItems.COPPER_CHIP)
+                .input('A', ModItems.DARK_CORE)
+                .criterion(hasItem(ModItems.DARK_CORE), conditionsFromItem(ModItems.DARK_CORE))
                 .offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.DIM_ROSE_QUARTZ_BLOCK)
                 .pattern("RRR")
@@ -343,6 +343,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.RAW_TITANIUM), conditionsFromItem(ModItems.RAW_TITANIUM))
                 .offerTo(exporter);
 
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.EMPTY_CORE_V2)
+                .pattern("RBP")
+                .pattern("FGA")
+                .pattern("PCR")
+                .input('R', ModItems.DARK_CORE)
+                .input('P', ModItems.LIGHT_CORE)
+                .input('B', Items.RED_STAINED_GLASS)
+                .input('F', Items.ORANGE_STAINED_GLASS)
+                .input('G', Items.YELLOW_STAINED_GLASS)
+                .input('A', Items.CYAN_STAINED_GLASS)
+                .input('C', Items.PURPLE_STAINED_GLASS)
+                .criterion(hasItem(ModItems.RAW_TITANIUM), conditionsFromItem(ModItems.RAW_TITANIUM))
+                .offerTo(exporter);
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RAW_NICKEL, 9)
                 .input(ModBlocks.RAW_NICKEL_BLOCK)
                 .criterion(hasItem(ModBlocks.RAW_NICKEL_BLOCK), conditionsFromItem(ModBlocks.RAW_NICKEL_BLOCK))
@@ -361,6 +376,22 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input('B', Items.END_ROD)
                         .input('C', ModItems.LIGHT_CORE)
                 .criterion(hasItem(ModItems.LIGHT_CORE), conditionsFromItem(ModItems.LIGHT_CORE))
+                .offerTo(exporter);
+
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.MOB_CORE_EXTRACTOR)
+                        .pattern("AXC")
+                        .pattern("BDX")
+                        .pattern("FBG")
+
+                        .input('B', Items.NETHERITE_INGOT)
+                        .input('C', ModItems.DARK_CORE)
+                        .input('F', ModItems.DRILL_ENGINE)
+                        .input('D', ModItems.DARK_SOUL_CORE)
+                        .input('A', Items.GLASS)
+                        .input('G', ModItems.EMPTY_CORE_V2)
+                        .input('X', ModItems.DARK_SHARD)
+                .criterion(hasItem(ModItems.DARK_CORE), conditionsFromItem(ModItems.DARK_CORE))
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.DARKNESS_AXE)
