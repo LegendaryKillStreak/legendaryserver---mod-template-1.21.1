@@ -1,4 +1,4 @@
-// 1.21.1	2026-04-16T16:59:37.7212492	LegendaryServer - Mod/Model Definitions
+// 1.21.1	2026-04-17T00:27:35.7813383	LegendaryServer - Mod/Model Definitions
 b9176c1ed5cdfd2525370627435c104b43ebb2f8 assets\lksls\models\block\raw_nickel_block.json
 24f8bbfba903536cf9fc951649b0f123008b833a assets\lksls\blockstates\titanium_deepslate_ore.json
 a903b1cfdc8de1481ee1e6912a9d7557ab634456 assets\lksls\models\item\dim_stone.json
@@ -11,8 +11,8 @@ b3c54d43da573151aa7ef1188db2cb047114a153 assets\lksls\models\block\almost_dim_st
 c5fe3eda54a04a6006d8e2d2c5ad0d5c6bd64b17 assets\lksls\models\item\dark_core_chestplate_quartz_trim.json
 ae961a539cfe11c476d5f877670b8eda97b38919 assets\lksls\models\item\dungeon_key_icy_caves.json
 10b4bcc84d67c391d45ac2bf472e5772a93a8a19 assets\lksls\models\item\davy_jones_theme_music_disc.json
-ccd5b51c1bffd817b304fbbc05952f82cca06882 assets\lksls\models\item\almost_dim_stone.json
 608e778f5549c491abc74651692e8cc3faf9f84e assets\lksls\models\block\raw_titanium_block.json
+ccd5b51c1bffd817b304fbbc05952f82cca06882 assets\lksls\models\item\almost_dim_stone.json
 d74ae374382d5ff45f48927ec76d85bd8e475c45 assets\lksls\blockstates\midnightwood_wood.json
 6245a15d36140f8f15d9b3401dc288ecc533a9eb assets\lksls\models\item\light_core_leggings_netherite_trim.json
 215e0ab3abd70d965f93e150cdf7b47872c4c5f3 assets\lksls\models\item\light_core_helmet_copper_trim.json
@@ -53,8 +53,8 @@ c1e1974484debb3842c97700d096916379f54557 assets\lksls\blockstates\midnightwood_s
 81d3358ca9906e36a19ab70ff96017b9d652bddb assets\lksls\models\item\darkness_sword.json
 6f3788d52cb890cecd2cfd4c9d0766825107190a assets\lksls\models\item\light_sword.json
 4632a718402a8adbeebab85deded1de627e4b1f5 assets\lksls\models\item\midnightwood_log.json
-14a79d4e38c7193a856696fd11eb792ebc210147 assets\lksls\blockstates\almost_dim_stone.json
 12b36724000863e6b2d9a094fdb82374f757a881 assets\lksls\models\item\custom_spawner.json
+14a79d4e38c7193a856696fd11eb792ebc210147 assets\lksls\blockstates\almost_dim_stone.json
 37fbc1ed12a59b3d979fcef749a3b94e24793973 assets\lksls\blockstates\midnightwood_log.json
 466f8018f5cade53f82db1e6fe29692c51d02757 assets\lksls\models\item\coin_2000.json
 d3305e716b4b69ef65c23aea2916a3c2b953db18 assets\lksls\models\item\lost_grass.json
@@ -172,8 +172,8 @@ b14af916bba204c6cf48f017502608b2a42c0ff2 assets\lksls\models\item\coin_50000.jso
 25332b5f759ff95974f9f222edd534f8aa5d1722 assets\lksls\models\item\nuclear_item_group_icon.json
 6a06403443fc6bfd658a04ec1a883644416c6274 assets\lksls\models\block\darkroot_soil.json
 03b49b998ddbe3eef58997e7fcce56210475c5d6 assets\lksls\models\item\titanium_deepslate_ore.json
-61ea80b9f3e9dd353a6e5ca6264189123fe5a0c5 assets\lksls\models\block\titanium_ore.json
 047e56c5f8d73ee4c2d21b20ad8fdc13e01cc6ff assets\lksls\models\item\refined_sphalerite.json
+61ea80b9f3e9dd353a6e5ca6264189123fe5a0c5 assets\lksls\models\block\titanium_ore.json
 71a36a5f4b09a4b7f178654c40d002695f38c1d4 assets\lksls\models\item\refined_noctyrian.json
 ec4b1c29852b4bac69e27b5cf6dffed6572d853b assets\lksls\models\item\light_core_leggings_amethyst_trim.json
 937b365451a66fd766964ca4fea3e28c2ddca8e4 assets\lksls\models\item\light_core_leggings_gold_trim.json
@@ -233,8 +233,8 @@ ecc42a6815a1655f666990d9be0fe59f4fbc5a22 assets\lksls\models\item\light_core_che
 8125c32286df8690b7021386c2da1d81ba69dc0c assets\lksls\models\item\titanium_block.json
 4df9ec7d890b877c94f951b352cc6e789a8df175 assets\lksls\models\item\coin_5000.json
 3acb44ec6003c8047ab441b317b73651881fcd02 assets\lksls\models\block\lost_grass.json
-c690361ecdd683daac50f0f4c82c02fe40b44c1e assets\lksls\models\item\light_core_chestplate_lapis_trim.json
 78b6ec35201c47c2e6e33207ca08763b7afe435f assets\lksls\models\block\custom_spawner.json
+c690361ecdd683daac50f0f4c82c02fe40b44c1e assets\lksls\models\item\light_core_chestplate_lapis_trim.json
 5f622e7f710d99f3d3e1b36b091c23a1c0dcb2c8 assets\lksls\models\item\rare_earth_dirt.json
 2dad8c15761cf36526562912bdd6d045a99c7a6c assets\lksls\models\item\nauticus_core.json
 06579151c3a7fd0238f76566b285f070a6ee43e6 assets\lksls\models\item\stripped_midnightwood_log.json
