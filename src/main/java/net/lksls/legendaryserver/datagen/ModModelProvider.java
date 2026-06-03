@@ -171,7 +171,7 @@ public class ModModelProvider extends FabricModelProvider {
 
 
 
-        itemModelGenerator.register(ModItems.DAVY_JONES_THEME_MUSIC_DISC, Models.GENERATED);
+        //itemModelGenerator.register(ModItems.DAVY_JONES_THEME_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.PAIN_RESONANCE_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.TEARS_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.HORIZON_ZERO_DAWN_MUSIC_DISC, Models.GENERATED);

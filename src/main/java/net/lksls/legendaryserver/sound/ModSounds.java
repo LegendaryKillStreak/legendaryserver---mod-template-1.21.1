@@ -18,6 +18,7 @@ public class ModSounds {
     private static SoundEvent registerSoundEvent(String name) {
         Identifier id = Identifier.of(LegendaryServerMod.MOD_ID, name);
         return Registry.register(Registries.SOUND_EVENT, id, SoundEvent.of(id));
+
     }
 
     public static void registerSounds() {
@@ -27,11 +28,55 @@ public class ModSounds {
     public static final RegistryKey<SoundEvent> AMBIENT_SOUND_LOOPS_REGISTRY_KEY =
             RegistryKey.of(RegistryKeys.SOUND_EVENT, Identifier.of(LegendaryServerMod.MOD_ID,"dark_ambience_one"));
 
+    public static final SoundEvent ARIA_MATH_CINEMATIC_REMIX_BY_CLEUR = registerSoundEvent("aria_math_remix_by_cleur");
+    public static final RegistryKey<SoundEvent> ARIA_MATH_CINEMATIC_REMIX_BY_CLEUR_KEY =
+            RegistryKey.of(RegistryKeys.SOUND_EVENT, Identifier.of(LegendaryServerMod.MOD_ID, "aria_math_remix_by_cleur"));
+
+    public static final SoundEvent LIVING_MICE_EPIC_REMIX_BY_ANGERER = registerSoundEvent("living_mice_epic_hybrid_orchestral_remix_by_angerer_on_youtube");
+    public static final RegistryKey<SoundEvent> LIVING_MICE_EPIC_REMIX_BY_ANGERER_KEY =
+            RegistryKey.of(RegistryKeys.SOUND_EVENT, Identifier.of(LegendaryServerMod.MOD_ID, "living_mice_epic_hybrid_orchestral_remix_by_angerer_on_youtube"));
+
+    public static final SoundEvent SWEDEN_REMIX_BY_MEDIAMOTIFS = registerSoundEvent("sweden_scary_remix_by_mediamotifs_on_youtube");
+    public static final RegistryKey<SoundEvent> SWEDEN_REMIX_BY_MEDIAMOTIFS_KEY =
+            RegistryKey.of(RegistryKeys.SOUND_EVENT, Identifier.of(LegendaryServerMod.MOD_ID, "sweden_scary_remix_by_mediamotifs_on_youtube"));
 
 
-    public static final SoundEvent DAVY_JONES_THEME = registerSoundEvent("davy_jones_theme");
-    public static final RegistryKey<JukeboxSong> DAVY_JONES_THEME_KEY =
-            RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(LegendaryServerMod.MOD_ID, "davy_jones_theme"));
+// public static final SoundEvent HALLOWEEN_MENU = registerSoundEvent("halloween_menu_by_gareth_coker_ownedby_mojang");
+// public static final RegistryKey<SoundEvent> HALLOWEEN_MENU_KEY =
+//         RegistryKey.of(RegistryKeys.SOUND_EVENT, Identifier.of(LegendaryServerMod.MOD_ID, "halloween_menu_by_gareth_coker_ownedby_mojang"));
+
+// public static final SoundEvent HALLOWEEN_I = registerSoundEvent("halloween_i_by_gareth_coker_ownedby_mojang");
+// public static final RegistryKey<SoundEvent> HALLOWEEN_I_KEY =
+//         RegistryKey.of(RegistryKeys.SOUND_EVENT, Identifier.of(LegendaryServerMod.MOD_ID, "halloween_i_by_gareth_coker_ownedby_mojang"));
+
+// public static final SoundEvent HALLOWEEN_II = registerSoundEvent("halloween_ii_by_gareth_coker_ownedby_mojang");
+// public static final RegistryKey<SoundEvent> HALLOWEEN_II_KEY =
+//         RegistryKey.of(RegistryKeys.SOUND_EVENT, Identifier.of(LegendaryServerMod.MOD_ID, "halloween_ii_by_gareth_coker_ownedby_mojang"));
+
+// public static final SoundEvent HALLOWEEN_III = registerSoundEvent("halloween_iii_by_gareth_coker_ownedby_mojang");
+// public static final RegistryKey<SoundEvent> HALLOWEEN_III_KEY =
+//         RegistryKey.of(RegistryKeys.SOUND_EVENT, Identifier.of(LegendaryServerMod.MOD_ID, "halloween_iii_by_gareth_coker_ownedby_mojang"));
+
+// public static final SoundEvent HALLOWEEN_THE_END = registerSoundEvent("halloween_the_end_by_gareth_coker_ownedby_mojang");
+// public static final RegistryKey<SoundEvent> HALLOWEEN_THE_END_KEY =
+//         RegistryKey.of(RegistryKeys.SOUND_EVENT, Identifier.of(LegendaryServerMod.MOD_ID, "halloween_the_end_by_gareth_coker_ownedby_mojang"));
+
+// public static final SoundEvent HALLOWEEN_NETHER_II = registerSoundEvent("halloween_nether_ii_by_gareth_coker_ownedby_mojang");
+// public static final RegistryKey<SoundEvent> HALLOWEEN_NETHER_II_KEY =
+//         RegistryKey.of(RegistryKeys.SOUND_EVENT, Identifier.of(LegendaryServerMod.MOD_ID, "halloween_nether_ii_by_gareth_coker_ownedby_mojang"));
+
+// public static final SoundEvent HALLOWEEN_NETHER_I = registerSoundEvent("halloween_nether_i_by_gareth_coker_ownedby_mojang");
+// public static final RegistryKey<SoundEvent> HALLOWEEN_NETHER_I_KEY =
+//         RegistryKey.of(RegistryKeys.SOUND_EVENT, Identifier.of(LegendaryServerMod.MOD_ID, "halloween_nether_i_by_gareth_coker_ownedby_mojang"));
+
+
+
+
+
+
+    //public static final SoundEvent DAVY_JONES_THEME = registerSoundEvent("davy_jones_theme");
+   // public static final RegistryKey<JukeboxSong> DAVY_JONES_THEME_KEY =
+     //       RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(LegendaryServerMod.MOD_ID, "davy_jones_theme"));
 
     public static final SoundEvent TEARS = registerSoundEvent("tears");
     public static final RegistryKey<JukeboxSong> TEARS_KEY =
@@ -44,6 +89,7 @@ public class ModSounds {
     public static final SoundEvent HORIZON_ZERO_DAWN = registerSoundEvent("horizon_zero_dawn");
     public static final RegistryKey<JukeboxSong> HORIZON_ZERO_DAWN_KEY =
             RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(LegendaryServerMod.MOD_ID, "horizon_zero_dawn"));
+
 
 
 }

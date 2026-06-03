@@ -1,5 +1,7 @@
-This project includes assets and/or code inspired by or derived from
-tutorial materials created by Kaupenjoe.
+This project includes assets and/or code inspired by or derived from:
+
+
+1. tutorial materials created by Kaupenjoe.
 
 Original tutorials and example resources:
 https://github.com/Tutorials-By-Kaupenjoe
@@ -22,5 +24,65 @@ The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 ------------------------------------------------------------
 
-All modifications, additions, and original content in this project are
-the work of the LKSLS development team.
+
+
+2. Musicians (in the titel Menu or as Music Disks) that produced remixes of original Mojang Minecraft Tracks or their own, royalty and copyright free, free for use tracks
+
+namingly this includes:
+
+    -"Minecraft - Sweden but it's absolutely terrifying (C418)" by "MediaMotifs", which is a remix of the title "Minecraft - Sweden" produced by C418 for Mojang
+     Title:(https://youtu.be/3daFlZyE3DY?si=fhDoxLa6BuX_ZzAv)
+     Creator:(https://www.youtube.com/@MediaMotifs)
+
+    -"Minecraft - Living Mice | Epic Hybrid Orchestral Remix" by "Seth Angerer", which is a Remix of the Original Title: "Minecraft - Living Mice" that is an Original composition by "C418" in 2011
+     Title:(https://youtu.be/_ogMlZFKus4?si=o1G50finjDREoP6-)
+     Creator:(https://www.youtube.com/@I_am_Angerer) / (https://www.youtube.com/c/SethAngerer/videos)
+
+    -"C418 - Aria Math (Cinematic Remix)" by "Cléur", which is a remix of "Minecraft - Aria Math" which is a Original composition by C418
+     Title:(https://youtu.be/B7Ck7V02Wic?si=DJS1_46fxV4PLHGc)
+     Creator:(https://www.youtube.com/@chroniccleur)
+
+    -"Pain Resonance [OFFICIAL AUDIO] (Dead by Daylight song / DBD song)" by "LegendaryKillStreak"
+     Title:(https://youtu.be/KV7ed_mj2uU?si=-9V_MCzr37eKkHtP)
+     Creator:(https://www.youtube.com/@LegendaryKillStreak)
+
+    -"Horizon Zero Dawn" which is a Tribute Song by "LegendaryKillStreak"
+     Title:(https://youtu.be/6c8PrvXF7sY?si=PtgOXbokY1ojbwss)
+     Creator:(https://www.youtube.com/@LegendaryKillStreak)
+
+
+    ________________________________________________________________________________
+   |All modifications, additions, and original content in this project are          |
+   |the work of the LKSLS development team. and Owned by the Seal of Orichalcos 2B2T|
+    --------------------------------------------------------------------------------
+      _________             .__            _____  ________        .__       .__           .__
+     /   _____/ ____ _____  |  |     _____/ ____\ \_____  \_______|__| ____ |  |__ _____  |  |   ____  ____  ______
+     \_____  \_/ __ \\__  \ |  |    /  _ \   __\   /   |   \_  __ \  |/ ___\|  |  \\__  \ |  | _/ ___\/  _ \/  ___/
+     /        \  ___/ / __ \|  |__ (  <_> )  |    /    |    \  | \/  \  \___|   Y  \/ __ \|  |_\  \__(  <_> )___ \
+    /_______  /\___  >____  /____/  \____/|__|    \_______  /__|  |__|\___  >___|  (____  /____/\___  >____/____  >
+            \/     \/     \/                              \/              \/     \/     \/          \/          \/
+
+
+
+   SSSSSSSSSSSSSSS                                     lllllll                          ffffffffffffffff            OOOOOOOOO                          iiii                     hhhhhhh                               lllllll                                                            MMMMMMMM               MMMMMMMMEEEEEEEEEEEEEEEEEEEEEEDDDDDDDDDDDDD      IIIIIIIIII               AAA
+ SS:::::::::::::::S                                    l:::::l                         f::::::::::::::::f         OO:::::::::OO                       i::::i                    h:::::h                               l:::::l                                                            M:::::::M             M:::::::ME::::::::::::::::::::ED::::::::::::DDD   I::::::::I              A:::A
+S:::::SSSSSS::::::S                                    l:::::l                        f::::::::::::::::::f      OO:::::::::::::OO                      iiii                     h:::::h                               l:::::l                                                            M::::::::M           M::::::::ME::::::::::::::::::::ED:::::::::::::::DD I::::::::I             A:::::A
+S:::::S     SSSSSSS                                    l:::::l                        f::::::fffffff:::::f     O:::::::OOO:::::::O                                              h:::::h                               l:::::l                                                            M:::::::::M         M:::::::::MEE::::::EEEEEEEEE::::EDDD:::::DDDDD:::::DII::::::II            A:::::::A
+S:::::S                eeeeeeeeeeee    aaaaaaaaaaaaa    l::::l         ooooooooooo    f:::::f       ffffff     O::::::O   O::::::Orrrrr   rrrrrrrrr  iiiiiii     cccccccccccccccch::::h hhhhh         aaaaaaaaaaaaa    l::::l     cccccccccccccccc   ooooooooooo       ssssssssss        M::::::::::M       M::::::::::M  E:::::E       EEEEEE  D:::::D    D:::::D I::::I             A:::::::::A
+S:::::S              ee::::::::::::ee  a::::::::::::a   l::::l       oo:::::::::::oo  f:::::f                  O:::::O     O:::::Or::::rrr:::::::::r i:::::i   cc:::::::::::::::ch::::hh:::::hhh      a::::::::::::a   l::::l   cc:::::::::::::::c oo:::::::::::oo   ss::::::::::s       M:::::::::::M     M:::::::::::M  E:::::E               D:::::D     D:::::DI::::I            A:::::A:::::A
+ S::::SSSS          e::::::eeeee:::::eeaaaaaaaaa:::::a  l::::l      o:::::::::::::::of:::::::ffffff            O:::::O     O:::::Or:::::::::::::::::r i::::i  c:::::::::::::::::ch::::::::::::::hh    aaaaaaaaa:::::a  l::::l  c:::::::::::::::::co:::::::::::::::oss:::::::::::::s      M:::::::M::::M   M::::M:::::::M  E::::::EEEEEEEEEE     D:::::D     D:::::DI::::I           A:::::A A:::::A
+  SS::::::SSSSS    e::::::e     e:::::e         a::::a  l::::l      o:::::ooooo:::::of::::::::::::f            O:::::O     O:::::Orr::::::rrrrr::::::ri::::i c:::::::cccccc:::::ch:::::::hhh::::::h            a::::a  l::::l c:::::::cccccc:::::co:::::ooooo:::::os::::::ssss:::::s     M::::::M M::::M M::::M M::::::M  E:::::::::::::::E     D:::::D     D:::::DI::::I          A:::::A   A:::::A
+    SSS::::::::SS  e:::::::eeeee::::::e  aaaaaaa:::::a  l::::l      o::::o     o::::of::::::::::::f            O:::::O     O:::::O r:::::r     r:::::ri::::i c::::::c     ccccccch::::::h   h::::::h    aaaaaaa:::::a  l::::l c::::::c     ccccccco::::o     o::::o s:::::s  ssssss      M::::::M  M::::M::::M  M::::::M  E:::::::::::::::E     D:::::D     D:::::DI::::I         A:::::A     A:::::A
+       SSSSSS::::S e:::::::::::::::::e aa::::::::::::a  l::::l      o::::o     o::::of:::::::ffffff            O:::::O     O:::::O r:::::r     rrrrrrri::::i c:::::c             h:::::h     h:::::h  aa::::::::::::a  l::::l c:::::c             o::::o     o::::o   s::::::s           M::::::M   M:::::::M   M::::::M  E::::::EEEEEEEEEE     D:::::D     D:::::DI::::I        A:::::AAAAAAAAA:::::A
+            S:::::Se::::::eeeeeeeeeee a::::aaaa::::::a  l::::l      o::::o     o::::o f:::::f                  O:::::O     O:::::O r:::::r            i::::i c:::::c             h:::::h     h:::::h a::::aaaa::::::a  l::::l c:::::c             o::::o     o::::o      s::::::s        M::::::M    M:::::M    M::::::M  E:::::E               D:::::D     D:::::DI::::I       A:::::::::::::::::::::A
+            S:::::Se:::::::e         a::::a    a:::::a  l::::l      o::::o     o::::o f:::::f                  O::::::O   O::::::O r:::::r            i::::i c::::::c     ccccccch:::::h     h:::::ha::::a    a:::::a  l::::l c::::::c     ccccccco::::o     o::::ossssss   s:::::s      M::::::M     MMMMM     M::::::M  E:::::E       EEEEEE  D:::::D    D:::::D I::::I      A:::::AAAAAAAAAAAAA:::::A
+SSSSSSS     S:::::Se::::::::e        a::::a    a:::::a l::::::l     o:::::ooooo:::::of:::::::f                 O:::::::OOO:::::::O r:::::r           i::::::ic:::::::cccccc:::::ch:::::h     h:::::ha::::a    a:::::a l::::::lc:::::::cccccc:::::co:::::ooooo:::::os:::::ssss::::::s     M::::::M               M::::::MEE::::::EEEEEEEE:::::EDDD:::::DDDDD:::::DII::::::II   A:::::A             A:::::A
+S::::::SSSSSS:::::S e::::::::eeeeeeeea:::::aaaa::::::a l::::::l     o:::::::::::::::of:::::::f                  OO:::::::::::::OO  r:::::r           i::::::i c:::::::::::::::::ch:::::h     h:::::ha:::::aaaa::::::a l::::::l c:::::::::::::::::co:::::::::::::::os::::::::::::::s      M::::::M               M::::::ME::::::::::::::::::::ED:::::::::::::::DD I::::::::I  A:::::A               A:::::A
+S:::::::::::::::SS   ee:::::::::::::e a::::::::::aa:::al::::::l      oo:::::::::::oo f:::::::f                    OO:::::::::OO    r:::::r           i::::::i  cc:::::::::::::::ch:::::h     h:::::h a::::::::::aa:::al::::::l  cc:::::::::::::::c oo:::::::::::oo  s:::::::::::ss       M::::::M               M::::::ME::::::::::::::::::::ED::::::::::::DDD   I::::::::I A:::::A                 A:::::A
+ SSSSSSSSSSSSSSS       eeeeeeeeeeeeee  aaaaaaaaaa  aaaallllllll        ooooooooooo   fffffffff                      OOOOOOOOO      rrrrrrr           iiiiiiii    cccccccccccccccchhhhhhh     hhhhhhh  aaaaaaaaaa  aaaallllllll    cccccccccccccccc   ooooooooooo     sssssssssss         MMMMMMMM               MMMMMMMMEEEEEEEEEEEEEEEEEEEEEEDDDDDDDDDDDDD      IIIIIIIIIIAAAAAAA                   AAAAAAA
+
+
+
+
+
+

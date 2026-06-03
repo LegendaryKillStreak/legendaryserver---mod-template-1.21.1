@@ -244,8 +244,8 @@ public class ModItems {
     public static final Item DUNGEON_ICON_ICY_CAVES = registerItem("dungeon_icon_icy_caves", new Item(new Item.Settings().rarity(Rarity.UNCOMMON)));
     public static final Item DUNGEON_ICON_DEADLY_HEAT = registerItem("dungeon_icon_deadly_heat", new Item(new Item.Settings().rarity(Rarity.UNCOMMON)));
 
-    public static final Item DAVY_JONES_THEME_MUSIC_DISC = registerItem("davy_jones_theme_music_disc",
-            new Item(new Item.Settings().rarity(Rarity.EPIC).jukeboxPlayable(ModSounds.DAVY_JONES_THEME_KEY).maxCount(1)));
+    //public static final Item DAVY_JONES_THEME_MUSIC_DISC = registerItem("davy_jones_theme_music_disc",
+    //        new Item(new Item.Settings().rarity(Rarity.EPIC).jukeboxPlayable(ModSounds.DAVY_JONES_THEME_KEY).maxCount(1)));
 
     public static final Item PAIN_RESONANCE_MUSIC_DISC = registerItem("pain_resonance_music_disc",
             new Item(new Item.Settings().rarity(Rarity.EPIC).jukeboxPlayable(ModSounds.PAIN_RESONANCE_KEY).maxCount(1)));

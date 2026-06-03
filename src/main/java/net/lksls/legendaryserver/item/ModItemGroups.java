@@ -92,7 +92,7 @@ public class ModItemGroups {
                         entries.add(ModItems.DARK_CORE_CHESTPLATE);
                         entries.add(ModItems.DARK_CORE_LEGGINGS);
                         entries.add(ModItems.DARK_CORE_BOOTS);
-                        entries.add(ModItems.DAVY_JONES_THEME_MUSIC_DISC);
+                        //entries.add(ModItems.DAVY_JONES_THEME_MUSIC_DISC);
                         entries.add(ModItems.PAIN_RESONANCE_MUSIC_DISC);
                         entries.add(ModItems.TEARS_MUSIC_DISC);
                         entries.add(ModItems.HORIZON_ZERO_DAWN_MUSIC_DISC);

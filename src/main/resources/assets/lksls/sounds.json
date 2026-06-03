@@ -1,13 +1,5 @@
 {
 
-  "davy_jones_theme": {
-    "sounds": [
-      {
-        "name": "lksls:davy_jones_theme",
-        "stream": true
-      }
-    ]
-  },
   "tears": {
     "sounds": [
       {
@@ -39,6 +31,31 @@
         "stream": true
       }
     ]
+  },
+  "sweden_scary_remix_by_mediamotifs_on_youtube": {
+    "sounds": [
+      {
+        "name": "lksls:sweden_scary_remix_by_mediamotifs_on_youtube",
+        "stream": true
+      }
+    ]
+  },
+  "aria_math_remix_by_cleur": {
+    "sounds": [
+      {
+        "name": "lksls:aria_math_remix_by_cleur",
+        "stream": true
+      }
+    ]
+  },
+  "living_mice_epic_hybrid_orchestral_remix_by_angerer_on_youtube": {
+    "sounds": [
+      {
+        "name": "lksls:living_mice_epic_hybrid_orchestral_remix_by_angerer_on_youtube",
+        "stream": true
+      }
+    ]
   }
+  
 
 }
